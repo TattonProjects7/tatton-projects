@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.tatton-projects.co.uk/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.tatton-projects.co.uk/images/vanguard-01-breakout.jpg</image:loc>
+      <image:title>Vanguard Manchester - 2M Cat B office fit-out by Tatton Projects</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tatton-projects.co.uk/images/knutsford-05-complete.jpg</image:loc>
+      <image:title>Knutsford new build home by Tatton Projects</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tatton-projects.co.uk/images/wilmslow-04-front-after.jpg</image:loc>
+      <image:title>Wilmslow house extension and refurbishment by Tatton Projects</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tatton-projects.co.uk/images/sentric-01-lounge.jpg</image:loc>
+      <image:title>Sentric Music Liverpool Cat B office fit-out</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tatton-projects.co.uk/images/stockport-01-floor.jpg</image:loc>
+      <image:title>Stockport service centre fit-out in a live building</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/costs.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/blog.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
