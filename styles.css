@@ -212,7 +212,7 @@ section { padding: clamp(72px, 10vw, 130px) var(--gutter); }
 @media (max-width: 940px) { .routes { grid-template-columns: 1fr; } .route { min-height: auto; } }
 
 /* ---------- focus (light panel) ---------- */
-.refuse { background: var(--stone); color: #1C1C1E; }
+.refuse { background: #E7E3DC; color: #1C1C1E; }
 .refuse .eyebrow { color: var(--gold-dim); }
 .refuse h2 {
   font-family: var(--serif); font-weight: 400;
@@ -221,13 +221,13 @@ section { padding: clamp(72px, 10vw, 130px) var(--gutter); }
   color: #1C1C1E;
 }
 .refuse h2 em { font-style: italic; color: var(--gold-dim); }
-.refuse p { color: #4A4A48; max-width: 46ch; }
+.refuse p { color: #33332F; max-width: 46ch; }
 .refuse-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 80px); align-items: end; }
 
 .struck { list-style: none; column-count: 2; column-gap: 40px; }
 .struck li {
   font-family: var(--serif); font-size: clamp(18px, 1.9vw, 26px);
-  color: #8A8985; padding: 9px 0; position: relative;
+  color: #55534C; padding: 9px 0; position: relative;
   break-inside: avoid; width: fit-content;
 }
 .struck li::after {
@@ -246,7 +246,7 @@ section { padding: clamp(72px, 10vw, 130px) var(--gutter); }
 .floor { margin-top: 40px; padding-top: 26px; border-top: 2px solid #1C1C1E; max-width: 46ch; }
 .floor-lbl { display: block; font-family: var(--mono); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold-dim); }
 .floor-num { display: block; font-family: var(--serif); font-size: clamp(46px, 6.5vw, 84px); line-height: 1; letter-spacing: -.03em; color: #1C1C1E; margin: 10px 0 12px; }
-.floor-note { display: block; font-size: 14px; color: #6A6A67; max-width: 36ch; }
+.floor-note { display: block; font-size: 14px; color: #514F49; max-width: 36ch; }
 @media (max-width: 900px) { .refuse-grid { grid-template-columns: 1fr; } .struck { column-count: 1; } }
 
 /* ---------- founder ---------- */
@@ -575,6 +575,23 @@ footer { padding: clamp(56px, 8vw, 90px) var(--gutter) 36px; border-top: 1px sol
 .plan .pop { animation: pop .6s ease both; }
 @keyframes pop { from { opacity: 0; } to { opacity: 1; } }
 
+/* continuous ambient motion: the plan stays alive after it sets itself out */
+.plan .ants { animation: ants 9s linear infinite; animation-delay: 4.2s; }
+.plan .scan { opacity: 0; animation: scan 7s cubic-bezier(.45,0,.55,1) infinite; animation-delay: 4.4s; }
+.plan .ping { transform-box: fill-box; transform-origin: center; animation: ping 3s ease-out infinite; animation-delay: 4.6s; }
+@keyframes ants { to { stroke-dashoffset: -130; } }
+@keyframes scan {
+  0%   { transform: translateX(0);     opacity: 0; }
+  7%   { opacity: .5; }
+  46%  { transform: translateX(680px); opacity: .5; }
+  55%  { transform: translateX(680px); opacity: 0; }
+  100% { transform: translateX(0);     opacity: 0; }
+}
+@keyframes ping {
+  0%       { transform: scale(1); opacity: .7; }
+  70%,100% { transform: scale(4); opacity: 0; }
+}
+
 /* ---------- ambient glow behind the hero ---------- */
 .glow {
   position: absolute; z-index: 0;
@@ -739,7 +756,8 @@ html.js .projects .proj:nth-child(6) { transition-delay: .12s; }
 
 /* ---------- reduced motion: kill all of it ---------- */
 @media (prefers-reduced-motion: reduce) {
-  .ln > span, .plan .draw, .plan .pop, .glow, .scrollcue, .track { animation: none !important; }
+  .ln > span, .plan .draw, .plan .pop, .plan .ants, .plan .scan, .plan .ping, .glow, .scrollcue, .track { animation: none !important; }
+  .plan .ping, .plan .scan { display: none; }
   .ln > span { transform: none; opacity: 1; }
   .plan .draw { stroke-dashoffset: 0; }
   .plan .pop { opacity: 1; }
@@ -785,7 +803,7 @@ footer,
 .founder,
 .land   { background-color: var(--ink-2); }
 
-.refuse { background-color: var(--stone); }
+.refuse { background-color: #E7E3DC; }
 
 /* hero keeps its radial */
 header {
@@ -800,8 +818,8 @@ header {
 .refuse,
 .refuse h2,
 .refuse .floor-num { color: #1C1C1E; }
-.refuse p,
-.refuse .floor-note { color: #4A4A48; }
+.refuse p { color: #33332F; }
+.refuse .floor-note { color: #514F49; }
 
 
 /* ===========================================================

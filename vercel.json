@@ -3,6 +3,9 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/images/:path*", "destination": "/:path*" }
+  ],
   "headers": [
     {
       "source": "/images/(.*)",
