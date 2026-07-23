@@ -198,11 +198,25 @@ Good topics — things people actually search:
 
 # ADDING A PROJECT
 
-Same idea in `projects.js`. Copy a block, paste at the top, fill in.
+Edit `projects.js` — copy a block, paste at the top, fill it in, commit.
+
+**Its own web page builds itself.** Vercel runs the generator on every
+commit, so a new project automatically gets:
+
+- a page at `tatton-projects.co.uk/work/<your-id>`
+- a card on the work page and the homepage
+- an entry in the sitemap, so Google finds it
+
+That link is the useful bit — you can email an agent a direct link to one
+job instead of your homepage.
+
 Photos go in `images/`, named clearly (`surgery-01-reception.jpg`).
 Leave `attribution` empty for Tatton Ltd work; use the pre-2020 line for
-anything older — a tender team checks, and honesty makes the 20 years
-credible.
+anything older — a tender team checks, and being straight about it makes
+the twenty years credible rather than vague.
+
+**Never edit anything inside the `work` folder by hand** — it gets
+regenerated and your changes would be wiped. Edit `projects.js` instead.
 
 ---
 

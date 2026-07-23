@@ -1543,3 +1543,38 @@ section.alt { background-color: var(--ink-2) !important; border-top: 1px solid v
 @media (prefers-reduced-motion: reduce) {
   .bar::after { width: var(--w) !important; }
 }
+
+
+/* ===========================================================
+   PROJECT PAGES — breadcrumbs, link cards, next-project row
+   =========================================================== */
+
+.crumb {
+  padding: 108px var(--gutter) 0;
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--line);
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+}
+.crumb a { color: var(--stone-2); text-decoration: none; transition: color .3s; }
+.crumb a:hover { color: var(--gold); }
+.crumb b { color: var(--gold); font-weight: 400; }
+.crumb span { opacity: .5; }
+.page-head .crumb { padding: 0; }
+
+/* project cards are links now, not buttons */
+a.proj { text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+a.proj:hover { text-decoration: none; }
+
+/* project pages start below the fixed nav */
+article > .cs-hero { padding-top: 60px; }
+
+/* next-project row as links */
+.cs-next a {
+  background: var(--ink-2); padding: 30px; border: none;
+  text-align: left; text-decoration: none; color: inherit;
+  display: block; transition: background .4s var(--ease), transform .4s var(--ease);
+}
+.cs-next a:hover { background: var(--ink-3); transform: translateY(-3px); }
+.cs-next a .v { font-family: var(--serif); font-size: 28px; color: var(--gold); line-height: 1; }
+.cs-next a h4 { font-family: var(--serif); font-weight: 400; font-size: 19px; margin: 10px 0 4px; color: var(--stone); }

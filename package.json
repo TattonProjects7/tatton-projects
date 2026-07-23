@@ -1,0 +1,9 @@
+{
+  "name": "tatton-projects",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tatton Projects website. Static — no framework. build-pages.js regenerates the project pages from projects.js.",
+  "scripts": {
+    "build": "node build-pages.js"
+  }
+}

@@ -3,40 +3,147 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.tatton-projects.co.uk/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://www.tatton-projects.co.uk/images/vanguard-01-breakout.jpg</image:loc>
-      <image:title>Vanguard Manchester - 2M Cat B office fit-out by Tatton Projects</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.tatton-projects.co.uk/images/knutsford-05-complete.jpg</image:loc>
-      <image:title>Knutsford new build home by Tatton Projects</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.tatton-projects.co.uk/images/wilmslow-04-front-after.jpg</image:loc>
-      <image:title>Wilmslow house extension and refurbishment by Tatton Projects</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.tatton-projects.co.uk/images/sentric-01-lounge.jpg</image:loc>
-      <image:title>Sentric Music Liverpool Cat B office fit-out</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.tatton-projects.co.uk/images/stockport-01-floor.jpg</image:loc>
-      <image:title>Stockport service centre fit-out in a live building</image:title>
-    </image:image>
+
   </url>
   <url>
-    <loc>https://www.tatton-projects.co.uk/costs.html</loc>
-    <lastmod>2026-07-14</lastmod>
+    <loc>https://www.tatton-projects.co.uk/work</loc>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+
   </url>
   <url>
-    <loc>https://www.tatton-projects.co.uk/blog.html</loc>
-    <lastmod>2026-07-14</lastmod>
+    <loc>https://www.tatton-projects.co.uk/costs</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/blog</loc>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/work/vanguard</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/vanguard-01-breakout.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/vanguard-02-lounge.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/vanguard-03-lift-lobby.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/vanguard-04-booths.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/vanguard-05-booth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/vanguard-06-entrance.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/vanguard-07-openplan.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/vanguard-08-floor.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/vanguard-09-utility.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/vanguard-10-progress.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/work/stockport-service-centre</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-01-floor.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-02-positions.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-03-waiting.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-06-openplan.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-05-breakout.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-04-desks.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-07-detail.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/work/wilmslow-house</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-04-front-after.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-01-before.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-02-during.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-05-rear-after.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-06-kitchen.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-07-porch.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-03-stairs.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/work/sentric-music</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-01-lounge.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-02-lounge-wide.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-04-breakout.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-10-booths.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-11-pods.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-05-boardroom.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-06-meeting.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-14-acoustic-wall.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-12-tv-wall.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-08-corridor.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-13-believe-2.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/work/knutsford-new-build</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/knutsford-05-complete.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/knutsford-01-plot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/knutsford-02-shell.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/knutsford-03-frame.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/knutsford-04-scaffold.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/knutsford-06-front.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/knutsford-07-gable.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/work/stockport-office</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-office-01-boardroom.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-office-02-boardroom-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-office-03-openplan.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-office-04-stair.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/work/fossil</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/fossil-01-store.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/fossil-02-watch-wall.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/fossil-03-cases.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/fossil-04-shelving.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/fossil-05-till.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/work/calvin-klein</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/calvin-klein-01-shopfront.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/calvin-klein-09-shell.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/calvin-klein-08-services.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/calvin-klein-07-frame.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/calvin-klein-06-ceiling.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/calvin-klein-04-hoarding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/calvin-klein-03-till.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/calvin-klein-02-complete.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/work/leeds-bar</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/leeds-bar-01-restaurant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/leeds-bar-03-bar.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/leeds-bar-02-lounge.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/leeds-bar-04-booths.jpg</image:loc></image:image>
   </url>
 </urlset>
