@@ -45,7 +45,7 @@ const nav = (depth) => {
   </a>
   <div class="nav-links">
     <a href="${up}index.html#build">What we build</a>
-    <a href="${up}work/">Work</a>
+    <a href="${up}work.html">Work</a>
     <a href="${up}costs.html">Costs</a>
     <a href="${up}blog.html">Insight</a>
     <a href="${up}index.html#land">Land</a>
@@ -73,10 +73,11 @@ const footer = (depth) => {
     </div>
     <div class="rise">
       <p class="foot-lbl">More</p>
-      <a href="${up}work/">Selected work</a>
+      <a href="${up}work.html">Selected work</a>
       <a href="${up}costs.html">What things cost</a>
       <a href="${up}blog.html">Insight</a>
       <a href="https://www.silopod.co.uk" rel="noopener">SiloPod — acoustic pods</a>
+      <a href="https://www.estimate-app.business" rel="noopener">EstiMate — quoting &amp; contracts app</a>
     </div>
   </div>
   <div class="foot-btm">
@@ -195,7 +196,7 @@ function projectPage(p, i, all) {
 
   <div class="crumb">
     <a href="../index.html">Home</a> <span>/</span>
-    <a href="index.html">Work</a> <span>/</span>
+    <a href="../work.html">Work</a> <span>/</span>
     <b>${esc(p.name)}</b>
   </div>
 
@@ -321,10 +322,10 @@ function workIndex(all) {
   }].map((d) => `<script type="application/ld+json">\n${JSON.stringify(d, null, 2)}\n</script>`).join('\n');
 
   const cards = all.map((p) => `
-    <a class="proj${p.live ? ' live' : ''}" href="${esc(p.id)}.html" data-t="${esc(p.sector)}">
+    <a class="proj${p.live ? ' live' : ''}" href="work/${esc(p.id)}.html" data-t="${esc(p.sector)}">
       <div class="shot">
         ${p.card
-          ? `<img src="../${esc(p.card)}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`
+          ? `<img src="${esc(p.card)}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`
           : `<span class="noimg">Photograph<br>${esc(p.name)}</span>`}
         ${p.year ? `<span class="yr">${esc(p.year)}</span>` : ''}
       </div>
@@ -345,7 +346,7 @@ function workIndex(all) {
     desc: 'Completed projects across Manchester and Cheshire — £2M Cat B office fit-out, new build homes, live-building refurbishment and retail shopfits.',
     canonical: `${SITE}/work`,
     image: `${SITE}/images/vanguard-01-breakout.jpg`,
-    depth: 1,
+    depth: 0,
     extraSchema: schema
   }) + `
 <main id="main">
@@ -353,14 +354,14 @@ function workIndex(all) {
 <header class="page-head">
   <div class="hero-inner">
     <div class="crumb" style="margin-bottom:20px">
-      <a href="../index.html">Home</a> <span>/</span> <b>Work</b>
+      <a href="index.html">Home</a> <span>/</span> <b>Work</b>
     </div>
     <p class="eyebrow ln"><span style="animation-delay:.3s">Selected work</span></p>
     <h1>
-      <span class="ln"><span style="animation-delay:.45s">Sixty projects delivered.</span></span>
+      <span class="ln"><span style="animation-delay:.45s">A hundred and ten projects delivered.</span></span>
       <span class="ln"><span style="animation-delay:.58s"><em>${all.length} we can show you.</em></span></span>
     </h1>
-    <div class="ln"><p class="lede" style="animation-delay:.75s">Over sixty completed since 2020. Most clients would rather we didn't publish theirs — these are the ones we can. Every project below has its own page.</p></div>
+    <div class="ln"><p class="lede" style="animation-delay:.75s">Over 110 completed since 2020. Most clients would rather we didn't publish theirs — these are the ones we can. Every project below has its own page.</p></div>
   </div>
 </header>
 
@@ -379,9 +380,9 @@ function workIndex(all) {
 
 </main>
 
-${footer(1)}
+${footer(0)}
 
-<script src="../page.js"></script>
+<script src="page.js"></script>
 <script>
 (function () {
   var cards = [].slice.call(document.querySelectorAll('.proj'));
@@ -408,7 +409,7 @@ try {
   PROJECTS.forEach((p, i) => {
     fs.writeFileSync(path.join(dir, p.id + '.html'), projectPage(p, i, PROJECTS));
   });
-  fs.writeFileSync(path.join(dir, 'index.html'), workIndex(PROJECTS));
+  fs.writeFileSync(path.join(__dirname, 'work.html'), workIndex(PROJECTS));
 
   /* ---------- sitemap ---------- */
   const today = new Date().toISOString().slice(0, 10);
@@ -441,7 +442,7 @@ ${imgs}
   fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemap);
 
   console.log(`✓ ${PROJECTS.length} project pages written to /work`);
-  console.log('✓ work/index.html written');
+  console.log('✓ work.html index written');
   console.log(`✓ sitemap.xml written — ${urls.length} URLs`);
 } catch (err) {
   /* Never let a build error take the live site down.
