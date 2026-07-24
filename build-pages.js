@@ -77,6 +77,7 @@ const footer = (depth) => {
       <a href="${up}costs.html">What things cost</a>
       <a href="${up}blog.html">Insight</a>
       <a href="https://www.silopod.co.uk" rel="noopener">SiloPod — acoustic pods</a>
+      <a href="https://www.estimate-app.business" rel="noopener">EstiMate — quoting &amp; contracts app</a>
     </div>
   </div>
   <div class="foot-btm">
@@ -357,10 +358,10 @@ function workIndex(all) {
     </div>
     <p class="eyebrow ln"><span style="animation-delay:.3s">Selected work</span></p>
     <h1>
-      <span class="ln"><span style="animation-delay:.45s">Sixty projects delivered.</span></span>
+      <span class="ln"><span style="animation-delay:.45s">A hundred and ten projects delivered.</span></span>
       <span class="ln"><span style="animation-delay:.58s"><em>${all.length} we can show you.</em></span></span>
     </h1>
-    <div class="ln"><p class="lede" style="animation-delay:.75s">Over sixty completed since 2020. Most clients would rather we didn't publish theirs — these are the ones we can. Every project below has its own page.</p></div>
+    <div class="ln"><p class="lede" style="animation-delay:.75s">Over 110 completed since 2020. Most clients would rather we didn't publish theirs — these are the ones we can. Every project below has its own page.</p></div>
   </div>
 </header>
 
