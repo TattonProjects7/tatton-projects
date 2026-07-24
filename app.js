@@ -301,59 +301,12 @@
   var firstFaq = document.querySelector('.faq-item');
   if (firstFaq) firstFaq.classList.add('open');
 
-  /* ---------- form: sends in-page, confirms, and never hangs on failure ---------- */
+  /* ---------- form: friendly confirmation instead of a blank page ---------- */
   var form = document.querySelector('.enq-form');
   if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var btn  = form.querySelector('button[type=submit]');
-      var note = form.querySelector('.form-note');
-      if (!note) {
-        note = document.createElement('p');
-        note.className = 'form-note';
-        form.appendChild(note);
-      }
-      note.textContent = '';
-
-      /* form not wired up yet — fail honestly instead of hanging */
-      if (form.action.indexOf('PASTE-YOUR') !== -1) {
-        note.textContent = "The form isn't connected yet — please call 0161 706 2907 or email info@tattonprojects.co.uk.";
-        return;
-      }
-
+    form.addEventListener('submit', function () {
+      var btn = form.querySelector('button[type=submit]');
       if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
-
-      var fileInput = form.querySelector('input[type=file]');
-      var hasFiles  = fileInput && fileInput.files && fileInput.files.length > 0;
-
-      function payload(includeFiles) {
-        var fd = new FormData(form);
-        if (!includeFiles && fileInput) fd.delete(fileInput.name);
-        return fd;
-      }
-      function send(fd) {
-        return fetch(form.action, { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } });
-      }
-      function done(extra) {
-        form.innerHTML = '<p class="form-done"><strong>Thanks — got it.</strong><br>We reply within one working day. If it’s urgent, call 0161 706 2907.' +
-          (extra ? '<br><span class="form-done-note">' + extra + '</span>' : '') + '</p>';
-      }
-      function fail() {
-        note.textContent = "That didn't send. Please try again — or call 0161 706 2907 / email info@tattonprojects.co.uk.";
-        if (btn) { btn.textContent = 'Send it over →'; btn.disabled = false; }
-      }
-
-      send(payload(true)).then(function (r) {
-        if (r.ok) { done(); return; }
-        /* attachments rejected (e.g. plan limits)? retry without them so the enquiry still lands */
-        if (hasFiles) {
-          return send(payload(false)).then(function (r2) {
-            if (r2.ok) { done('Your attachments couldn’t be uploaded — please email them to info@tattonprojects.co.uk.'); }
-            else { fail(); }
-          });
-        }
-        fail();
-      }).catch(fail);
     });
   }
 
