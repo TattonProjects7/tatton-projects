@@ -354,7 +354,7 @@ const PROJECTS = [
     location: "",
     value: "£115K",
     year: "",
-    sector: "dev",
+    sector: "resi",
     type: "Industrial new build",
     live: false,
     featured: false,
