@@ -301,12 +301,38 @@
   var firstFaq = document.querySelector('.faq-item');
   if (firstFaq) firstFaq.classList.add('open');
 
-  /* ---------- form: friendly confirmation instead of a blank page ---------- */
+  /* ---------- form: sends in-page, confirms, and never hangs on failure ---------- */
   var form = document.querySelector('.enq-form');
   if (form) {
-    form.addEventListener('submit', function () {
-      var btn = form.querySelector('button[type=submit]');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn  = form.querySelector('button[type=submit]');
+      var note = form.querySelector('.form-note');
+      if (!note) {
+        note = document.createElement('p');
+        note.className = 'form-note';
+        form.appendChild(note);
+      }
+      note.textContent = '';
+
+      /* form not wired up yet — fail honestly instead of hanging */
+      if (form.action.indexOf('PASTE-YOUR') !== -1) {
+        note.textContent = "The form isn't connected yet — please call 0161 706 2907 or email info@tattonprojects.co.uk.";
+        return;
+      }
+
       if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (r) {
+        if (!r.ok) throw new Error('send failed');
+        form.innerHTML = '<p class="form-done"><strong>Thanks — got it.</strong><br>We reply within one working day. If it’s urgent, call 0161 706 2907.</p>';
+      }).catch(function () {
+        note.textContent = "That didn't send. Please try again — or call 0161 706 2907 / email info@tattonprojects.co.uk.";
+        if (btn) { btn.textContent = 'Send it over →'; btn.disabled = false; }
+      });
     });
   }
 

@@ -19,6 +19,51 @@
 const PROJECTS = [
 
   {
+    id: "didsbury-extension",
+    name: "Didsbury extension",
+    client: "Private client",
+    location: "Didsbury, Manchester",
+    value: "£160K",
+    year: "",
+    sector: "resi",
+    type: "Extension · Kitchen · Staircase",
+    live: false,
+    featured: true,
+    attribution: "",
+    card: "images/didsbury-01-kitchen-card.jpg",
+    hero: "images/didsbury-01-kitchen.jpg",
+    gallery: [
+      { src: "images/didsbury-02-kitchen-garden.jpg", cap: "Kitchen opened to the garden through minimal-frame sliders" },
+      { src: "images/didsbury-03-kitchen-hob.jpg",    cap: "Bookmatched marble island with integrated hob" },
+      { src: "images/didsbury-07-rear-extension.jpg", cap: "The rear extension from the garden — full-width glazing under a flat zinc-line fascia" },
+      { src: "images/didsbury-08-rear-complete.jpg",  cap: "Rear elevation complete — extension tied into the original brick" },
+      { src: "images/didsbury-05-hallway.jpg",        cap: "Hallway with the replacement staircase balustrade and oak handrail" },
+      { src: "images/didsbury-10-landing.jpg",        cap: "New oak handrail and painted spindles, run through every landing" },
+      { src: "images/didsbury-06-understair.jpg",     cap: "Panelled under-stair storage, built to the stair line" },
+      { src: "images/didsbury-04-wardrobes.jpg",      cap: "Fitted wardrobes with a recessed dressing table" },
+      { src: "images/didsbury-09-bathroom-brass.jpg", cap: "Brass high-level cistern — the detail work carried into the bathrooms" }
+    ],
+    blurb: "A rear extension with a full kitchen install — bookmatched marble island, minimal-frame sliders — plus a complete staircase railing and handrail replacement through the house.",
+    overview: "A rear extension in Didsbury, delivered with the kitchen installed and finished — not left as a shell.\nBookmatched marble island and splashback, dark cabinetry, minimal-frame sliding glazing onto the garden, and skylights over the working end of the room.\nAlongside the extension we replaced the full staircase railing and handrail through the house — new oak handrail, painted spindles, and panelled under-stair storage built to the stair line.",
+    facts: { "Contract": "Extension, kitchen install and staircase", "Value": "circa £160,000", "Duration": "", "Status": "Complete" },
+    scope: [
+      "Single-storey rear extension",
+      "Structural alterations and steelwork",
+      "Minimal-frame sliding glazing and rooflights",
+      "Full kitchen install — marble island and splashback",
+      "Complete staircase railing and handrail replacement",
+      "Panelled under-stair storage",
+      "Fitted wardrobes and joinery",
+      "Bathroom fit-out",
+      "Decoration and flooring throughout"
+    ],
+    challenge: "",
+    outcome: "",
+    quote: { text: "", by: "" }
+  },
+
+
+  {
     id: "vanguard",
     name: "Vanguard",
     client: "",
