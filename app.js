@@ -322,17 +322,38 @@
       }
 
       if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      }).then(function (r) {
-        if (!r.ok) throw new Error('send failed');
-        form.innerHTML = '<p class="form-done"><strong>Thanks — got it.</strong><br>We reply within one working day. If it’s urgent, call 0161 706 2907.</p>';
-      }).catch(function () {
+
+      var fileInput = form.querySelector('input[type=file]');
+      var hasFiles  = fileInput && fileInput.files && fileInput.files.length > 0;
+
+      function payload(includeFiles) {
+        var fd = new FormData(form);
+        if (!includeFiles && fileInput) fd.delete(fileInput.name);
+        return fd;
+      }
+      function send(fd) {
+        return fetch(form.action, { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } });
+      }
+      function done(extra) {
+        form.innerHTML = '<p class="form-done"><strong>Thanks — got it.</strong><br>We reply within one working day. If it’s urgent, call 0161 706 2907.' +
+          (extra ? '<br><span class="form-done-note">' + extra + '</span>' : '') + '</p>';
+      }
+      function fail() {
         note.textContent = "That didn't send. Please try again — or call 0161 706 2907 / email info@tattonprojects.co.uk.";
         if (btn) { btn.textContent = 'Send it over →'; btn.disabled = false; }
-      });
+      }
+
+      send(payload(true)).then(function (r) {
+        if (r.ok) { done(); return; }
+        /* attachments rejected (e.g. plan limits)? retry without them so the enquiry still lands */
+        if (hasFiles) {
+          return send(payload(false)).then(function (r2) {
+            if (r2.ok) { done('Your attachments couldn’t be uploaded — please email them to info@tattonprojects.co.uk.'); }
+            else { fail(); }
+          });
+        }
+        fail();
+      }).catch(fail);
     });
   }
 
