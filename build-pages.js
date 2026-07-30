@@ -78,7 +78,8 @@ const footer = (depth) => {
       <a href="${up}costs.html">What things cost</a>
       <a href="${up}blog.html">Insight</a>
       <a href="https://www.silopod.co.uk" rel="noopener">SiloPod — acoustic pods</a>
-      <a href="https://www.estimate-app.business" rel="noopener">EstiMate — quoting &amp; contracts app</a>
+      <a href="https://www.esti-mate.app" rel="noopener">EstiMate — quoting &amp; contracts app</a>
+      <a href="https://www.apex-carnivore.com" rel="noopener">APEX — carnivore recipes &amp; training app</a>
       <a href="${up}invest.html">Investors</a>
     </div>
   </div>
