@@ -49,6 +49,7 @@ const nav = (depth) => {
     <a href="${up}costs.html">Costs</a>
     <a href="${up}blog.html">Insight</a>
     <a href="${up}index.html#land">Land</a>
+    <a href="${up}invest.html">Partner</a>
     <a href="tel:01617062907" class="nav-call">0161 706 2907</a>
   </div>
 </nav>`;
@@ -417,7 +418,8 @@ try {
     { loc: `${SITE}/`, pri: '1.0', freq: 'monthly' },
     { loc: `${SITE}/work`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/costs`, pri: '0.9', freq: 'monthly' },
-    { loc: `${SITE}/blog`, pri: '0.8', freq: 'weekly' }
+    { loc: `${SITE}/blog`, pri: '0.8', freq: 'weekly' },
+    { loc: `${SITE}/invest`, pri: '0.7', freq: 'monthly' }
   ].concat(PROJECTS.map((p) => ({ loc: `${SITE}/work/${p.id}`, pri: '0.8', freq: 'yearly' })));
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
