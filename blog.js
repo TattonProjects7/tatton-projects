@@ -86,7 +86,7 @@
               '<time datetime="' + esc(p.date) + '">' + niceDate(p.date) + '</time>' +
               (p.readTime ? '<span>' + esc(p.readTime) + ' read</span>' : '') +
             '</p>' +
-            '<h2>' + esc(p.title) + '</h2>' +
+            '<h2><a href="blog/' + esc(p.slug) + '" style="color:inherit;text-decoration:none">' + esc(p.title) + '</a></h2>' +
             '<p class="post-sum">' + esc(p.summary) + '</p>' +
             '<span class="post-more">Read it →</span>' +
           '</div>' +
@@ -165,7 +165,9 @@
 
   document.addEventListener('click', function (e) {
     var t = e.target.closest ? e.target.closest('[data-post]') : null;
-    if (t) { e.preventDefault(); open(t.dataset.post); }
+    /* Each post now has its own real page (better for Google and for sharing),
+       so clicks navigate there instead of opening the in-page overlay. */
+    if (t) { e.preventDefault(); location.href = 'blog/' + t.dataset.post; }
   });
 
   var cb = document.getElementById('artClose');
@@ -175,8 +177,13 @@
     if (e.key === 'Escape') { if (lb) lb.classList.remove('on'); close(); }
   });
 
-  /* deep link: blog.html#slug opens that post */
-  if (location.hash.length > 1) open(location.hash.slice(1));
+  /* deep link: old blog.html#slug links redirect to the post's own page */
+  if (location.hash.length > 1) {
+    var deepSlug = location.hash.slice(1);
+    var deepKnown = list.some(function (x) { return x.slug === deepSlug; });
+    if (deepKnown) location.replace('blog/' + deepSlug);
+    else open(deepSlug);
+  }
 
   /* ---------- reveals ---------- */
   if ('IntersectionObserver' in window) {

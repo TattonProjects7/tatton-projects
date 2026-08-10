@@ -3,3 +3,7 @@ Thumbs.db
 *.log
 node_modules/
 .vercel
+
+# generated at deploy by build-pages.js
+work/
+blog/
