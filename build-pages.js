@@ -19,6 +19,10 @@ const SITE = 'https://www.tatton-projects.co.uk';
 const src = fs.readFileSync(path.join(__dirname, 'projects.js'), 'utf8');
 const PROJECTS = new Function(src + '; return PROJECTS;')();
 
+/* ---------- load posts.js the same way ---------- */
+const postsSrc = fs.readFileSync(path.join(__dirname, 'posts.js'), 'utf8');
+const POSTS = new Function(postsSrc + '; return POSTS;')();
+
 /* ---------- helpers ---------- */
 const esc = (t) => String(t == null ? '' : t)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -78,7 +82,7 @@ const footer = (depth) => {
       <a href="${up}costs.html">What things cost</a>
       <a href="${up}blog.html">Insight</a>
       <a href="https://www.silopod.co.uk" rel="noopener">SiloPod — acoustic pods</a>
-      <a href="https://www.esti-mate.app" rel="noopener">EstiMate — quoting &amp; contracts app</a>
+      <a href="https://estimate-app.business" rel="noopener">EstiMate — quoting &amp; contracts app</a>
       <a href="https://www.apex-carnivore.com" rel="noopener">APEX — carnivore recipes &amp; training app</a>
       <a href="${up}invest.html">Investors</a>
     </div>
@@ -404,6 +408,147 @@ ${footer(0)}
 `;
 }
 
+/* ---------- blog posts: markdown-lite renderer (server port of blog.js) ---------- */
+const inlineMd = (t) => esc(t)
+  .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+  .replace(/\*(.+?)\*/g, '<em>$1</em>');
+
+function renderPostBody(body) {
+  const lines = String(body || '').split('\n');
+  const out = [];
+  let list = null;
+  const closeList = () => { if (list) { out.push('<ul>' + list.join('') + '</ul>'); list = null; } };
+
+  lines.forEach((raw) => {
+    const l = raw.trim();
+    if (!l) { closeList(); return; }
+    if (l.indexOf('## ') === 0) {
+      closeList(); out.push('<h2>' + inlineMd(l.slice(3)) + '</h2>');
+    } else if (l.indexOf('- ') === 0) {
+      if (!list) list = [];
+      list.push('<li>' + inlineMd(l.slice(2)) + '</li>');
+    } else if (l.indexOf('> ') === 0) {
+      closeList(); out.push('<blockquote>' + inlineMd(l.slice(2)) + '</blockquote>');
+    } else if (l.indexOf('[image:') === 0) {
+      closeList();
+      const f = l.slice(7).replace(']', '').trim();
+      out.push('<figure class="post-img"><img src="../images/' + esc(f) +
+               '" alt="" loading="lazy" onerror="var g=this.closest(\'figure\'); if(g) g.remove();"></figure>');
+    } else if (l.indexOf('[caption:') === 0) {
+      closeList();
+      const c = l.slice(9).replace(']', '').trim();
+      out.push('<p class="post-cap">' + esc(c) + '</p>');
+    } else {
+      closeList(); out.push('<p>' + inlineMd(l) + '</p>');
+    }
+  });
+  closeList();
+  return out.join('\n      ');
+}
+
+/* ---------- one static blog post page (so each post can rank on its own) ---------- */
+function blogPostPage(p, all) {
+  const url = `${SITE}/blog/${p.slug}`;
+  const img = p.image ? `${SITE}/${p.image}` : `${SITE}/images/vanguard-01-breakout.jpg`;
+  const title = `${p.title} | Tatton Projects`;
+  const desc = clip(p.summary, 155);
+  const others = all.filter((x) => x.slug !== p.slug).slice(0, 2);
+
+  const posting = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: p.title,
+    description: plain(p.summary),
+    datePublished: p.date,
+    dateModified: p.date,
+    author: { '@type': 'Person', name: p.author || 'Dave Groom' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Tatton Projects',
+      logo: { '@type': 'ImageObject', url: `${SITE}/images/logo-horizontal-light-type.png` }
+    },
+    image: img,
+    url,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url }
+  };
+
+  const crumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 2, name: 'Insight', item: `${SITE}/blog` },
+      { '@type': 'ListItem', position: 3, name: p.title, item: url }
+    ]
+  };
+
+  const schema = [posting, crumbs]
+    .map((d) => `<script type="application/ld+json">\n${JSON.stringify(d, null, 2)}\n</script>`)
+    .join('\n');
+
+  return head({ title, desc, canonical: url, image: img, depth: 1, extraSchema: schema }) + `
+<style>
+/* Standalone page version of the blog reader's headline style */
+.art h1 {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(30px, 4.4vw, 54px); line-height: 1.08;
+  letter-spacing: -.015em; margin: 6px 0 20px; color: var(--stone);
+}
+.art { padding-bottom: 40px; }
+</style>
+<main id="main">
+
+<article class="art">
+  <div class="crumb" style="margin-bottom:26px">
+    <a href="../index.html">Home</a> <span>/</span>
+    <a href="../blog.html">Insight</a> <span>/</span>
+    <b>${esc(p.title)}</b>
+  </div>
+
+  <header class="art-head">
+    <p class="post-meta">
+      <span class="cat">${esc(p.category || 'Note')}</span>
+      <time datetime="${esc(p.date)}">${esc(p.date)}</time>
+      ${p.readTime ? `<span>${esc(p.readTime)} read</span>` : ''}
+    </p>
+    <h1>${esc(p.title)}</h1>
+    <p class="art-sum">${esc(p.summary)}</p>
+    <p class="art-by">By ${esc(p.author || 'Dave Groom')} · Tatton Projects</p>
+  </header>
+  ${p.image ? `<div class="art-hero"><img src="../${esc(p.image)}" alt="${esc(p.title)}"
+      onerror="var d=this.closest('.art-hero'); if(d) d.remove();"></div>` : ''}
+  <div class="art-body">
+      ${renderPostBody(p.body)}
+  </div>
+
+  <div class="art-cta">
+    <h2>Got a project like this?</h2>
+    <p class="lede" style="margin:0 auto 26px">Feasibility, cost plan, or a straight answer on whether a building is worth taking.</p>
+    <div class="cta-row" style="justify-content:center">
+      <a href="../index.html#enquire" class="btn btn-solid">Send an enquiry →</a>
+      <a href="tel:01617062907" class="btn btn-ghost">0161 706 2907</a>
+    </div>
+  </div>
+
+  ${others.length ? `<div class="art-next">
+    ${others.map((o) => `<a href="${esc(o.slug)}.html" style="display:block;color:inherit;text-decoration:none;padding:30px;background:var(--ink)">
+      <span class="cat">${esc(o.category || 'Note')}</span>
+      <h4 style="margin-top:10px">${esc(o.title)}</h4>
+      <p class="loc">${esc(o.date)}</p>
+    </a>`).join('\n    ')}
+  </div>` : ''}
+</article>
+
+</main>
+
+${footer(1)}
+
+<script src="../page.js"></script>
+</body>
+</html>
+`;
+}
+
 /* ---------- write everything ---------- */
 try {
   const dir = path.join(__dirname, 'work');
@@ -414,6 +559,13 @@ try {
   });
   fs.writeFileSync(path.join(__dirname, 'work.html'), workIndex(PROJECTS));
 
+  /* ---------- blog post pages ---------- */
+  const bdir = path.join(__dirname, 'blog');
+  if (!fs.existsSync(bdir)) fs.mkdirSync(bdir);
+  POSTS.forEach((p) => {
+    fs.writeFileSync(path.join(bdir, p.slug + '.html'), blogPostPage(p, POSTS));
+  });
+
   /* ---------- sitemap ---------- */
   const today = new Date().toISOString().slice(0, 10);
   const urls = [
@@ -422,7 +574,8 @@ try {
     { loc: `${SITE}/costs`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/blog`, pri: '0.8', freq: 'weekly' },
     { loc: `${SITE}/invest`, pri: '0.7', freq: 'monthly' }
-  ].concat(PROJECTS.map((p) => ({ loc: `${SITE}/work/${p.id}`, pri: '0.8', freq: 'yearly' })));
+  ].concat(PROJECTS.map((p) => ({ loc: `${SITE}/work/${p.id}`, pri: '0.8', freq: 'yearly' })))
+   .concat(POSTS.map((p) => ({ loc: `${SITE}/blog/${p.slug}`, pri: '0.7', freq: 'yearly' })));
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -446,6 +599,7 @@ ${imgs}
   fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemap);
 
   console.log(`✓ ${PROJECTS.length} project pages written to /work`);
+  console.log(`✓ ${POSTS.length} blog post pages written to /blog`);
   console.log('✓ work.html index written');
   console.log(`✓ sitemap.xml written — ${urls.length} URLs`);
 } catch (err) {
