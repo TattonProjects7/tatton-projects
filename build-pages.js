@@ -48,7 +48,7 @@ const nav = (depth) => {
          onerror="this.outerHTML='<span>Tatton Projects</span>'">
   </a>
   <div class="nav-links">
-    <a href="${up}index.html#build">What we build</a>
+    <a href="${up}services.html">Services</a>
     <a href="${up}work.html">Work</a>
     <a href="${up}costs.html">Costs</a>
     <a href="${up}blog.html">Insight</a>
@@ -78,11 +78,12 @@ const footer = (depth) => {
     </div>
     <div class="rise">
       <p class="foot-lbl">More</p>
+      <a href="${up}services.html">Construction services</a>
       <a href="${up}work.html">Selected work</a>
       <a href="${up}costs.html">What things cost</a>
       <a href="${up}blog.html">Insight</a>
       <a href="https://www.silopod.co.uk" rel="noopener">SiloPod — acoustic pods</a>
-      <a href="https://estimate-app.business" rel="noopener">EstiMate — quoting &amp; contracts app</a>
+      <a href="https://www.esti-mate.app" rel="noopener">EstiMate — quoting &amp; contracts app</a>
       <a href="https://www.apex-carnivore.com" rel="noopener">APEX — carnivore recipes &amp; training app</a>
       <a href="${up}invest.html">Investors</a>
     </div>
@@ -573,7 +574,14 @@ try {
     { loc: `${SITE}/work`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/costs`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/blog`, pri: '0.8', freq: 'weekly' },
-    { loc: `${SITE}/invest`, pri: '0.7', freq: 'monthly' }
+    { loc: `${SITE}/invest`, pri: '0.7', freq: 'monthly' },
+    { loc: `${SITE}/services`, pri: '0.9', freq: 'monthly' },
+    { loc: `${SITE}/office-fit-out-manchester`, pri: '0.9', freq: 'monthly' },
+    { loc: `${SITE}/shopfitting-manchester`, pri: '0.9', freq: 'monthly' },
+    { loc: `${SITE}/commercial-refurbishment-manchester`, pri: '0.9', freq: 'monthly' },
+    { loc: `${SITE}/extension-builders-altrincham`, pri: '0.9', freq: 'monthly' },
+    { loc: `${SITE}/extension-builders-hale`, pri: '0.9', freq: 'monthly' },
+    { loc: `${SITE}/new-build-homes-cheshire`, pri: '0.9', freq: 'monthly' }
   ].concat(PROJECTS.map((p) => ({ loc: `${SITE}/work/${p.id}`, pri: '0.8', freq: 'yearly' })))
    .concat(POSTS.map((p) => ({ loc: `${SITE}/blog/${p.slug}`, pri: '0.7', freq: 'yearly' })));
 
