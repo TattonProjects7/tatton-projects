@@ -3,42 +3,91 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.tatton-projects.co.uk/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/costs</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/blog</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/invest</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
   </url>
   <url>
+    <loc>https://www.tatton-projects.co.uk/services</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/office-fit-out-manchester</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/shopfitting-manchester</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/commercial-refurbishment-manchester</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/extension-builders-altrincham</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/extension-builders-hale</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+  </url>
+  <url>
+    <loc>https://www.tatton-projects.co.uk/new-build-homes-cheshire</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+  </url>
+  <url>
     <loc>https://www.tatton-projects.co.uk/work/vanguard</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/vanguard-01-breakout.jpg</image:loc></image:image>
@@ -54,7 +103,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/stockport-service-centre</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-01-floor.jpg</image:loc></image:image>
@@ -67,7 +116,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/wilmslow-house</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-04-front-after.jpg</image:loc></image:image>
@@ -80,7 +129,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/sentric-music</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-01-lounge.jpg</image:loc></image:image>
@@ -97,7 +146,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/knutsford-new-build</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/knutsford-05-complete.jpg</image:loc></image:image>
@@ -110,7 +159,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/stockport-office</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-office-01-boardroom.jpg</image:loc></image:image>
@@ -120,7 +169,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/didsbury-extension</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/didsbury-01-kitchen.jpg</image:loc></image:image>
@@ -136,7 +185,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/didsbury-kitchen</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/didsbury-kitchen-01-crittall.jpg</image:loc></image:image>
@@ -147,7 +196,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/pendrick-self-storage</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/pendrick-01-unit.jpg</image:loc></image:image>
@@ -157,7 +206,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/fossil</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/fossil-01-store.jpg</image:loc></image:image>
@@ -168,7 +217,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/calvin-klein</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/calvin-klein-01-shopfront.jpg</image:loc></image:image>
@@ -182,7 +231,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/leeds-bar</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/leeds-bar-01-restaurant.jpg</image:loc></image:image>
@@ -192,21 +241,21 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/blog/office-fit-out-cost-per-square-foot-manchester</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/blog/mees-epc-changes-what-landlords-need-to-do</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/blog/building-around-a-business-that-cannot-close</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
 
