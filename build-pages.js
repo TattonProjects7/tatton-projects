@@ -89,7 +89,7 @@ const footer = (depth) => {
     </div>
   </div>
   <div class="foot-btm">
-    <span>© 2026 Tatton Project Management Ltd · <b>A Tatton Holdings company</b></span>
+    <span>© 2026 Tatton Project Management Ltd · Company no. 14163724 · <b>A Tatton Holdings company</b></span>
     <span>New builds · Developments · Fit-out</span>
   </div>
 </footer>`;
@@ -172,6 +172,7 @@ function projectPage(p, i, all) {
     author: { '@type': 'Person', name: 'Dave Groom' },
     publisher: {
       '@type': 'Organization',
+      '@id': `${SITE}/#organisation`,
       name: 'Tatton Projects',
       logo: { '@type': 'ImageObject', url: `${SITE}/images/logo-horizontal-light-type.png` }
     },
@@ -465,6 +466,7 @@ function blogPostPage(p, all) {
     author: { '@type': 'Person', name: p.author || 'Dave Groom' },
     publisher: {
       '@type': 'Organization',
+      '@id': `${SITE}/#organisation`,
       name: 'Tatton Projects',
       logo: { '@type': 'ImageObject', url: `${SITE}/images/logo-horizontal-light-type.png` }
     },
@@ -581,7 +583,8 @@ try {
     { loc: `${SITE}/commercial-refurbishment-manchester`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/extension-builders-altrincham`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/extension-builders-hale`, pri: '0.9', freq: 'monthly' },
-    { loc: `${SITE}/new-build-homes-cheshire`, pri: '0.9', freq: 'monthly' }
+    { loc: `${SITE}/new-build-homes-cheshire`, pri: '0.9', freq: 'monthly' },
+    { loc: `${SITE}/housing-developments-cheshire`, pri: '0.9', freq: 'monthly' }
   ].concat(PROJECTS.map((p) => ({ loc: `${SITE}/work/${p.id}`, pri: '0.8', freq: 'yearly' })))
    .concat(POSTS.map((p) => ({ loc: `${SITE}/blog/${p.slug}`, pri: '0.7', freq: 'yearly' })));
 

@@ -3,6 +3,20 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "tattonprojects.co.uk" }],
+      "destination": "https://www.tatton-projects.co.uk/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.tattonprojects.co.uk" }],
+      "destination": "https://www.tatton-projects.co.uk/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/images/:path*", "destination": "/:path*" }
   ],
