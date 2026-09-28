@@ -23,6 +23,10 @@ const PROJECTS = new Function(src + '; return PROJECTS;')();
 const postsSrc = fs.readFileSync(path.join(__dirname, 'posts.js'), 'utf8');
 const POSTS = new Function(postsSrc + '; return POSTS;')();
 
+/* ---------- and services.js ---------- */
+const servicesSrc = fs.readFileSync(path.join(__dirname, 'services.js'), 'utf8');
+const SERVICES = new Function(servicesSrc + '; return SERVICES;')();
+
 /* ---------- helpers ---------- */
 const esc = (t) => String(t == null ? '' : t)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -40,16 +44,17 @@ const clip = (t, n) => {
 };
 
 /* ---------- shared chrome ---------- */
-const nav = (depth) => {
+const nav = (depth, active) => {
   const up = depth ? '../' : '';
+  const on = (k) => (k === active ? ' class="active"' : '');
   return `<nav id="nav" aria-label="Main navigation">
   <a href="${up}index.html" class="brand">
     <img src="${up}images/logo-horizontal-light-type.png" alt="Tatton Projects"
          onerror="this.outerHTML='<span>Tatton Projects</span>'">
   </a>
   <div class="nav-links">
-    <a href="${up}services.html">Services</a>
-    <a href="${up}work.html">Work</a>
+    <a href="${up}services.html"${on('services')}>Services</a>
+    <a href="${up}work.html"${on('work')}>Work</a>
     <a href="${up}costs.html">Costs</a>
     <a href="${up}blog.html">Insight</a>
     <a href="${up}index.html#land">Land</a>
@@ -89,13 +94,13 @@ const footer = (depth) => {
     </div>
   </div>
   <div class="foot-btm">
-    <span>© 2026 Tatton Project Management Ltd · <b>A Tatton Holdings company</b></span>
+    <span>© 2026 Tatton Project Management Ltd · Company no. 14163724 · <b>A Tatton Holdings company</b></span>
     <span>New builds · Developments · Fit-out</span>
   </div>
 </footer>`;
 };
 
-const head = ({ title, desc, canonical, image, depth, extraSchema }) => {
+const head = ({ title, desc, canonical, image, depth, extraSchema, ogType = 'article', active }) => {
   const up = depth ? '../' : '';
   return `<!DOCTYPE html>
 <html lang="en-GB">
@@ -108,7 +113,7 @@ const head = ({ title, desc, canonical, image, depth, extraSchema }) => {
 <link rel="canonical" href="${canonical}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 
-<meta property="og:type" content="article">
+<meta property="og:type" content="${ogType}">
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="Tatton Projects">
 <meta property="og:title" content="${esc(title)}">
@@ -134,7 +139,7 @@ ${extraSchema}
 <a class="skip" href="#main">Skip to content</a>
 <div id="prog"></div>
 
-${nav(depth)}
+${nav(depth, active)}
 `;
 };
 
@@ -172,6 +177,7 @@ function projectPage(p, i, all) {
     author: { '@type': 'Person', name: 'Dave Groom' },
     publisher: {
       '@type': 'Organization',
+      '@id': `${SITE}/#organisation`,
       name: 'Tatton Projects',
       logo: { '@type': 'ImageObject', url: `${SITE}/images/logo-horizontal-light-type.png` }
     },
@@ -465,6 +471,7 @@ function blogPostPage(p, all) {
     author: { '@type': 'Person', name: p.author || 'Dave Groom' },
     publisher: {
       '@type': 'Organization',
+      '@id': `${SITE}/#organisation`,
       name: 'Tatton Projects',
       logo: { '@type': 'ImageObject', url: `${SITE}/images/logo-horizontal-light-type.png` }
     },
@@ -550,6 +557,291 @@ ${footer(1)}
 `;
 }
 
+/* ---------- service pages (from services.js) ---------- */
+/* "*words*" in a heading show in gold italics */
+const gold = (t) => esc(t).replace(/\*(.+?)\*/g, '<em>$1</em>');
+
+const ldScripts = (docs) => docs
+  .map((d) => `<script type="application/ld+json">\n${JSON.stringify(d, null, 2)}\n</script>`)
+  .join('\n');
+
+const projectCard = (p) => `<a class="proj" href="work/${esc(p.id)}.html">
+      <div class="shot">
+        ${p.card
+          ? `<img src="${esc(p.card)}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`
+          : `<span class="noimg">Photograph<br>${esc(p.name)}</span>`}
+        ${p.year ? `<span class="yr">${esc(p.year)}</span>` : ''}
+      </div>
+      <div class="pbody">
+        <div>
+          ${p.value ? `<div class="val">${esc(p.value)}</div>` : ''}
+          <h4>${esc(p.name)}</h4>
+          <p class="loc">${esc(p.location)}</p>
+          <p class="desc">${esc(p.blurb)}</p>
+          ${p.attribution ? `<span class="pre">Pre-Tatton · Dave Groom</span>` : ''}
+        </div>
+        <span class="type">${esc(p.type)}</span>
+      </div>
+    </a>`;
+
+const callButtons = (label, center) => `<div class="cta-row"${center ? ' style="justify-content:center"' : ''}>
+        <a href="index.html#enquire" class="btn btn-solid">${esc(label)}</a>
+        <a href="tel:01617062907" class="btn btn-ghost">0161 706 2907</a>
+      </div>`;
+
+function servicePage(s, all) {
+  const url = `${SITE}/${s.id}`;
+  const img = `${SITE}/${s.hero}`;
+  const others = all.filter((x) => x.id !== s.id);
+  const work = (s.projects || []).map((id) => PROJECTS.find((p) => p.id === id)).filter(Boolean);
+  const faqs = s.faqs || [];
+
+  const schema = ldScripts([{
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${url}#service`,
+    name: s.name,
+    description: s.description,
+    url,
+    image: img,
+    provider: { '@id': `${SITE}/#organisation` },
+    areaServed: [
+      { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
+      { '@type': 'AdministrativeArea', name: 'Cheshire' }
+    ],
+    serviceType: s.serviceType
+  }, {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE}/services` },
+      { '@type': 'ListItem', position: 3, name: s.name, item: url }
+    ]
+  }].concat(faqs.length ? [{
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(([q, a]) => ({
+      '@type': 'Question', name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a }
+    }))
+  }] : []));
+
+  return head({ title: s.title, desc: s.description, canonical: url, image: img, depth: 0, extraSchema: schema, ogType: 'website', active: 'services' }) + `
+<!-- Built by build-pages.js from services.js. Edit services.js, not this file. -->
+<main id="main" class="svc">
+
+<header class="svc-hero">
+  <div class="svc-hero-in">
+    <div class="svc-copy">
+      <div class="crumb">
+        <a href="index.html">Home</a> <span>/</span>
+        <a href="services.html">Services</a> <span>/</span>
+        <b>${esc(s.short)}</b>
+      </div>
+      <p class="eyebrow">${esc(s.eyebrow)}</p>
+      <h1>${gold(s.h1)}</h1>
+      <p class="lede">${esc(s.lede)}</p>
+      ${callButtons(s.ctaButton)}
+      <div class="hero-meta">
+        ${(s.heroFacts || []).map(([k, v]) => `<span>${esc(k)} <b>${esc(v)}</b></span>`).join('\n        ')}
+      </div>
+    </div>
+    <figure class="svc-shot">
+      <img src="${esc(s.hero)}" alt="${esc(s.heroCaption)}"
+           onerror="var f=this.closest('figure'); if(f) f.remove();">
+      <figcaption>${esc(s.heroCaption)}</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section>
+  <div class="cs-two">
+    <div class="svc-ov rise">
+      <p class="eyebrow">${esc(s.introEyebrow)}</p>
+      <h2 class="svc-h2">${gold(s.introHeading)}</h2>
+      ${(s.intro || []).map((t, i) => `<p${i === 0 ? ' class="big"' : ''}>${esc(t)}</p>`).join('\n      ')}
+    </div>
+    <aside class="rise">
+      <p class="eyebrow" style="margin-bottom:18px">${esc(s.factsTitle)}</p>
+      <ul class="facts">
+        ${(s.facts || []).map(([k, v]) => `<li><span>${esc(k)}</span> <b>${esc(v)}</b></li>`).join('\n        ')}
+      </ul>
+      ${s.factsNote ? `<p class="svc-note">${esc(s.factsNote)} <a href="costs.html">Full cost guide →</a></p>` : ''}
+    </aside>
+  </div>
+</section>
+
+<section class="svc-what">
+  <div class="sec-head rise">
+    <p class="eyebrow">What we do</p>
+    <h2>${gold(s.cardsHeading)}</h2>
+  </div>
+  <div class="cav-grid">
+    ${(s.cards || []).map(([h, p], i) => `<div class="cav rise">
+      <span class="cav-n">${String(i + 1).padStart(2, '0')}</span>
+      <h3>${esc(h)}</h3>
+      <p>${esc(p)}</p>
+    </div>`).join('\n    ')}
+  </div>
+</section>
+
+${(s.scope || []).length ? `<section class="scope-sec">
+  <p class="eyebrow">Scope</p>
+  <h2>What's <em>included.</em></h2>
+  <ul class="scope">
+    ${s.scope.map((x) => `<li>${esc(x)}</li>`).join('\n    ')}
+  </ul>
+</section>` : ''}
+
+${work.length ? `<section>
+  <div class="svc-head rise">
+    <div>
+      <p class="eyebrow">Recent work</p>
+      <h2 class="svc-h2">Projects like this, <em>delivered.</em></h2>
+      ${s.projectsNote ? `<p class="svc-note">${esc(s.projectsNote)}</p>` : ''}
+    </div>
+    <a class="svc-more" href="work.html">All work →</a>
+  </div>
+  <div class="projects">
+    ${work.map(projectCard).join('\n    ')}
+  </div>
+</section>` : ''}
+
+${faqs.length ? `<section class="faq">
+  <div class="sec-head rise">
+    <p class="eyebrow">Straight answers</p>
+    <h2>Questions we get <em>asked.</em></h2>
+  </div>
+  <div class="faq-list rise">
+    ${faqs.map(([q, a]) => `<div class="faq-item">
+      <button class="faq-q" type="button">${esc(q)}<i></i></button>
+      <div class="faq-a"><p>${esc(a)}</p></div>
+    </div>`).join('\n    ')}
+  </div>
+</section>` : ''}
+
+<section class="svc-others">
+  <div class="sec-head rise">
+    <p class="eyebrow">Also from Tatton</p>
+    <h2>Other <em>services.</em></h2>
+  </div>
+  <div class="sectors">
+    ${others.map((o) => `<a class="sector" href="${esc(o.id)}.html">
+      <span class="k">${esc(o.sector)}</span>
+      <h4>${esc(o.short)}</h4>
+      <p>${esc(o.summary)}</p>
+    </a>`).join('\n    ')}
+  </div>
+</section>
+
+<section class="svc-cta">
+  <h2 class="svc-h2">${gold(s.ctaHeading)}</h2>
+  <p class="lede">${esc(s.ctaText)}</p>
+  ${callButtons(s.ctaButton, true)}
+</section>
+
+</main>
+
+${footer(0)}
+
+<script src="page.js"></script>
+</body>
+</html>
+`;
+}
+
+/* ---------- the /services index ---------- */
+function servicesIndex(all) {
+  const url = `${SITE}/services`;
+  const groups = [
+    ['Commercial', 'Fit-out and refurbishment'],
+    ['Residential', 'Homes and development']
+  ];
+
+  const schema = ldScripts([{
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Construction & fit-out services — Tatton Projects',
+    url,
+    hasPart: all.map((s) => ({ '@type': 'Service', '@id': `${SITE}/${s.id}#service`, name: s.name, url: `${SITE}/${s.id}` }))
+  }, {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: url }
+    ]
+  }]);
+
+  return head({
+    title: 'Construction & Fit-Out Services Manchester | Tatton Projects',
+    desc: 'Tatton Projects delivers office fit-out, shopfitting, commercial refurbishment, major extensions and new-build homes across Manchester and Cheshire.',
+    canonical: url,
+    image: `${SITE}/images/vanguard-01-breakout.jpg`,
+    depth: 0,
+    extraSchema: schema,
+    ogType: 'website',
+    active: 'services'
+  }) + `
+<!-- Built by build-pages.js from services.js. Edit services.js, not this file. -->
+<main id="main">
+
+<header class="page-head">
+  <div class="hero-inner">
+    <div class="crumb" style="margin-bottom:20px">
+      <a href="index.html">Home</a> <span>/</span> <b>Services</b>
+    </div>
+    <p class="eyebrow ln"><span style="animation-delay:.3s">Construction · Fit-out · Residential</span></p>
+    <h1><span class="ln"><span style="animation-delay:.45s">What we <em>build.</em></span></span></h1>
+    <div class="ln"><p class="lede" style="animation-delay:.6s">Commercial fit-out and refurbishment across Manchester and selected UK locations, alongside substantial residential construction across Greater Manchester and Cheshire.</p></div>
+  </div>
+</header>
+
+<section>
+  ${groups.map(([sector, label]) => `<div class="svc-group">
+    <p class="eyebrow">${esc(label)}</p>
+    <div class="svc-list">
+      ${all.filter((s) => s.sector === sector).map((s) => `<a class="proj" href="${esc(s.id)}.html">
+        <div class="shot">
+          <img src="${esc(s.card || s.hero)}" alt="${esc(s.short)}" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="pbody">
+          <div>
+            <p class="loc">${esc(s.eyebrow.split('·').pop().trim())}</p>
+            <h4>${esc(s.short)}</h4>
+            <p class="desc">${esc(s.summary)}</p>
+          </div>
+          <span class="type">Explore →</span>
+        </div>
+      </a>`).join('\n      ')}
+    </div>
+  </div>`).join('\n  ')}
+</section>
+
+<div class="band">
+  <div><div class="num">£8m+</div><div class="lbl">Turnover since 2020</div></div>
+  <div><div class="num">110+</div><div class="lbl">Projects completed</div></div>
+  <div><div class="num">20+</div><div class="lbl">Years on site — founder</div></div>
+  <div><div class="num">2020</div><div class="lbl">Company founded</div></div>
+</div>
+
+<section class="svc-cta">
+  <h2 class="svc-h2">Not sure which fits? <em>Ask.</em></h2>
+  <p class="lede">Send us the floor, the plot or the drawing. You'll get a straight answer from the person who'd run the job — and a written cost plan if it's right for us.</p>
+  ${callButtons('Start a conversation →', true)}
+</section>
+
+</main>
+
+${footer(0)}
+
+<script src="page.js"></script>
+</body>
+</html>
+`;
+}
+
 /* ---------- write everything ---------- */
 try {
   const dir = path.join(__dirname, 'work');
@@ -567,6 +859,12 @@ try {
     fs.writeFileSync(path.join(bdir, p.slug + '.html'), blogPostPage(p, POSTS));
   });
 
+  /* ---------- service pages + /services ---------- */
+  SERVICES.forEach((s) => {
+    fs.writeFileSync(path.join(__dirname, s.id + '.html'), servicePage(s, SERVICES));
+  });
+  fs.writeFileSync(path.join(__dirname, 'services.html'), servicesIndex(SERVICES));
+
   /* ---------- sitemap ---------- */
   const today = new Date().toISOString().slice(0, 10);
   const urls = [
@@ -581,7 +879,8 @@ try {
     { loc: `${SITE}/commercial-refurbishment-manchester`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/extension-builders-altrincham`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/extension-builders-hale`, pri: '0.9', freq: 'monthly' },
-    { loc: `${SITE}/new-build-homes-cheshire`, pri: '0.9', freq: 'monthly' }
+    { loc: `${SITE}/new-build-homes-cheshire`, pri: '0.9', freq: 'monthly' },
+    { loc: `${SITE}/housing-developments-cheshire`, pri: '0.9', freq: 'monthly' }
   ].concat(PROJECTS.map((p) => ({ loc: `${SITE}/work/${p.id}`, pri: '0.8', freq: 'yearly' })))
    .concat(POSTS.map((p) => ({ loc: `${SITE}/blog/${p.slug}`, pri: '0.7', freq: 'yearly' })));
 
@@ -608,6 +907,7 @@ ${imgs}
 
   console.log(`✓ ${PROJECTS.length} project pages written to /work`);
   console.log(`✓ ${POSTS.length} blog post pages written to /blog`);
+  console.log(`✓ ${SERVICES.length} service pages and services.html written`);
   console.log('✓ work.html index written');
   console.log(`✓ sitemap.xml written — ${urls.length} URLs`);
 } catch (err) {

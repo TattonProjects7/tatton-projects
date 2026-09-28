@@ -21,6 +21,19 @@
     [].forEach.call(document.querySelectorAll('.rise'), function (el) { el.classList.add('in'); });
   }, 2500);
 
+  /* FAQ accordion (service pages) — first answer open so it never looks empty */
+  var faqs = document.querySelectorAll('.faq-item');
+  [].forEach.call(faqs, function (item) {
+    var q = item.querySelector('.faq-q');
+    if (!q) return;
+    q.addEventListener('click', function () {
+      var wasOpen = item.classList.contains('open');
+      [].forEach.call(faqs, function (i) { i.classList.remove('open'); });
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+  if (faqs.length) faqs[0].classList.add('open');
+
   var nav = document.getElementById('nav');
   var prog = document.getElementById('prog');
   window.addEventListener('scroll', function () {

@@ -51,9 +51,9 @@ your homepage.
     page.js          shared sub-page behaviour
     build-pages.js   generates the project pages (don't edit unless you mean it)
     package.json     tells Vercel to run the generator
-    vercel.json      caching + security headers
+    vercel.json      caching, security headers, redirect from tattonprojects.co.uk
     images/          all photography
-    robots.txt · sitemap.xml
+    robots.txt · sitemap.xml · llms.txt (plain-text summary for AI assistants)
 
 ## Built-in SEO
 
