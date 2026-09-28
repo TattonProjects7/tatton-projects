@@ -1,0 +1,41 @@
+# Tells Bing and the other IndexNow search engines about every page in the
+# sitemap each time the live site changes, so new and updated pages are picked
+# up in hours rather than weeks. Google doesn't use IndexNow; it reads
+# sitemap.xml (submit it once in Google Search Console).
+#
+# The key is public by design: it must match the file of the same name at the
+# site root (6f6c1039216bcce813d1189421566897.txt).
+
+name: Notify search engines (IndexNow)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: true
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      HOST: www.tatton-projects.co.uk
+      KEY: 6f6c1039216bcce813d1189421566897
+    steps:
+      - name: Wait for Vercel to publish this commit
+        run: sleep 150
+      - name: Submit every URL in the live sitemap
+        run: |
+          urls=$(curl -fsSL "https://$HOST/sitemap.xml" | grep -o '<loc>[^<]*</loc>' | sed -e 's#<loc>##' -e 's#</loc>##')
+          count=$(printf '%s\n' "$urls" | grep -c .)
+          body=$(printf '%s\n' "$urls" | jq -R . | jq -s --arg host "$HOST" --arg key "$KEY" \
+            '{host: $host, key: $key, keyLocation: ("https://" + $host + "/" + $key + ".txt"), urlList: .}')
+          status=$(curl -sS -o response.txt -w '%{http_code}' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' -d "$body")
+          echo "Submitted $count URLs: HTTP $status"
+          cat response.txt
+          # 200 = accepted; 202 = accepted while the key file is being checked
+          test "$status" = 200 || test "$status" = 202
