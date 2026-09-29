@@ -125,7 +125,7 @@ const PROJECTS = [
       { src: "images/wilmslow-03-stairs.jpg",     cap: "New oak staircase and landing" }
     ],
     blurb: "A tired 1930s detached taken back to brick and rebuilt — full-width rear extension, complete refurbishment, new kitchen, staircase and oak porch.",
-    overview: "This is the before-and-after that shows what we do to a house.\nA tired red-brick detached, dark and cut up inside. We extended it front and rear, re-rendered it, replaced every window, put in a full-width rear extension with bi-folds onto a new terrace, opened the ground floor into a single kitchen-living space, and built a new oak staircase and oak-framed porch.\nWhat came out is a different house on the same footprint. This is the kind of job we still take — above £100,000.",
+    overview: "This is the before-and-after that shows what we do to a house.\nA tired red-brick detached, dark and cut up inside. We extended it front and rear, re-rendered it, replaced every window, put in a full-width rear extension with bi-folds onto a new terrace, opened the ground floor into a single kitchen-living space, and built a new oak staircase and oak-framed porch.\nWhat came out is a different house on the same footprint.",
     facts: { "Contract": "Extension, refurbishment and fit-out", "Value": "circa £375,000", "Duration": "", "Status": "Complete" },
     scope: [
       "Full-width rear extension",

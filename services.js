@@ -29,7 +29,7 @@ const SERVICES = [
     hero: "images/vanguard-01-breakout.jpg",
     heroCaption: "Vanguard · £2M Cat B fit-out · Manchester",
     card: "images/vanguard-01-breakout-card.jpg",
-    heroFacts: [["Cat B from", "£70 / sq ft"], ["Largest to date", "£2M"], ["Minimum project", "£100,000"]],
+    heroFacts: [["Cat B from", "£70 / sq ft"], ["Largest to date", "£2M"], ["Coverage", "North West · nationwide"]],
     introEyebrow: "Project delivery",
     introHeading: "Commercial office fit-out contractors *in Manchester.*",
     intro: [
@@ -85,7 +85,7 @@ const SERVICES = [
     hero: "images/fossil-01-store.jpg",
     heroCaption: "Fossil retail shopfit · delivered by Dave Groom before founding Tatton",
     card: "images/fossil-01-store-card.jpg",
-    heroFacts: [["Programme", "Built to opening day"], ["Coverage", "Nationwide · selected"], ["Minimum project", "£100,000"]],
+    heroFacts: [["Programme", "Built to opening day"], ["Coverage", "Nationwide · selected"], ["Scope", "Strip-out to handover"]],
     introEyebrow: "Project delivery",
     introHeading: "Retail fit-out and *shopfitting contractors.*",
     intro: [
@@ -93,7 +93,7 @@ const SERVICES = [
       "Retail units inside trading shopping centres are part of what we do — out-of-hours working, dust and route separation, and a programme built around the day the doors open."
     ],
     factsTitle: "At a glance",
-    facts: [["Scope", "Strip-out to handover"], ["New stores", "And refurbishments"], ["Coverage", "Manchester · nationwide"], ["Minimum project", "£100,000"]],
+    facts: [["Scope", "Strip-out to handover"], ["New stores", "And refurbishments"], ["Coverage", "Manchester · nationwide"]],
     factsNote: "",
     cardsHeading: "From strip-out *to opening day.*",
     cards: [
@@ -118,8 +118,7 @@ const SERVICES = [
     faqs: [
       ["Can you build to a fixed opening date?", "Yes. Retail programmes are often driven by a fixed launch date, so we review drawings, landlord requirements, procurement and long-lead items before works begin, and manage the trade sequence through to snagging and handover."],
       ["Do you refurbish existing stores as well as fitting out new ones?", "Yes. Where a complete strip-out is unnecessary, works can be focused on selected areas and phased around the way the store trades."],
-      ["Can you work while the shopping centre is open?", "Yes — it's most of what we do. Retail units in a trading mall, hotels that kept selling rooms, a public service centre with the public coming through the doors. Phased handbacks, dust and route separation, out-of-hours working."],
-      ["Why is your minimum project £100,000?", "Because a firm juggling nine small jobs can't put its owner on your site every week. The projects we take get proper attention — the person who priced the job is the person managing it. Below £100k we'll happily recommend someone good."]
+      ["Can you work while the shopping centre is open?", "Yes — it's most of what we do. Retail units in a trading mall, hotels that kept selling rooms, a public service centre with the public coming through the doors. Phased handbacks, dust and route separation, out-of-hours working."]
     ],
     ctaHeading: "Opening a *new store?*",
     ctaText: "Send us the drawings, the landlord pack and the opening date. You'll get a written cost plan and a programme from the person who'd run the job.",
@@ -141,7 +140,7 @@ const SERVICES = [
     hero: "images/stockport-01-floor.jpg",
     heroCaption: "Stockport service centre · £175K · fitted out while open",
     card: "images/stockport-01-floor-card.jpg",
-    heroFacts: [["Occupied buildings", "Phased handbacks"], ["EPC & MEES", "Upgrades"], ["Minimum project", "£100,000"]],
+    heroFacts: [["Occupied buildings", "Phased handbacks"], ["EPC & MEES", "Upgrades"], ["Buildings", "Occupied or vacant"]],
     introEyebrow: "Project delivery",
     introHeading: "Refurbishment of occupied and *vacant buildings.*",
     intro: [
@@ -149,7 +148,7 @@ const SERVICES = [
       "If your building is EPC E, in most cases it can't lawfully be let. We survey it, tell you what it costs to get the rating up, and do the work — often fabric, lighting and controls rather than anything dramatic."
     ],
     factsTitle: "At a glance",
-    facts: [["Buildings", "Occupied or vacant"], ["Phasing", "Around your operation"], ["EPC & MEES", "Survey, cost, upgrade"], ["Minimum project", "£100,000"]],
+    facts: [["Buildings", "Occupied or vacant"], ["Phasing", "Around your operation"], ["EPC & MEES", "Survey, cost, upgrade"]],
     factsNote: "",
     cardsHeading: "Existing buildings, *properly managed.*",
     cards: [
@@ -174,8 +173,7 @@ const SERVICES = [
     faqs: [
       ["My building is EPC E. Can I still let it?", "Not lawfully, in most cases — and the standard is tightening. This is the MEES regime, and it turns an aesthetic decision into a legal one: a sub-standard building can't earn until it's fixed. We survey it, tell you what it costs to get the rating up, and do the work. Often it's fabric, lighting and controls rather than anything dramatic. Get it assessed before your next void, not during one."],
       ["Can you work in my building while we're still open?", "Yes — it's most of what we do. Hotels that kept selling rooms, care homes with residents in their beds, a public service centre with ninety staff at their desks and the public coming through the doors, retail units in a trading mall. Phased handbacks, dust and route separation, out-of-hours working."],
-      ["How do you stop the final account creeping?", "A written cost plan at stage two and a signed variation procedure before anyone lifts a spade. Written variations only — no verbal extras, ever. Monthly valuations so you always know where the number is."],
-      ["Why is your minimum project £100,000?", "Because a firm juggling nine small jobs can't put its owner on your site every week. The projects we take get proper attention — the person who priced the job is the person managing it. Below £100k we'll happily recommend someone good."]
+      ["How do you stop the final account creeping?", "A written cost plan at stage two and a signed variation procedure before anyone lifts a spade. Written variations only — no verbal extras, ever. Monthly valuations so you always know where the number is."]
     ],
     ctaHeading: "Got a building to *bring back?*",
     ctaText: "Send us the address, the floor plans and what you need it to do. You'll get a straight answer on what it takes, and a written cost plan.",
@@ -197,7 +195,7 @@ const SERVICES = [
     hero: "images/knutsford-05-complete.jpg",
     heroCaption: "Knutsford new build · circa £400K · brick and flint",
     card: "images/knutsford-05-complete-card.jpg",
-    heroFacts: [["Private homes", "£400K – £3M+"], ["Build rates", "£2,000–£5,500 / sq m"], ["Minimum project", "£100,000"]],
+    heroFacts: [["Private homes", "£400K – £3M+"], ["Build rates", "£2,000–£5,500 / sq m"], ["Knutsford new build", "circa £400K"]],
     introEyebrow: "Project delivery",
     introHeading: "One-off private homes and *residential construction.*",
     intro: [
@@ -260,13 +258,13 @@ const SERVICES = [
       "Send us a location and a title plan and you'll get a residual land value and a build cost, free, in five working days. If the numbers don't work we'll tell you that too — it's cheaper than finding out after you've bought it."
     ],
     factsTitle: "At a glance",
-    facts: [["Plots", "2 – 30"], ["Status", "With or without consent"], ["Geography", "Gtr Manchester & Cheshire"], ["Appraisal turnaround", "5 working days"], ["Minimum project", "£100,000"]],
+    facts: [["Plots", "2 – 30"], ["Status", "With or without consent"], ["Geography", "Gtr Manchester & Cheshire"], ["Appraisal turnaround", "5 working days"]],
     factsNote: "",
     cardsHeading: "From a line on a map *to a street.*",
     cards: [
       ["Site appraisal in five working days", "Send us a location and a title plan. You'll get a residual land value and a build cost, free, in five working days."],
       ["Buy, joint-venture or build out", "We buy sites, joint-venture with landowners who'd rather keep the development upside, or build out a scheme for you."],
-      ["Two to thirty plots", "Small and medium schemes of two to thirty plots, with or without planning consent. Minimum project value £100,000."],
+      ["Two to thirty plots", "Small and medium schemes of two to thirty plots, with or without planning consent."],
       ["Cheshire and Greater Manchester", "Our residential construction focus includes Knutsford, Wilmslow, Altrincham, Hale, Bowdon and surrounding Cheshire locations."]
     ],
     scope: [
@@ -280,7 +278,7 @@ const SERVICES = [
     faqs: [
       ["I own a plot but don't know what it's worth. Can you help?", "Send us the location and a title plan. You'll get a residual land value and a build cost back in five working days, free. If the numbers don't work we'll tell you that too — that advice is free, and it's cheaper than finding out after you've bought it."],
       ["Do you buy land?", "Yes. We buy sites, joint-venture with landowners who'd rather keep the development upside, or build out a scheme for you."],
-      ["What size of scheme do you build?", "Small and medium schemes of two to thirty plots, with or without planning consent. The minimum project value is £100,000."],
+      ["What size of scheme do you build?", "Small and medium schemes of two to thirty plots, with or without planning consent."],
       ["Where do you build?", "New build homes, developments and private work across Greater Manchester and Cheshire — Altrincham, Hale, Bowdon, Knutsford, Mobberley, Wilmslow, Alderley Edge, Sale, Timperley, Mere, Handforth, Northwich, Macclesfield, Lymm, Winsford, New Mills and Chester."]
     ],
     ctaHeading: "Have a site? *We'll appraise it in a week.*",
@@ -303,15 +301,15 @@ const SERVICES = [
     hero: "images/wilmslow-05-rear-after.jpg",
     heroCaption: "Wilmslow house · £375K rear extension & refurbishment",
     card: "images/wilmslow-04-front-after-card.jpg",
-    heroFacts: [["Extensions from", "£2,400 / sq m"], ["Wilmslow house", "£375K"], ["Minimum project", "£100,000"]],
+    heroFacts: [["Extensions from", "£2,400 / sq m"], ["Wilmslow house", "£375K"], ["Areas", "Altrincham · Hale · Bowdon"]],
     introEyebrow: "Project delivery",
     introHeading: "Major home extensions and remodelling *in Altrincham.*",
     intro: [
       "Our approach combines practical construction delivery with programme, procurement and commercial management. We work with clients, architects, engineers, Building Control and specialist subcontractors to turn an agreed scope into a controlled construction project.",
-      "We closed the domestic small works side in 2026 so the projects we take get proper attention — the person who priced the job is the person managing it. Extensions and whole-house remodels are welcome above £100,000."
+      "Tatton Projects is owner-managed, so the projects we take get proper attention — the person who priced the job is the person managing it on site. Extensions, remodels and whole-house refurbishments are all welcome."
     ],
     factsTitle: "2026 guide prices",
-    facts: [["Extension", "£2,400–£3,600 / sq m"], ["Whole-house refurbishment", "£1,400–£2,800 / sq m"], ["Basement", "£3,000–£5,000 / sq m"], ["Minimum project", "£100,000"]],
+    facts: [["Extension", "£2,400–£3,600 / sq m"], ["Whole-house refurbishment", "£1,400–£2,800 / sq m"], ["Basement", "£3,000–£5,000 / sq m"]],
     factsNote: "Finished floor area, excluding VAT, professional fees and abnormals. Cheshire and Greater Manchester.",
     cardsHeading: "From drawings *to handover.*",
     cards: [
@@ -334,7 +332,6 @@ const SERVICES = [
     faqs: [
       ["How much does an extension cost per square metre?", "As a 2026 guide across Cheshire and Greater Manchester: £2,400–£3,600 per square metre for a single or two-storey extension with structural alterations, tying into the existing house. It often costs more per square metre than a new build, because nothing is square. Whole-house refurbishment runs £1,400–£2,800 per square metre. Rates exclude VAT, professional fees and abnormals — ground conditions, drainage diversions and structural surprises are found by survey, not by a rate."],
       ["Can you work from my architect's drawings?", "Yes. If you already have an architect and structural information, we can review the package, develop the construction scope and price the works. At an earlier stage, we can coordinate with the professional team to move the project towards site."],
-      ["Why is your minimum project £100,000?", "Because a firm juggling nine kitchens can't put its owner on your site every week. We closed the domestic small works side in 2026 so the projects we do take get proper attention — the person who priced the job is the person managing it. Below £100k we'll happily recommend someone good."],
       ["Which areas do you cover?", "Altrincham, Hale, Bowdon and the wider Greater Manchester and Cheshire area — including Knutsford, Wilmslow, Alderley Edge, Sale, Timperley, Mere, Lymm and Macclesfield."]
     ],
     ctaHeading: "Planning a major *extension?*",
@@ -357,7 +354,7 @@ const SERVICES = [
     hero: "images/didsbury-kitchen-01-crittall.jpg",
     heroCaption: "Didsbury kitchen extension · £120K · glazed roof",
     card: "images/didsbury-kitchen-01-crittall-card.jpg",
-    heroFacts: [["Extensions from", "£2,400 / sq m"], ["Remodels", "Whole-house"], ["Minimum project", "£100,000"]],
+    heroFacts: [["Extensions from", "£2,400 / sq m"], ["Remodels", "Whole-house"], ["Areas", "Hale · Bowdon · Altrincham"]],
     introEyebrow: "Project delivery",
     introHeading: "Major extensions and high-specification *refurbishment in Hale.*",
     intro: [
@@ -365,7 +362,7 @@ const SERVICES = [
       "Every price is built around the actual house — ground conditions, steelwork, glazing, kitchens, bathrooms, access and specification — not a headline square-metre rate. Scope, allowances and variations are written down before anyone lifts a spade."
     ],
     factsTitle: "At a glance",
-    facts: [["Extension", "£2,400–£3,600 / sq m"], ["Whole-house refurbishment", "£1,400–£2,800 / sq m"], ["Areas", "Hale · Bowdon · Altrincham"], ["Minimum project", "£100,000"]],
+    facts: [["Extension", "£2,400–£3,600 / sq m"], ["Whole-house refurbishment", "£1,400–£2,800 / sq m"], ["Areas", "Hale · Bowdon · Altrincham"]],
     factsNote: "2026 guide prices, excluding VAT, professional fees and abnormals.",
     cardsHeading: "One contractor, *one project.*",
     cards: [
@@ -388,7 +385,6 @@ const SERVICES = [
     faqs: [
       ["What does a major extension in Hale cost?", "As a 2026 guide across Cheshire and Greater Manchester: £2,400–£3,600 per square metre for a single or two-storey extension with structural alterations. It often costs more per square metre than a new build, because nothing is square. Whole-house refurbishment runs £1,400–£2,800 per square metre. Excluding VAT, professional fees and abnormals — and a measured survey and cost plan beats any rate."],
       ["How do you stop the final account creeping?", "A written cost plan at stage two and a signed variation procedure before anyone lifts a spade. Written variations only — no verbal extras, ever. Monthly valuations so you always know where the number is."],
-      ["Why is your minimum project £100,000?", "Because a firm juggling nine kitchens can't put its owner on your site every week. We closed the domestic small works side in 2026 so the projects we do take get proper attention — the person who priced the job is the person managing it. Below £100k we'll happily recommend someone good."],
       ["Which areas do you cover?", "Hale, Bowdon, Altrincham and the surrounding Cheshire area — including Knutsford, Mobberley, Wilmslow, Alderley Edge, Mere and Lymm."]
     ],
     ctaHeading: "Planning a major *extension?*",

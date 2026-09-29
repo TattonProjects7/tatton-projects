@@ -85,7 +85,7 @@ The interesting line is M&E. It is the biggest cost, it is the one clients under
 
 Get a measured survey and a proper cost plan before you commit to a lease length or a fit-out budget. It costs a fraction of the job and it is the difference between a number you can hold and a number that grows.
 
-We'll do a feasibility appraisal on any floor above £100,000 and tell you what it will really cost — including telling you when the building is wrong for you. That advice is free, and we would rather give it before you sign than after.`
+We'll do a feasibility appraisal on any floor and tell you what it will really cost — including telling you when the building is wrong for you. That advice is free, and we would rather give it before you sign than after.`
   },
 
   {
