@@ -1786,37 +1786,62 @@ a.sector:hover h4 { color: var(--gold); }
 }
 .sister-tags li:hover { border-color: var(--gold-dim); background: #E3DED5; }
 
-.sister-card {
-  display: flex; flex-direction: column; gap: 14px;
-  background: var(--ink); color: var(--stone);
-  border: 1px solid var(--line-soft); border-radius: 4px;
-  padding: clamp(28px, 4vw, 44px);
+.lbc-card {
+  --lbc-yellow: #FFCE00;
+  --lbc-black:  #131313;
+  --lbc-grey:   #9A9CA3;
+  display: flex; flex-direction: column; gap: 22px;
+  background: var(--lbc-black); color: #fff;
+  border: 1px solid #2A2A2A; border-radius: 6px;
+  padding: clamp(26px, 3.4vw, 40px) clamp(24px, 3.4vw, 40px) clamp(24px, 3vw, 34px);
   text-decoration: none; position: relative; overflow: hidden;
   transition: transform .45s var(--ease), border-color .45s var(--ease), box-shadow .45s var(--ease);
 }
-.sister-card::before {
-  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
-  background: var(--gold);
+/* hazard tape across the top — LBC's brand motif */
+.lbc-tape {
+  position: absolute; left: 0; right: 0; top: 0; height: 10px;
+  background: repeating-linear-gradient(-45deg,
+    var(--lbc-yellow) 0, var(--lbc-yellow) 14px,
+    var(--lbc-black) 14px, var(--lbc-black) 28px);
 }
-.sister-card:hover {
-  transform: translateY(-4px); border-color: var(--gold);
-  box-shadow: 0 24px 60px rgba(12,12,13,.28);
+.lbc-card:hover {
+  transform: translateY(-4px); border-color: var(--lbc-yellow);
+  box-shadow: 0 26px 64px rgba(0,0,0,.4);
 }
-.sc-eyebrow {
+.lbc-eyebrow {
+  margin-top: 6px;
   font-family: var(--mono); font-size: 10px; letter-spacing: .22em;
-  text-transform: uppercase; color: var(--line);
+  text-transform: uppercase; color: var(--lbc-grey);
 }
-.sc-name {
-  font-family: var(--serif); font-weight: 400; font-style: italic;
-  font-size: clamp(34px, 4.6vw, 52px); line-height: .98; color: var(--stone);
+.lbc-lockup { display: flex; align-items: center; gap: clamp(16px, 2vw, 22px); }
+.lbc-badge {
+  width: clamp(76px, 9vw, 104px); height: auto; flex: none;
+  border-radius: 6px; display: block;
 }
-.sc-tag { color: var(--stone-2); font-size: 15px; line-height: 1.55; max-width: 34ch; }
-.sc-go {
-  margin-top: 6px; font-family: var(--mono); font-size: 13px; letter-spacing: .01em;
-  color: var(--gold); display: inline-flex; align-items: center; gap: 8px;
+.lbc-word { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.lbc-name {
+  font-family: var(--sans); font-weight: 800; color: #fff;
+  font-size: clamp(21px, 2.5vw, 30px); line-height: 1.02; letter-spacing: -.01em;
 }
-.sc-go i { font-style: normal; transition: transform .35s var(--ease); }
-.sister-card:hover .sc-go i { transform: translateX(6px); }
+.lbc-sub {
+  font-family: var(--sans); font-weight: 700; color: var(--lbc-yellow);
+  font-size: clamp(11px, 1.2vw, 13px); letter-spacing: .16em; text-transform: uppercase;
+}
+.lbc-loc {
+  font-family: var(--sans); font-weight: 600; color: var(--lbc-grey);
+  font-size: clamp(12px, 1.2vw, 14px); letter-spacing: .01em;
+}
+.lbc-go {
+  align-self: flex-start;
+  font-family: var(--mono); font-size: 12px; letter-spacing: .02em;
+  color: var(--lbc-black); background: var(--lbc-yellow);
+  padding: 12px 20px; border-radius: 999px; font-weight: 500;
+  display: inline-flex; align-items: center; gap: 8px;
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.lbc-go i { font-style: normal; transition: transform .35s var(--ease); }
+.lbc-card:hover .lbc-go { box-shadow: 0 10px 30px rgba(255,206,0,.28); }
+.lbc-card:hover .lbc-go i { transform: translateX(6px); }
 
 @media (max-width: 900px) {
   .sister-grid { grid-template-columns: 1fr; }
