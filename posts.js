@@ -33,6 +33,7 @@ const POSTS = [
   {
     slug: "office-fit-out-cost-per-square-foot-manchester",
     title: "What an office fit-out actually costs per square foot in Manchester",
+    seoTitle: "Office fit-out cost per sq ft, Manchester",
     summary: "Real 2026 rates for Cat A and Cat B fit-out in Manchester and Cheshire — and the five things that move the number more than anything on the drawing.",
     date: "2026-07-14",
     author: "Dave Groom",
@@ -91,6 +92,7 @@ We'll do a feasibility appraisal on any floor and tell you what it will really c
   {
     slug: "mees-epc-changes-what-landlords-need-to-do",
     title: "Your building is EPC E. Here's what that actually means for letting it",
+    seoTitle: "EPC E buildings: what MEES means for letting",
     summary: "MEES turned energy performance from a nice-to-have into a legal condition of letting. What the rules require, what the work costs, and when to do it.",
     date: "2026-06-20",
     author: "Dave Groom",

@@ -150,7 +150,13 @@ function projectPage(p, i, all) {
   const img = p.hero ? `${SITE}/${p.hero}` : `${SITE}/images/vanguard-01-breakout.jpg`;
 
   const bits = [p.type, p.location, p.value].filter(Boolean).join(' · ');
-  const title = `${p.name} — ${bits} | Tatton Projects`;
+  const primaryType = (p.type || '').split('·')[0].trim();
+  const _n = p.name.toLowerCase(), _t = primaryType.toLowerCase();
+  const typePart = primaryType && !_n.includes(_t) && !_t.includes(_n) ? primaryType : '';
+  const segs = [typePart, p.location].filter(Boolean).join(', ');
+  let title = `${p.name}${segs ? ' — ' + segs : ''} | Tatton Projects`;
+  if (title.length > 62) title = `${p.name}${typePart ? ' — ' + typePart : ''} | Tatton Projects`;
+  if (title.length > 62) title = `${p.name} | Tatton Projects`;
   const desc = clip(p.blurb, 155);
 
   const others = all.filter((x) => x.id !== p.id).slice(0, 3);
@@ -357,7 +363,7 @@ function workIndex(all) {
     </a>`).join('\n');
 
   return head({
-    title: 'Selected Work | Office Fit-Out, New Builds & Refurbishment — Tatton Projects',
+    title: 'Selected Work | Fit-Out & New Build Projects | Tatton Projects',
     desc: 'Completed projects across Manchester and Cheshire — £2M Cat B office fit-out, new build homes, live-building refurbishment and retail shopfits.',
     canonical: `${SITE}/work`,
     image: `${SITE}/images/vanguard-01-breakout.jpg`,
@@ -458,7 +464,7 @@ function renderPostBody(body) {
 function blogPostPage(p, all) {
   const url = `${SITE}/blog/${p.slug}`;
   const img = p.image ? `${SITE}/${p.image}` : `${SITE}/images/vanguard-01-breakout.jpg`;
-  const title = `${p.title} | Tatton Projects`;
+  const title = p.seoTitle ? `${p.seoTitle} | Tatton Projects` : `${p.title} | Tatton Projects`;
   const desc = clip(p.summary, 155);
   const others = all.filter((x) => x.slug !== p.slug).slice(0, 2);
 
