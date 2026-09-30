@@ -17,6 +17,7 @@ const SERVICES = [
 
   {
     id: "office-fit-out-manchester",
+    areaServed: [{ "@type": "Country", "name": "United Kingdom" }],
     name: "Office Fit-Out Manchester",
     short: "Office fit-out",
     sector: "Commercial",
@@ -73,13 +74,14 @@ const SERVICES = [
 
   {
     id: "shopfitting-manchester",
+    areaServed: [{ "@type": "Country", "name": "United Kingdom" }],
     name: "Shopfitting Manchester",
     short: "Shopfitting",
     sector: "Commercial",
-    title: "Shopfitters Manchester | Retail Fit-Out | Tatton Projects",
+    title: "Shopfitting & Retail Fit-Out, UK-wide | Tatton Projects",
     description: "Shopfitting and retail fit-out contractors in Manchester delivering strip-out, joinery, M&E, finishes, refurbishment and complete retail interiors.",
     h1: "Shopfitting, *Manchester.*",
-    eyebrow: "Retail fit-out · Manchester & nationwide",
+    eyebrow: "Retail fit-out · UK-wide",
     lede: "Tatton Projects delivers shopfitting, retail refurbishment and commercial fit-out projects across Manchester and the North West, from strip-out and enabling works through to finished customer-facing space.",
     summary: "Shopfitting and retail refurbishment, from strip-out and enabling works to a finished store — built around a fixed opening date.",
     hero: "images/fossil-01-store.jpg",
@@ -128,13 +130,14 @@ const SERVICES = [
 
   {
     id: "commercial-refurbishment-manchester",
+    areaServed: [{ "@type": "Country", "name": "United Kingdom" }],
     name: "Commercial Refurbishment Manchester",
     short: "Commercial refurbishment",
     sector: "Commercial",
-    title: "Commercial Refurbishment Manchester | Tatton Projects",
+    title: "Commercial Refurbishment, UK-wide | Tatton Projects",
     description: "Commercial refurbishment contractors in Manchester for offices, workplaces, retail and operational buildings. Managed from survey and strip-out to handover.",
     h1: "Commercial refurbishment, *Manchester.*",
-    eyebrow: "Refurbishment · Manchester & the North West",
+    eyebrow: "Refurbishment · UK-wide",
     lede: "Tatton Projects delivers commercial refurbishment across Manchester and the North West, coordinating the building fabric, interiors and specialist trades required to upgrade existing workplaces and commercial property.",
     summary: "Whole-building and occupied refurbishment of workplaces and commercial property — including the EPC and MEES upgrades that make a building lettable.",
     hero: "images/stockport-01-floor.jpg",
@@ -186,7 +189,7 @@ const SERVICES = [
     name: "New Build Homes Cheshire",
     short: "New build homes",
     sector: "Residential",
-    title: "New Build Homes Cheshire | Tatton Projects",
+    title: "New Build Homes & New Builds, Cheshire | Tatton Projects",
     description: "New-build home contractor for Cheshire and Greater Manchester. Tatton Projects delivers one-off private homes from pre-construction to handover.",
     h1: "New build homes, *Cheshire.*",
     eyebrow: "New build · Cheshire & Greater Manchester",
@@ -391,6 +394,281 @@ const SERVICES = [
     ctaText: "Send us the drawings, or just the house and what you want from it. You'll get a written cost plan from the person who'd run the job.",
     ctaButton: "Discuss a project →",
     serviceType: ["House extensions Hale", "Home refurbishment", "Structural alterations", "High-specification residential construction"]
+  },
+
+  {
+    id: "cat-a-cat-b-fit-out",
+    name: "Cat A & Cat B Fit-Out",
+    short: "Cat A & Cat B fit-out",
+    sector: "Commercial",
+    areaServed: [{ "@type": "Country", "name": "United Kingdom" }],
+    title: "Cat A & Cat B Office Fit-Out, UK-wide | Tatton Projects",
+    description: "Cat A and Cat B office fit-out contractors, UK-wide. Landlord Cat A, tenant Cat B and shell-to-handover, engineered, costed and delivered.",
+    h1: "Cat A & Cat B *fit-out.*",
+    eyebrow: "Office fit-out · UK-wide",
+    lede: "Tatton Projects delivers Cat A and Cat B office fit-out across the UK, from landlord Cat A upgrades that make a floor lettable to full Cat B fit-outs that turn a bare shell into a workplace.",
+    summary: "Landlord Cat A, tenant Cat B and complete shell-to-handover fit-out, delivered UK-wide.",
+    hero: "images/vanguard-01-breakout.jpg",
+    heroCaption: "Vanguard · £2M Cat B fit-out · Manchester",
+    card: "images/vanguard-01-breakout-card.jpg",
+    heroFacts: [["Cat A from", "£45 / sq ft"], ["Cat B from", "£70 / sq ft"], ["Coverage", "UK-wide"]],
+    introEyebrow: "Project delivery",
+    introHeading: "The difference between *Cat A and Cat B.*",
+    intro: [
+      "Cat A is the landlord's base build: raised floors, suspended ceilings, basic services, fire detection and finished surfaces that leave a floor clean, lettable and ready for a tenant. Cat B is the tenant's fit-out: the layout, partitions, meeting rooms, kitchens, joinery, branding, lighting and workplace design that turn that empty floor into somewhere a team actually works.",
+      "We deliver both, and the shell-to-handover work in between, coordinating landlord, tenant, designer and building control so the two stages meet cleanly instead of clashing on site."
+    ],
+    factsTitle: "Guide rates",
+    facts: [["Cat A refresh", "£45–£70 / sq ft"], ["Standard Cat B", "£70–£110 / sq ft"], ["High-spec Cat B", "£110–£180 / sq ft"], ["Coverage", "UK-wide, selected"]],
+    factsNote: "2026 guide rates, excluding VAT and professional fees. A measured cost plan replaces the range.",
+    cardsHeading: "From base build *to handover.*",
+    cards: [
+      ["Cat A for landlords", "Raised floors, ceilings, base services, fire detection and finished surfaces that make a floor lettable and pass a letting agent's inspection."],
+      ["Cat B for tenants", "Space planning, partitions, meeting rooms, tea points, joinery, feature lighting, acoustics, branding and the full workplace fit-out."],
+      ["Shell-to-handover", "A bare shell taken all the way to an occupied floor as one managed project, so nothing falls between landlord and tenant scope."],
+      ["Dilapidations & reinstatement", "End-of-lease strip-out and reinstatement back to the Cat A condition your lease requires."]
+    ],
+    scope: [
+      "Raised access floors and suspended ceilings",
+      "Partitions, glazed screens and doors",
+      "Mechanical, electrical and HVAC",
+      "Lighting, power and data",
+      "Kitchens, tea points and washrooms",
+      "Joinery, branding and finishes",
+      "Fire detection and life safety",
+      "Test, commission and handover"
+    ],
+    projects: ["vanguard", "sentric-music", "stockport-office"],
+    faqs: [
+      ["What is the difference between Cat A and Cat B fit-out?", "Cat A is the landlord's base finish, raised floors, ceilings, basic services and finished surfaces that make a floor lettable. Cat B is the tenant's fit-out on top: layout, partitions, meeting rooms, kitchens, joinery, lighting and branding. We deliver both."],
+      ["How much does a Cat B office fit-out cost?", "As a 2026 guide: a Cat A refresh runs about £45–£70 per sq ft, a standard Cat B £70–£110, and a high-specification Cat B £110–£180 and up. We give you an elemental cost plan rather than a single headline number."],
+      ["Do you work UK-wide?", "Yes. Commercial fit-out is delivered across the UK on selected projects, managed from Manchester with the same team on site wherever the building is."],
+      ["Can you take a shell through Cat A and Cat B as one project?", "Yes. Running Cat A straight into Cat B as one programme avoids the gap where landlord and tenant scope usually clash, and gets the floor occupied sooner."]
+    ],
+    ctaHeading: "Fitting out *a floor?*",
+    ctaText: "Send us the floor plans, the lease and the specification. You'll get a written cost plan and a programme from the person who'd run the job.",
+    ctaButton: "Discuss a fit-out →",
+    serviceType: ["Cat A fit-out", "Cat B fit-out", "Office fit-out", "Commercial fit-out", "Shell and core fit-out"]
+  },
+
+  {
+    id: "commercial-fit-out-uk",
+    name: "Commercial Fit-Out",
+    short: "Commercial fit-out",
+    sector: "Commercial",
+    areaServed: [{ "@type": "Country", "name": "United Kingdom" }],
+    title: "Commercial Fit-Out Contractors, UK-wide | Tatton Projects",
+    description: "Commercial and office fit-out contractors working UK-wide: offices, healthcare, hospitality and retail, delivered in occupied buildings and to fixed programmes.",
+    h1: "Commercial fit-out, *UK-wide.*",
+    eyebrow: "Commercial fit-out · UK-wide",
+    lede: "Tatton Projects fits out commercial buildings across the UK, offices, workplaces, healthcare, hotels, restaurants and retail, much of it delivered in buildings that never close.",
+    summary: "Office, healthcare, hospitality and retail fit-out, delivered UK-wide and around live operations.",
+    hero: "images/sentric-01-lounge.jpg",
+    heroCaption: "Sentric Music · Cat B fit-out · Liverpool",
+    card: "images/sentric-01-lounge-card.jpg",
+    heroFacts: [["Largest to date", "£2M"], ["Sectors", "Office · care · retail"], ["Coverage", "UK-wide"]],
+    introEyebrow: "Project delivery",
+    introHeading: "One contractor, *every sector.*",
+    intro: [
+      "We deliver commercial fit-out and refurbishment across the UK: Cat A and Cat B offices, care homes and healthcare, hotels and restaurants, retail units and public-facing service buildings. The common thread is programme, procurement and commercial control, the same discipline whatever the sector.",
+      "Much of it is done in occupied buildings: hotels that kept selling rooms, care homes with residents in their beds, service centres with the public coming through the doors. Phased handbacks, dust and route separation and out-of-hours working are routine."
+    ],
+    factsTitle: "At a glance",
+    facts: [["Sectors", "Office, healthcare, hospitality, retail"], ["Occupied buildings", "Phased, out-of-hours"], ["Programme", "Fixed-date delivery"], ["Coverage", "UK-wide, selected"]],
+    factsNote: "",
+    cardsHeading: "Commercial interiors, *properly run.*",
+    cards: [
+      ["Offices & workplaces", "Cat A and Cat B fit-out, refurbishment and reconfiguration for landlords and occupiers."],
+      ["Healthcare & care homes", "Fit-out and refurbishment in live clinical and care settings, sequenced around residents and patients."],
+      ["Hotels, restaurants & retail", "Front and back of house delivered to a fixed opening date, in trading buildings where needed."],
+      ["Occupied buildings", "Phased handbacks, temporary protection and out-of-hours working so your operation keeps running."]
+    ],
+    scope: [
+      "Cat A and Cat B office fit-out",
+      "Healthcare and care-home fit-out",
+      "Hotel, restaurant and retail fit-out",
+      "Whole-building refurbishment",
+      "Mechanical and electrical",
+      "Partitions, ceilings and joinery",
+      "Phasing and temporary works",
+      "Test, commission and handover"
+    ],
+    projects: ["vanguard", "sentric-music", "stockport-service-centre"],
+    faqs: [
+      ["Do you work across the whole UK?", "Yes. Commercial fit-out and refurbishment is delivered on selected projects nationwide, managed from Manchester with our own team on site wherever the building is."],
+      ["Can you work while our building stays open?", "Yes, it is most of what we do. Hotels, care homes, service centres and retail units in trading malls, delivered with phased handbacks, dust and route separation and out-of-hours working."],
+      ["What sectors do you fit out?", "Offices and workplaces, healthcare and care homes, hotels, restaurants, retail and public-facing service buildings."],
+      ["How do you control the final cost?", "A written cost plan at stage two and a signed variation procedure before work starts. Written variations only, and monthly valuations so you always know where the number is."]
+    ],
+    ctaHeading: "Got a building *to fit out?*",
+    ctaText: "Send us the floor plans and what the space needs to do. You'll get a written cost plan and a programme from the person who'd run the job.",
+    ctaButton: "Discuss a project →",
+    serviceType: ["Commercial fit-out", "Office fit-out", "Healthcare fit-out", "Retail fit-out", "Hospitality fit-out"]
+  },
+
+  {
+    id: "building-conversions",
+    name: "Building & Change-of-Use Conversions",
+    short: "Conversions",
+    sector: "Commercial",
+    areaServed: [{ "@type": "Country", "name": "United Kingdom" }],
+    title: "Building Conversions & Change of Use | Tatton Projects",
+    description: "Building conversion contractors: office-to-residential, commercial change of use and permitted-development conversions, engineered and delivered across the UK.",
+    h1: "Building *conversions.*",
+    eyebrow: "Conversions & change of use · UK-wide",
+    lede: "Tatton Projects converts buildings to new uses, offices to apartments, commercial to residential and change-of-use projects under permitted development, from structural work through to finished, lettable space.",
+    summary: "Office-to-residential, commercial change of use and permitted-development conversions, delivered UK-wide.",
+    hero: "images/stockport-01-floor.jpg",
+    heroCaption: "Stockport service centre · refurbished while occupied",
+    card: "images/stockport-01-floor-card.jpg",
+    heroFacts: [["Change of use", "Class MA & full"], ["Scope", "Structure to finish"], ["Coverage", "UK-wide"]],
+    introEyebrow: "Project delivery",
+    introHeading: "A new use *from an old building.*",
+    intro: [
+      "Conversions turn a building that no longer earns into one that does: offices into apartments, redundant commercial space into homes, and mixed change-of-use schemes. Many now proceed under permitted development rights such as Class MA, which lets suitable commercial premises become residential without a full planning application, though prior approval and building regulations still apply.",
+      "We handle the whole conversion: structural alterations, new floors and cores, services, fire compartmentation, acoustics, insulation and the finishes that make the space lettable or saleable."
+    ],
+    factsTitle: "At a glance",
+    facts: [["Office to residential", "Class MA & full planning"], ["Commercial change of use", "Retail, industrial, mixed"], ["Structure", "Alterations & new cores"], ["Coverage", "UK-wide, selected"]],
+    factsNote: "Permitted development still needs prior approval and building regulations sign-off. We confirm the route at survey.",
+    cardsHeading: "From redundant *to let.*",
+    cards: [
+      ["Office to residential", "Converting redundant offices into apartments, under Class MA permitted development or full planning."],
+      ["Commercial change of use", "Retail, industrial and mixed-use buildings converted to a new, consented use."],
+      ["Structure & compartmentation", "New floors, cores, fire compartmentation, acoustic separation and insulation to meet residential standards."],
+      ["Fit-out & finishes", "Kitchens, bathrooms, services and finishes that leave units ready to let or sell."]
+    ],
+    scope: [
+      "Feasibility and change-of-use advice",
+      "Structural alterations and new cores",
+      "Fire compartmentation and means of escape",
+      "Acoustic and thermal upgrades",
+      "Mechanical, electrical and drainage",
+      "Apartment layouts and fit-out",
+      "Building regulations and prior approval",
+      "Handover ready to let or sell"
+    ],
+    projects: ["stockport-service-centre", "wilmslow-house", "pendrick-self-storage"],
+    faqs: [
+      ["Can I convert an office into flats without planning permission?", "Often, yes. Class MA permitted development lets many offices and commercial premises become residential without a full planning application, but you still need prior approval from the council and building regulations sign-off. We confirm the route at survey."],
+      ["What is change of use?", "It is moving a building from one planning use class to another, for example commercial to residential. Some changes are permitted development, others need full planning. Either way the building work must meet building regulations."],
+      ["Do you do office-to-residential conversions?", "Yes, converting redundant offices and commercial buildings into apartments is a core part of what we do, from structure and compartmentation through to finished, lettable units."],
+      ["Do you work UK-wide on conversions?", "Commercial and mixed-use conversions are delivered on selected projects nationwide; residential conversion work is focused on Greater Manchester and Cheshire."]
+    ],
+    ctaHeading: "Got a building *to convert?*",
+    ctaText: "Send us the building and what you want it to become. You'll get a straight answer on the route, the works and a written cost plan.",
+    ctaButton: "Discuss a conversion →",
+    serviceType: ["Building conversion", "Change of use", "Office to residential conversion", "Permitted development conversion", "Commercial conversion"]
+  },
+
+  {
+    id: "healthcare-fit-out",
+    name: "Healthcare & Care-Home Fit-Out",
+    short: "Healthcare fit-out",
+    sector: "Commercial",
+    areaServed: [{ "@type": "Country", "name": "United Kingdom" }],
+    title: "Care Home & Healthcare Fit-Out, UK-wide | Tatton Projects",
+    description: "Care home and healthcare fit-out and refurbishment contractors, UK-wide, delivered in live clinical and care settings, sequenced around residents and patients.",
+    h1: "Healthcare & care-home *fit-out.*",
+    eyebrow: "Healthcare fit-out · UK-wide",
+    lede: "Tatton Projects fits out and refurbishes care homes, surgeries and healthcare buildings across the UK, working in live settings around residents, patients and staff.",
+    summary: "Care homes, surgeries and clinical buildings, fitted out and refurbished in live settings, UK-wide.",
+    hero: "images/stockport-01-floor.jpg",
+    heroCaption: "Occupied building · phased handbacks · fitted out while open",
+    card: "images/stockport-01-floor-card.jpg",
+    heroFacts: [["Settings", "Live clinical & care"], ["Sectors", "Care homes · surgeries · NHS"], ["Coverage", "UK-wide"]],
+    introEyebrow: "Project delivery",
+    introHeading: "Building around *people who can't move out.*",
+    intro: [
+      "Healthcare and care happen in buildings that cannot close. We fit out and refurbish care homes, GP surgeries, dental and clinical settings around the people who depend on them, with infection control, dust and noise management, fire compartmentation and phased handbacks planned before the first wall comes down.",
+      "The programme is built around the building's routine, day rooms, medication rounds and clinics, so the works progress without putting residents or patients at risk."
+    ],
+    factsTitle: "At a glance",
+    facts: [["Settings", "Care homes, surgeries, clinics"], ["Occupied", "Infection control & phasing"], ["Compliance", "Fire, DDA, HTM-aware"], ["Coverage", "UK-wide, selected"]],
+    factsNote: "",
+    cardsHeading: "Care settings, *kept safe.*",
+    cards: [
+      ["Care & nursing homes", "Refurbishment and fit-out of bedrooms, day rooms, dining and wet rooms, phased around residents."],
+      ["Surgeries & clinics", "GP, dental and clinical fit-out with the infection control and compliance these settings demand."],
+      ["Infection & dust control", "Sealed zones, negative pressure where needed, HEPA extraction and rigorous cleaning regimes."],
+      ["Phased handbacks", "Rooms and wings handed back in a planned sequence so the building keeps running."]
+    ],
+    scope: [
+      "Bedroom, day-room and dining refurbishment",
+      "Wet rooms and accessible washrooms",
+      "Infection control and dust management",
+      "Fire compartmentation and life safety",
+      "Nurse call, data and services",
+      "DDA and accessibility upgrades",
+      "Flooring, decoration and finishes",
+      "Phasing and handback planning"
+    ],
+    projects: ["stockport-service-centre", "vanguard", "sentric-music"],
+    faqs: [
+      ["Can you work in an occupied care home?", "Yes, it is what we specialise in. Works are zoned and sealed, dust and noise controlled, and rooms handed back in a planned sequence so residents stay safe and the home keeps running."],
+      ["Do you fit out GP surgeries and clinics?", "Yes, GP, dental and clinical settings, delivered with the infection control, compartmentation and compliance these buildings require."],
+      ["Do you work UK-wide on healthcare projects?", "Yes, healthcare fit-out and refurbishment is delivered on selected projects nationwide, managed from Manchester."],
+      ["How do you keep infection risk down during works?", "Sealed work zones, negative pressure and HEPA extraction where needed, dedicated routes, and cleaning regimes agreed with the home or practice before work starts."]
+    ],
+    ctaHeading: "Refurbishing *a care setting?*",
+    ctaText: "Send us the building and how it is used day to day. You'll get a phased plan and a written cost plan from the person who'd run the job.",
+    ctaButton: "Discuss a project →",
+    serviceType: ["Healthcare fit-out", "Care home refurbishment", "Care home fit-out", "GP surgery fit-out", "Dental practice fit-out", "NHS fit-out"]
+  },
+
+  {
+    id: "hospitality-fit-out",
+    name: "Hotel, Restaurant & Hospitality Fit-Out",
+    short: "Hospitality fit-out",
+    sector: "Commercial",
+    areaServed: [{ "@type": "Country", "name": "United Kingdom" }],
+    title: "Hotel & Restaurant Fit-Out, UK-wide | Tatton Projects",
+    description: "Hotel, restaurant and bar fit-out contractors, UK-wide. Front and back of house delivered to a fixed opening date, in trading venues where needed.",
+    h1: "Hotel & restaurant *fit-out.*",
+    eyebrow: "Hospitality fit-out · UK-wide",
+    lede: "Tatton Projects fits out hotels, restaurants and bars across the UK, front and back of house, delivered to a fixed opening date and in venues that keep trading where they must.",
+    summary: "Hotels, restaurants and bars, front and back of house, delivered to a fixed opening date, UK-wide.",
+    hero: "images/leeds-bar-01-restaurant.jpg",
+    heroCaption: "Bar & restaurant fit-out · Leeds",
+    card: "images/leeds-bar-01-restaurant-card.jpg",
+    heroFacts: [["Front & back", "Of house"], ["Programme", "Built to opening day"], ["Coverage", "UK-wide"]],
+    introEyebrow: "Project delivery",
+    introHeading: "Built to *opening day.*",
+    intro: [
+      "Hospitality lives and dies by the opening date. We fit out hotels, restaurants, bars and cafes across the UK, coordinating kitchens, bars, front of house, guest rooms and back of house so the venue opens on the day the marketing says it will.",
+      "Where a hotel keeps selling rooms or a venue keeps trading next door, we phase the works, separate the routes and run the noisy trades out of hours."
+    ],
+    factsTitle: "At a glance",
+    facts: [["Venues", "Hotels, restaurants, bars"], ["Kitchens", "Commercial, extract, gas"], ["Trading", "Phased where needed"], ["Coverage", "UK-wide, selected"]],
+    factsNote: "",
+    cardsHeading: "Front and back *of house.*",
+    cards: [
+      ["Restaurants & bars", "Full fit-out: dining, bar servery, commercial kitchen, extract and finishes, to a fixed opening date."],
+      ["Hotels", "Guest rooms, lobbies, restaurants and back of house, delivered around a trading operation."],
+      ["Commercial kitchens", "Kitchen fit-out with extract, gas interlocks, drainage and the compliance a servery needs."],
+      ["Trading venues", "Phased handbacks, route separation and out-of-hours working so the doors stay open."]
+    ],
+    scope: [
+      "Restaurant, bar and cafe fit-out",
+      "Hotel guest rooms and public areas",
+      "Commercial kitchens and extract",
+      "Bars, serveries and joinery",
+      "Feature lighting and acoustics",
+      "Mechanical, electrical and drainage",
+      "Fire, gas and life safety",
+      "Phasing to a fixed opening date"
+    ],
+    projects: ["leeds-bar", "sentric-music", "vanguard"],
+    faqs: [
+      ["Can you deliver to a fixed opening date?", "Yes. Hospitality programmes are driven by the opening date, so we plan procurement, long-lead items and the trade sequence backwards from it and manage to that date."],
+      ["Can you fit out a commercial kitchen?", "Yes, commercial kitchens with extract, gas interlocks, drainage and the compliance a servery needs, coordinated with your catering supplier."],
+      ["Can you work while the venue keeps trading?", "Yes, hotels that kept selling rooms and venues that kept serving next door. Phased handbacks, route separation and out-of-hours working keep the doors open."],
+      ["Do you work UK-wide on hospitality projects?", "Yes, hotel, restaurant and bar fit-out is delivered on selected projects nationwide, managed from Manchester."]
+    ],
+    ctaHeading: "Opening *a venue?*",
+    ctaText: "Send us the drawings and the opening date. You'll get a written cost plan and a programme from the person who'd run the job.",
+    ctaButton: "Discuss a fit-out →",
+    serviceType: ["Hospitality fit-out", "Hotel fit-out", "Restaurant fit-out", "Bar fit-out", "Commercial kitchen fit-out", "Cafe fit-out"]
   }
 
 ];

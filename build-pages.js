@@ -612,7 +612,7 @@ function servicePage(s, all) {
     url,
     image: img,
     provider: { '@id': `${SITE}/#organisation` },
-    areaServed: [
+    areaServed: s.areaServed || [
       { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
       { '@type': 'AdministrativeArea', name: 'Cheshire' }
     ],
@@ -782,8 +782,8 @@ function servicesIndex(all) {
   }]);
 
   return head({
-    title: 'Construction & Fit-Out Services Manchester | Tatton Projects',
-    desc: 'Tatton Projects delivers office fit-out, shopfitting, commercial refurbishment, major extensions and new-build homes across Manchester and Cheshire.',
+    title: 'Construction & Fit-Out Services, UK-wide | Tatton Projects',
+    desc: 'Office fit-out, Cat A & Cat B, refurbishment, conversions and shopfitting UK-wide, plus new-build homes and extensions across Manchester & Cheshire.',
     canonical: url,
     image: `${SITE}/images/vanguard-01-breakout.jpg`,
     depth: 0,
@@ -880,15 +880,9 @@ try {
     { loc: `${SITE}/costs`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/blog`, pri: '0.8', freq: 'weekly' },
     { loc: `${SITE}/invest`, pri: '0.7', freq: 'monthly' },
-    { loc: `${SITE}/services`, pri: '0.9', freq: 'monthly' },
-    { loc: `${SITE}/office-fit-out-manchester`, pri: '0.9', freq: 'monthly' },
-    { loc: `${SITE}/shopfitting-manchester`, pri: '0.9', freq: 'monthly' },
-    { loc: `${SITE}/commercial-refurbishment-manchester`, pri: '0.9', freq: 'monthly' },
-    { loc: `${SITE}/extension-builders-altrincham`, pri: '0.9', freq: 'monthly' },
-    { loc: `${SITE}/extension-builders-hale`, pri: '0.9', freq: 'monthly' },
-    { loc: `${SITE}/new-build-homes-cheshire`, pri: '0.9', freq: 'monthly' },
-    { loc: `${SITE}/housing-developments-cheshire`, pri: '0.9', freq: 'monthly' }
-  ].concat(PROJECTS.map((p) => ({ loc: `${SITE}/work/${p.id}`, pri: '0.8', freq: 'yearly' })))
+    { loc: `${SITE}/services`, pri: '0.9', freq: 'monthly' }
+  ].concat(SERVICES.map((s) => ({ loc: `${SITE}/${s.id}`, pri: '0.9', freq: 'monthly' })))
+   .concat(PROJECTS.map((p) => ({ loc: `${SITE}/work/${p.id}`, pri: '0.8', freq: 'yearly' })))
    .concat(POSTS.map((p) => ({ loc: `${SITE}/blog/${p.slug}`, pri: '0.7', freq: 'yearly' })));
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
