@@ -39,7 +39,7 @@ const POSTS = [
     author: "Dave Groom",
     category: "Cost",
     readTime: "6 min",
-    image: "images/vanguard-01-breakout.jpg",
+    image: "images/sentric-01-lounge.jpg",
     featured: true,
     body: `Nobody in this industry publishes prices. I've never understood it. You end up with a client who has a floor, a budget in their head, and no way of knowing whether the two are in the same postcode until they've spent three weeks getting quotes.
 

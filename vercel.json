@@ -17,7 +17,9 @@
       "permanent": true
     },
     { "source": "/projects", "destination": "/work", "permanent": true },
-    { "source": "/vanguard", "destination": "/work/vanguard", "permanent": true },
+    { "source": "/vanguard", "destination": "/work/sentric-music", "permanent": true },
+    { "source": "/work/vanguard", "destination": "/work/sentric-music", "permanent": true },
+    { "source": "/sentric-music", "destination": "/work/sentric-music", "permanent": true },
     { "source": "/calvin-klein", "destination": "/work/calvin-klein", "permanent": true },
     { "source": "/fossil", "destination": "/work/fossil", "permanent": true },
     { "source": "/knutsford-new-build", "destination": "/work/knutsford-new-build", "permanent": true },
