@@ -38,7 +38,7 @@ Google indexes pages, not pop-ups. Nine projects with nine addresses is
 nine chances to rank instead of one. It also means you can send someone a
 direct link to a single job:
 
-    tatton-projects.co.uk/work/vanguard
+    tatton-projects.co.uk/work/sentric-music
 
 That's a much better thing to put in an email to an agent than a link to
 your homepage.

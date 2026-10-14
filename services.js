@@ -27,15 +27,15 @@ const SERVICES = [
     eyebrow: "Commercial fit-out · Manchester & the North West",
     lede: "Tatton Projects delivers office fit-outs, workplace refurbishments and commercial interior projects across Manchester, Greater Manchester and the North West, with selected projects delivered nationwide.",
     summary: "Cat A and Cat B fit-out, workplace refurbishment and commercial interiors — much of it delivered in buildings that never closed.",
-    hero: "images/vanguard-01-breakout.jpg",
-    heroCaption: "Vanguard · £2M Cat B fit-out · Manchester",
-    card: "images/vanguard-01-breakout-card.jpg",
+    hero: "images/sentric-01-lounge.jpg",
+    heroCaption: "Sentric Music · Cat B fit-out · Liverpool",
+    card: "images/sentric-01-lounge-card.jpg",
     heroFacts: [["Cat B from", "£70 / sq ft"], ["Largest to date", "£2M"], ["Coverage", "North West · nationwide"]],
     introEyebrow: "Project delivery",
     introHeading: "Commercial office fit-out contractors *in Manchester.*",
     intro: [
       "Our approach combines practical construction delivery with programme, procurement and commercial management. We work with clients, architects, engineers, Building Control and specialist subcontractors to turn an agreed scope into a controlled construction project.",
-      "Most of our fit-outs happen in buildings that stay open — floors handed back in phases, dust and route separation, noisy trades out of hours. Our largest, a £2M Cat B fit-out at Vanguard, was delivered floor by floor in a live, occupied building."
+      "Most of our fit-outs happen in buildings that stay open — floors handed back in phases, dust and route separation, noisy trades out of hours. A recent multi-floor £2M Cat B fit-out was delivered floor by floor in a live, occupied building."
     ],
     factsTitle: "2026 guide prices",
     facts: [["Cat A refresh", "£45–£70 / sq ft"], ["Cat B — standard", "£70–£110 / sq ft"], ["Cat B — high spec", "£110–£180+ / sq ft"], ["Occupied building", "+10–25%"]],
@@ -59,9 +59,9 @@ const SERVICES = [
       "Pre-construction review and cost plan",
       "Snagging and handover"
     ],
-    projects: ["vanguard", "stockport-service-centre", "sentric-music"],
+    projects: ["sentric-music", "stockport-service-centre", "stockport-office"],
     faqs: [
-      ["What does an office fit-out cost per square foot in Manchester?", "As a working range in 2026: a basic Cat A refresh runs around £45–£70 per sq ft. A standard Cat B fit-out is roughly £70–£110 per sq ft. A high-specification Cat B — bespoke joinery, feature lighting, acoustic treatment, the kind of thing we did at Vanguard — runs £110–£180 per sq ft and upwards. Anyone who quotes you a single number without seeing the floor, the building's services and the landlord's licence to alter is guessing. We give you an elemental cost plan instead, and that number is the one you build to."],
+      ["What does an office fit-out cost per square foot in Manchester?", "As a working range in 2026: a basic Cat A refresh runs around £45–£70 per sq ft. A standard Cat B fit-out is roughly £70–£110 per sq ft. A high-specification Cat B — bespoke joinery, feature lighting, acoustic treatment, the kind of thing we did at Sentric Music — runs £110–£180 per sq ft and upwards. Anyone who quotes you a single number without seeing the floor, the building's services and the landlord's licence to alter is guessing. We give you an elemental cost plan instead, and that number is the one you build to."],
       ["Can you work in my building while we're still open?", "Yes — it's most of what we do. Hotels that kept selling rooms, care homes with residents in their beds, a public service centre with ninety staff at their desks and the public coming through the doors, retail units in a trading mall. Phased handbacks, dust and route separation, out-of-hours working. If you can only close for a weekend, say so at the appraisal and we'll build the programme around it."],
       ["How do you stop the final account creeping?", "A written cost plan at stage two and a signed variation procedure before anyone lifts a spade. Written variations only — no verbal extras, ever. Monthly valuations so you always know where the number is."],
       ["Do you work outside Manchester?", "Yes. Commercial fit-out and refurbishment we take nationwide for the right project. We have delivered in Liverpool, Leeds, Stockport and London."]
@@ -172,7 +172,7 @@ const SERVICES = [
       "Phased and occupied works",
       "EPC and MEES upgrades"
     ],
-    projects: ["stockport-service-centre", "vanguard", "stockport-office"],
+    projects: ["stockport-service-centre", "sentric-music", "stockport-office"],
     faqs: [
       ["My building is EPC E. Can I still let it?", "Not lawfully, in most cases — and the standard is tightening. This is the MEES regime, and it turns an aesthetic decision into a legal one: a sub-standard building can't earn until it's fixed. We survey it, tell you what it costs to get the rating up, and do the work. Often it's fabric, lighting and controls rather than anything dramatic. Get it assessed before your next void, not during one."],
       ["Can you work in my building while we're still open?", "Yes — it's most of what we do. Hotels that kept selling rooms, care homes with residents in their beds, a public service centre with ninety staff at their desks and the public coming through the doors, retail units in a trading mall. Phased handbacks, dust and route separation, out-of-hours working."],
@@ -408,9 +408,9 @@ const SERVICES = [
     eyebrow: "Office fit-out · UK-wide",
     lede: "Tatton Projects delivers Cat A and Cat B office fit-out across the UK, from landlord Cat A upgrades that make a floor lettable to full Cat B fit-outs that turn a bare shell into a workplace.",
     summary: "Landlord Cat A, tenant Cat B and complete shell-to-handover fit-out, delivered UK-wide.",
-    hero: "images/vanguard-01-breakout.jpg",
-    heroCaption: "Vanguard · £2M Cat B fit-out · Manchester",
-    card: "images/vanguard-01-breakout-card.jpg",
+    hero: "images/sentric-01-lounge.jpg",
+    heroCaption: "Sentric Music · Cat B fit-out · Liverpool",
+    card: "images/sentric-01-lounge-card.jpg",
     heroFacts: [["Cat A from", "£45 / sq ft"], ["Cat B from", "£70 / sq ft"], ["Coverage", "UK-wide"]],
     introEyebrow: "Project delivery",
     introHeading: "The difference between *Cat A and Cat B.*",
@@ -438,7 +438,7 @@ const SERVICES = [
       "Fire detection and life safety",
       "Test, commission and handover"
     ],
-    projects: ["vanguard", "sentric-music", "stockport-office"],
+    projects: ["sentric-music", "stockport-office", "stockport-service-centre"],
     faqs: [
       ["What is the difference between Cat A and Cat B fit-out?", "Cat A is the landlord's base finish, raised floors, ceilings, basic services and finished surfaces that make a floor lettable. Cat B is the tenant's fit-out on top: layout, partitions, meeting rooms, kitchens, joinery, lighting and branding. We deliver both."],
       ["How much does a Cat B office fit-out cost?", "As a 2026 guide: a Cat A refresh runs about £45–£70 per sq ft, a standard Cat B £70–£110, and a high-specification Cat B £110–£180 and up. We give you an elemental cost plan rather than a single headline number."],
@@ -493,7 +493,7 @@ const SERVICES = [
       "Phasing and temporary works",
       "Test, commission and handover"
     ],
-    projects: ["vanguard", "sentric-music", "stockport-service-centre"],
+    projects: ["sentric-music", "stockport-service-centre", "stockport-office"],
     faqs: [
       ["Do you work across the whole UK?", "Yes. Commercial fit-out and refurbishment is delivered on selected projects nationwide, managed from Manchester with our own team on site wherever the building is."],
       ["Can you work while our building stays open?", "Yes, it is most of what we do. Hotels, care homes, service centres and retail units in trading malls, delivered with phased handbacks, dust and route separation and out-of-hours working."],
@@ -603,7 +603,7 @@ const SERVICES = [
       "Flooring, decoration and finishes",
       "Phasing and handback planning"
     ],
-    projects: ["stockport-service-centre", "vanguard", "sentric-music"],
+    projects: ["stockport-service-centre", "sentric-music", "stockport-office"],
     faqs: [
       ["Can you work in an occupied care home?", "Yes, it is what we specialise in. Works are zoned and sealed, dust and noise controlled, and rooms handed back in a planned sequence so residents stay safe and the home keeps running."],
       ["Do you fit out GP surgeries and clinics?", "Yes, GP, dental and clinical settings, delivered with the infection control, compartmentation and compliance these buildings require."],
@@ -658,7 +658,7 @@ const SERVICES = [
       "Fire, gas and life safety",
       "Phasing to a fixed opening date"
     ],
-    projects: ["leeds-bar", "sentric-music", "vanguard"],
+    projects: ["leeds-bar", "sentric-music", "fossil"],
     faqs: [
       ["Can you deliver to a fixed opening date?", "Yes. Hospitality programmes are driven by the opening date, so we plan procurement, long-lead items and the trade sequence backwards from it and manage to that date."],
       ["Can you fit out a commercial kitchen?", "Yes, commercial kitchens with extract, gas interlocks, drainage and the compliance a servery needs, coordinated with your catering supplier."],

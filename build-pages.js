@@ -147,7 +147,7 @@ ${nav(depth, active)}
 /* ---------- one project page ---------- */
 function projectPage(p, i, all) {
   const url = `${SITE}/work/${p.id}`;
-  const img = p.hero ? `${SITE}/${p.hero}` : `${SITE}/images/vanguard-01-breakout.jpg`;
+  const img = p.hero ? `${SITE}/${p.hero}` : `${SITE}/images/sentric-01-lounge.jpg`;
 
   const bits = [p.type, p.location, p.value].filter(Boolean).join(' · ');
   const primaryType = (p.type || '').split('·')[0].trim();
@@ -366,7 +366,7 @@ function workIndex(all) {
     title: 'Selected Work | Fit-Out & New Build Projects | Tatton Projects',
     desc: 'Completed projects across Manchester and Cheshire — £2M Cat B office fit-out, new build homes, live-building refurbishment and retail shopfits.',
     canonical: `${SITE}/work`,
-    image: `${SITE}/images/vanguard-01-breakout.jpg`,
+    image: `${SITE}/images/sentric-01-lounge.jpg`,
     depth: 0,
     extraSchema: schema
   }) + `
@@ -463,7 +463,7 @@ function renderPostBody(body) {
 /* ---------- one static blog post page (so each post can rank on its own) ---------- */
 function blogPostPage(p, all) {
   const url = `${SITE}/blog/${p.slug}`;
-  const img = p.image ? `${SITE}/${p.image}` : `${SITE}/images/vanguard-01-breakout.jpg`;
+  const img = p.image ? `${SITE}/${p.image}` : `${SITE}/images/sentric-01-lounge.jpg`;
   const title = p.seoTitle ? `${p.seoTitle} | Tatton Projects` : `${p.title} | Tatton Projects`;
   const desc = clip(p.summary, 155);
   const others = all.filter((x) => x.slug !== p.slug).slice(0, 2);
@@ -785,7 +785,7 @@ function servicesIndex(all) {
     title: 'Construction & Fit-Out Services, UK-wide | Tatton Projects',
     desc: 'Office fit-out, Cat A & Cat B, refurbishment, conversions and shopfitting UK-wide, plus new-build homes and extensions across Manchester & Cheshire.',
     canonical: url,
-    image: `${SITE}/images/vanguard-01-breakout.jpg`,
+    image: `${SITE}/images/sentric-01-lounge.jpg`,
     depth: 0,
     extraSchema: schema,
     ogType: 'website',
