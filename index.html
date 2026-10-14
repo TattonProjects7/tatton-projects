@@ -435,6 +435,7 @@
     <a href="services.html">Services</a>
     <a href="#founder">Who runs it</a>
     <a href="work.html">Work</a>
+    <a href="#walkthroughs">Walkthroughs</a>
     <a href="#pods">SiloPod</a>
     <a href="#land">Land</a>
     <a href="costs.html">Costs</a>
@@ -700,6 +701,82 @@
     </div>
   </div>
 </section>
+
+<!-- ============ WALKTHROUGHS ============ -->
+<section id="walkthroughs" class="walkthroughs">
+  <div class="sec-head rise">
+    <p class="eyebrow">On site · In motion</p>
+    <h2>Walk the <em>finished work.</em></h2>
+    <p class="lede">Site walkthroughs across our live and completed projects — the way we hand them back to clients. New builds, developments and commercial fit-outs, filmed on the day.</p>
+  </div>
+
+  <div class="wt-grid rise">
+    <figure class="wt-card wt-card--lead">
+      <video
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/hf_20261014_120331_21c48300-4d68-45c4-a7f3-1c83a81c77d0.mp4"
+        preload="metadata"
+        muted
+        loop
+        playsinline
+        controls
+        aria-label="Two-site walkthrough — new build and fit-out"></video>
+      <figcaption>
+        <span class="wt-k">01 · Multi-site walkthrough</span>
+        <span class="wt-t">Two live sites, one pass</span>
+      </figcaption>
+    </figure>
+
+    <figure class="wt-card">
+      <video
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/hf_20261014_111210_ceb94ed2-5021-4bc1-bc9f-dd9d37437453.mp4"
+        preload="metadata"
+        muted
+        loop
+        playsinline
+        controls
+        aria-label="Site walkthrough — handover view"></video>
+      <figcaption>
+        <span class="wt-k">02 · Site walkthrough</span>
+        <span class="wt-t">Handover view</span>
+      </figcaption>
+    </figure>
+
+    <figure class="wt-card">
+      <video
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/hf_20261014_090629_e48a880b-bb44-46ba-b0a2-2d054c2a17ff.mp4"
+        preload="metadata"
+        muted
+        loop
+        playsinline
+        controls
+        aria-label="Site walkthrough — short cut"></video>
+      <figcaption>
+        <span class="wt-k">03 · Short cut</span>
+        <span class="wt-t">Finished detail</span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="rise" style="margin-top:40px;text-align:center">
+    <a href="#enquire" class="btn btn-ghost">Bring us a site →</a>
+  </div>
+</section>
+
+<style>
+  .walkthroughs{padding:clamp(80px,10vw,140px) var(--gutter);background:var(--ink)}
+  .wt-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:48px}
+  @media (min-width:900px){
+    .wt-grid{grid-template-columns:2fr 1fr;grid-template-rows:auto auto;gap:20px}
+    .wt-card--lead{grid-row:1 / span 2}
+  }
+  .wt-card{position:relative;margin:0;border:1px solid var(--line-soft);border-radius:4px;overflow:hidden;background:var(--ink-2);transition:border-color .3s var(--ease)}
+  .wt-card:hover{border-color:var(--gold-dim)}
+  .wt-card video{display:block;width:100%;height:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+  .wt-card--lead video{aspect-ratio:16/9}
+  .wt-card figcaption{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-top:1px solid var(--line-soft);background:var(--ink-2)}
+  .wt-k{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--line)}
+  .wt-t{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--stone)}
+</style>
 
 <!-- ============ WORK ============ -->
 <section id="work">
@@ -1086,12 +1163,11 @@
             <label for="f-budget">Budget</label>
             <select id="f-budget" name="budget" required>
               <option value="">Select…</option>
-              <option>Under £100k</option>
-              <option>£100k – £250k</option>
               <option>£250k – £500k</option>
               <option>£500k – £1m</option>
               <option>£1m – £3m</option>
-              <option>£3m+</option>
+              <option>£3m – £5m</option>
+              <option>£5m+</option>
               <option>Not sure yet</option>
             </select>
           </div>
