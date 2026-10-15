@@ -711,33 +711,19 @@
   </div>
 
   <div class="wt-grid rise">
-    <figure class="wt-card wt-card--lead">
+    <figure class="wt-card wt-card--lead wt-card--portrait">
       <video
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/hf_20261014_120331_21c48300-4d68-45c4-a7f3-1c83a81c77d0.mp4"
+        src="videos/basement-conversion-hale.mp4"
+        poster="videos/basement-conversion-hale.jpg"
         preload="metadata"
         muted
         loop
         playsinline
         controls
-        aria-label="Two-site walkthrough — new build and fit-out"></video>
+        aria-label="Basement conversion walkthrough — Hale"></video>
       <figcaption>
-        <span class="wt-k">01 · Multi-site walkthrough</span>
-        <span class="wt-t">Two live sites, one pass</span>
-      </figcaption>
-    </figure>
-
-    <figure class="wt-card">
-      <video
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/hf_20261014_111210_ceb94ed2-5021-4bc1-bc9f-dd9d37437453.mp4"
-        preload="metadata"
-        muted
-        loop
-        playsinline
-        controls
-        aria-label="Site walkthrough — handover view"></video>
-      <figcaption>
-        <span class="wt-k">02 · Site walkthrough</span>
-        <span class="wt-t">Handover view</span>
+        <span class="wt-k">01 · Hale basement</span>
+        <span class="wt-t">Cellar to cinema, office &amp; lounge</span>
       </figcaption>
     </figure>
 
@@ -749,10 +735,25 @@
         loop
         playsinline
         controls
-        aria-label="Site walkthrough — short cut"></video>
+        aria-label="Site walkthrough — finished interior"></video>
       <figcaption>
-        <span class="wt-k">03 · Short cut</span>
-        <span class="wt-t">Finished detail</span>
+        <span class="wt-k">02 · Finished interior</span>
+        <span class="wt-t">Fit-out handover</span>
+      </figcaption>
+    </figure>
+
+    <figure class="wt-card">
+      <video
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/hf_20261014_120331_21c48300-4d68-45c4-a7f3-1c83a81c77d0.mp4"
+        preload="metadata"
+        muted
+        loop
+        playsinline
+        controls
+        aria-label="Two-site walkthrough — new build and fit-out"></video>
+      <figcaption>
+        <span class="wt-k">03 · Multi-site</span>
+        <span class="wt-t">Two live sites</span>
       </figcaption>
     </figure>
   </div>
@@ -766,14 +767,14 @@
   .walkthroughs{padding:clamp(80px,10vw,140px) var(--gutter);background:var(--ink)}
   .wt-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:48px}
   @media (min-width:900px){
-    .wt-grid{grid-template-columns:2fr 1fr;grid-template-rows:auto auto;gap:20px}
+    .wt-grid{grid-template-columns:1fr 1.45fr;grid-template-rows:auto auto;gap:20px}
     .wt-card--lead{grid-row:1 / span 2}
   }
-  .wt-card{position:relative;margin:0;border:1px solid var(--line-soft);border-radius:4px;overflow:hidden;background:var(--ink-2);transition:border-color .3s var(--ease)}
+  .wt-card{position:relative;display:flex;flex-direction:column;margin:0;border:1px solid var(--line-soft);border-radius:4px;overflow:hidden;background:var(--ink-2);transition:border-color .3s var(--ease)}
   .wt-card:hover{border-color:var(--gold-dim)}
-  .wt-card video{display:block;width:100%;height:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
-  .wt-card--lead video{aspect-ratio:16/9}
-  .wt-card figcaption{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-top:1px solid var(--line-soft);background:var(--ink-2)}
+  .wt-card video{display:block;width:100%;flex:1 1 auto;min-height:0;aspect-ratio:16/9;object-fit:cover;background:#000}
+  .wt-card--portrait video{aspect-ratio:9/16}
+  .wt-card figcaption{flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-top:1px solid var(--line-soft);background:var(--ink-2)}
   .wt-k{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--line)}
   .wt-t{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--stone)}
 </style>
