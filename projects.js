@@ -158,6 +158,12 @@ const PROJECTS = [
     attribution: "",
     card: "images/knutsford-05-complete-card.jpg",
     hero: "images/knutsford-05-complete.jpg",
+    video: {
+      src: "https://d2ol7oe51mr4n9.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/72dde289-2b9a-420a-a7fe-6571f8a9babe.mp4",
+      poster: "images/knutsford-05-complete.jpg",
+      label: "Knutsford new build walkthrough — plot to finished family home",
+      cap: "Site walkthrough · plot to finished home · 21 s"
+    },
     gallery: [
       { src: "images/knutsford-01-plot.jpg",     cap: "The plot, before anything existed" },
       { src: "images/knutsford-02-shell.jpg",    cap: "Substructure and ground floor going up" },

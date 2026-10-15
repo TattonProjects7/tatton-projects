@@ -238,6 +238,22 @@ function projectPage(p, i, all) {
     </div>
   </header>
 
+  ${p.video ? `<section class="cs-video">
+    <figure>
+      <video src="${esc(p.video.src)}" poster="${p.video.poster ? '../' + esc(p.video.poster) : (p.hero ? '../' + esc(p.hero) : '')}"
+        preload="metadata" muted loop playsinline controls
+        aria-label="${esc(p.video.label || p.name + ' walkthrough')}"></video>
+      ${p.video.cap ? `<figcaption><span>${esc(p.video.cap)}</span><img src="../images/logo-horizontal-light-type.png" alt="Tatton Projects" loading="lazy" decoding="async"></figcaption>` : ''}
+    </figure>
+  </section>
+  <style>
+    .cs-video{padding:clamp(28px,4vw,56px) var(--gutter,24px) 0}
+    .cs-video figure{margin:0 auto;max-width:1100px;border:1px solid var(--line-soft,#2a2c30);border-radius:4px;overflow:hidden;background:var(--ink-2,#141517)}
+    .cs-video video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+    .cs-video figcaption{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;font-family:var(--mono,ui-monospace,monospace);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dim,#a98a3a)}
+    .cs-video figcaption img{height:22px;width:auto;opacity:.9}
+  </style>` : ''}
+
   <section>
     <div class="cs-two">
       <div class="cs-ov">
@@ -667,7 +683,19 @@ function servicePage(s, all) {
     <div class="svc-ov rise">
       <p class="eyebrow">${esc(s.introEyebrow)}</p>
       <h2 class="svc-h2">${gold(s.introHeading)}</h2>
-      ${(s.intro || []).map((t, i) => `<p${i === 0 ? ' class="big"' : ''}>${esc(t)}</p>`).join('\n      ')}
+      ${(s.intro || []).map((t, i) => `<p${i === 0 ? ' class="big"' : ''}>${esc(t)}</p>`).join('\n      ')}${s.video ? `
+      <figure class="svc-video">
+        <video src="${esc(s.video.src)}" poster="${esc(s.video.poster || s.hero)}"
+          preload="metadata" muted loop playsinline controls
+          aria-label="${esc(s.video.label || s.short + ' walkthrough')}"></video>
+        <figcaption><span>${esc(s.video.cap || '')}</span>${s.video.link ? `<a href="${esc(s.video.link)}">See the full project →</a>` : ''}</figcaption>
+      </figure>
+      <style>
+        .svc-video{margin:28px 0 0;border:1px solid var(--line-soft,#2a2c30);border-radius:4px;overflow:hidden;background:var(--ink-2,#141517)}
+        .svc-video video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+        .svc-video figcaption{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 16px;font-family:var(--mono,ui-monospace,monospace);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dim,#a98a3a)}
+        .svc-video figcaption a{color:var(--gold,#d4ac3c);text-decoration:none}
+      </style>` : ''}
     </div>
     <aside class="rise">
       <p class="eyebrow" style="margin-bottom:18px">${esc(s.factsTitle)}</p>
