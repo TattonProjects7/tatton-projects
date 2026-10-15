@@ -707,11 +707,11 @@
   <div class="sec-head rise">
     <p class="eyebrow">On site · In motion</p>
     <h2>Walk the <em>finished work.</em></h2>
-    <p class="lede">Site walkthroughs across our live and completed projects — the way we hand them back to clients. New builds, developments and commercial fit-outs, filmed on the day.</p>
+    <p class="lede">Site walkthroughs across our live and completed projects — the way we hand them back to clients. New builds, developments and commercial fit-outs, filmed on the day. Scroll through.</p>
   </div>
 
   <div class="wt-grid rise">
-    <figure class="wt-card wt-card--lead wt-card--portrait">
+    <figure class="wt-card wt-card--portrait">
       <video
         src="videos/basement-conversion-hale.mp4"
         poster="videos/basement-conversion-hale.jpg"
@@ -774,20 +774,17 @@
 
 <style>
   .walkthroughs{padding:clamp(80px,10vw,140px) var(--gutter);background:var(--ink)}
-  .wt-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:48px}
-  @media (min-width:900px){
-    .wt-grid{grid-template-columns:1fr 1.45fr;grid-template-rows:auto auto;gap:20px}
-    .wt-card--lead{grid-row:1 / span 2}
-  }
+  .wt-grid{display:flex;flex-direction:column;gap:clamp(48px,7vw,88px);margin-top:48px;max-width:960px;margin-left:auto;margin-right:auto}
   .wt-card{position:relative;display:flex;flex-direction:column;margin:0;border:1px solid var(--line-soft);border-radius:4px;overflow:hidden;background:var(--ink-2);transition:border-color .3s var(--ease)}
   .wt-card:hover{border-color:var(--gold-dim)}
-  .wt-card video{display:block;width:100%;flex:1 1 auto;min-height:0;aspect-ratio:16/9;object-fit:cover;background:#000}
+  .wt-card video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+  .wt-card--portrait{max-width:460px;align-self:center}
   .wt-card--portrait video{aspect-ratio:9/16}
-  .wt-card figcaption{flex:none;display:flex;flex-direction:column;gap:10px;padding:16px 18px 18px;border-top:1px solid var(--line-soft);background:var(--ink-2)}
-  .wt-cap-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
-  .wt-k{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--line)}
+  .wt-card figcaption{flex:none;display:flex;flex-direction:column;gap:10px;padding:18px 22px 20px;border-top:1px solid var(--line-soft);background:var(--ink-2)}
+  .wt-cap-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .wt-k{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--line)}
   .wt-brand{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
-  .wt-d{font-family:var(--sans);font-size:13px;line-height:1.55;color:var(--stone-2);margin:0}
+  .wt-d{font-family:var(--sans);font-size:14px;line-height:1.6;color:var(--stone-2);margin:0}
   .wt-t{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--stone)}
 </style>
 
