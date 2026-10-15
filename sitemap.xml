@@ -4,7 +4,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.tatton-projects.co.uk/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <video:video>
@@ -14,146 +14,153 @@
       <video:content_loc>https://www.tatton-projects.co.uk/videos/basement-conversion-hale.mp4</video:content_loc>
       <video:duration>27</video:duration>
     </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.tatton-projects.co.uk/videos/wilmslow-walkthrough.jpg</video:thumbnail_loc>
+      <video:title>Wilmslow house — before, during and after site walkthrough</video:title>
+      <video:description>Wilmslow extension and full refurbishment by Tatton Projects: the original 1930s brick house, the strip-out and first fix with wet underfloor heating across the ground floor, and the finished rendered home with oak porch, bi-folds and open-plan kitchen.</video:description>
+      <video:content_loc>https://d2ol7oe51mr4n9.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/89ce4df0-1ede-43f3-8853-a276cfb85214.mp4</video:content_loc>
+      <video:duration>38</video:duration>
+    </video:video>
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/costs</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/blog</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/invest</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/services</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/office-fit-out-manchester</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/shopfitting-manchester</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/commercial-refurbishment-manchester</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/new-build-homes-cheshire</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/housing-developments-cheshire</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/extension-builders-altrincham</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/extension-builders-hale</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/cat-a-cat-b-fit-out</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/commercial-fit-out-uk</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/building-conversions</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/healthcare-fit-out</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/hospitality-fit-out</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/sentric-music</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-01-lounge.jpg</image:loc></image:image>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-02-lounge-wide.jpg</image:loc></image:image>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-04-breakout.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-05-boardroom.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-06-meeting.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-08-corridor.jpg</image:loc></image:image>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-10-booths.jpg</image:loc></image:image>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-11-pods.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-12-tv-wall.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-13-believe-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-05-boardroom.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-06-meeting.jpg</image:loc></image:image>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-14-acoustic-wall.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-12-tv-wall.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-08-corridor.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-13-believe-2.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/stockport-service-centre</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-01-floor.jpg</image:loc></image:image>
@@ -166,37 +173,37 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/wilmslow-house</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-04-front-after.jpg</image:loc></image:image>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-01-before.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-08-rear-before.jpg</image:loc></image:image>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-02-during.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-05-rear-after.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-06-kitchen.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-09-blockwork.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-10-strip-out.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-11-new-windows.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-13-plastered.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-12-utility-plaster.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-14-kitchen-units.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-15-kitchen-fitting.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-04-front-after.jpg</image:loc></image:image>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-07-porch.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-16-porch-roof.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-06-kitchen.jpg</image:loc></image:image>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-03-stairs.jpg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://www.tatton-projects.co.uk/work/sentric-music</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-01-lounge.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-02-lounge-wide.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-04-breakout.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-10-booths.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-11-pods.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-05-boardroom.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-06-meeting.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-14-acoustic-wall.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-12-tv-wall.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-08-corridor.jpg</image:loc></image:image>
-    <image:image><image:loc>https://www.tatton-projects.co.uk/images/sentric-13-believe-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.tatton-projects.co.uk/images/wilmslow-05-rear-after.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.tatton-projects.co.uk/videos/wilmslow-walkthrough.jpg</video:thumbnail_loc>
+      <video:title>Wilmslow house — before, during and after site walkthrough</video:title>
+      <video:description>Walk through the Wilmslow extension and full refurbishment by Tatton Projects: the original 1930s brick house, the strip-out and first fix with wet underfloor heating across the ground floor, and the finished rendered home with oak porch, bi-folds and open-plan kitchen.</video:description>
+      <video:content_loc>https://d2ol7oe51mr4n9.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/89ce4df0-1ede-43f3-8853-a276cfb85214.mp4</video:content_loc>
+      <video:duration>38</video:duration>
+    </video:video>
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/knutsford-new-build</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/knutsford-05-complete.jpg</image:loc></image:image>
@@ -209,7 +216,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/stockport-office</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/stockport-office-01-boardroom.jpg</image:loc></image:image>
@@ -219,7 +226,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/didsbury-extension</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/didsbury-01-kitchen.jpg</image:loc></image:image>
@@ -235,7 +242,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/didsbury-kitchen</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/didsbury-kitchen-01-crittall.jpg</image:loc></image:image>
@@ -246,7 +253,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/pendrick-self-storage</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/pendrick-01-unit.jpg</image:loc></image:image>
@@ -256,7 +263,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/fossil</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/fossil-01-store.jpg</image:loc></image:image>
@@ -267,7 +274,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/calvin-klein</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/calvin-klein-01-shopfront.jpg</image:loc></image:image>
@@ -281,7 +288,7 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/work/leeds-bar</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.tatton-projects.co.uk/images/leeds-bar-01-restaurant.jpg</image:loc></image:image>
@@ -291,21 +298,21 @@
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/blog/office-fit-out-cost-per-square-foot-manchester</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/blog/mees-epc-changes-what-landlords-need-to-do</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
 
   </url>
   <url>
     <loc>https://www.tatton-projects.co.uk/blog/building-around-a-business-that-cannot-close</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
 

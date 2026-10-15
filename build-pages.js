@@ -43,6 +43,42 @@ const clip = (t, n) => {
   return s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…';
 };
 
+/* ---------- video sitemap entries ----------
+   Walkthrough clips embedded on the home page (index.html #walkthroughs).
+   Project pages pick theirs up from `video:` in projects.js. */
+const HOME_VIDEOS = [
+  {
+    title: 'Basement conversion walkthrough — Hale, Cheshire',
+    desc: 'Hale basement conversion by Tatton Projects: a damp cellar turned into a cinema, office and lounge, completed 2021. Before and after, filmed on site.',
+    thumb: 'videos/basement-conversion-hale.jpg',
+    src: `${SITE}/videos/basement-conversion-hale.mp4`,
+    duration: 27
+  },
+  {
+    title: 'Wilmslow house — before, during and after site walkthrough',
+    desc: 'Wilmslow extension and full refurbishment by Tatton Projects: the original 1930s brick house, the strip-out and first fix with wet underfloor heating across the ground floor, and the finished rendered home with oak porch, bi-folds and open-plan kitchen.',
+    thumb: 'videos/wilmslow-walkthrough.jpg',
+    src: 'https://d2ol7oe51mr4n9.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/89ce4df0-1ede-43f3-8853-a276cfb85214.mp4',
+    duration: 38
+  }
+];
+
+const projectVideo = (p) => ({
+  title: p.video.title || `${p.name} — site walkthrough`,
+  desc: plain(p.video.desc || p.blurb),
+  thumb: p.video.poster || p.hero,
+  src: p.video.src,
+  duration: p.video.duration
+});
+
+const videoXml = (v) => `    <video:video>
+      <video:thumbnail_loc>${/^https?:/.test(v.thumb) ? v.thumb : `${SITE}/${v.thumb}`}</video:thumbnail_loc>
+      <video:title>${esc(v.title)}</video:title>
+      <video:description>${esc(v.desc)}</video:description>
+      <video:content_loc>${esc(v.src)}</video:content_loc>${v.duration ? `
+      <video:duration>${v.duration}</video:duration>` : ''}
+    </video:video>`;
+
 /* ---------- shared chrome ---------- */
 const nav = (depth, active) => {
   const up = depth ? '../' : '';
@@ -173,6 +209,19 @@ function projectPage(p, i, all) {
         <figcaption>${esc(g.cap)}</figcaption>
       </figure>`).join('\n      ');
 
+  /* --- optional site walkthrough video (video: {...} in projects.js) --- */
+  const video = p.video ? `<section class="cs-video">
+    <p class="eyebrow">Walk through it</p>
+    <h2>${esc(p.video.heading || 'See it in motion.')}</h2>
+    ${p.video.intro ? `<p class="lede">${esc(p.video.intro)}</p>` : ''}
+    <figure>
+      <video src="${esc(p.video.src)}"${p.video.poster ? ` poster="../${esc(p.video.poster)}"` : ''}
+             preload="metadata" controls playsinline
+             aria-label="${esc(p.video.title || p.name + ' — site walkthrough')}"></video>
+      ${p.video.caption ? `<figcaption>${esc(p.video.caption)}</figcaption>` : ''}
+    </figure>
+  </section>` : '';
+
   /* --- schema: Article + Breadcrumb + images --- */
   const article = {
     '@context': 'https://schema.org',
@@ -195,6 +244,17 @@ function projectPage(p, i, all) {
       { '@type': 'Place', name: p.location }
     ]
   };
+  if (p.video) {
+    article.video = {
+      '@type': 'VideoObject',
+      name: p.video.title || `${p.name} — site walkthrough`,
+      description: plain(p.video.desc || p.blurb),
+      thumbnailUrl: p.video.poster ? `${SITE}/${p.video.poster}` : img,
+      contentUrl: p.video.src,
+      uploadDate: p.video.date || '2026-10-15',
+      duration: p.video.duration ? `PT${p.video.duration}S` : undefined
+    };
+  }
 
   const crumbs = {
     '@context': 'https://schema.org',
@@ -251,6 +311,8 @@ function projectPage(p, i, all) {
       </div>` : '<div></div>'}
     </div>
   </section>
+
+  ${video}
 
   ${(p.scope || []).length ? `<section class="scope-sec">
     <p class="eyebrow">What we did</p>
@@ -887,19 +949,23 @@ try {
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 ${urls.map((u) => {
     const proj = PROJECTS.find((p) => u.loc.endsWith('/' + p.id));
     const imgs = proj
       ? [proj.hero].concat((proj.gallery || []).map((g) => g.src)).filter(Boolean)
           .map((s) => `    <image:image><image:loc>${SITE}/${s}</image:loc></image:image>`).join('\n')
       : '';
+    const vids = u.loc === `${SITE}/`
+      ? HOME_VIDEOS.map(videoXml).join('\n')
+      : (proj && proj.video ? videoXml(projectVideo(proj)) : '');
     return `  <url>
     <loc>${u.loc}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${u.freq}</changefreq>
     <priority>${u.pri}</priority>
-${imgs}
+${[imgs, vids].filter(Boolean).join('\n')}
   </url>`;
   }).join('\n')}
 </urlset>
