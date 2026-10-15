@@ -198,6 +198,13 @@ const SERVICES = [
     hero: "images/knutsford-05-complete.jpg",
     heroCaption: "Knutsford new build · circa £400K · brick and flint",
     card: "images/knutsford-05-complete-card.jpg",
+    video: {
+      src: "https://d2ol7oe51mr4n9.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/72dde289-2b9a-420a-a7fe-6571f8a9babe.mp4",
+      poster: "images/knutsford-05-complete.jpg",
+      label: "Knutsford new build walkthrough — plot to finished family home",
+      cap: "Knutsford new build · site walkthrough · 21 s",
+      link: "work/knutsford-new-build"
+    },
     heroFacts: [["Private homes", "£400K – £3M+"], ["Build rates", "£2,000–£5,500 / sq m"], ["Knutsford new build", "circa £400K"]],
     introEyebrow: "Project delivery",
     introHeading: "One-off private homes and *residential construction.*",
