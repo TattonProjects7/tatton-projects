@@ -44,8 +44,8 @@
       <video:thumbnail_loc>https://www.tatton-projects.co.uk/images/knutsford-05-complete.jpg</video:thumbnail_loc>
       <video:title>Knutsford new build — empty plot to finished family home</video:title>
       <video:description>Cinematic site walkthrough of a Knutsford new build: empty plot, structure going up in knapped flint and red brick, then the finished two-storey detached with slate roof, oak porch and gravel drive. Delivered by Tatton Projects.</video:description>
-      <video:content_loc>https://d8j0ntlcm91z4.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/hf_20261015_053722_12b67380-75a5-47bd-afb7-6320a96aa352.mp4</video:content_loc>
-      <video:duration>15</video:duration>
+      <video:content_loc>https://d2ol7oe51mr4n9.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/72dde289-2b9a-420a-a7fe-6571f8a9babe.mp4</video:content_loc>
+      <video:duration>21</video:duration>
       <video:publication_date>2026-10-15T00:00:00+00:00</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:restriction relationship="allow">GB</video:restriction>
@@ -101,9 +101,9 @@
       <video:live>no</video:live>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://www.tatton-projects.co.uk/images/knutsford-03-frame.jpg</video:thumbnail_loc>
-      <video:title>Multi-site walkthrough — new build &amp; commercial fit-out</video:title>
-      <video:description>A single pass across two live Tatton Projects sites — one new-build residential, one commercial fit-out — showing concurrent programmes run side by side.</video:description>
+      <video:thumbnail_loc>https://d2ol7oe51mr4n9.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/26fb13db-f4da-4495-b1f9-27847e54ccb5.jpg</video:thumbnail_loc>
+      <video:title>Rear extension &amp; refurbishment — steel-framed glazing, parquet hallway, kitchen under glass</video:title>
+      <video:description>Walkthrough across two completed Tatton Projects homes: a brick rear extension with black steel-framed glazed doors and a fixed glazed panel following the roofline, a panelled herringbone-parquet hallway under a brass globe pendant, an open-plan kitchen and island beneath a sloping glass roof, and a finished bedroom with built-in wardrobes.</video:description>
       <video:content_loc>https://d8j0ntlcm91z4.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/hf_20261014_201400_cf7b8338-8bfb-473c-8407-085a374c431b.mp4</video:content_loc>
       <video:duration>15</video:duration>
       <video:publication_date>2026-10-14T00:00:00+00:00</video:publication_date>
@@ -119,6 +119,18 @@
       <video:content_loc>https://d8j0ntlcm91z4.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/hf_20261014_120331_21c48300-4d68-45c4-a7f3-1c83a81c77d0.mp4</video:content_loc>
       <video:duration>15</video:duration>
       <video:publication_date>2026-10-14T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:restriction relationship="allow">GB</video:restriction>
+      <video:uploader info="https://www.tatton-projects.co.uk/">Tatton Projects</video:uploader>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://d2ol7oe51mr4n9.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/1919a1ec-a069-47cb-9810-31da10bcfcb5.jpg</video:thumbnail_loc>
+      <video:title>Didsbury extension, kitchen &amp; staircase — Manchester</video:title>
+      <video:description>Walkthrough reel of a rear extension to a brick semi in Didsbury, Manchester: kitchen opened to the garden through minimal-frame sliding doors under roof lights, full kitchen install around a bookmatched marble island, and a new staircase. Extension, kitchen and staircase, circa £160K. Delivered by Tatton Projects.</video:description>
+      <video:content_loc>https://d2ol7oe51mr4n9.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/6b9c626b-a938-4c75-9c7b-f5da71f18598.mp4</video:content_loc>
+      <video:duration>23</video:duration>
+      <video:publication_date>2026-10-15T00:00:00+00:00</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:restriction relationship="allow">GB</video:restriction>
       <video:uploader info="https://www.tatton-projects.co.uk/">Tatton Projects</video:uploader>
