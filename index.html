@@ -722,8 +722,11 @@
         controls
         aria-label="Basement conversion walkthrough — Hale"></video>
       <figcaption>
-        <span class="wt-k">01 · Hale basement</span>
-        <span class="wt-t">Cellar to cinema, office &amp; lounge</span>
+        <div class="wt-cap-top">
+          <span class="wt-k">01 · Hale basement</span>
+          <span class="wt-brand">Tatton Projects</span>
+        </div>
+        <p class="wt-d">Cellar to cinema, office &amp; lounge — structural underpinning, waterproofing, services and finished living space built beneath an existing Hale property.</p>
       </figcaption>
     </figure>
 
@@ -735,10 +738,13 @@
         loop
         playsinline
         controls
-        aria-label="Site walkthrough — finished interior"></video>
+        aria-label="Office fit-out walkthrough — Sentric Music, Liverpool"></video>
       <figcaption>
-        <span class="wt-k">02 · Finished interior</span>
-        <span class="wt-t">Fit-out handover</span>
+        <div class="wt-cap-top">
+          <span class="wt-k">02 · Office fit-out · Liverpool</span>
+          <span class="wt-brand">Tatton Projects</span>
+        </div>
+        <p class="wt-d">Cat B fit-out for Sentric Music — acoustic booths, bespoke feature lighting and a lounge built around a wall of records.</p>
       </figcaption>
     </figure>
 
@@ -750,10 +756,13 @@
         loop
         playsinline
         controls
-        aria-label="Two-site walkthrough — new build and fit-out"></video>
+        aria-label="Housing units walkthrough — development site"></video>
       <figcaption>
-        <span class="wt-k">03 · Multi-site</span>
-        <span class="wt-t">Two live sites</span>
+        <div class="wt-cap-top">
+          <span class="wt-k">03 · Housing units · Cheshire</span>
+          <span class="wt-brand">Tatton Projects</span>
+        </div>
+        <p class="wt-d">New-build housing units on a Cheshire development — site set-out, foundations and ground slabs in place, structure next.</p>
       </figcaption>
     </figure>
   </div>
@@ -774,8 +783,11 @@
   .wt-card:hover{border-color:var(--gold-dim)}
   .wt-card video{display:block;width:100%;flex:1 1 auto;min-height:0;aspect-ratio:16/9;object-fit:cover;background:#000}
   .wt-card--portrait video{aspect-ratio:9/16}
-  .wt-card figcaption{flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-top:1px solid var(--line-soft);background:var(--ink-2)}
+  .wt-card figcaption{flex:none;display:flex;flex-direction:column;gap:10px;padding:16px 18px 18px;border-top:1px solid var(--line-soft);background:var(--ink-2)}
+  .wt-cap-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
   .wt-k{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--line)}
+  .wt-brand{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+  .wt-d{font-family:var(--sans);font-size:13px;line-height:1.55;color:var(--stone-2);margin:0}
   .wt-t{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--stone)}
 </style>
 
