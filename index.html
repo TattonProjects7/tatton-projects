@@ -435,7 +435,7 @@
     <a href="services.html">Services</a>
     <a href="#founder">Who runs it</a>
     <a href="work.html">Work</a>
-    <a href="#walkthroughs">Walkthroughs</a>
+    <a href="walkthroughs.html">Walkthroughs</a>
     <a href="#pods">SiloPod</a>
     <a href="#land">Land</a>
     <a href="costs.html">Costs</a>
@@ -702,7 +702,7 @@
   </div>
 </section>
 
-<!-- ============ WALKTHROUGHS ============ -->
+<!-- ============ WALKTHROUGHS (teaser · full library on walkthroughs.html) ============ -->
 <section id="walkthroughs" class="walkthroughs">
   <div class="sec-head rise">
     <p class="eyebrow">On site · In motion</p>
@@ -711,7 +711,7 @@
   </div>
 
   <div class="wt-grid rise">
-    <figure class="wt-card wt-card--lead wt-card--portrait">
+    <figure class="wt-card wt-card--portrait">
       <video
         src="videos/basement-conversion-hale.mp4"
         poster="videos/basement-conversion-hale.jpg"
@@ -722,60 +722,34 @@
         controls
         aria-label="Basement conversion walkthrough — Hale"></video>
       <figcaption>
-        <span class="wt-k">01 · Hale basement</span>
-        <span class="wt-t">Cellar to cinema, office &amp; lounge</span>
-      </figcaption>
-    </figure>
-
-    <figure class="wt-card">
-      <video
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/hf_20261014_090629_e48a880b-bb44-46ba-b0a2-2d054c2a17ff.mp4"
-        preload="metadata"
-        muted
-        loop
-        playsinline
-        controls
-        aria-label="Site walkthrough — finished interior"></video>
-      <figcaption>
-        <span class="wt-k">02 · Finished interior</span>
-        <span class="wt-t">Fit-out handover</span>
-      </figcaption>
-    </figure>
-
-    <figure class="wt-card">
-      <video
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_3FhpZjYJ4wsbx84EJNWISXA5KnX/hf_20261014_120331_21c48300-4d68-45c4-a7f3-1c83a81c77d0.mp4"
-        preload="metadata"
-        muted
-        loop
-        playsinline
-        controls
-        aria-label="Two-site walkthrough — new build and fit-out"></video>
-      <figcaption>
-        <span class="wt-k">03 · Multi-site</span>
-        <span class="wt-t">Two live sites</span>
+        <div class="wt-cap-top">
+          <span class="wt-k">Featured · Hale basement</span>
+          <span class="wt-brand">Tatton Projects</span>
+        </div>
+        <p class="wt-d">Cellar to cinema, office &amp; lounge — a full below-ground basement conversion built beneath an existing Hale property.</p>
       </figcaption>
     </figure>
   </div>
 
   <div class="rise" style="margin-top:40px;text-align:center">
-    <a href="#enquire" class="btn btn-ghost">Bring us a site →</a>
+    <a href="walkthroughs.html" class="btn btn-solid">Watch all site walkthroughs →</a>
+    <p style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--line);margin-top:16px">Basements · Fit-outs · New builds · Housing developments</p>
   </div>
 </section>
 
 <style>
   .walkthroughs{padding:clamp(80px,10vw,140px) var(--gutter);background:var(--ink)}
-  .wt-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:48px}
-  @media (min-width:900px){
-    .wt-grid{grid-template-columns:1fr 1.45fr;grid-template-rows:auto auto;gap:20px}
-    .wt-card--lead{grid-row:1 / span 2}
-  }
+  .wt-grid{display:flex;flex-direction:column;gap:clamp(48px,7vw,88px);margin-top:48px;max-width:960px;margin-left:auto;margin-right:auto}
   .wt-card{position:relative;display:flex;flex-direction:column;margin:0;border:1px solid var(--line-soft);border-radius:4px;overflow:hidden;background:var(--ink-2);transition:border-color .3s var(--ease)}
   .wt-card:hover{border-color:var(--gold-dim)}
-  .wt-card video{display:block;width:100%;flex:1 1 auto;min-height:0;aspect-ratio:16/9;object-fit:cover;background:#000}
+  .wt-card video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+  .wt-card--portrait{max-width:460px;align-self:center}
   .wt-card--portrait video{aspect-ratio:9/16}
-  .wt-card figcaption{flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-top:1px solid var(--line-soft);background:var(--ink-2)}
-  .wt-k{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--line)}
+  .wt-card figcaption{flex:none;display:flex;flex-direction:column;gap:10px;padding:18px 22px 20px;border-top:1px solid var(--line-soft);background:var(--ink-2)}
+  .wt-cap-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .wt-k{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--line)}
+  .wt-brand{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+  .wt-d{font-family:var(--sans);font-size:14px;line-height:1.6;color:var(--stone-2);margin:0}
   .wt-t{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--stone)}
 </style>
 
