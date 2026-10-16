@@ -8,13 +8,31 @@
       "source": "/:path*",
       "has": [{ "type": "host", "value": "tattonprojects.co.uk" }],
       "destination": "https://www.tatton-projects.co.uk/:path*",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.tattonprojects.co.uk" }],
       "destination": "https://www.tatton-projects.co.uk/:path*",
-      "permanent": true
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "tatton-projects.co.uk" }],
+      "destination": "https://www.tatton-projects.co.uk/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "tatton-projects.com" }],
+      "destination": "https://www.tatton-projects.co.uk/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.tatton-projects.com" }],
+      "destination": "https://www.tatton-projects.co.uk/:path*",
+      "statusCode": 301
     },
     { "source": "/projects", "destination": "/work", "permanent": true },
     { "source": "/vanguard", "destination": "/work/sentric-music", "permanent": true },
