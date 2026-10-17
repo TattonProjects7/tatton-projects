@@ -440,6 +440,7 @@ ${footer(0)}
 
 /* ---------- blog posts: markdown-lite renderer (server port of blog.js) ---------- */
 const inlineMd = (t) => esc(t)
+  .replace(/\[([^\]]+)\]\(((?:https?:\/\/|\/)[^)\s]+)\)/g, '<a href="$2">$1</a>')
   .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
   .replace(/\*(.+?)\*/g, '<em>$1</em>');
 
@@ -906,6 +907,7 @@ try {
     { loc: `${SITE}/`, pri: '1.0', freq: 'monthly' },
     { loc: `${SITE}/work`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/costs`, pri: '0.9', freq: 'monthly' },
+    { loc: `${SITE}/walkthroughs`, pri: '0.8', freq: 'monthly' },
     { loc: `${SITE}/blog`, pri: '0.8', freq: 'weekly' },
     { loc: `${SITE}/invest`, pri: '0.7', freq: 'monthly' },
     { loc: `${SITE}/services`, pri: '0.9', freq: 'monthly' }
