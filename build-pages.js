@@ -80,6 +80,8 @@ const footer = (depth) => {
       <a href="tel:01617062907">0161 706 2907</a>
       <a href="mailto:info@tattonprojects.co.uk">info@tattonprojects.co.uk</a>
       <address>Tatton Projects<br>Suite 15, Peel House<br>30 The Downs<br>Altrincham WA14 2PX</address>
+      <a href="https://www.google.com/maps/place/?q=place_id:ChIJhWCYYwCte0gRConY8S861FA" rel="noopener">Find us on Google Maps</a>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJhWCYYwCte0gRConY8S861FA" rel="noopener">Review us on Google</a>
     </div>
     <div class="rise">
       <p class="foot-lbl">More</p>
@@ -477,13 +479,42 @@ function renderPostBody(body) {
   return out.join('\n      ');
 }
 
+/* ---------- blog.html list: the same cards blog.js renders, written at build ---------- */
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'];
+const niceDate = (iso) => {
+  const d = new Date(iso + 'T00:00:00');
+  return isNaN(d) ? iso : `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+};
+
+function blogList(all) {
+  return all.map((p, i) => `  <article class="post rise${i === 0 ? ' lead' : ''}" data-post="${esc(p.slug)}">
+    ${p.image ? `<div class="post-shot"><img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy"
+      onerror="var d=this.closest('.post-shot'); if(d) d.remove();"></div>` : ''}
+    <div class="post-body">
+      <p class="post-meta">
+        <span class="cat">${esc(p.category || 'Note')}</span>
+        <time datetime="${esc(p.date)}">${niceDate(p.date)}</time>
+        ${p.readTime ? `<span>${esc(p.readTime)} read</span>` : ''}
+      </p>
+      <h2><a href="blog/${esc(p.slug)}" style="color:inherit;text-decoration:none">${esc(p.title)}</a></h2>
+      <p class="post-sum">${esc(p.summary)}</p>
+      <span class="post-more">Read it →</span>
+    </div>
+  </article>`).join('\n');
+}
+
 /* ---------- one static blog post page (so each post can rank on its own) ---------- */
 function blogPostPage(p, all) {
   const url = `${SITE}/blog/${p.slug}`;
   const img = p.image ? `${SITE}/${p.image}` : `${SITE}/images/sentric-01-lounge.jpg`;
   const title = p.seoTitle ? `${p.seoTitle} | Tatton Projects` : `${p.title} | Tatton Projects`;
   const desc = clip(p.summary, 155);
-  const others = all.filter((x) => x.slug !== p.slug).slice(0, 2);
+  /* related posts: same category first, then the rest in list order (newest first) */
+  const rest = all.filter((x) => x.slug !== p.slug);
+  const others = rest.filter((x) => x.category === p.category)
+    .concat(rest.filter((x) => x.category !== p.category))
+    .slice(0, 2);
 
   const posting = {
     '@context': 'https://schema.org',
@@ -894,6 +925,23 @@ try {
   POSTS.forEach((p) => {
     fs.writeFileSync(path.join(bdir, p.slug + '.html'), blogPostPage(p, POSTS));
   });
+
+  /* ---------- llms.txt: the guides section lists every post ---------- */
+  const llmsFile = path.join(__dirname, 'llms.txt');
+  const llms = fs.readFileSync(llmsFile, 'utf8');
+  const guides = /## Costs and guides\n[\s\S]*?\n(?=## )/;
+  if (guides.test(llms)) {
+    const lines = POSTS.map((p) => `- [${plain(p.title)}](${SITE}/blog/${p.slug}): ${plain(p.summary)}`);
+    fs.writeFileSync(llmsFile, llms.replace(guides, `## Costs and guides\n\n- [What things cost](${SITE}/costs): Published 2026 rates for Cat A and Cat B office fit-out per sq ft, new build homes per sq m, extensions and refurbishment.\n${lines.join('\n')}\n\n`));
+  }
+
+  /* ---------- blog.html post list, in the HTML so every crawler sees it ---------- */
+  const blogFile = path.join(__dirname, 'blog.html');
+  const blogHtml = fs.readFileSync(blogFile, 'utf8');
+  const marked = /(<!-- posts:start -->)[\s\S]*?(<!-- posts:end -->)/;
+  if (marked.test(blogHtml)) {
+    fs.writeFileSync(blogFile, blogHtml.replace(marked, (m, a, b) => `${a}\n${blogList(POSTS)}\n  ${b}`));
+  }
 
   /* ---------- service pages + /services ---------- */
   SERVICES.forEach((s) => {

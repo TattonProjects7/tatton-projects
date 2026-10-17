@@ -70,7 +70,8 @@
   var list = (typeof POSTS !== 'undefined' && Array.isArray(POSTS)) ? POSTS : [];
   var wrap = document.getElementById('postList');
 
-  if (wrap) {
+  /* build-pages.js writes the list into blog.html; only render it here if it isn't there */
+  if (wrap && !wrap.querySelector('.post')) {
     if (!list.length) {
       wrap.innerHTML = '<p class="loc" style="padding:40px">No posts yet.</p>';
     } else {
