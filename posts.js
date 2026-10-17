@@ -21,6 +21,9 @@
    Everything else becomes a normal paragraph.
    Leave a blank line between paragraphs.
 
+   Inside any line:
+     **bold**  *italic*  [link text](https://www.tatton-projects.co.uk/costs)
+
    TIPS THAT ACTUALLY MATTER FOR GOOGLE
      · title      — write it like someone would search it
      · summary    — this is what shows in Google. 150 chars.
@@ -29,6 +32,255 @@
    =========================================================== */
 
 const POSTS = [
+
+  {
+    slug: "house-extension-cost-altrincham-cheshire",
+    title: "What a house extension actually costs in Altrincham and Cheshire in 2026",
+    seoTitle: "House extension cost 2026, Altrincham & Cheshire",
+    summary: "Real 2026 rates for extensions in Altrincham, Hale and Cheshire, what's in the number, what moves it, and three of our own jobs with their final values.",
+    date: "2026-10-17",
+    author: "Dave Groom",
+    category: "Cost",
+    readTime: "6 min",
+    image: "images/didsbury-02-kitchen-garden.jpg",
+    featured: false,
+    body: `The question I get asked most on a first visit is the one nobody wants to answer: roughly what is this going to cost?
+
+The online calculators give you a national average, which tells you very little about a 1930s semi in Hale or a detached house in Wilmslow. So here is what we actually work to.
+
+## The working range
+
+For an extension in Altrincham, Hale, Bowdon and across Cheshire in 2026, we work to **£2,400 to £3,600 per square metre** of new floor area. That excludes VAT and professional fees.
+
+That covers single and two-storey extensions with the structural alterations needed to tie them into the existing house. A 30 sq m single-storey rear extension at those rates is roughly £72,000 to £108,000 before VAT and fees. Where it lands in that range depends mostly on the glazing, the structure and what goes inside it.
+
+> An extension often costs more per square metre than a new build house. Nothing on an existing house is square, level or where the drawings say it is.
+
+## Three real jobs
+
+Rates per square metre only get you a ballpark. Here is what three finished projects actually came to.
+
+**[Didsbury kitchen extension](https://www.tatton-projects.co.uk/work/didsbury-kitchen) — circa £120,000.** A kitchen extension under a full-length glazed roof, a crittall-style screen onto the garden, a new kitchen fitted, and flooring and tiling run through the house.
+
+**[Didsbury extension](https://www.tatton-projects.co.uk/work/didsbury-extension) — circa £160,000.** A single-storey rear extension with steelwork, minimal-frame sliders and rooflights, a full kitchen install with a bookmatched marble island, plus a new staircase handrail through the house, fitted wardrobes and a bathroom.
+
+**[Wilmslow house](https://www.tatton-projects.co.uk/work/wilmslow-house) — circa £375,000.** A tired 1930s detached extended front and rear, re-rendered, every window replaced, fully re-serviced, with a new oak staircase, oak-framed porch, driveway and landscaping.
+
+[image:wilmslow-05-rear-after.jpg]
+[caption:Wilmslow — the full-width rear extension with bi-folds onto the new terrace]
+
+The pattern is the same on all three. The extension itself is rarely the whole job. The kitchen, the glazing and the rest of the house are where budgets grow.
+
+## What moves the number
+
+**Glazing.** Large sliders, glazed roofs and structural glass are some of the most expensive single items on an extension. They are also usually the reason people are extending in the first place, so budget for them properly rather than hoping.
+
+**Structure.** Opening up the back of the house means steel, padstones, temporary support and a structural engineer's design that building control will sign off. Our sister company, [The Load Bearing Company](https://www.theloadbearingcompany.co.uk), does nothing but this work.
+
+**The ground.** Foundation depth, nearby trees and drains all change the groundworks. If a public sewer runs where the extension is going, you will need a build-over agreement from the water company, which is United Utilities across most of Greater Manchester and Cheshire.
+
+**The rest of the house.** Once the back of the house is open, most people want the heating upgraded, the electrics brought up to date and the flooring run through. That is sensible, but it is a separate budget line.
+
+**Living in during the works.** Most of our clients stay at home. That is fine, but it means phasing, dust separation and a working kitchen somewhere, and it should be planned from day one.
+
+## What to add on top
+
+- **VAT** at 20 per cent on extension work to an existing house
+- **Design fees** — architect or designer, and the structural engineer
+- **Building control** — needed on almost every extension
+- **Planning**, if the extension is outside permitted development — see [do I need planning permission for an extension?](https://www.tatton-projects.co.uk/blog/do-i-need-planning-permission-for-an-extension-altrincham)
+- **Party wall surveyors**, if you are building on or near a shared boundary
+
+## The honest advice
+
+Get the drawings and the structural design resolved before you ask anyone to price it. Two quotes for an unresolved design are two guesses, and the cheaper one usually has more left out.
+
+There are more ranges on our [cost guide](https://www.tatton-projects.co.uk/costs). If you send us the drawings, or even a sketch and a few photos, you will get a straight answer from the person who would run the job, including telling you if the budget and the brief don't match.`
+  },
+
+  {
+    slug: "do-i-need-planning-permission-for-an-extension-altrincham",
+    title: "Do I need planning permission for an extension? Altrincham, Hale and Cheshire",
+    seoTitle: "Do I need planning permission for an extension?",
+    summary: "When an extension in Altrincham, Hale or Cheshire needs planning, when it's permitted development, and the conservation area catch to check first.",
+    date: "2026-10-17",
+    author: "Dave Groom",
+    category: "Planning",
+    readTime: "7 min",
+    image: "images/didsbury-07-rear-extension.jpg",
+    featured: false,
+    body: `A lot of extensions don't need planning permission at all. A lot of people assume theirs is one of them, and find out otherwise when the neighbour complains.
+
+Here is how it works in practice. This is a builder's summary, not legal advice. The national rules are published in full on the Planning Portal, and if you are anywhere near the limits, check there or with your council before you commit.
+
+## First: which council are you in?
+
+- **Altrincham, Hale, Bowdon, Timperley and Sale** — Trafford Council
+- **Wilmslow, Knutsford, Alderley Edge, Prestbury and Macclesfield** — Cheshire East Council
+- **Didsbury and Chorlton** — Manchester City Council
+- **Stockport, Bramhall and Cheadle** — Stockport Council
+
+The national rules are the same everywhere. What differs is local policy, conservation areas and how each council's planning department reads a borderline case.
+
+## Permitted development: the main limits
+
+Houses in England have permitted development rights. These let you extend without a planning application, within limits. The main ones for extensions are:
+
+- **Single-storey rear extension** — up to 3 metres deep for a semi or terrace, 4 metres for a detached house, and no more than 4 metres high
+- **Larger single-storey rear extension** — up to 6 metres (semi or terrace) or 8 metres (detached), but only after the council has approved a prior approval application and your neighbours have been consulted
+- **Close to the boundary** — within 2 metres of a boundary, the eaves can't be higher than 3 metres
+- **Side extension** — single storey only, no more than 4 metres high and no wider than half the width of the original house
+- **Two-storey rear extension** — no more than 3 metres deep, and at least 7 metres from the rear boundary
+- **Coverage** — extensions and outbuildings together can't cover more than half the garden around the original house
+- **Materials** — must look similar to the existing house
+- **Nothing forward of the front** — anything beyond the principal elevation, or a side elevation facing a road, needs planning permission
+
+"Original house" means the house as it was first built, or as it stood on 1 July 1948 if it is older. If a previous owner has already extended, that counts against your allowance.
+
+## The catches that change everything
+
+**Conservation areas.** Much of Bowdon, and parts of Hale and Altrincham, sit in conservation areas, as do many village centres in Cheshire East. Inside one, side extensions, two-storey rear extensions and the larger rear extension route are not permitted development, and cladding is restricted. Check the council's conservation area maps before you assume anything.
+
+**Article 4 directions.** A council can remove some permitted development rights in a particular area. They are less common than conservation areas, but they exist.
+
+**Conditions on newer houses.** Many houses on estates built in the last few decades had their permitted development rights removed by a condition on the original planning permission. It is in the planning history for the estate, and it is worth ten minutes to look.
+
+**Flats and maisonettes** have no permitted development rights for extensions. **Listed buildings** need listed building consent for almost any alteration.
+
+## Permitted development is not "no paperwork"
+
+Even when you don't need planning permission:
+
+- **Building regulations approval** is needed on almost every extension — structure, foundations, fire safety, drainage, insulation and ventilation. This is not optional, and it is what your buyer's solicitor will ask for when you sell.
+- **A Lawful Development Certificate** is worth getting. It is the council confirming in writing that the extension is permitted development. Without one, you are relying on your own reading of the rules.
+- **The Party Wall Act** applies if you are building on the boundary, working on a shared wall, or digging foundations close to a neighbour's. Notices have to be served before work starts.
+- **A build-over agreement** with the water company is needed if you are building over or near a public sewer.
+
+## How we handle it
+
+On every extension we price, we check the planning position before we talk about money. There is no point pricing a 6 metre extension that needs prior approval in a conservation area where it won't be allowed.
+
+If you want to know whether your extension needs planning, send us the address and what you have in mind. We'll tell you which route it is, what it is likely to cost — the ranges are in [what a house extension actually costs](https://www.tatton-projects.co.uk/blog/house-extension-cost-altrincham-cheshire) — and who you'll need on the design side. More on how we work is on our [extension builders in Altrincham](https://www.tatton-projects.co.uk/extension-builders-altrincham) page.`
+  },
+
+  {
+    slug: "cost-to-build-a-house-cheshire",
+    title: "What it costs to build a house in Cheshire in 2026",
+    seoTitle: "Cost to build a house in Cheshire, 2026",
+    summary: "2026 build costs per sq m for a new home in Cheshire, a worked example, and the costs outside the build rate that catch out first-time self-builders.",
+    date: "2026-10-17",
+    author: "Dave Groom",
+    category: "New build",
+    readTime: "6 min",
+    image: "images/knutsford-05-complete.jpg",
+    featured: false,
+    body: `If you own a plot, or you're about to buy one, the first thing you need is a believable number for the build. Not the developer's figure, not a TV programme's, but what a one-off house costs to build here in 2026.
+
+These are the rates we work to across Cheshire and Greater Manchester.
+
+## The working ranges
+
+Per square metre of finished floor area, excluding VAT, land, professional fees and abnormals:
+
+- **Good standard — £2,000 to £2,600 per sq m.** A solid, well-built family house. Quality mainstream kitchen and bathrooms, standard glazing, conventional structure.
+- **High specification — £2,600 to £3,800 per sq m.** Architect-led, structural glazing, bespoke joinery, underfloor heating throughout, air source heat pump or MVHR, landscaped grounds.
+- **Exceptional — £3,800 to £5,500+ per sq m.** Basement, pool or spa, plant room, lift, gated approach, full home automation. The £2m+ house.
+
+A basement is priced on its own, at **£3,000 to £5,000 per sq m**. Excavation, retaining walls and waterproofing make it the most expensive floor of any house by a long way.
+
+## A worked example
+
+A 220 sq m house built to a good standard: 220 × £2,300 = roughly **£506,000** for the build.
+
+Then add professional fees at 10 to 12 per cent, planning and building control, a structural warranty, service connections and the site's abnormals. A realistic all-in figure before the land is **£580,000 to £620,000**.
+
+> The build rate is the number everyone quotes. The costs around it are the ones that catch out first-time self-builders.
+
+## What a real job came to
+
+Our [Knutsford new build](https://www.tatton-projects.co.uk/work/knutsford-new-build) came in at circa £400,000 for the build: brick and flint elevations, slate roof, everything from groundworks and drainage to landscaping and warranty sign-off.
+
+[image:knutsford-06-front.jpg]
+[caption:Knutsford — complete, brick and flint under a slate roof]
+
+That's a different house on a different plot with a different specification from the worked example above. It's exactly why a rate per square metre gets you a ballpark and nothing more.
+
+## What sits outside the build rate
+
+**Professional fees.** Architect, structural engineer, and often a planning consultant, energy assessor and principal designer. Budget 10 to 12 per cent.
+
+**Warranty.** Mortgage lenders generally want a ten-year structural warranty on a new home. Arrange it before work starts, not at the end.
+
+**Service connections.** Electricity, water, drainage and, if you want it, gas. On a rural plot a long connection run can cost more than people expect, so get quotes early.
+
+**Abnormals.** Ground conditions, trees and root protection, drainage, a sloping site, poor access. They are found by a site investigation, not by a rate per square metre, and they are where budgets go wrong.
+
+**Community Infrastructure Levy.** Check whether your council charges CIL on new homes. If it does, self-builders can usually claim an exemption, but only if it's applied for before work starts.
+
+**VAT.** Building a new home is generally zero-rated for VAT, unlike an extension, which carries the standard 20 per cent. Check with your accountant how it applies to your project.
+
+## The honest advice
+
+Before you commit to a plot or a design, get a site appraisal and an elemental cost plan. It costs a fraction of the build, and it's the difference between a number you can hold and one that grows every month.
+
+The full set of ranges is on our [cost guide](https://www.tatton-projects.co.uk/costs), and more about how we build one-off homes is on our [new build homes in Cheshire](https://www.tatton-projects.co.uk/new-build-homes-cheshire) page. If you send us the plot, you'll get a straight answer on what it costs to build out, and whether it's worth doing at all.`
+  },
+
+  {
+    slug: "questions-to-ask-a-builder-before-you-sign",
+    title: "Eight questions to ask a builder before you sign anything",
+    seoTitle: "Questions to ask a builder before you sign",
+    summary: "The eight questions that separate a builder you can trust from a cheap quote that grows, from an Altrincham contractor who gets asked them every week.",
+    date: "2026-10-17",
+    author: "Dave Groom",
+    category: "Advice",
+    readTime: "5 min",
+    image: "images/didsbury-01-kitchen.jpg",
+    featured: false,
+    body: `Most building disputes I have seen started before a spade went in the ground. The quote was vague, the contract was a text message, and the first real conversation about money happened halfway through the job.
+
+If you are choosing a builder for an extension, a refurbishment or a new house, ask these eight questions. A good builder will be glad you did.
+
+## 1. Who will actually run my job?
+
+The person who sells you the job is often not the person who runs it. Ask who will be on site day to day, who makes decisions when something unexpected turns up, and who you call. At Tatton, the person who prices the job is the person who runs it.
+
+## 2. Is this a fixed price, and what are the provisional sums?
+
+A provisional sum is an allowance for something not yet designed or chosen, like a kitchen, the tiles or the foundations. It is a placeholder, not a price. A quote with a lot of provisional sums can look cheap and end up being the most expensive.
+
+## 3. What contract will we sign?
+
+There should be a written contract, not just a quote. Standard forms exist for exactly this. The JCT has contracts for homeowners, and the Federation of Master Builders publishes a plain-English building contract for its members' clients. Either is far better than an email chain.
+
+## 4. How do the payments work?
+
+Payments should follow the work: stages that are clearly defined and that you can see on site. Be wary of a large payment up front for anything other than specific materials that have to be ordered early.
+
+## 5. What happens when something changes?
+
+Something always changes. Ask how variations are handled. The right answer is that every change is priced and agreed in writing before it is carried out, so the final account never comes as a surprise.
+
+## 6. What insurance do you hold?
+
+Ask for public liability, employer's liability and contract works insurance, and ask to see the certificates. On a bigger job, ask who insures the existing structure while it is being worked on.
+
+## 7. Who is handling building control, party walls and the structural engineer?
+
+Someone has to apply for building control, serve party wall notices and get the structural calculations done. Find out who before you start, and make sure it's in writing.
+
+## 8. Can I see a finished job like mine?
+
+Photos are easy to borrow. Ask to see a completed project similar to yours, with its value, and ask whether you can speak to that client.
+
+> If a builder can't answer these clearly, their price isn't comparable to one from a builder who can, however much cheaper it is.
+
+## Where we stand
+
+We are members of the Federation of Master Builders and hold Constructionline Gold. Our finished projects are on our [work page](https://www.tatton-projects.co.uk/work) with their real values, and our [cost guide](https://www.tatton-projects.co.uk/costs) shows the rates we work to before you've even called us.
+
+If you're getting quotes for an extension or a new build in Altrincham, Hale or anywhere across Cheshire, send us the drawings and we'll answer every one of these questions in writing.`
+  },
 
   {
     slug: "office-fit-out-cost-per-square-foot-manchester",

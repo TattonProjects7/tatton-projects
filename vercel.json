@@ -52,7 +52,7 @@
     { "source": "/post/completed-office-fit-out-in-liverpool", "destination": "/work/sentric-music", "permanent": true },
     { "source": "/post/tatton-projects-deliver-a-cat-a-office-fit-out-in-stockport", "destination": "/office-fit-out-manchester", "permanent": true },
     { "source": "/post/the-benefits-of-a-professional-office-fit-out-in-manchester-cheshire", "destination": "/office-fit-out-manchester", "permanent": true },
-    { "source": "/post/do-i-need-planning-permission-for-a-house-extension-in-altrincham", "destination": "/extension-builders-altrincham", "permanent": true },
+    { "source": "/post/do-i-need-planning-permission-for-a-house-extension-in-altrincham", "destination": "/blog/do-i-need-planning-permission-for-an-extension-altrincham", "permanent": true },
     { "source": "/post/:slug*", "destination": "/blog", "permanent": true }
   ],
   "rewrites": [

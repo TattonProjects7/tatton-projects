@@ -59,9 +59,10 @@
     return out.join('');
   }
 
-  /* bold and italic only — deliberately minimal */
+  /* links, bold and italic only — deliberately minimal */
   function inline(t) {
     return esc(t)
+      .replace(/\[([^\]]+)\]\(((?:https?:\/\/|\/)[^)\s]+)\)/g, '<a href="$2">$1</a>')
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*(.+?)\*/g, '<em>$1</em>');
   }
