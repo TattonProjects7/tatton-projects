@@ -34,7 +34,7 @@
       "destination": "https://www.tatton-projects.co.uk/:path*",
       "statusCode": 301
     },
-    { "source": "/review", "destination": "https://search.google.com/local/writereview?placeid=ChIJhWCYYwCte0gRConY8S861FA", "permanent": false },
+    { "source": "/review", "destination": "https://g.page/r/CQqJ2PEvOtRQEAE/review", "permanent": false },
     { "source": "/projects", "destination": "/work", "permanent": true },
     { "source": "/vanguard", "destination": "/work/sentric-music", "permanent": true },
     { "source": "/work/vanguard", "destination": "/work/sentric-music", "permanent": true },
