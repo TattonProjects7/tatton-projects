@@ -220,7 +220,7 @@ section { padding: clamp(72px, 10vw, 130px) var(--gutter); }
 .sec-head h2 em { font-style: italic; color: var(--gold); }
 
 /* ---------- three disciplines ---------- */
-.routes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line-soft); }
+.routes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line-soft); }
 .route {
   background: var(--ink-2);
   padding: clamp(26px, 3vw, 40px);
