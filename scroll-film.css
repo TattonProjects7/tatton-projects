@@ -34,9 +34,19 @@
 .sf__cue i { display: block; width: 1px; height: 28px; background: linear-gradient(var(--sf-accent, #d4a533), transparent); animation: sf-cue 1.6s ease-in-out infinite; }
 @keyframes sf-cue { 0%, 100% { transform: scaleY(.4); transform-origin: top; opacity: .3 } 50% { transform: scaleY(1); opacity: 1 } }
 @media (max-width: 860px) {
-  .sf__chapter { align-items: flex-end; padding-bottom: 72px; }
+  /* Phones: the clip is a portrait cut, so keep the top two-thirds of the frame
+     clear and carry the copy on a bottom-weighted shade only. */
+  .sf__chapter { align-items: flex-end; padding: 0 20px 64px; }
   .sf__steps { display: none; }
   .sf__media img, .sf__media video { object-position: var(--sf-pos-mobile, var(--sf-pos, 50% 50%)); }
+  .sf__shade {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--sf-bg, #0b0b0c) 55%, transparent) 0%, transparent 16%, transparent 46%, color-mix(in srgb, var(--sf-bg, #0b0b0c) 82%, transparent) 72%, color-mix(in srgb, var(--sf-bg, #0b0b0c) 96%, transparent) 100%);
+  }
+  .sf__title { font-size: clamp(30px, 9.2vw, 40px); }
+  .sf__body { font-size: 15.5px; line-height: 1.5; margin-top: 14px; }
+  .sf__kicker { margin-bottom: 12px; }
+  .sf__actions { margin-top: 20px; gap: 10px; }
+  .sf__cue { bottom: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .sf__stage { position: relative; height: auto; min-height: 70vh; }

@@ -45,12 +45,12 @@ const filmSection = (slug, label, chapters) => `
 <!-- ============ ${label.toUpperCase()}, IN ONE TAKE ============ -->
 <section class="sf tp-film" aria-label="${label}, in one take"
   data-clip="${FILMS}/${slug}.mp4"
-  data-mobile-clip="${FILMS}/${slug}-mobile.mp4"
+  data-mobile-clip="${FILMS}/${slug}-mobile.mp4?v=2"
   style="padding:0; height: calc(330vh + 100vh)">
   <div class="sf__stage">
     <div class="sf__media" aria-hidden="true">
       <picture>
-        <source media="(hover: none) and (pointer: coarse), (max-width: 860px)" srcset="${FILMS}/${slug}-mobile-poster.jpg">
+        <source media="(hover: none) and (pointer: coarse), (max-width: 860px)" srcset="${FILMS}/${slug}-mobile-poster.jpg?v=2">
         <img src="${FILMS}/${slug}-poster.jpg" alt="" decoding="async" loading="lazy">
       </picture>
     </div>
