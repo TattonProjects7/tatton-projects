@@ -33,6 +33,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Archivo:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="scroll-film.css">
 
 <script type="application/ld+json">
 {
@@ -553,6 +554,54 @@
   <div class="rise"><div class="num" data-count="20" data-suffix="+">0</div><div class="lbl">Years on site — founder</div></div>
   <div class="rise"><div class="num">2020</div><div class="lbl">Company founded</div></div>
 </div>
+
+<!-- ============ THE BUILD, IN ONE TAKE ============ -->
+<section class="sf tp-film" aria-label="The build, in one take"
+  data-clip="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/hero.mp4"
+  data-mobile-clip="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/hero-mobile.mp4"
+  style="padding:0; height: calc(330vh + 100vh)">
+  <div class="sf__stage">
+    <div class="sf__media" aria-hidden="true">
+      <picture>
+        <source media="(hover: none) and (pointer: coarse), (max-width: 860px)" srcset="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/hero-mobile-poster.jpg">
+        <img src="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/hero-poster.jpg" alt="" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="sf__shade" aria-hidden="true"></div>
+    <div class="sf__chapter" data-align="left">
+      <div class="sf__copy">
+        <p class="sf__kicker">Private homes · Developments · Commercial</p>
+        <h2 class="sf__title">Built the way the drawings promised.</h2>
+        <p class="sf__body">One-off homes, housing developments and commercial fit-out across Manchester and Cheshire — owner-managed on site from the first dig to the last snag.</p>
+      </div>
+    </div>
+    <div class="sf__chapter" data-align="left">
+      <div class="sf__copy">
+        <p class="sf__kicker">The build</p>
+        <h2 class="sf__title">Steel, brick, glass — <em>then the finish.</em></h2>
+        <p class="sf__body">Structural alterations, extensions and whole-building refurbishments delivered to programme, with trades we have worked alongside for years and a site that is tidy at four o&rsquo;clock.</p>
+      </div>
+    </div>
+    <div class="sf__chapter" data-align="right">
+      <div class="sf__copy">
+        <p class="sf__kicker">Handover</p>
+        <h2 class="sf__title">Lights on. Keys in hand.</h2>
+        <p class="sf__body">Every job closes with a structured handover: certificates, warranties, the O&amp;M file — and a client who would have us back.</p>
+        <div class="sf__actions">
+          <a href="#land" class="btn btn-solid">Bring us a site &rarr;</a>
+          <a href="#work" class="btn btn-ghost">See the work</a>
+        </div>
+      </div>
+    </div>
+    <nav class="sf__steps" aria-label="Chapters">
+      <button type="button" aria-label="Who we build for"></button>
+      <button type="button" aria-label="The build"></button>
+      <button type="button" aria-label="Handover"></button>
+    </nav>
+    <div class="sf__progress" aria-hidden="true"><span></span></div>
+    <div class="sf__cue" aria-hidden="true"><i></i> Scroll</div>
+  </div>
+</section>
 
 <!-- ============ THREE DISCIPLINES ============ -->
 <section id="build">
@@ -1325,6 +1374,7 @@
 <div id="lb"><img id="lbImg" alt=""><span class="cap" id="lbCap"></span></div>
 
 <script src="projects.js"></script>
+<script src="scroll-film.js" defer></script>
 <script src="app.js"></script>
 </body>
 </html>
