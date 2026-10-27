@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Archivo:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="scroll-film.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -162,6 +163,55 @@
     <div class="ln"><p class="lede" style="animation-delay:.75s">Over 110 completed since 2020. Most clients would rather we didn't publish theirs — these are the ones we can. Every project below has its own page.</p></div>
   </div>
 </header>
+
+<!-- ============ AN OFFICE FIT-OUT, IN ONE TAKE ============ -->
+<section class="sf tp-film" aria-label="An office fit-out, in one take"
+  data-clip="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/office.mp4"
+  data-mobile-clip="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/office-mobile.mp4"
+  style="padding:0; height: calc(330vh + 100vh)">
+  <div class="sf__stage">
+    <div class="sf__media" aria-hidden="true">
+      <picture>
+        <source media="(hover: none) and (pointer: coarse), (max-width: 860px)" srcset="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/office-mobile-poster.jpg">
+        <img src="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/office-poster.jpg" alt="" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="sf__shade" aria-hidden="true"></div>
+    <div class="sf__chapter" data-align="left">
+      <div class="sf__copy">
+        <p class="sf__kicker">Commercial · Cat B office fit-out</p>
+        <h2 class="sf__title">An empty floor. <em>A finished office.</em></h2>
+        <p class="sf__body">Manchester mill shell to boardroom: partitions, services, joinery and finishes delivered in one programme, with the landlord&rsquo;s building kept running around us.</p>
+      </div>
+    </div>
+    <div class="sf__chapter" data-align="left">
+      <div class="sf__copy">
+        <p class="sf__kicker">The fit-out</p>
+        <h2 class="sf__title">Glass, timber, light &mdash; <em>then the desks.</em></h2>
+        <p class="sf__body">Glazed meeting rooms, acoustic rafts, bench desking and a reception that says who you are. Cat A to Cat B, snag-free on the handover date.</p>
+      </div>
+    </div>
+    <div class="sf__chapter" data-align="right">
+      <div class="sf__copy">
+        <p class="sf__kicker">Handover</p>
+        <h2 class="sf__title">Monday morning. <em>Staff in.</em></h2>
+        <p class="sf__body">O&amp;M file, certificates and warranties on the desk; keys with the tenant; a landlord who calls us for the next floor.</p>
+        <div class="sf__actions">
+          <a href="index.html#enquire" class="btn btn-solid">Talk about a fit-out &rarr;</a>
+          <a href="office-fit-out-manchester.html" class="btn btn-ghost">Office fit-out</a>
+        </div>
+      </div>
+    </div>
+    <nav class="sf__steps" aria-label="Chapters">
+      <button type="button" aria-label="The shell"></button>
+      <button type="button" aria-label="The fit-out"></button>
+      <button type="button" aria-label="Handover"></button>
+    </nav>
+    <div class="sf__progress" aria-hidden="true"><span></span></div>
+    <div class="sf__cue" aria-hidden="true"><i></i> Scroll</div>
+  </div>
+</section>
+
 
 <section>
   <div class="filters rise">
@@ -414,5 +464,7 @@
   });
 })();
 </script>
+<script src="scroll-film.js" defer></script>
+<script src="nav.js" defer></script>
 </body>
 </html>

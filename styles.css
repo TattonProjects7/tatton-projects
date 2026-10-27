@@ -1872,3 +1872,55 @@ a.sector:hover h4 { color: var(--gold); }
 .tp-film .sf__body { font-size: clamp(16px, 1.2vw, 18px); }
 .tp-film .sf__cue { font-family: var(--mono); }
 .tp-film .sf__actions .btn { margin: 0; }
+
+/* ---------- phone-width navigation (1000px and below only) ---------- */
+.nav-toggle, .nav-menu { display: none; }
+@media (max-width: 1000px) {
+  .nav-toggle {
+    display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
+    width: 44px; height: 44px; margin-left: 10px; padding: 0 10px;
+    background: transparent; border: 1px solid var(--line-soft); border-radius: 2px; cursor: pointer;
+  }
+  .nav-toggle span:not(.sr) { display: block; height: 1.5px; width: 22px; background: var(--stone); transition: transform .3s, opacity .3s; }
+  .nav-toggle .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  nav.menu-open .nav-toggle span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  nav.menu-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  nav.menu-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+  .nav-menu {
+    position: fixed; left: 0; right: 0; top: 64px; bottom: 0; z-index: 90;
+    background: rgba(12,12,13,.98); padding: 24px var(--gutter) 48px; overflow-y: auto;
+    flex-direction: column;
+  }
+  nav.menu-open .nav-menu { display: flex; }
+  .nav-menu a {
+    font-family: var(--serif); font-size: 27px; line-height: 1.2; color: var(--stone);
+    text-decoration: none; padding: 15px 0; border-bottom: 1px solid var(--line-soft);
+  }
+  .nav-menu a.nav-call {
+    font-family: var(--mono); font-size: 13px; letter-spacing: .16em; text-transform: uppercase;
+    margin-top: 26px; border: 1px solid var(--gold-dim); text-align: center; padding: 17px; color: var(--gold) !important;
+  }
+  body.menu-open { overflow: hidden; }
+  .nav-call { padding: 9px 12px; }
+}
+
+/* ---------- phone-width legibility (700px and below only) ---------- */
+@media (max-width: 700px) {
+  .band .lbl, .floor-lbl, .f-portrait, .roll .hdr, .shot .noimg, .shot .yr, .type,
+  .sector .k, .pod-shot, .pod-table th, .accred .tile-txt, .foot-btm, .plan-tag { font-size: 11.5px; }
+  .loc, .ladder .yr, .step .n, .nav-links a { font-size: 12px; }
+  .tp-film .sf__body { font-size: 15px; }
+  .btn { min-height: 46px; display: inline-flex; align-items: center; }
+}
+
+/* ---------- phone-width legibility, second pass (700px and below only) ---------- */
+@media (max-width: 700px) {
+  .eyebrow, .sf__kicker, .crumb a, .crumb b, .svc-more, .wt-link, .wt-k, .filters .filter,
+  .lbl, .foot-btm span, .areas span, .stg .n, .svc-group li, .svc-group p.eyebrow,
+  .rate-head span, .wt-jump a, .wt-meta span, .wt-chapters button, .rp-tag, .build-cap span,
+  .lbc-eyebrow, .lbc-sub, .file-hint, .enq-note, .enq-form label, .track span { font-size: 12px; }
+  .pre { font-size: 11px; }
+}
+@media (max-width: 700px) {
+  .tp-film .sf__kicker, .route li, body .wt-jump a, body .wt-meta span, body .wt-chapters button { font-size: 12px; }
+}
