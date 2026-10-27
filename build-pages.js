@@ -38,6 +38,54 @@ const plain = (t) => String(t == null ? '' : t)
 const paras = (t) => String(t || '').split('\n').filter(Boolean)
   .map((p) => `<p>${esc(p)}</p>`).join('\n            ');
 
+/* ---------- one-take scroll films (same engine as the homepage) ---------- */
+const FILMS = 'https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton';
+const FILM_HEAD = '<link rel="stylesheet" href="scroll-film.css">\n';
+const filmSection = (slug, label, chapters) => `
+<!-- ============ ${label.toUpperCase()}, IN ONE TAKE ============ -->
+<section class="sf tp-film" aria-label="${label}, in one take"
+  data-clip="${FILMS}/${slug}.mp4"
+  data-mobile-clip="${FILMS}/${slug}-mobile.mp4"
+  style="padding:0; height: calc(330vh + 100vh)">
+  <div class="sf__stage">
+    <div class="sf__media" aria-hidden="true">
+      <picture>
+        <source media="(hover: none) and (pointer: coarse), (max-width: 860px)" srcset="${FILMS}/${slug}-mobile-poster.jpg">
+        <img src="${FILMS}/${slug}-poster.jpg" alt="" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="sf__shade" aria-hidden="true"></div>
+${chapters.map((c, i) => `    <div class="sf__chapter" data-align="${i === chapters.length - 1 ? 'right' : 'left'}">
+      <div class="sf__copy">
+        <p class="sf__kicker">${c.kicker}</p>
+        <h2 class="sf__title">${c.title}</h2>
+        <p class="sf__body">${c.body}</p>${c.actions ? `
+        <div class="sf__actions">
+          ${c.actions.map((a) => `<a href="${a.href}" class="btn ${a.ghost ? 'btn-ghost' : 'btn-solid'}">${a.label}</a>`).join('\n          ')}
+        </div>` : ''}
+      </div>
+    </div>`).join('\n')}
+    <nav class="sf__steps" aria-label="Chapters">
+${chapters.map((c) => `      <button type="button" aria-label="${c.step}"></button>`).join('\n')}
+    </nav>
+    <div class="sf__progress" aria-hidden="true"><span></span></div>
+    <div class="sf__cue" aria-hidden="true"><i></i> Scroll</div>
+  </div>
+</section>
+`;
+const OFFICE_FILM = filmSection('office', 'An office fit-out', [
+  { step: 'The shell', kicker: 'Commercial · Cat B office fit-out', title: 'An empty floor. <em>A finished office.</em>', body: 'Manchester mill shell to boardroom: partitions, services, joinery and finishes delivered in one programme, with the landlord&rsquo;s building kept running around us.' },
+  { step: 'The fit-out', kicker: 'The fit-out', title: 'Glass, timber, light &mdash; <em>then the desks.</em>', body: 'Glazed meeting rooms, acoustic rafts, bench desking and a reception that says who you are. Cat A to Cat B, snag-free on the handover date.' },
+  { step: 'Handover', kicker: 'Handover', title: 'Monday morning. <em>Staff in.</em>', body: 'O&amp;M file, certificates and warranties on the desk; keys with the tenant; a landlord who calls us for the next floor.',
+    actions: [{ href: 'index.html#enquire', label: 'Talk about a fit-out &rarr;' }, { href: 'office-fit-out-manchester.html', label: 'Office fit-out', ghost: true }] },
+]);
+const NEWBUILD_FILM = filmSection('newbuild', 'A new build home', [
+  { step: 'The structure', kicker: 'New build · Cheshire', title: 'From the first course <em>of brick.</em>', body: 'A one-off home on a private plot: groundworks, structure, roof and glazing under one site manager, from the first dig to the day the keys turn.' },
+  { step: 'The build', kicker: 'The build', title: 'Structure, services &mdash; <em>then the finish.</em>', body: 'Blockwork and steel, first fix, plaster, second-fix joinery &mdash; a programme you can see, with a site that is tidy at four o&rsquo;clock.' },
+  { step: 'Handover', kicker: 'Handover', title: 'The front door, <em>on the day we said.</em>', body: 'Warranties, certificates and the O&amp;M file in hand &mdash; and a home that looks like the drawings.',
+    actions: [{ href: 'index.html#enquire', label: 'Discuss a new build &rarr;' }, { href: 'work.html', label: 'See the work', ghost: true }] },
+]);
+
 const clip = (t, n) => {
   const s = plain(t);
   return s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…';
@@ -103,7 +151,7 @@ const footer = (depth) => {
 </footer>`;
 };
 
-const head = ({ title, desc, canonical, image, depth, extraSchema, ogType = 'article', active }) => {
+const head = ({ title, desc, canonical, image, depth, extraSchema, ogType = 'article', active, extraHead = '' }) => {
   const up = depth ? '../' : '';
   return `<!DOCTYPE html>
 <html lang="en-GB">
@@ -134,7 +182,7 @@ const head = ({ title, desc, canonical, image, depth, extraSchema, ogType = 'art
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Archivo:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${up}styles.css">
-${extraSchema}
+${extraHead}${extraSchema}
 </head>
 <body>
 <script>document.documentElement.className += ' js';</script>
@@ -315,6 +363,7 @@ ${footer(1)}
 <div id="lb"><img id="lbImg" alt=""><span class="cap" id="lbCap"></span></div>
 
 <script src="../page.js"></script>
+<script src="../nav.js" defer></script>
 <script>
 /* gallery lightbox */
 (function () {
@@ -386,7 +435,8 @@ function workIndex(all) {
     canonical: `${SITE}/work`,
     image: `${SITE}/images/sentric-01-lounge.jpg`,
     depth: 0,
-    extraSchema: schema
+    extraSchema: schema,
+    extraHead: FILM_HEAD
   }) + `
 <main id="main">
 
@@ -403,6 +453,7 @@ function workIndex(all) {
     <div class="ln"><p class="lede" style="animation-delay:.75s">Over 110 completed since 2020. Most clients would rather we didn't publish theirs — these are the ones we can. Every project below has its own page.</p></div>
   </div>
 </header>
+${OFFICE_FILM}
 
 <section>
   <div class="filters rise">
@@ -421,7 +472,9 @@ function workIndex(all) {
 
 ${footer(0)}
 
+<script src="scroll-film.js" defer></script>
 <script src="page.js"></script>
+<script src="nav.js" defer></script>
 <script>
 (function () {
   var cards = [].slice.call(document.querySelectorAll('.proj'));
@@ -607,6 +660,7 @@ function blogPostPage(p, all) {
 ${footer(1)}
 
 <script src="../page.js"></script>
+<script src="../nav.js" defer></script>
 </body>
 </html>
 `;
@@ -682,7 +736,8 @@ function servicePage(s, all) {
     }))
   }] : []));
 
-  return head({ title: s.title, desc: s.description, canonical: url, image: img, depth: 0, extraSchema: schema, ogType: 'website', active: 'services' }) + `
+  const film = s.id === 'new-build-homes-cheshire';
+  return head({ title: s.title, desc: s.description, canonical: url, image: img, depth: 0, extraSchema: schema, ogType: 'website', active: 'services', extraHead: film ? FILM_HEAD : '' }) + `
 <!-- Built by build-pages.js from services.js. Edit services.js, not this file. -->
 <main id="main" class="svc">
 
@@ -709,6 +764,7 @@ function servicePage(s, all) {
     </figure>
   </div>
 </header>
+${film ? NEWBUILD_FILM : ''}
 
 <section>
   <div class="cs-two">
@@ -812,7 +868,8 @@ ${faqs.length ? `<section class="faq">
 
 ${footer(0)}
 
-<script src="page.js"></script>
+${film ? '<script src="scroll-film.js" defer></script>\n' : ''}<script src="page.js"></script>
+<script src="nav.js" defer></script>
 </body>
 </html>
 `;
@@ -904,6 +961,7 @@ function servicesIndex(all) {
 ${footer(0)}
 
 <script src="page.js"></script>
+<script src="nav.js" defer></script>
 </body>
 </html>
 `;
