@@ -79,6 +79,12 @@ const OFFICE_FILM = filmSection('office', 'An office fit-out', [
   { step: 'Handover', kicker: 'Handover', title: 'Monday morning. <em>Staff in.</em>', body: 'O&amp;M file, certificates and warranties on the desk; keys with the tenant; a landlord who calls us for the next floor.',
     actions: [{ href: 'index.html#enquire', label: 'Talk about a fit-out &rarr;' }, { href: 'office-fit-out-manchester.html', label: 'Office fit-out', ghost: true }] },
 ]);
+const SERVICES_FILM = filmSection('newbuild', 'What we build', [
+  { step: 'What we do', kicker: 'Services · Manchester &amp; Cheshire · UK-wide fit-out', title: 'Structure first. <em>Finish last.</em>', body: 'New build homes, major domestic works, housing developments and commercial fit-out: four things, one site manager, from the first dig to the keys.' },
+  { step: 'How we work', kicker: 'How we work', title: 'Priced properly. <em>Programmed honestly.</em>', body: 'A fixed-price quote with the working shown, a programme you can see move, and a site that is tidy at four o&rsquo;clock.' },
+  { step: 'Handover', kicker: 'Handover', title: 'Keys in hand, <em>paperwork done.</em>', body: 'Certificates, warranties and the O&amp;M file on the day, and a client who would have us back for the next one.',
+    actions: [{ href: 'index.html#enquire', label: 'Talk to us about a project &rarr;' }, { href: 'work.html', label: 'See the work', ghost: true }] },
+]);
 const NEWBUILD_FILM = filmSection('newbuild', 'A new build home', [
   { step: 'The structure', kicker: 'New build · Cheshire', title: 'From the first course <em>of brick.</em>', body: 'A one-off home on a private plot: groundworks, structure, roof and glazing under one site manager, from the first dig to the day the keys turn.' },
   { step: 'The build', kicker: 'The build', title: 'Structure, services &mdash; <em>then the finish.</em>', body: 'Blockwork and steel, first fix, plaster, second-fix joinery &mdash; a programme you can see, with a site that is tidy at four o&rsquo;clock.' },
@@ -908,7 +914,8 @@ function servicesIndex(all) {
     depth: 0,
     extraSchema: schema,
     ogType: 'website',
-    active: 'services'
+    active: 'services',
+    extraHead: FILM_HEAD
   }) + `
 <!-- Built by build-pages.js from services.js. Edit services.js, not this file. -->
 <main id="main">
@@ -923,6 +930,7 @@ function servicesIndex(all) {
     <div class="ln"><p class="lede" style="animation-delay:.6s">Commercial fit-out and refurbishment across Manchester and selected UK locations, alongside substantial residential construction across Greater Manchester and Cheshire.</p></div>
   </div>
 </header>
+${SERVICES_FILM}
 
 <section>
   ${groups.map(([sector, label]) => `<div class="svc-group">
@@ -962,6 +970,7 @@ function servicesIndex(all) {
 
 ${footer(0)}
 
+<script src="scroll-film.js" defer></script>
 <script src="page.js"></script>
 <script src="nav.js" defer></script>
 </body>

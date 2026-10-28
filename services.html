@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Archivo:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="scroll-film.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -165,6 +166,55 @@
     <div class="ln"><p class="lede" style="animation-delay:.6s">Commercial fit-out and refurbishment across Manchester and selected UK locations, alongside substantial residential construction across Greater Manchester and Cheshire.</p></div>
   </div>
 </header>
+
+<!-- ============ WHAT WE BUILD, IN ONE TAKE ============ -->
+<section class="sf tp-film" aria-label="What we build, in one take"
+  data-clip="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/newbuild.mp4"
+  data-mobile-clip="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/newbuild-mobile.mp4?v=2"
+  style="padding:0; height: calc(330vh + 160vh); --sf-n: 3">
+  <div class="sf__stage">
+    <div class="sf__media" aria-hidden="true">
+      <picture>
+        <source media="(hover: none) and (pointer: coarse), (max-width: 860px)" srcset="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/newbuild-mobile-poster.jpg?v=2">
+        <img src="https://aqulyknvqtmqyysdexob.supabase.co/storage/v1/object/public/web-assets/tatton/newbuild-poster.jpg" alt="" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="sf__shade" aria-hidden="true"></div>
+    <div class="sf__chapter" data-align="left">
+      <div class="sf__copy">
+        <p class="sf__kicker">Services · Manchester &amp; Cheshire · UK-wide fit-out</p>
+        <h2 class="sf__title">Structure first. <em>Finish last.</em></h2>
+        <p class="sf__body">New build homes, major domestic works, housing developments and commercial fit-out: four things, one site manager, from the first dig to the keys.</p>
+      </div>
+    </div>
+    <div class="sf__chapter" data-align="left">
+      <div class="sf__copy">
+        <p class="sf__kicker">How we work</p>
+        <h2 class="sf__title">Priced properly. <em>Programmed honestly.</em></h2>
+        <p class="sf__body">A fixed-price quote with the working shown, a programme you can see move, and a site that is tidy at four o&rsquo;clock.</p>
+      </div>
+    </div>
+    <div class="sf__chapter" data-align="right">
+      <div class="sf__copy">
+        <p class="sf__kicker">Handover</p>
+        <h2 class="sf__title">Keys in hand, <em>paperwork done.</em></h2>
+        <p class="sf__body">Certificates, warranties and the O&amp;M file on the day, and a client who would have us back for the next one.</p>
+        <div class="sf__actions">
+          <a href="index.html#enquire" class="btn btn-solid">Talk to us about a project &rarr;</a>
+          <a href="work.html" class="btn btn-ghost">See the work</a>
+        </div>
+      </div>
+    </div>
+    <nav class="sf__steps" aria-label="Chapters">
+      <button type="button" aria-label="What we do"></button>
+      <button type="button" aria-label="How we work"></button>
+      <button type="button" aria-label="Handover"></button>
+    </nav>
+    <div class="sf__progress" aria-hidden="true"><span></span></div>
+    <div class="sf__cue" aria-hidden="true"><i></i> Scroll</div>
+  </div>
+</section>
+
 
 <section>
   <div class="svc-group">
@@ -389,6 +439,7 @@
   </div>
 </footer>
 
+<script src="scroll-film.js" defer></script>
 <script src="page.js"></script>
 <script src="nav.js" defer></script>
 </body>
