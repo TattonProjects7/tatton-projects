@@ -289,7 +289,7 @@ function projectPage(p, i, all) {
   </header>
 
   ${p.video ? `<section class="cs-video">
-    <figure>
+    <figure${p.video.portrait ? ' class="portrait"' : ''}>
       <video src="${esc(p.video.src)}" poster="${p.video.poster ? '../' + esc(p.video.poster) : (p.hero ? '../' + esc(p.hero) : '')}"
         preload="metadata" muted loop playsinline controls
         aria-label="${esc(p.video.label || p.name + ' walkthrough')}"></video>
@@ -300,6 +300,8 @@ function projectPage(p, i, all) {
     .cs-video{padding:clamp(28px,4vw,56px) var(--gutter,24px) 0}
     .cs-video figure{margin:0 auto;max-width:1100px;border:1px solid var(--line-soft,#2a2c30);border-radius:4px;overflow:hidden;background:var(--ink-2,#141517)}
     .cs-video video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+    .cs-video figure.portrait{max-width:440px}
+    .cs-video figure.portrait video{aspect-ratio:9/16}
     .cs-video figcaption{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;font-family:var(--mono,ui-monospace,monospace);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dim,#a98a3a)}
     .cs-video figcaption img{height:22px;width:auto;opacity:.9}
   </style>` : ''}

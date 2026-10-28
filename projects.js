@@ -19,6 +19,60 @@
 const PROJECTS = [
 
   {
+    id: "office-fit-out-walkways",
+    name: "Office walkways & communal toilets",
+    client: "Confidential client",
+    location: "Greater Manchester",
+    value: "",
+    year: "2026",
+    sector: "fitout",
+    type: "Office fit-out · Live building",
+    live: false,
+    featured: true,
+    attribution: "",
+    card: "images/office-walkways-01-toilets-card.jpg",
+    hero: "images/office-walkways-01-breakout.jpg",
+    video: {
+      src: "../videos/office-fit-out-walkways.mp4",
+      poster: "videos/office-fit-out-walkways.jpg",
+      portrait: true,
+      label: "Office fit-out walkthrough — walkways, bike store, showers and communal toilets, before, during and after",
+      cap: "Site walkthrough · before, during & after · 66 s"
+    },
+    gallery: [
+      { src: "images/office-walkways-02-before-walkway.jpg",    cap: "Before — the existing tiled walkway and one-way floor graphics" },
+      { src: "images/office-walkways-03-strip-out-atrium.jpg",  cap: "Strip out — old tiles lifted and stacked for removal on the atrium walkway" },
+      { src: "images/office-walkways-04-blockwork-complete.jpg", cap: "New blockwork walls at car park level" },
+      { src: "images/office-walkways-05-bike-store.jpg",        cap: "Secure bike store — mesh enclosure and galvanised racks" },
+      { src: "images/office-walkways-06-toilet-framing.jpg",    cap: "Communal toilets — timber carcass framing and first-fix plumbing" },
+      { src: "images/office-walkways-07-cubicles-installed.jpg", cap: "Cubicle system going in over new flecked safety vinyl" },
+      { src: "images/office-walkways-08-changing-room.jpg",     cap: "Changing room — numbered lockers, track lighting and shower rooms off the corridor" },
+      { src: "images/office-walkways-09-shower.jpg",            cap: "Shower cubicle — metro tiles, black-framed sliding screen and bench" },
+      { src: "images/office-walkways-10-accessible-wc.jpg",     cap: "Accessible WC — wood-effect panelling, concealed cistern and black fittings" },
+      { src: "images/office-walkways-11-vanity-run.jpg",        cap: "Six-basin vanity run under round mirrors" },
+      { src: "images/office-walkways-12-walkway-lvt.jpg",       cap: "Atrium walkway re-floored in grey LVT along the glass balustrade" },
+      { src: "images/office-walkways-13-lift-lobby.jpg",        cap: "Lift lobby — new floor, skirting and planting" }
+    ],
+    blurb: "Walkways, lobbies and stairs re-floored through an occupied office building, with a new communal toilet block, showers and changing room, an accessible WC and a secure bike store off the car park.",
+    overview: "An occupied office building, trading throughout. The brief was to bring the common parts and welfare up to standard without closing the building.\nThe existing tiled walkways, lift lobbies and stair landings were stripped back to the raised floor, overlaid and levelled, then re-floored in grey LVT with new skirting. Off the car park, new blockwork and a mesh-secured bike store with galvanised racks. Below, a new communal toilet block — cubicle system, six-basin vanity run under round mirrors, flecked safety vinyl — alongside showers, a changing room with numbered lockers and an accessible WC.\nLive floors stayed open behind protection while the work moved through the building.",
+    facts: { "Contract": "Office fit-out — common parts and welfare", "Value": "", "Duration": "", "Status": "Complete" },
+    scope: [
+      "Strip out of existing floor finishes to walkways, lobbies and stairs",
+      "Ply overlay, levelling and new grey LVT flooring with new skirting",
+      "New blockwork walls off the car park",
+      "Secure bike store — mesh enclosure and galvanised racks",
+      "Communal toilet block — cubicle system, vanity run and safety vinyl",
+      "Showers and changing room with lockers",
+      "Accessible WC",
+      "Plumbing, electrics and lighting to the new welfare areas",
+      "Works phased around an occupied building"
+    ],
+    challenge: "The building stayed open. Every walkway being re-floored was also somebody's route to their desk, so floors were taken in sections behind protection and handed back as they finished.",
+    outcome: "Handed over complete.",
+    quote: { text: "", by: "" }
+  },
+
+  {
     id: "sentric-music",
     name: "Sentric Music",
     client: "Sentric Music Group",
