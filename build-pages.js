@@ -46,7 +46,7 @@ const filmSection = (slug, label, chapters) => `
 <section class="sf tp-film" aria-label="${label}, in one take"
   data-clip="${FILMS}/${slug}.mp4"
   data-mobile-clip="${FILMS}/${slug}-mobile.mp4?v=2"
-  style="padding:0; height: calc(330vh + 100vh)">
+  style="padding:0; height: calc(330vh + 100vh); --sf-n: 3">
   <div class="sf__stage">
     <div class="sf__media" aria-hidden="true">
       <picture>

@@ -27,20 +27,40 @@
       total = Math.max(root.offsetHeight - window.innerHeight, 1);
       dirty = true;
     }
+    function markPainted() { media.setAttribute('data-painted', 'true'); }
+    function makeVideo() {
+      var v = document.createElement('video');
+      v.muted = true; v.playsInline = true; v.preload = 'auto';
+      v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+      v.addEventListener('loadedmetadata', function () { ready = true; dirty = true; }, { once: true });
+      v.addEventListener('seeked', markPainted, { once: true });
+      v.addEventListener('error', function () { v.remove(); ready = false; }, { once: true });
+      return v;
+    }
     function load() {
       if (reduce || loading || ready || destroyed) return;
       loading = true;
       var src = mobile.matches && root.getAttribute('data-mobile-clip') ? root.getAttribute('data-mobile-clip') : root.getAttribute('data-clip');
       if (!src) return;
+      if (mobile.matches) {
+        /* Phones: iOS will not decode a frame of a blob until the element is
+           unlocked, so stream straight from the URL, autoplay muted for one
+           frame, then pause and scrub. Seeks are served by range requests. */
+        var mv = makeVideo();
+        mv.autoplay = true; mv.setAttribute('autoplay', '');
+        var firstFrame = function () { mv.pause(); markPainted(); ready = true; dirty = true; };
+        mv.addEventListener('playing', firstFrame, { once: true });
+        mv.addEventListener('loadeddata', function () { if (mv.readyState >= 2) firstFrame(); }, { once: true });
+        mv.src = src;
+        media.appendChild(mv);
+        video = mv;
+        var pp = mv.play(); if (pp && pp.catch) pp.catch(function () {});
+        return;
+      }
       fetch(src).then(function (r) { if (!r.ok) throw new Error(r.status); return r.blob(); }).then(function (blob) {
         if (destroyed) return;
-        var v = document.createElement('video');
-        v.muted = true; v.playsInline = true; v.preload = 'auto';
-        v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+        var v = makeVideo();
         v.src = URL.createObjectURL(blob);
-        v.addEventListener('loadedmetadata', function () { ready = true; dirty = true; }, { once: true });
-        v.addEventListener('seeked', function () { media.setAttribute('data-painted', 'true'); }, { once: true });
-        v.addEventListener('error', function () { v.remove(); ready = false; }, { once: true });
         media.appendChild(v);
         video = v;
       }).catch(function () { loading = false; });
@@ -69,7 +89,7 @@
     function tick() {
       if (destroyed) return;
       if (dirty) { dirty = false; read(); }
-      if (video && ready && !video.seeking) {
+      if (video && ready && !video.seeking && video.readyState >= 1) {
         current += (target - current) * 0.18;
         var t = clamp(current, 0, 0.999) * (video.duration || 1);
         if (Math.abs(video.currentTime - t) > (mobile.matches ? 0.02 : 0.006)) { try { video.currentTime = t; } catch (e) { /* keep frame */ } }
@@ -85,7 +105,14 @@
     });
     window.addEventListener('scroll', function () { dirty = true; }, { passive: true });
     window.addEventListener('resize', layout);
-    window.addEventListener('touchstart', function () { if (video && mobile.matches) { var p = video.play(); if (p && p.then) p.then(function () { video.pause(); }).catch(function () {}); } }, { once: true, passive: true });
+    /* Phones: keep offering the clip a user gesture until a frame has painted;
+       the first touch usually lands before the clip has even arrived. */
+    function unlock() {
+      if (!video || !mobile.matches || media.getAttribute('data-painted') === 'true') return;
+      var p = video.play(); if (p && p.then) p.then(function () { video.pause(); markPainted(); }).catch(function () {});
+    }
+    window.addEventListener('touchstart', unlock, { passive: true });
+    window.addEventListener('pointerdown', unlock, { passive: true });
     layout();
     window.requestAnimationFrame(tick);
   }

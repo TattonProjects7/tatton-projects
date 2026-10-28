@@ -36,6 +36,7 @@
 @media (max-width: 860px) {
   /* Phones: the clip is a portrait cut, so keep the top two-thirds of the frame
      clear and carry the copy on a bottom-weighted shade only. */
+  .sf { height: calc(var(--sf-n, 3) * 80vh + 100vh) !important; }
   .sf__chapter { align-items: flex-end; padding: 0 20px 64px; }
   .sf__steps { display: none; }
   .sf__media img, .sf__media video { object-position: var(--sf-pos-mobile, var(--sf-pos, 50% 50%)); }
