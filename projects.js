@@ -22,7 +22,7 @@ const PROJECTS = [
     id: "office-fit-out-walkways",
     name: "Office walkways & communal toilets",
     client: "Confidential client",
-    location: "Greater Manchester",
+    location: "",
     value: "",
     year: "2026",
     sector: "fitout",

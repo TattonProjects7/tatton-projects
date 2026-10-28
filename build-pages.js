@@ -281,7 +281,7 @@ function projectPage(p, i, all) {
       <h1>${esc(p.name)}</h1>
       <div class="cs-meta">
         ${p.value ? `<span>Value <b>${esc(p.value)}</b></span>` : ''}
-        <span>Location <b>${esc(p.location)}</b></span>
+        ${p.location ? `<span>Location <b>${esc(p.location)}</b></span>` : ''}
         ${p.client ? `<span>Client <b>${esc(p.client)}</b></span>` : ''}
       </div>
       ${p.attribution ? `<p class="attrib">${esc(p.attribution)}</p>` : ''}
