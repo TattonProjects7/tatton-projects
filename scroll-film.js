@@ -9,6 +9,8 @@
 (function () {
   'use strict';
   var clamp = function (v, a, b) { return Math.min(b, Math.max(a, v)); };
+  /* The film plays over this share of the pinned track; the rest holds the last shot. */
+  var FILM_SPAN = 0.8;
   var smooth = function (v) { var x = clamp(v, 0, 1); return x * x * (3 - 2 * x); };
 
   function init(root) {
@@ -68,7 +70,7 @@
     function read() {
       var pageY = window.scrollY || window.pageYOffset;
       var y = clamp(pageY - rootTop, 0, total);
-      target = y / total;
+      target = clamp(y / total / FILM_SPAN, 0, 1);
       root.style.setProperty('--sf-progress', String(target));
       var idx = Math.min(n - 1, Math.floor(target * n));
       chapters.forEach(function (el, i) {
@@ -100,7 +102,7 @@
       b.addEventListener('click', function () {
         var top = root.getBoundingClientRect().top + window.scrollY;
         var tot = Math.max(root.offsetHeight - window.innerHeight, 1);
-        window.scrollTo({ top: top + tot * (i + 0.35) / n, behavior: reduce ? 'auto' : 'smooth' });
+        window.scrollTo({ top: top + tot * FILM_SPAN * (i + 0.35) / n, behavior: reduce ? 'auto' : 'smooth' });
       });
     });
     window.addEventListener('scroll', function () { dirty = true; }, { passive: true });
