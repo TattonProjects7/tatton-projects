@@ -5,79 +5,261 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.tattonprojects.co.uk"
+        }
+      ],
+      "destination": "https://www.tatton-projects.co.uk/",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "tattonprojects.co.uk"
+        }
+      ],
+      "destination": "https://www.tatton-projects.co.uk/",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "tatton-projects.co.uk"
+        }
+      ],
+      "destination": "https://www.tatton-projects.co.uk/",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "tatton-projects.com"
+        }
+      ],
+      "destination": "https://www.tatton-projects.co.uk/",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.tatton-projects.com"
+        }
+      ],
+      "destination": "https://www.tatton-projects.co.uk/",
+      "statusCode": 301
+    },
+    {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "tattonprojects.co.uk" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "tattonprojects.co.uk"
+        }
+      ],
       "destination": "https://www.tatton-projects.co.uk/:path*",
       "statusCode": 301
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.tattonprojects.co.uk" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.tattonprojects.co.uk"
+        }
+      ],
       "destination": "https://www.tatton-projects.co.uk/:path*",
       "statusCode": 301
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "tatton-projects.co.uk" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "tatton-projects.co.uk"
+        }
+      ],
       "destination": "https://www.tatton-projects.co.uk/:path*",
       "statusCode": 301
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "tatton-projects.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "tatton-projects.com"
+        }
+      ],
       "destination": "https://www.tatton-projects.co.uk/:path*",
       "statusCode": 301
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.tatton-projects.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.tatton-projects.com"
+        }
+      ],
       "destination": "https://www.tatton-projects.co.uk/:path*",
       "statusCode": 301
     },
-    { "source": "/review", "destination": "https://g.page/r/CQqJ2PEvOtRQEAE/review", "permanent": false },
-    { "source": "/projects", "destination": "/work", "permanent": true },
-    { "source": "/vanguard", "destination": "/work/sentric-music", "permanent": true },
-    { "source": "/work/vanguard", "destination": "/work/sentric-music", "permanent": true },
-    { "source": "/sentric-music", "destination": "/work/sentric-music", "permanent": true },
-    { "source": "/calvin-klein", "destination": "/work/calvin-klein", "permanent": true },
-    { "source": "/fossil", "destination": "/work/fossil", "permanent": true },
-    { "source": "/knutsford-new-build", "destination": "/work/knutsford-new-build", "permanent": true },
-    { "source": "/leeds-bar", "destination": "/work/leeds-bar", "permanent": true },
-    { "source": "/sentric-music", "destination": "/work/sentric-music", "permanent": true },
-    { "source": "/stockport-office", "destination": "/work/stockport-office", "permanent": true },
-    { "source": "/stockport-service-centre", "destination": "/work/stockport-service-centre", "permanent": true },
-    { "source": "/wilmslow-house", "destination": "/work/wilmslow-house", "permanent": true },
-    { "source": "/about-1", "destination": "/", "permanent": true },
-    { "source": "/about", "destination": "/", "permanent": true },
-    { "source": "/contact", "destination": "/", "permanent": true },
-    { "source": "/post/completed-office-fit-out-in-liverpool", "destination": "/work/sentric-music", "permanent": true },
-    { "source": "/post/tatton-projects-deliver-a-cat-a-office-fit-out-in-stockport", "destination": "/office-fit-out-manchester", "permanent": true },
-    { "source": "/post/the-benefits-of-a-professional-office-fit-out-in-manchester-cheshire", "destination": "/office-fit-out-manchester", "permanent": true },
-    { "source": "/post/do-i-need-planning-permission-for-a-house-extension-in-altrincham", "destination": "/blog/do-i-need-planning-permission-for-an-extension-altrincham", "permanent": true },
-    { "source": "/post/:slug*", "destination": "/blog", "permanent": true }
+    {
+      "source": "/review",
+      "destination": "https://g.page/r/CQqJ2PEvOtRQEAE/review",
+      "permanent": false
+    },
+    {
+      "source": "/projects",
+      "destination": "/work",
+      "permanent": true
+    },
+    {
+      "source": "/vanguard",
+      "destination": "/work/sentric-music",
+      "permanent": true
+    },
+    {
+      "source": "/work/vanguard",
+      "destination": "/work/sentric-music",
+      "permanent": true
+    },
+    {
+      "source": "/sentric-music",
+      "destination": "/work/sentric-music",
+      "permanent": true
+    },
+    {
+      "source": "/calvin-klein",
+      "destination": "/work/calvin-klein",
+      "permanent": true
+    },
+    {
+      "source": "/fossil",
+      "destination": "/work/fossil",
+      "permanent": true
+    },
+    {
+      "source": "/knutsford-new-build",
+      "destination": "/work/knutsford-new-build",
+      "permanent": true
+    },
+    {
+      "source": "/leeds-bar",
+      "destination": "/work/leeds-bar",
+      "permanent": true
+    },
+    {
+      "source": "/sentric-music",
+      "destination": "/work/sentric-music",
+      "permanent": true
+    },
+    {
+      "source": "/stockport-office",
+      "destination": "/work/stockport-office",
+      "permanent": true
+    },
+    {
+      "source": "/stockport-service-centre",
+      "destination": "/work/stockport-service-centre",
+      "permanent": true
+    },
+    {
+      "source": "/wilmslow-house",
+      "destination": "/work/wilmslow-house",
+      "permanent": true
+    },
+    {
+      "source": "/about-1",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/post/completed-office-fit-out-in-liverpool",
+      "destination": "/work/sentric-music",
+      "permanent": true
+    },
+    {
+      "source": "/post/tatton-projects-deliver-a-cat-a-office-fit-out-in-stockport",
+      "destination": "/office-fit-out-manchester",
+      "permanent": true
+    },
+    {
+      "source": "/post/the-benefits-of-a-professional-office-fit-out-in-manchester-cheshire",
+      "destination": "/office-fit-out-manchester",
+      "permanent": true
+    },
+    {
+      "source": "/post/do-i-need-planning-permission-for-a-house-extension-in-altrincham",
+      "destination": "/blog/do-i-need-planning-permission-for-an-extension-altrincham",
+      "permanent": true
+    },
+    {
+      "source": "/post/:slug*",
+      "destination": "/blog",
+      "permanent": true
+    }
   ],
   "rewrites": [
-    { "source": "/images/:path*", "destination": "/:path*" }
+    {
+      "source": "/images/:path*",
+      "destination": "/:path*"
+    }
   ],
   "headers": [
     {
       "source": "/images/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
       ]
     },
     {
       "source": "/videos/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ]

@@ -134,8 +134,9 @@ const footer = (depth) => {
       <a href="tel:01617062907">0161 706 2907</a>
       <a href="mailto:info@tattonprojects.co.uk">info@tattonprojects.co.uk</a>
       <address>Tatton Projects<br>Suite 15, Peel House<br>30 The Downs<br>Altrincham WA14 2PX</address>
-      <a href="https://maps.google.com/?cid=5824344195692267786" rel="noopener">Find us on Google Maps</a>
-      <a href="https://g.page/r/CQqJ2PEvOtRQEAE/review" rel="noopener">Review us on Google</a>
+      <a href="https://www.google.com/maps?cid=5824344195692267786" rel="noopener">Find us on Google Maps</a>
+      <a href="https://www.google.com/maps?cid=5824344195692267786" rel="noopener">Read our Google reviews</a>
+      <a href="https://g.page/r/CQqJ2PEvOtRQEAE/review" rel="noopener">Leave a review on Google</a>
     </div>
     <div class="rise">
       <p class="foot-lbl">More</p>
@@ -569,7 +570,8 @@ function blogList(all) {
 function blogPostPage(p, all) {
   const url = `${SITE}/blog/${p.slug}`;
   const img = p.image ? `${SITE}/${p.image}` : `${SITE}/images/sentric-01-lounge.jpg`;
-  const title = p.seoTitle ? `${p.seoTitle} | Tatton Projects` : `${p.title} | Tatton Projects`;
+  const base = p.seoTitle || p.title;
+  const title = `${base} | Tatton Projects`.length > 65 ? base : `${base} | Tatton Projects`;
   const desc = clip(p.summary, 155);
   /* related posts: same category first, then the rest in list order (newest first) */
   const rest = all.filter((x) => x.slug !== p.slug);
