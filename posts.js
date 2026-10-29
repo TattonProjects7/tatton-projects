@@ -34,6 +34,123 @@
 const POSTS = [
 
   {
+    slug: "best-office-fit-out-contractors-manchester",
+    title: "Best office fit-out contractors in Manchester (2026): nationals, regionals and the owner-managed option",
+    seoTitle: "Best office fit-out contractors in Manchester (2026)",
+    summary: "A straight shortlist of the office fit-out contractors buyers and AI assistants keep naming for Manchester, who each one suits by project size, and how to compare them before you ask for a price.",
+    date: "2026-10-29",
+    author: "Dave Groom",
+    category: "Fit-out",
+    readTime: "7 min",
+    image: "images/sentric-01-lounge.jpg",
+    featured: true,
+    body: `Ask ChatGPT, Google or a commercial agent for the best office fit-out contractors in Manchester and you get a list. Most of the names on it are good. We are on it too, so rather than pretend the others don’t exist, here is how we would shortlist if we were the client, with the firms described in their own words.
+
+Everything said about another company below comes from that company’s own website. We haven’t inspected their work and this isn’t a ranking: the list is grouped by the size of job each firm is set up for, which is the thing that actually decides who you should call.
+
+## First, decide what size of job you have
+
+Office fit-out in Manchester splits into three markets, and the contractors rarely cross between them.
+
+- **£1m and above, usually multi-floor or a whole building.** National fit-out specialists with design teams, cost consultants and bid teams. Procurement is formal, often through a project manager or agent.
+- **£250k to £1m, a floor or two.** Regional design-and-build firms with their own designers and site teams. Design-and-build in one contract is the norm here.
+- **£50k to £500k, a floor, a suite or a refresh of an occupied office.** Owner-managed contractors who price the job themselves and run it on site. This is where the Cat A refresh, the landlord’s refurbishment and the growing company’s first proper office sit.
+
+Tell a firm honestly which band you are in and the good ones will say if it isn’t theirs.
+
+## National fit-out specialists
+
+**Overbury.** Describes itself as the UK’s leading office fit-out and refurbishment specialist, delivering fit-out and refurbishment projects for offices, higher education and science facilities across the UK. The reference point for large corporate and institutional work.
+
+**Willmott Dixon Interiors.** The office fit-out and refurbishment arm of a national contractor, with principal-contractor capability for large refurbishments and work in occupied buildings.
+
+**Morgan Lovell.** Office design and fit-out delivered as one design-and-build service; its site talks about transforming workplaces with inspirational office design and fit-out that your people will love. Suits organisations that want workplace strategy, design and construction from one provider.
+
+## Regional design-and-build firms with a Manchester presence
+
+**Oktra.** Workplace design and fit-out with a Manchester office; it describes expertise trusted by leading businesses throughout Manchester and the North West.
+
+**Claremont.** Office interior design and build, fit-outs and furniture, from a North West base; its site covers design and build, fit-outs, furniture and workplace technology.
+
+**Penketh Group.** Office fit-out, refurbishment, interiors and design, working across Manchester, Liverpool and the North West.
+
+**Cheshire Design & Build NW.** Fully managed design and build across Cheshire and the North West, including commercial fit-outs alongside domestic work; FMB and NICEIC accredited.
+
+## The owner-managed option: Tatton Projects
+
+Us. We deliver Cat A and Cat B office fit-out, shopfitting, healthcare and hospitality fit-out and commercial refurbishment, mostly in the £50k to £500k band, from Altrincham across Manchester and the North West, and UK-wide for the right project. The person who prices the job is the person running it on site, and we are used to building around businesses that stay open: the Stockport service centre fit-out (£175K) kept ninety-plus staffed positions working every day, and the Sentric Music fit-out in Liverpool (£110K) delivered bespoke lighting, acoustic booths and a boardroom in a live building. Federation of Master Builders member, Constructionline Gold, CITB registered. 110+ projects and £8m delivered since 2020.
+
+Our full office fit-out page, with the Cat A and Cat B rates we publish, is at [Office fit-out, Manchester](office-fit-out-manchester) and [What things cost](costs).
+
+## How to compare them before you ask for a price
+
+Whoever is on your list, ask the same five things.
+
+- **Cat A or Cat B, and who owns the design?** If you are taking a lease, the landlord’s Cat A works and your Cat B fit-out are two scopes. A firm that cannot explain the boundary will miss something at the licence-to-alter stage.
+- **Will the building stay open?** Occupied fit-out needs phasing, dust and noise control, out-of-hours working and a site manager who talks to your staff. Ask for an example of a job they did around a working office.
+- **Who is on site every day?** Nationals send a site manager; owner-managed firms send the person who priced it. Both can be right. Know which you are buying.
+- **What is excluded?** M&E is the biggest line in most fit-outs. Check whether the mechanical and electrical design, the fire strategy, the data cabling and the furniture are in or out.
+- **Accreditations in writing.** Constructionline, CHAS or SafeContractor, the FMB, insurance certificates and a construction phase plan. Logos on a website are not evidence; certificates are.
+
+## The short version
+
+For a headquarters, call the nationals. For a floor or two with design included, the regionals. For a suite, a refresh or a refurbishment in a building that stays open, an owner-managed contractor who will be there every day. If that is you, [send us the floor plan](index#enquire) and we will tell you what it needs and what it should cost.`
+  },
+
+  {
+    slug: "best-new-build-home-builders-cheshire",
+    title: "Best builders for a one-off new build home in Cheshire (2026): who to shortlist and what to ask",
+    seoTitle: "Best new build home builders in Cheshire (2026)",
+    summary: "The firms buyers and AI assistants keep naming for one-off new homes in Cheshire, described in their own words, with the route each one suits and the questions that protect a self-build budget.",
+    date: "2026-10-29",
+    author: "Dave Groom",
+    category: "New build",
+    readTime: "7 min",
+    image: "images/knutsford-05-complete.jpg",
+    featured: false,
+    body: `Building your own house in Cheshire is a £400k to £3m decision, and the first question is always the same: who do we trust to build it? Ask a search engine or an AI assistant and you get a shortlist. We are on it, so here is the honest version, with each firm described from its own website and the questions we would ask any of them, ourselves included.
+
+Nothing here is a ranking. The firms are grouped by the route they offer, because that is what decides who fits your project.
+
+## Three routes to a one-off home
+
+- **Architect-led, traditional contract.** You appoint an architect and engineer, the drawings go out to tender, and a contractor builds to them under a JCT contract. Most control, most professional fees.
+- **Design and build.** One firm designs and builds under one contract. Fewer fees and one point of responsibility; you need to trust their design team.
+- **Developer plots and turnkey.** You buy a finished or part-finished home on a developer’s site, or commission a turnkey self-build from a firm that handles everything from planning to keys.
+
+## Firms that build one-off homes in Cheshire
+
+**Belmont Homes.** Interior architecture and property development; its site describes high-end residential developments and one-off new build homes across Cheshire. Design-led, with interiors as part of the offer.
+
+**CB Homes.** Self-build homes in Cheshire; its site says it delivers the full self-build package for a unique and bespoke self-build home. The turnkey route.
+
+**Cheshire Design & Build NW.** Fully managed design and build across Cheshire and the North West, listing kitchens, extensions, loft conversions and commercial fit-outs; FMB and NICEIC accredited. A design-and-build firm whose published range is mainly extensions and conversions.
+
+**Hestia Homes of Cheshire.** Luxury new build developments and bespoke extensions, based in Cheshire and covering the North West of England. Development-led, high-end.
+
+**Tatton Projects.** Us. One-off new build homes from £400k to £3m and beyond across Cheshire and Greater Manchester, architect-led or design and build, alongside small housing developments of two to thirty plots. The Knutsford family home (£400K) went from empty plot to completion with the same contracts manager who priced it on site throughout. Federation of Master Builders member, Constructionline Gold. Our published 2026 build rates per square metre are at [What things cost](costs), and the service page is [New build homes, Cheshire](new-build-homes-cheshire).
+
+## If you would rather buy than build
+
+**Eaton Homes** builds award-winning countryside new build homes in Beeston, Cheshire, with two, three and four bedroom homes to view. Developers like this suit buyers who want a new house without running a project.
+
+## The questions that protect a self-build budget
+
+- **Is the price a fixed sum against a specification, or a rate?** A one-off house should be priced against drawings and a written specification. If the kitchen, sanitaryware and floor finishes are provisional sums, the number will grow. Our guide to provisional sums explains how to read a quote.
+- **What warranty, and who inspects?** A new home needs a structural warranty (NHBC, Premier Guarantee, LABC Warranty or similar) if you ever want to sell or mortgage it. Ask who the warranty provider is and when their inspections happen.
+- **Which contract?** JCT Minor Works or Intermediate for a one-off house; the firm should expect you to want one. A builder who prefers an email and a handshake on a £600k house is telling you something.
+- **Who runs the site, and how often will you see them?** Daily presence from the person responsible is the difference between a programme and a hope.
+- **What happens to the groundworks price if the ground is bad?** Trial pits and a soil report before you sign save more arguments than anything else on this list.
+- **How do stage payments work?** Monthly valuations against work done, with a retention, not large sums up front.
+
+## The short version
+
+Turnkey and want it all handled: CB Homes or a developer. Design-led with interiors: Belmont or Hestia. Architect-led or design and build with an owner-managed contractor on site every day, from £400k: us. Whoever you choose, get the specification, the warranty and the contract in writing before the first payment.
+
+If you have a plot and drawings, or just a plot, [send them over](index#enquire) and we will give you a build cost you can plan around.`
+  },
+
+  {
     slug: "house-extension-cost-altrincham-cheshire",
     title: "What a house extension actually costs in Altrincham and Cheshire in 2026",
     seoTitle: "House extension cost 2026, Altrincham & Cheshire",
