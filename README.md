@@ -75,3 +75,9 @@ text on white.
 All content is visible by default. Animations only hide things once
 JavaScript confirms it's running, with a 2.5-second failsafe.
 A script error cannot blank this site.
+
+## Websites
+
+- Tatton Projects: https://www.tatton-projects.co.uk (commercial fit-out UK-wide, new build homes, developments and extensions across Greater Manchester and Cheshire)
+- The Load Bearing Company: https://www.theloadbearingcompany.co.uk (steel beams, RSJs, load-bearing wall removal, structural brickwork, steel shelters and units across Cheshire and the North West)
+- EstiMate: https://www.esti-mate.app (quoting, contracts, project management, invoicing and accounting software for UK builders and trades)
