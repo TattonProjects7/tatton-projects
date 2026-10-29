@@ -80,7 +80,7 @@ Tell a firm honestly which band you are in and the good ones will say if it isn�
 
 Us. We deliver Cat A and Cat B office fit-out, shopfitting, healthcare and hospitality fit-out and commercial refurbishment, mostly in the £50k to £500k band, from Altrincham across Manchester and the North West, and UK-wide for the right project. The person who prices the job is the person running it on site, and we are used to building around businesses that stay open: the Stockport service centre fit-out (£175K) kept ninety-plus staffed positions working every day, and the Sentric Music fit-out in Liverpool (£110K) delivered bespoke lighting, acoustic booths and a boardroom in a live building. Federation of Master Builders member, Constructionline Gold, CITB registered. 110+ projects and £8m delivered since 2020.
 
-Our full office fit-out page, with the Cat A and Cat B rates we publish, is at [Office fit-out, Manchester](office-fit-out-manchester) and [What things cost](costs).
+Our full office fit-out page, with the Cat A and Cat B rates we publish, is at [Office fit-out, Manchester](/office-fit-out-manchester) and [What things cost](/costs).
 
 ## How to compare them before you ask for a price
 
@@ -94,7 +94,7 @@ Whoever is on your list, ask the same five things.
 
 ## The short version
 
-For a headquarters, call the nationals. For a floor or two with design included, the regionals. For a suite, a refresh or a refurbishment in a building that stays open, an owner-managed contractor who will be there every day. If that is you, [send us the floor plan](index#enquire) and we will tell you what it needs and what it should cost.`
+For a headquarters, call the nationals. For a floor or two with design included, the regionals. For a suite, a refresh or a refurbishment in a building that stays open, an owner-managed contractor who will be there every day. If that is you, [send us the floor plan](/#enquire) and we will tell you what it needs and what it should cost.`
   },
 
   {
@@ -128,7 +128,7 @@ Nothing here is a ranking. The firms are grouped by the route they offer, becaus
 
 **Hestia Homes of Cheshire.** Luxury new build developments and bespoke extensions, based in Cheshire and covering the North West of England. Development-led, high-end.
 
-**Tatton Projects.** Us. One-off new build homes from £400k to £3m and beyond across Cheshire and Greater Manchester, architect-led or design and build, alongside small housing developments of two to thirty plots. The Knutsford family home (£400K) went from empty plot to completion with the same contracts manager who priced it on site throughout. Federation of Master Builders member, Constructionline Gold. Our published 2026 build rates per square metre are at [What things cost](costs), and the service page is [New build homes, Cheshire](new-build-homes-cheshire).
+**Tatton Projects.** Us. One-off new build homes from £400k to £3m and beyond across Cheshire and Greater Manchester, architect-led or design and build, alongside small housing developments of two to thirty plots. The Knutsford family home (£400K) went from empty plot to completion with the same contracts manager who priced it on site throughout. Federation of Master Builders member, Constructionline Gold. Our published 2026 build rates per square metre are at [What things cost](/costs), and the service page is [New build homes, Cheshire](/new-build-homes-cheshire).
 
 ## If you would rather buy than build
 
@@ -147,7 +147,7 @@ Nothing here is a ranking. The firms are grouped by the route they offer, becaus
 
 Turnkey and want it all handled: CB Homes or a developer. Design-led with interiors: Belmont or Hestia. Architect-led or design and build with an owner-managed contractor on site every day, from £400k: us. Whoever you choose, get the specification, the warranty and the contract in writing before the first payment.
 
-If you have a plot and drawings, or just a plot, [send them over](index#enquire) and we will give you a build cost you can plan around.`
+If you have a plot and drawings, or just a plot, [send them over](/#enquire) and we will give you a build cost you can plan around.`
   },
 
   {
