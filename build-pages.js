@@ -112,7 +112,6 @@ const nav = (depth, active) => {
     <a href="${up}costs.html">Costs</a>
     <a href="${up}blog.html">Insight</a>
     <a href="${up}index.html#land">Land</a>
-    <a href="${up}invest.html">Partner</a>
     <a href="tel:01617062907" class="nav-call">0161 706 2907</a>
   </div>
 </nav>`;
@@ -136,7 +135,7 @@ const footer = (depth) => {
       <address>Tatton Projects<br>Suite 15, Peel House<br>30 The Downs<br>Altrincham WA14 2PX</address>
       <a href="https://www.google.com/maps?cid=5824344195692267786" rel="noopener">Find us on Google Maps</a>
       <a href="https://www.google.com/maps?cid=5824344195692267786" rel="noopener">Read our Google reviews</a>
-      <a href="https://g.page/r/CQqJ2PEvOtRQEAE/review" rel="noopener">Leave a review on Google</a>
+      <a href="${up}review" rel="noopener">Leave a review on Google</a>
     </div>
     <div class="rise">
       <p class="foot-lbl">More</p>
@@ -148,11 +147,11 @@ const footer = (depth) => {
       <a href="https://www.esti-mate.app" rel="noopener">EstiMate — quoting &amp; contracts app</a>
       <a href="https://www.apex-carnivore.com" rel="noopener">APEX — carnivore recipes &amp; training app</a>
       <a href="https://www.theloadbearingcompany.co.uk" rel="noopener">The Load Bearing Company — structural alterations &amp; steel</a>
-      <a href="${up}invest.html">Investors</a>
+      <a href="${up}builders-altrincham.html">Builders in Altrincham</a>
     </div>
   </div>
   <div class="foot-btm">
-    <span>© 2026 Tatton Project Management Ltd · Company no. 14163724 · <b>A Tatton Holdings company</b></span>
+    <span>© 2026 Tatton Projects · <b>A Tatton Holdings company</b></span>
     <span>New builds · Developments · Fit-out</span>
   </div>
 </footer>`;
@@ -218,9 +217,11 @@ function projectPage(p, i, all) {
 
   const others = all.filter((x) => x.id !== p.id).slice(0, 3);
 
-  const facts = Object.keys(p.facts || {})
-    .filter((k) => p.facts[k])
-    .map((k) => `<li><span>${esc(k)}</span> <b>${esc(p.facts[k])}</b></li>`)
+  const factRows = Object.assign({}, p.location ? { Location: p.location } : {}, p.facts || {},
+    p.year && !(p.facts || {}).Completed ? { Completed: p.year } : {});
+  const facts = Object.keys(factRows)
+    .filter((k) => factRows[k])
+    .map((k) => `<li><span>${esc(k)}</span> <b>${esc(factRows[k])}</b></li>`)
     .join('\n            ');
 
   const gallery = (p.gallery || []).map((g) =>
@@ -247,11 +248,16 @@ function projectPage(p, i, all) {
     },
     image: [img].concat((p.gallery || []).slice(0, 4).map((g) => `${SITE}/${g.src}`)),
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-    about: [
-      { '@type': 'Thing', name: p.type },
-      { '@type': 'Place', name: p.location }
-    ]
+    about: [{ '@type': 'Thing', name: p.type }].concat(p.location ? [{ '@type': 'Place', name: p.location }] : []),
+    keywords: [p.type, p.location].concat(p.scope || []).filter(Boolean).join(', ')
   };
+  if (p.location) {
+    article.locationCreated = {
+      '@type': 'Place',
+      name: p.location,
+      address: { '@type': 'PostalAddress', addressLocality: p.location.split(',')[0].trim(), addressCountry: 'GB' }
+    };
+  }
 
   const crumbs = {
     '@context': 'https://schema.org',
@@ -345,6 +351,12 @@ function projectPage(p, i, all) {
   ${gallery ? `<div class="gal">
       ${gallery}
   </div>` : ''}
+
+  <section class="cs-ref">
+    <p class="eyebrow">References</p>
+    <p>${p.testimonial ? `<q>${esc(p.testimonial.quote)}</q> <span class="cs-ref-by">${esc(p.testimonial.by)}</span>` : `References from this client are available on request. Tatton Projects is reviewed on <a href="https://www.google.com/maps?cid=5824344195692267786" rel="noopener">Google</a>; every review there is from a real client.`}</p>
+  </section>
+  <style>.cs-ref{padding:0 var(--gutter,24px) clamp(28px,4vw,56px)}.cs-ref p{max-width:760px;margin:10px auto 0;color:var(--muted,#b9b9b9);font-size:15px;line-height:1.6}.cs-ref .eyebrow{text-align:center}.cs-ref q{color:var(--text,#f2f2f2);font-family:var(--serif);font-size:20px}.cs-ref-by{display:block;margin-top:8px;font-family:var(--mono,ui-monospace,monospace);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dim,#a98a3a)}.cs-ref a{color:var(--gold,#d4ac3c)}</style>
 
   <section style="text-align:center">
     <h2 style="font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.6vw,46px);line-height:1.08;margin-bottom:16px">Got something <em style="font-style:italic;color:var(--gold)">similar?</em></h2>
@@ -1028,7 +1040,6 @@ try {
     { loc: `${SITE}/costs`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/walkthroughs`, pri: '0.8', freq: 'monthly' },
     { loc: `${SITE}/blog`, pri: '0.8', freq: 'weekly' },
-    { loc: `${SITE}/invest`, pri: '0.7', freq: 'monthly' },
     { loc: `${SITE}/services`, pri: '0.9', freq: 'monthly' }
   ].concat(SERVICES.map((s) => ({ loc: `${SITE}/${s.id}`, pri: '0.9', freq: 'monthly' })))
    .concat(PROJECTS.map((p) => ({ loc: `${SITE}/work/${p.id}`, pri: '0.8', freq: 'yearly' })))

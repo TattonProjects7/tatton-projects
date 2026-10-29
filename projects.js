@@ -19,6 +19,41 @@
 const PROJECTS = [
 
   {
+    id: "hale-basement-conversion",
+    name: "Hale basement conversion",
+    client: "Private client",
+    location: "Hale, Cheshire",
+    value: "",
+    year: "",
+    sector: "resi",
+    type: "Basement conversion · Residential",
+    live: false,
+    featured: false,
+    attribution: "",
+    card: "videos/basement-conversion-hale.jpg",
+    hero: "videos/basement-conversion-hale.jpg",
+    video: {
+      src: "../videos/basement-conversion-hale.mp4",
+      poster: "videos/basement-conversion-hale.jpg",
+      portrait: true,
+      label: "Basement conversion walkthrough — Hale, Cheshire: cellar to cinema room, home office and lounge",
+      cap: "Site walkthrough · 27 s"
+    },
+    gallery: [],
+    blurb: "Full below-ground basement conversion beneath an existing Hale property: structural underpinning, tanking and waterproofing, services and finished living space with a cinema room, home office and lounge.",
+    overview: "A full basement conversion built beneath an existing house in Hale, Cheshire, turning an unused cellar into finished living space.\nThe structure was underpinned, the new envelope tanked and waterproofed, and services run for a cinema room, a home office and a lounge. Finishes were carried through to the same standard as the house above.\nOne of several basement projects Tatton Projects has delivered across Altrincham, Hale and Bowdon, where adding floor area below ground is often the best route when a plot is tight or the street scene is protected.",
+    facts: { "Contract": "Basement conversion", "Status": "Complete" },
+    scope: [
+      "Structural underpinning",
+      "Tanking and waterproofing",
+      "Drainage and sump pumping",
+      "Mechanical and electrical services",
+      "Cinema room, home office and lounge",
+      "Plastering, decoration and finishes"
+    ]
+  },
+
+  {
     id: "office-fit-out-walkways",
     name: "Office walkways & communal toilets",
     client: "Confidential client",
