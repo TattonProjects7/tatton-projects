@@ -147,7 +147,12 @@ const footer = (depth) => {
       <a href="https://www.esti-mate.app" rel="noopener">EstiMate — quoting &amp; contracts app</a>
       <a href="https://www.apex-carnivore.com" rel="noopener">APEX — carnivore recipes &amp; training app</a>
       <a href="https://www.theloadbearingcompany.co.uk" rel="noopener">The Load Bearing Company — structural alterations &amp; steel</a>
+      <a href="https://www.tattonprojects.com" rel="noopener">Tatton Project Management — project management consultancy</a>
       <a href="${up}builders-altrincham.html">Builders in Altrincham</a>
+      <a href="${up}builders-sale.html">Builders in Sale</a>
+      <a href="${up}builders-timperley.html">Builders in Timperley</a>
+      <a href="${up}builders-manchester.html">Construction company, Manchester</a>
+      <a href="${up}builders-cheshire.html">Builders in Cheshire</a>
     </div>
   </div>
   <div class="foot-btm">
