@@ -452,6 +452,7 @@ footer { padding: clamp(56px, 8vw, 90px) var(--gutter) 36px; border-top: 1px sol
 .foot-grid a { color: var(--stone-2); text-decoration: none; display: block; padding: 5px 0; font-size: 15px; transition: color .25s; }
 .foot-grid a:hover { color: var(--gold); }
 .foot-grid .foot-txt { color: var(--stone-2); display: block; padding: 5px 0; font-size: 15px; }
+.foot-legal { max-width: 1100px; margin: 14px auto 0; padding: 0 24px; font-size: 12px; line-height: 1.6; color: var(--stone-2); opacity: .8; }
 
 /* ---------- accreditation strip ---------- */
 .accred { padding-top: 48px; padding-bottom: 48px; border-top: 1px solid var(--line-soft); }
