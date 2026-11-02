@@ -137,7 +137,7 @@ const footer = (depth) => {
       <a href="https://www.google.com/maps?cid=5824344195692267786" rel="noopener">Read our Google reviews</a>
       <a href="${up}review" rel="noopener">Leave a review on Google</a>
       <a href="https://find-and-update.company-information.service.gov.uk/company/17553626" rel="noopener">Companies House: 17553626</a>
-      <span class="foot-txt">Follow: <a href="https://www.linkedin.com/company/tatton-projects/" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/tatton.projects/" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@tattonprojects" rel="noopener">YouTube</a></span>
+      <span class="foot-txt">Follow: <a href="https://www.linkedin.com/company/tatton-projects/" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/tatton.projects/" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@tattonprojects" rel="noopener">YouTube</a> · <a href="https://www.tiktok.com/@tattonprojects" rel="noopener">TikTok</a></span>
       <span class="foot-txt">EstiMate: <a href="https://www.esti-mate.app" rel="noopener">Website</a> · <a href="https://www.youtube.com/@estimate-app" rel="noopener">YouTube</a> · <a href="https://www.linkedin.com/company/esti-mate-app/" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/estimate.app.uk" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@estimate.app" rel="noopener">TikTok</a> · <a href="https://www.google.com/maps?cid=6162024861675261580" rel="noopener">Google</a></span>
       <span class="foot-txt">The Load Bearing Company: <a href="https://www.theloadbearingcompany.co.uk" rel="noopener">Website</a> · <a href="https://www.google.com/maps?cid=1607872291215419791" rel="noopener">Google</a></span>
     </div>
@@ -707,6 +707,7 @@ const FIND_US = [
   ['LinkedIn', 'Tatton Projects on LinkedIn', 'Project updates, handovers and what we&rsquo;re building across Manchester and Cheshire.', 'https://www.linkedin.com/company/tatton-projects/'],
   ['Instagram', '@tatton.projects', 'Before, during and after photos straight from site.', 'https://www.instagram.com/tatton.projects/'],
   ['YouTube', 'Site walkthrough films', 'Walkthrough films of our jobs, from strip-out to handover.', 'https://www.youtube.com/@tattonprojects'],
+  ['TikTok', '@tattonprojects', 'Short clips straight from our sites.', 'https://www.tiktok.com/@tattonprojects'],
   ['Accreditation', 'Federation of Master Builders', 'Vetted FMB member, Constructionline Gold and CITB registered, with CSCS-carded site staff.', 'https://www.fmb.org.uk/'],
   ['Companies House', 'Tatton Projects of Cheshire Ltd', 'Company no. 17553626, part of the DPG Holdings MCR group.', 'https://find-and-update.company-information.service.gov.uk/company/17553626'],
   ['Sister company', 'The Load Bearing Company', 'Our structural team: steel beams, RSJs and load-bearing wall removal across the North West.', 'https://www.theloadbearingcompany.co.uk'],
