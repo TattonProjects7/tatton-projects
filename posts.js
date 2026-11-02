@@ -34,6 +34,110 @@
 const POSTS = [
 
   {
+    slug: "best-builders-altrincham",
+    title: "Best builders in Altrincham (2026): who to call for an extension, a renovation, a basement or a new home",
+    seoTitle: "Best builders in Altrincham (2026)",
+    summary: "A straight shortlist of the builders people keep finding for Altrincham, Hale and Bowdon, who each one suits, and the five questions to ask before you let anyone price your job.",
+    date: "2026-11-02",
+    author: "Dave Groom",
+    category: "Residential",
+    readTime: "6 min",
+    image: "images/wilmslow-04-front-after.jpg",
+    featured: true,
+    body: `Search for a builder in Altrincham and you get the same handful of names, plus Checkatrade, MyBuilder and the FMB directory. We're one of the names, based on The Downs, so rather than pretend the others don't exist, here's how we'd shortlist if it were our house.
+
+Everything said about another company below comes from that company's own website. We haven't inspected their work and this isn't a ranking. The list is grouped by the kind of job each firm is set up for, which is what actually decides who you should call.
+
+## First, be honest about the size of the job
+
+- **Under about £50,000**: a garage conversion, a new bathroom, a small single-storey extension. A local general builder or a firm from a directory with plenty of recent reviews is usually the right call.
+- **£100,000 and up**: a big extension, a whole-house refurbishment, a basement under the house, or a new home on your plot. You want a contractor who prices from drawings, runs one programme with every trade in sequence and handles Building Control and party walls.
+- **One specialist job**: a cellar conversion or a single steel beam. A specialist often beats a generalist on price and speed.
+
+## Local builders in Altrincham and Hale
+
+**MDA Design & Build.** Describes itself as a building company based in Hale, Altrincham, and lists new builds, home extensions, renovations, cellar conversions, loft and garage conversions, conservatories and kitchens.
+
+**KJL Builders.** A Manchester-based building firm offering building, renovation and property improvement services across the North West.
+
+**OneSource Property Solutions.** Cheshire-based, offering building, refurbishment, cleaning and property improvement for homeowners, landlords and commercial clients, and Citation Health & Safety approved.
+
+## Specialists
+
+**Altrincham Basement & Cellar Conversions.** Basement and cellar conversion specialists in Altrincham, who say they were chosen to appear on "Make My Home Bigger" on the Sky Home Living channel.
+
+**The Load Bearing Company.** Our sister company, for the structural jobs on their own: [steel beams, RSJs and load-bearing wall removal](https://www.theloadbearingcompany.co.uk/areas/altrincham) across Altrincham and the North West.
+
+## The owner-managed main contractor: Tatton Projects
+
+Us. We take on the bigger residential jobs from our office at Peel House on The Downs: extensions and remodels from around £100,000, whole-house refurbishments, basement conversions under existing houses, and one-off new homes in Altrincham, Hale, Bowdon and Timperley. The person who prices the job runs it on site. We're FMB members, Constructionline Gold and CITB registered, and we publish our 2026 rates on [What things cost](/costs).
+
+See the work: the [Hale basement](/work/hale-basement-conversion), the [Wilmslow house](/work/wilmslow-house) and the [Knutsford new build](/work/knutsford-new-build). More on how we work is on [Builders in Altrincham](/builders-altrincham), [Home builders in Altrincham](/home-builders-altrincham) and [Property refurbishment, Altrincham](/property-refurbishment-altrincham).
+
+## Five questions to ask any builder before they price
+
+- **Who will be on site every day?** The person who priced it, a site manager, or a subcontractor you haven't met?
+- **What's excluded?** Kitchens, glazing, electrics, decoration, skips and Building Control fees are the usual gaps between two "similar" prices.
+- **Provisional sums.** How much of the price is a guess, and who carries the risk if it's wrong?
+- **Trafford Council and party walls.** Altrincham, Hale and Bowdon fall under Trafford, and Bowdon and parts of Hale are conservation areas. Ask who handles planning conditions, Building Control and any party wall notices.
+- **Proof, not logos.** Insurance certificates, FMB or TrustMark membership, and two recent clients you can ring.
+
+## The short version
+
+Small job: a well-reviewed local builder. One specialist task: a specialist. A big extension, a refurbishment, a basement or a new house in Altrincham, Hale or Bowdon: a main contractor who will be there every day. If that's you, [send us the drawings](/#enquire) and you'll get a written cost plan from the person who'd run the job.`
+  },
+
+  {
+    slug: "best-extension-builders-manchester",
+    title: "Best extension builders in Manchester (2026): a shortlist, and how to compare their prices",
+    seoTitle: "Best extension builders in Manchester (2026)",
+    summary: "The extension builders people keep finding for Manchester and Cheshire, who each suits, what an extension really costs in 2026, and how to compare two quotes properly.",
+    date: "2026-11-02",
+    author: "Dave Groom",
+    category: "Residential",
+    readTime: "6 min",
+    image: "images/didsbury-01-kitchen.jpg",
+    featured: false,
+    body: `Ask Google or an AI assistant for the best extension builders in Manchester and you get a list of firms, plus Checkatrade and MyBuilder. We're on it too, building extensions from Didsbury to Hale, so here's a straight shortlist with the other firms described in their own words.
+
+Everything said about another company below comes from that company's own website. This isn't a ranking, and we haven't inspected anyone else's work.
+
+## Extension specialists covering Manchester
+
+**First Choice Extensions.** Extension builders for Manchester, Cheshire, Lancashire and the North West, with extension cost calculators, 360° tours and time-lapse videos of past projects on its site.
+
+**The Extension Guys.** A family-run business offering home extensions, garage conversions and plans drawn across the North West, with a fixed price guarantee, deposit protection and a 10-year guarantee.
+
+**Manchester Builder.** A house extension builder for Manchester and Cheshire, carrying out extensions and refurbishments across Greater Manchester and north Cheshire, which says it employs only skilled tradesmen.
+
+**MDA Design & Build.** Based in Hale, Altrincham, building home extensions alongside new builds, renovations and loft, cellar and garage conversions.
+
+## Tatton Projects
+
+Us. We build the larger extensions: side returns on Victorian terraces, full-width kitchen-diners on Edwardian semis, two-storey extensions, and extensions built together with a whole-house refurbishment. Recent Manchester work includes a £160,000 rear extension in Didsbury with a bookmatched marble island and minimal-frame sliders, and a £120,000 kitchen extension nearby under a full-length glazed roof. The person who prices the job runs it, and the steelwork goes in through our sister company [The Load Bearing Company](https://www.theloadbearingcompany.co.uk/areas/manchester).
+
+Details and 2026 prices are on [Extension builders, Manchester](/extension-builders-manchester) and [Extension builders, Altrincham](/extension-builders-altrincham).
+
+## What an extension costs in Manchester in 2026
+
+A well-built single-storey extension costs about **£2,400–£3,600 per square metre** of finished floor area before VAT and fees. A typical south Manchester kitchen extension, kitchen included, lands somewhere around £100,000–£180,000. Our full rates are on [What things cost](/costs), and the long version is in [Kitchen extension cost, Manchester](/blog/kitchen-extension-cost-manchester).
+
+## How to compare two extension quotes
+
+- **Same drawings, same spec.** If one builder priced the architect's drawings and another priced "an extension", the numbers aren't comparable.
+- **Kitchen, glazing and steel.** Check whether the kitchen, the sliders or roof glazing and the structural steel are in the price or are provisional sums.
+- **Party wall and build-over agreements.** On a Manchester terrace or semi you'll almost always need one or both. Ask who arranges them and when.
+- **Living in.** Ask how they'll keep you with a working kitchen, water and power, and on which days you won't have them.
+- **Who's on site.** The person who priced it, or someone you'll meet on day one?
+
+More on this is in [How to compare builders' quotes](/blog/how-to-compare-builders-quotes).
+
+## The short version
+
+For a straightforward single-storey extension, any of the specialists above is worth a call. For a big kitchen extension, a side return with structural work, or an extension done together with refurbishing the rest of the house, [send us the drawings](/#enquire). You'll get a written cost plan from the person who'd run the job.`
+  },
+
+  {
     slug: "best-office-fit-out-contractors-manchester",
     title: "Best office fit-out contractors in Manchester (2026): nationals, regionals and the owner-managed option",
     seoTitle: "Best office fit-out contractors in Manchester (2026)",
