@@ -150,6 +150,13 @@ const footer = (depth) => {
       <a href="https://www.apex-carnivore.com" rel="noopener">APEX — carnivore recipes &amp; training app</a>
       <a href="https://www.theloadbearingcompany.co.uk" rel="noopener">The Load Bearing Company — structural alterations &amp; steel</a>
       <a href="${up}builders-altrincham.html">Builders in Altrincham</a>
+      <a href="${up}builders-manchester.html">Builders in Manchester</a>
+      <a href="${up}home-builders-altrincham.html">Home builders Altrincham</a>
+      <a href="${up}home-builders-manchester.html">Home builders Manchester</a>
+      <a href="${up}extension-builders-altrincham.html">Extension builders Altrincham</a>
+      <a href="${up}extension-builders-manchester.html">Extension builders Manchester</a>
+      <a href="${up}property-refurbishment-altrincham.html">Property refurbishment Altrincham</a>
+      <a href="${up}property-refurbishment-manchester.html">Property refurbishment Manchester</a>
     </div>
   </div>
   <div class="foot-btm">
