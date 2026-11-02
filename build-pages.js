@@ -698,6 +698,19 @@ ${footer(1)}
 `;
 }
 
+/* ---------- where else to find us (every service page) ---------- */
+const FIND_US = [
+  ['Google', 'Five-star reviews', 'Read what clients say on our Google Business Profile, or leave a review of your own job.', 'https://www.google.com/maps?cid=5824344195692267786'],
+  ['Google', 'Leave us a review', 'Had work done by us? Two minutes on Google helps the next family find a builder they can trust.', 'https://g.page/r/CQqJ2PEvOtRQEAE/review'],
+  ['LinkedIn', 'Tatton Projects on LinkedIn', 'Project updates, handovers and what we&rsquo;re building across Manchester and Cheshire.', 'https://www.linkedin.com/company/tatton-projects/'],
+  ['Instagram', '@tatton.projects', 'Before, during and after photos straight from site.', 'https://www.instagram.com/tatton.projects/'],
+  ['YouTube', 'Site walkthrough films', 'Walkthrough films of our jobs, from strip-out to handover.', 'https://www.youtube.com/@tattonprojects'],
+  ['Accreditation', 'Federation of Master Builders', 'Vetted FMB member, Constructionline Gold and CITB registered, with CSCS-carded site staff.', 'https://www.fmb.org.uk/'],
+  ['Companies House', 'Tatton Projects of Cheshire Ltd', 'Company no. 17553626, part of the DPG Holdings MCR group.', 'https://find-and-update.company-information.service.gov.uk/company/17553626'],
+  ['Sister company', 'The Load Bearing Company', 'Our structural team: steel beams, RSJs and load-bearing wall removal across the North West.', 'https://www.theloadbearingcompany.co.uk'],
+  ['Our software', 'EstiMate', 'The quoting and contracts app we built to price our own jobs, now used by UK builders.', 'https://www.esti-mate.app']
+];
+
 /* ---------- service pages (from services.js) ---------- */
 /* "*words*" in a heading show in gold italics */
 const gold = (t) => esc(t).replace(/\*(.+?)\*/g, '<em>$1</em>');
@@ -886,6 +899,20 @@ ${faqs.length ? `<section class="faq">
       <span class="k">${esc(o.sector)}</span>
       <h4>${esc(o.short)}</h4>
       <p>${esc(o.summary)}</p>
+    </a>`).join('\n    ')}
+  </div>
+</section>
+
+<section class="svc-others">
+  <div class="sec-head rise">
+    <p class="eyebrow">Check us out</p>
+    <h2>Find Tatton Projects <em>everywhere.</em></h2>
+  </div>
+  <div class="sectors">
+    ${FIND_US.map(([k, h, p, href]) => `<a class="sector" href="${href}"${href.startsWith('http') ? ' rel="noopener"' : ''}>
+      <span class="k">${k}</span>
+      <h4>${h}</h4>
+      <p>${p}</p>
     </a>`).join('\n    ')}
   </div>
 </section>
