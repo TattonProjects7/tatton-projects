@@ -1000,4 +1000,58 @@ const SERVICES = [
     serviceType: ["Property refurbishment", "Whole-house refurbishment", "Commercial refurbishment", "Office refurbishment"],
     areaServed: [{ "@type": "City", "name": "Manchester" }, { "@type": "Place", "name": "Didsbury" }, { "@type": "Place", "name": "Chorlton" }, { "@type": "Place", "name": "Withington" }, { "@type": "Place", "name": "Fallowfield" }, { "@type": "Place", "name": "Stockport" }, { "@type": "Place", "name": "Sale" }]
   },
+
+  {
+    id: "industrial-units-warehouses",
+    areaServed: [{ "@type": "AdministrativeArea", "name": "North West England" }, { "@type": "AdministrativeArea", "name": "Cheshire" }, { "@type": "AdministrativeArea", "name": "Greater Manchester" }],
+    name: "Industrial Units & Warehouses North West",
+    short: "Industrial units",
+    sector: "Commercial",
+    title: "Industrial Units & Steel-Frame Warehouses North West | Tatton Projects",
+    description: "Steel-frame industrial units, warehouses, workshops and self-storage built from bare site to a trading building across Cheshire, Manchester and the North West.",
+    h1: "Industrial units & *warehouses.*",
+    eyebrow: "Industrial new build · North West",
+    lede: "Tatton Projects builds steel-frame industrial units, workshops, storage buildings and warehouses across Cheshire, Greater Manchester and the North West, from groundworks and slab to a building that is ready to trade.",
+    summary: "Steel portal-frame industrial units, workshops and self-storage, from slab and frame to cladding, roller shutters and external works.",
+    hero: "images/pendrick-01-unit.jpg",
+    heroCaption: "Pendrick Self Storage · steel-frame storage facility · circa £115K",
+    card: "images/pendrick-01-unit-card.jpg",
+    heroFacts: [["Recent", "Self-storage facility, circa £115K"], ["Frame", "Steel portal frame"], ["Coverage", "North West"]],
+    introEyebrow: "Project delivery",
+    introHeading: "Steel-frame buildings, *bare site to trading.*",
+    intro: [
+      "An industrial building looks simple: a slab, a frame, a skin and the doors. That is exactly why the few things that matter have to be right first time — the ground and the slab, the frame lining up with the holding-down bolts, a watertight envelope and doors that suit how the building will be used.",
+      "We take these jobs from bare site to a finished, trading unit: groundworks and slab, steel portal frame, insulated wall and roof cladding, roller-shutter and personnel doors, and the external works around it. Our Pendrick Self Storage facility was delivered this way for circa £115,000."
+    ],
+    factsTitle: "At a glance",
+    facts: [["Scope", "Slab to trading unit"], ["Frame", "Steel portal frame"], ["Envelope", "Insulated cladding"], ["Doors", "Roller shutters & personnel doors"]],
+    factsNote: "",
+    cardsHeading: "From slab *to roller shutter.*",
+    cards: [
+      ["Groundworks and slab", "Site set-up, excavation, foundations and the slab the frame stands on, set out so the holding-down bolts and the steel line up."],
+      ["Steel portal frame", "Frame erected on the new slab, braced and ready for the envelope."],
+      ["Insulated envelope", "Insulated wall and roof cladding to give a dry, secure building that suits storage or light industrial use."],
+      ["Doors, external works and handover", "Roller-shutter bays, personnel doors and the external works, handed over ready to trade."]
+    ],
+    scope: [
+      "Groundworks and slab",
+      "Steel portal frame",
+      "Insulated wall and roof cladding",
+      "Roller-shutter doors",
+      "Personnel doors",
+      "External works",
+      "Programme, procurement and site management",
+      "Handover"
+    ],
+    projects: ["pendrick-self-storage"],
+    faqs: [
+      ["Do you build industrial units and warehouses?", "Yes. We build steel-frame industrial units, workshops, storage buildings and warehouses across Cheshire, Greater Manchester and the North West, from groundworks and slab through to a finished building. A recent example is the Pendrick Self Storage facility, delivered for circa £115,000."],
+      ["What does a steel-frame industrial building involve?", "Groundworks and a concrete slab, a steel portal frame, insulated wall and roof cladding, doors such as roller shutters and personnel doors, and the external works. We explain the full sequence in our guide to building a self-storage facility."],
+      ["Can you work from my drawings?", "Yes. If you already have drawings and structural information, we can review the package, develop the construction scope and price the works."]
+    ],
+    ctaHeading: "Planning an industrial *building?*",
+    ctaText: "Send us the site, the drawings or just what the building needs to do. You'll get a straight answer from the person who'd run the job.",
+    ctaButton: "Discuss a project →",
+    serviceType: ["Industrial unit construction", "Warehouse construction", "Steel-frame building", "Self-storage construction", "Workshop construction"]
+  },
 ];

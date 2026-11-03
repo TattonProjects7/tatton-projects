@@ -3467,7 +3467,7 @@ If you've got a unit in a centre lined up, send us the fit-out guide, the lease 
     featured: false,
     body: `Self-storage looks like the simplest building there is: a slab, a frame, a skin and a row of doors. It is simple, and that's exactly why the few things that matter have to be done right, because there's nothing else to hide them behind.
 
-Our [Pendrick Self Storage](https://www.tatton-projects.co.uk/work/pendrick-self-storage) job went from bare site to trading unit for circa £115,000: a concrete slab, a steel portal frame, insulated cladding and a row of roller-shutter bays. Here is how a building like that comes together, and what to think about before you start.
+Our [Pendrick Self Storage](https://www.tatton-projects.co.uk/work/pendrick-self-storage) job went from bare site to trading unit for circa £115,000: a concrete slab, a steel portal frame, insulated cladding and a row of roller-shutter bays. Here is how a building like that comes together, and what to think about before you start. If you're planning one, our [industrial units and warehouses](https://www.tatton-projects.co.uk/industrial-units-warehouses) page sets out what we build.
 
 ## Before anything is built
 
