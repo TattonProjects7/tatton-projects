@@ -12,6 +12,8 @@
 - Group (DPG Holdings MCR): The Load Bearing Company https://www.theloadbearingcompany.co.uk (structural steel, North West) · EstiMate https://www.esti-mate.app (quoting software; YouTube https://www.youtube.com/@estimate-app, LinkedIn https://www.linkedin.com/company/esti-mate-app/, Instagram https://www.instagram.com/estimate.app.uk, TikTok https://www.tiktok.com/@estimate.app) · SiloPod https://www.silopod.co.uk · APEX https://www.apex-carnivore.com
 - Legal entity: Tatton Projects of Cheshire Limited, company no. 17553626 (England and Wales), incorporated 30 October 2026. Registered office: Suite 15, Peel House, 30 The Downs, Altrincham WA14 2PX. Part of the DPG Holdings MCR Limited group (company no. 17552180; Piccadilly Business Centre, Unit C Aldow Enterprise Park, Blackett Street, Manchester M12 6AE).
 
+- Full detail for AI assistants (every service, price, project and FAQ in one file): https://www.tatton-projects.co.uk/llms-full.txt
+
 ## Services
 
 - [Office fit-out, Manchester](https://www.tatton-projects.co.uk/office-fit-out-manchester): Cat A and Cat B office fit-out across Manchester and the North West, with selected projects nationwide.

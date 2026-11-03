@@ -1058,6 +1058,29 @@ try {
     fs.writeFileSync(llmsFile, llms.replace(guides, `## Costs and guides\n\n- [What things cost](${SITE}/costs): Published 2026 rates for Cat A and Cat B office fit-out per sq ft, new build homes per sq m, extensions and refurbishment.\n${lines.join('\n')}\n\n`));
   }
 
+  /* ---------- llms-full.txt: the whole business in one read for AI assistants ---------- */
+  {
+    const strip = (t) => String(t || '').replace(/\*/g, '').replace(/&rsquo;/g, "'").replace(/&amp;/g, '&');
+    const head = fs.readFileSync(path.join(__dirname, 'llms.txt'), 'utf8').split('\n## ')[0].trim();
+    const out = [head, '', '## Services', ''];
+    SERVICES.forEach((s) => {
+      out.push(`### ${strip(s.name)}`, `URL: ${SITE}/${s.id}`, '', strip(s.lede), '');
+      (s.intro || []).forEach((p) => out.push(strip(p), ''));
+      if ((s.facts || []).length) out.push(`${strip(s.factsTitle || 'Key facts')}: ` + s.facts.map(([k, v]) => `${strip(k)} ${strip(v)}`).join('; ') + (s.factsNote ? ` (${strip(s.factsNote)})` : ''), '');
+      (s.cards || []).forEach(([h, b]) => out.push(`- ${strip(h)}: ${strip(b)}`));
+      if ((s.cards || []).length) out.push('');
+      (s.faqs || []).forEach(([q, a]) => out.push(`Q: ${strip(q)}`, `A: ${strip(a)}`, ''));
+    });
+    out.push('## Projects', '');
+    PROJECTS.forEach((p) => {
+      out.push(`### ${strip(p.name)}${p.location ? ' — ' + strip(p.location) : ''}${p.value ? ' (' + strip(p.value) + ')' : ''}`, `URL: ${SITE}/work/${p.id}`, strip(p.blurb), '');
+      if ((p.scope || []).length) out.push('Scope: ' + p.scope.map(strip).join('; '), '');
+    });
+    out.push('## Articles', '');
+    POSTS.forEach((p) => out.push(`- [${strip(p.title)}](${SITE}/blog/${p.slug}): ${strip(p.summary)}`));
+    fs.writeFileSync(path.join(__dirname, 'llms-full.txt'), out.join('\n') + '\n');
+  }
+
   /* ---------- blog.html post list, in the HTML so every crawler sees it ---------- */
   const blogFile = path.join(__dirname, 'blog.html');
   const blogHtml = fs.readFileSync(blogFile, 'utf8');
