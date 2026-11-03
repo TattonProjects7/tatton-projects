@@ -110,6 +110,7 @@ const nav = (depth, active) => {
     <a href="${up}services.html"${on('services')}>Services</a>
     <a href="${up}work.html"${on('work')}>Work</a>
     <a href="${up}costs.html">Costs</a>
+    <a href="${up}finance.html">Finance</a>
     <a href="${up}blog.html">Insight</a>
     <a href="${up}index.html#land">Land</a>
     <a href="tel:01617062907" class="nav-call">0161 706 2907</a>
@@ -146,6 +147,7 @@ const footer = (depth) => {
       <a href="${up}services.html">Construction services</a>
       <a href="${up}work.html">Selected work</a>
       <a href="${up}costs.html">What things cost</a>
+      <a href="${up}finance.html">Project finance</a>
       <a href="${up}blog.html">Insight</a>
       <a href="https://www.silopod.co.uk" rel="noopener">SiloPod — acoustic pods</a>
       <a href="https://www.esti-mate.app" rel="noopener">EstiMate — quoting &amp; contracts app</a>
@@ -1106,6 +1108,7 @@ try {
     { loc: `${SITE}/`, pri: '1.0', freq: 'monthly' },
     { loc: `${SITE}/work`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/costs`, pri: '0.9', freq: 'monthly' },
+    { loc: `${SITE}/finance`, pri: '0.9', freq: 'monthly' },
     { loc: `${SITE}/walkthroughs`, pri: '0.8', freq: 'monthly' },
     { loc: `${SITE}/blog`, pri: '0.8', freq: 'weekly' },
     { loc: `${SITE}/services`, pri: '0.9', freq: 'monthly' }
