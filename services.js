@@ -21,7 +21,7 @@ const SERVICES = [
     name: "Office Fit-Out Manchester",
     short: "Office fit-out",
     sector: "Commercial",
-    title: "Office Fit-Out Manchester | Cat A & Cat B | Tatton Projects",
+    title: "Office Fit-Out Contractors Manchester | Cat A & Cat B | Tatton Projects",
     description: "Manchester office fit-out contractors delivering Cat A, Cat B, refurbishment and commercial interiors from pre-construction through to handover.",
     h1: "Office fit-out, *Manchester.*",
     eyebrow: "Commercial fit-out · Manchester & the North West",
