@@ -34,6 +34,75 @@
 const POSTS = [
 
   {
+    slug: "do-i-need-an-architect-for-an-extension",
+    title: "Do I need an architect for an extension? What drawings you actually need, and who can do them",
+    seoTitle: "Do I need an architect for an extension?",
+    summary: "No law says you need an architect for a house extension. You do need planning drawings (if it needs permission), Building Regulations drawings and structural calculations. Who should do them depends on the house.",
+    date: "2026-11-03",
+    author: "Dave Groom",
+    category: "Advice",
+    readTime: "5 min",
+    image: "images/didsbury-08-rear-complete.jpg",
+    featured: false,
+    body: `No. Nothing in law says a house extension has to be designed by an architect. What you do need is drawings good enough for planning, if the extension needs permission, and for Building Regulations, plus a structural engineer's calculations for any beams. An architect, an architectural technologist or a design-and-build route can produce them.
+
+The question that matters is which of those suits your house, and that comes down to how complicated the job is.
+
+## The drawings an extension actually needs
+
+Whoever you use, these are the pieces of paper most extensions need before a builder can price them properly:
+
+- **Planning drawings**, if the extension is outside permitted development: existing and proposed plans and elevations, a location plan and a block plan. See [do I need planning permission for an extension?](https://www.tatton-projects.co.uk/blog/do-i-need-planning-permission-for-an-extension-altrincham)
+- **Building Regulations drawings**. These still apply when you don't need planning. They show how the extension is built: foundations, walls, insulation, drainage, fire safety and ventilation. Building Control check them and then inspect the work, covered in [what Building Control inspect on an extension](https://www.tatton-projects.co.uk/blog/building-control-inspections-extension).
+- **Structural calculations** from a structural engineer for steels, lintels and any wall coming out. More on that in [removing a load-bearing wall](https://www.tatton-projects.co.uk/blog/removing-a-load-bearing-wall).
+- **Party wall notices**, if you're building on or near a shared boundary. See [the Party Wall Act explained](https://www.tatton-projects.co.uk/blog/party-wall-act-explained).
+
+Planning drawings on their own are not enough to build from. A lot of quotes go wrong because a builder is pricing a planning set that says nothing about the structure.
+
+## Architect, technologist or design and build
+
+**An architect.** "Architect" is a protected title in the UK: only people registered with the Architects Registration Board can use it. You're paying for design, not just drawing. That earns its fee on a house where the layout is the hard part, in a conservation area or on a listed building, or where you want something better than the obvious box on the back.
+
+**An architectural technologist.** Often chartered through CIAT. Strong on the technical side: Building Regulations drawings, construction details and getting approvals through. A good fit for a straightforward single-storey or two-storey extension where the design is fairly clear.
+
+**Design and build.** One firm takes responsibility for the design and the construction. It can be quicker, with one point of contact. The thing to pin down is exactly who is doing the design, who is checking the structure, and whose insurance covers it if the design is wrong.
+
+> The cheapest drawings are rarely the cheapest extension. Gaps in the drawings get filled on site, at site prices.
+
+## When an architect is worth it
+
+- The house is listed, or in a conservation area
+- The extension changes how the whole ground floor works, not just adds a room
+- There's a lot of structural glazing, or a roof that isn't a simple flat or pitched one
+- You're remodelling the whole house, not adding to it
+- The site is tight, sloping, or close to neighbours
+
+## When a simpler route is fine
+
+A single-storey rear extension within permitted development, with a flat roof and a clear layout, rarely needs the full architect service. Good Building Regulations drawings, proper structural calculations and a builder who reads them carefully will usually get you there.
+
+## Where we come in
+
+If you already have an architect and structural information, we can review the package, develop the construction scope and price the works. If you don't have drawings yet, it's still worth talking to us early: a builder looking at the idea before it's designed can tell you where the cost will sit and whether the budget and the brief are in the same place. Our working rates per square metre are on the [cost guide](https://www.tatton-projects.co.uk/costs), and [writing a brief for your architect](https://www.tatton-projects.co.uk/blog/writing-a-brief-for-your-architect) covers what to hand over.
+
+[image:didsbury-07-rear-extension.jpg]
+[caption:Didsbury, Manchester: the rear extension from the garden, full-width glazing tied into the original brick]
+
+## Common questions
+
+**Do I need an architect if my extension is permitted development?**
+No. You still need Building Regulations approval and, for any steel, structural calculations. Many people also get a Lawful Development Certificate from the council so there's proof it was permitted.
+
+**Can a builder draw the plans?**
+Some builders offer design and build. Ask who actually does the design and the structural calculations, and get that in writing.
+
+**Is the architect's fee part of the build cost?**
+No. Professional fees are separate from the build cost, along with VAT, Building Control and any party wall costs.
+
+Send us the drawings, or just the house and what you want from it. You'll get a straight answer from the person who would run the job. More on how we work is on our [extension builders in Altrincham](https://www.tatton-projects.co.uk/extension-builders-altrincham) page.`
+  },
+
+  {
     slug: "best-builders-altrincham",
     title: "Best builders in Altrincham (2026): who to call for an extension, a renovation, a basement or a new home",
     seoTitle: "Best builders in Altrincham (2026)",
