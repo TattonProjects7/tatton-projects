@@ -34,6 +34,77 @@
 const POSTS = [
 
   {
+    slug: "loft-conversion-altrincham",
+    title: "Loft conversion in Altrincham: what fits under your roof, and what it takes to build one properly",
+    seoTitle: "Loft conversion Altrincham: what fits under your roof",
+    summary: "Most Altrincham houses can take a loft conversion if there is about 2.2 m under the ridge. Rooflight, dormer or hip-to-gable: what each gives you, planning and permitted development, Building Regulations, the party wall, and how to get a real price.",
+    date: "2026-11-06",
+    author: "Dave Groom",
+    category: "Advice",
+    readTime: "6 min",
+    image: "images/knutsford-07-gable.jpg",
+    featured: false,
+    body: `Most houses in Altrincham, Hale, Timperley and Sale can take a loft conversion if there is around 2.2 m from the top of the ceiling joists to the underside of the ridge. The roof type decides what you can build: a rooflight conversion, a rear dormer or a hip-to-gable. Most are permitted development, but conservation areas and anything on the front of the house usually need planning.
+
+That is the short version. The rest of this page is what we check on a first visit, and what a conversion has to get through before anyone sleeps up there.
+
+## Will your loft actually convert?
+
+Three things settle it before design starts:
+
+- **Head height.** Measure from the top of the ceiling joists to the underside of the ridge board. About 2.2 m is the practical minimum, because the new floor and the insulated roof both eat into it. 2.4 m or more gives a room that feels like a room. Under 2.2 m is not impossible, but it means lowering ceilings below or raising the roof, which changes the job completely.
+- **Roof structure.** Older houses, which is most of the 1930s semis around Altrincham and Timperley, have a cut roof: rafters, purlins and a clear loft. Newer houses, from roughly the 1960s on, have trussed rafters with a W of timber through the space. A trussed roof still converts, but the trusses are replaced with steel beams and new rafters, which is more structural work and more cost.
+- **The stair.** It needs to land somewhere sensible, usually over the existing stair, and keep 2 m of headroom on the landing. Building Regulations allow a little less over the stair itself on a loft conversion, but the landing is the thing that catches people out. A bad stair position costs you a bedroom below.
+
+Water tanks, boilers and chimney breasts all have to go somewhere too. None of them stop a conversion, but they belong in the design, not as a surprise on site.
+
+## The three common types
+
+**Rooflight conversion.** The roof stays as it is and windows go into the slope. Cheapest, quickest and the least likely to need planning, but you only get the floor area where the roof is already tall enough.
+
+**Rear dormer.** A flat-roofed box built out of the back slope. It is the standard Altrincham loft because it turns the sloping ceiling into a full-height room, usually with space for a bedroom and an en suite. A full-width dormer is the most space; a smaller one keeps more of the roof.
+
+**Hip-to-gable.** For semi-detached and end-terrace houses with a hipped roof, the sloping side is built up into a vertical gable, then a rear dormer goes on as well. This is what makes a lot of the 1930s semis in Timperley, Hale and Sale work, because the hip takes most of the usable space away.
+
+Mansards, which change the whole roof shape, are rarer here and nearly always need planning.
+
+## Planning permission or permitted development
+
+Most loft conversions on houses are permitted development, which means no planning application, as long as the extra roof space is within 40 cubic metres for a terraced house or 50 cubic metres for a semi or detached house, nothing goes on the roof slope facing the road, the roof does not get higher than the existing ridge, the materials match the house, and side windows are obscure glazed. Dormers also have to be set back from the eaves.
+
+The exceptions matter around here. Permitted development for roof extensions does not apply in conservation areas, and much of Bowdon, the Devisdale and parts of Hale are conservation areas. Flats, listed buildings and houses where the permitted development rights were removed when they were built also need an application. If you are not sure, a lawful development certificate from Trafford is worth getting even when you do not strictly need permission, because it proves the conversion was lawful when you come to sell.
+
+We cover how the same rules work for extensions in [do I need planning permission for an extension in Altrincham?](https://www.tatton-projects.co.uk/blog/do-i-need-planning-permission-for-an-extension-altrincham).
+
+## Building Regulations
+
+Every loft conversion needs Building Regulations approval, whether or not it needed planning. The inspector is looking at:
+
+- **Structure.** New floor joists, because ceiling joists are not designed to carry a room, and steel beams to carry the floor and the dormer. A structural engineer designs these.
+- **Fire.** Once you add a third storey the stair has to be a protected route to the front door, with fire doors to the rooms off it, and mains-wired interlinked smoke alarms on every floor. The new room needs an escape window.
+- **Insulation.** The roof becomes the room's ceiling, so it has to meet current thermal standards. This is where head height gets used up.
+- **Stairs, sound and ventilation.** Stair pitch and headroom, sound insulation between the new floor and the rooms below, and ventilation to any new bathroom.
+
+How the inspections run, and why you should not let anything get covered up before the inspector has seen it, is in [Building Control inspections on an extension](https://www.tatton-projects.co.uk/blog/building-control-inspections-extension). A loft follows the same pattern.
+
+## The party wall
+
+On a semi or a terrace, the steel beams usually bear on the wall you share with your neighbour, and that is work under the Party Wall Act. Your neighbour gets formal notice at least two months before that work starts and can consent or ask for a surveyor. It is not optional and it is not a formality to leave until the week before. [The Party Wall Act explained](https://www.tatton-projects.co.uk/blog/party-wall-act-explained) sets out the notices and timings.
+
+## What it is like to live through
+
+A dormer loft conversion is typically six to ten weeks on site. The good news is that most of it happens from outside: scaffold goes up, the roof is opened from above and the dormer is built and made watertight before the ceiling below is touched. The disruptive part is the stair, which is usually the last few weeks. You can normally stay in the house throughout.
+
+> The loft is the one extension that does not take any garden. On a plot in Altrincham, that is often the whole argument.
+
+## How to get a real price
+
+We do not put a loft price on the website because the honest answer depends on the roof: a rooflight conversion on a cut roof and a hip-to-gable with a full-width dormer on a trussed roof are not the same job. What we can do is look at your loft, measure the head height, check the roof structure and tell you what will fit before you spend anything on drawings. The way we price, and what a proper quote should include, is on the [costs page](https://www.tatton-projects.co.uk/costs).
+
+If the loft is part of a bigger plan for the house, [house renovations in Altrincham](https://www.tatton-projects.co.uk/house-renovations-altrincham) covers how we run a whole-house project, and [removing a load-bearing wall](https://www.tatton-projects.co.uk/blog/removing-a-load-bearing-wall) explains the structural side that lofts and remodels share.`
+  },
+
+  {
     slug: "do-i-need-an-architect-for-an-extension",
     title: "Do I need an architect for an extension? What drawings you actually need, and who can do them",
     seoTitle: "Do I need an architect for an extension?",
