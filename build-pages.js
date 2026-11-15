@@ -166,6 +166,9 @@ const footer = (depth) => {
       <a href="${up}builders-sale.html">Builders in Sale</a>
       <a href="${up}builders-bowdon.html">Builders in Bowdon</a>
       <a href="${up}builders-knutsford.html">Builders in Knutsford</a>
+      <a href="${up}builders-mobberley.html">Builders in Mobberley</a>
+      <a href="${up}builders-hale.html">Builders in Hale</a>
+      <a href="${up}builders-urmston.html">Builders in Urmston</a>
       <a href="${up}builders-didsbury.html">Builders in Didsbury</a>
       <a href="${up}office-fit-out-stockport.html">Office fit-out Stockport</a>
       <a href="${up}industrial-units-warehouses.html">Industrial units &amp; warehouses</a>
