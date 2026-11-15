@@ -3832,7 +3832,7 @@ Send us the drawings or a scope, the address, and how the building will be used 
   {
     slug: "office-fit-out-cost-per-square-foot-manchester",
     title: "What an office fit-out actually costs per square foot in Manchester",
-    seoTitle: "Office fit-out cost per sq ft, Manchester",
+    seoTitle: "Office Fit-Out Cost Manchester: £45–£180 per sq ft (2026)",
     summary: "Real 2026 rates for Cat A and Cat B fit-out in Manchester and Cheshire — and the five things that move the number more than anything on the drawing.",
     date: "2026-07-14",
     author: "Dave Groom",
