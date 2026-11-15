@@ -34,6 +34,159 @@
 const POSTS = [
 
   {
+    slug: "kitchen-refurbishment-altrincham",
+    title: "Kitchen refurbishment in Altrincham: when it's a builder's job, what it involves and how it's priced",
+    seoTitle: "Kitchen refurbishment Altrincham, Hale and Bowdon (2026 guide)",
+    summary: "Refurbishing or remodelling a kitchen in Altrincham, Hale or Bowdon: when walls, services or an extension come in, the consents, what moves the cost and how to price it.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Advice",
+    readTime: "6 min",
+    image: "images/wilmslow-06-kitchen.jpg",
+    featured: false,
+    body: `A kitchen refurbishment in Altrincham, Hale or Bowdon becomes a builder's job when the room itself changes: a wall comes out, the services move or the floor is replaced. If you keep the layout and swap the units, a kitchen company can usually do it. Once structure is involved, it needs Building Control and one firm running every trade.
+
+That is the short answer. The rest of this guide is how to tell which kind of job you have, what tends to turn up when a kitchen in an older house is opened up, and what actually drives the price.
+
+## Refurbishment, remodel or extension: which do you need?
+
+Most kitchen projects fall into one of three kinds, and they are priced and run very differently.
+
+- **Refurbishment.** Same room, same walls. New units, worktops, flooring, lighting and decoration, often with the electrics brought up to date while the walls are open.
+- **Remodel.** The walls move. Typically the kitchen, dining room and back room become one space, which usually means taking out a load-bearing wall and putting in a steel.
+- **Extension.** New floor area, usually across the back of the house or into the side return, with the kitchen built for the new room.
+
+The kitchens on our work page all came as part of a bigger job. In Wilmslow, the ground floor of a 1930s detached was opened into a single kitchen and living space as part of a circa £375,000 extension and refurbishment. In Didsbury, both kitchens sat inside new rear extensions.
+
+## What does a kitchen remodel in Hale or Bowdon involve?
+
+Taking a wall out is the step that changes the job. A structural engineer designs the steel and its supports, Building Control approves and inspects it, and the openings are propped while the steel goes in. There is more on who does what in [removing a load-bearing wall](https://www.tatton-projects.co.uk/blog/removing-a-load-bearing-wall).
+
+After the structure comes the order of work that every remodel follows: strip-out, first fix of the services, plastering, then the kitchen, second fix and finishes. The kitchen goes in near the end, not the start. Floors are best laid once, through the whole space, rather than patched around old walls.
+
+## What turns up in older Altrincham kitchens?
+
+Much of the housing around Altrincham, Hale and Bowdon is Victorian, Edwardian or 1930s. A kitchen in a house of that age has usually been altered more than once, and what is behind the plaster is only known once it comes off.
+
+- **Wiring.** Either very old, or a patchwork of every decade since. If the walls are open, it is usually the time to sort it.
+- **Pipework and drainage.** Moving the sink to an island means a new waste route, and the fall it needs decides where the sink can go.
+- **Chimney breasts.** Sometimes removed in one room and left in the one above, which needs checking before anything else changes.
+- **Earlier alterations.** An opening made without proper support, or a floor that has been patched rather than levelled.
+
+None of these stop a job. They are the reason a sensible budget carries a contingency, and the reason a price given without opening anything up is a guess.
+
+## Do you need planning permission or Building Control?
+
+Internal work to a house rarely needs planning permission. The catch is location. Bowdon, The Downs and parts of Hale are conservation areas, and a listed building needs listed building consent from Trafford Council for most internal work, kitchens included.
+
+Building Regulations apply more often. Removing a load-bearing wall needs approval. New electrical circuits, such as a cooker or induction hob supply, are notifiable work, and any change to the gas supply has to be made by a Gas Safe registered engineer. If an extension is involved, it needs Building Control in any case.
+
+## What does a kitchen refurbishment cost?
+
+We don't publish a rate for a kitchen on its own, because the kitchen itself can be anything from supplied units to bespoke joinery. What we do publish is the rate for the work around it, on our [cost guide](https://www.tatton-projects.co.uk/costs), before VAT and fees:
+
+- **Whole-house refurbishment:** £1,400 to £2,800 per square metre, when the kitchen is one part of a wider refurbishment
+- **Extension:** £2,400 to £3,600 per square metre of new floor area, when the kitchen goes into new space
+
+For a sense of finished jobs, the two Didsbury kitchen extensions on our work page came in at circa £120,000 and circa £160,000, kitchens included. The difference between them is explained in [what a kitchen extension costs](https://www.tatton-projects.co.uk/blog/kitchen-extension-cost-manchester).
+
+## What moves the price most?
+
+On a kitchen remodel, the units are rarely the line that surprises people. These usually matter more:
+
+- **Structure.** Whether a wall comes out, how long the steel spans and what it bears on.
+- **Moving the wet services.** A sink or dishwasher on the opposite wall, or on an island, means new waste and supply routes.
+- **The floor.** Running one floor through the kitchen and the rooms next to it means lifting what is there and levelling the subfloor.
+- **Glazing.** New doors to the garden usually mean a new opening and a steel above it.
+- **Lighting and electrics.** A new layout almost always means new circuits and a new lighting plan.
+
+## Can you live at home while the kitchen is done?
+
+For a kitchen remodel, usually yes, if the work is confined to the back of the house. Plan a temporary kitchen in another room, agree which rooms are sealed off, and expect short shutdowns of water and power while the services are changed over.
+
+For a full back-to-brick refurbishment the answer changes. The house has no services for a period and every room becomes a work area, so most clients move out. We'll say plainly which yours is.
+
+## How do you get a real price?
+
+Send the address, some photos and what you want the kitchen to do. We'll visit, look at the structure and the services, and give you a written cost plan from the person who would run the job. More on how we run whole-house work is on our [house renovations in Altrincham](https://www.tatton-projects.co.uk/house-renovations-altrincham) page.`
+  },
+
+  {
+    slug: "office-construction-cost-per-square-metre",
+    title: "Office construction costs per square metre: new build versus fit-out",
+    seoTitle: "Office build and fit-out cost per sq m and per sq ft (2026)",
+    summary: "Office fit-out costs per square metre and per square foot in 2026, why a new-build office is priced differently, and what moves the rate on a real building.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Cost",
+    readTime: "6 min",
+    image: "images/stockport-office-03-openplan.jpg",
+    featured: false,
+    body: `Our 2026 office fit-out rates work out at roughly £480 to £750 per square metre for Cat A, £750 to £1,180 for a standard Cat B and £1,180 to £1,940 or more for a high-specification Cat B. That excludes VAT, fees and furniture. A new-build office adds the shell and core, which is priced from a cost plan.
+
+Those figures are our published per square foot rates converted to square metres. This guide sets out both, explains why a new building is priced differently from a fit-out, and covers what moves the number on a real floor.
+
+## What are the rates per square metre and per square foot?
+
+These are all-in fit-out rates for Manchester and the North West in 2026, measured on net internal area, excluding VAT, professional fees and loose furniture. One square metre is 10.764 square feet, and the square metre figures are rounded.
+
+- **Cat A refresh:** £45 to £70 per sq ft, or roughly £480 to £750 per sq m. Ceilings, lighting, raised floor, basic mechanical and electrical, decoration.
+- **Standard Cat B:** £70 to £110 per sq ft, or roughly £750 to £1,180 per sq m. Partitions, meeting rooms, tea point, carpet, data cabling, basic joinery.
+- **High-specification Cat B:** £110 to £180 per sq ft and upwards, or roughly £1,180 to £1,940 per sq m and upwards. Bespoke joinery, feature lighting, acoustic treatment, integrated AV.
+
+The full table is on our [cost guide](https://www.tatton-projects.co.uk/costs). If you are working in square feet, the breakdown of a typical Cat B is in [what an office fit-out costs per square foot](https://www.tatton-projects.co.uk/blog/office-fit-out-cost-per-square-foot-manchester).
+
+## Why is a new-build office priced differently?
+
+A new office building is three jobs stacked together. The shell and core is the frame, the envelope, the roof, the stair and lift cores, the landlord's plant and the drainage. Cat A turns the empty shell into a floor ready to let. Cat B turns that floor into somewhere a particular business works.
+
+The fit-out rates above cover only the last two. The shell and core depends on things a rate can't see: the ground, the height of the building, the frame, the cladding and the site. We don't publish a rate for it, and a figure given before a site investigation and a design is a guess.
+
+> A rate per square metre gets you a ballpark. On a new building, the ground and the abnormals decide whether the ballpark holds.
+
+## Is it cheaper to fit out an existing building than to build new?
+
+Like for like, a new building costs the shell and core plus the fit-out, so taking an existing floor avoids the first part. The real question is whether an existing building can do what you need. The building's existing services are the single biggest swing on a fit-out, and they are invisible on a floor plan.
+
+A floor with good, recent mechanical and electrical services is a completely different job from one with twenty-year-old plant that won't take another forty desks. Some existing buildings are wrong for the business that wants them, and it is better to find that out before signing a lease. The difference between [Cat A and Cat B fit-out](https://www.tatton-projects.co.uk/cat-a-cat-b-fit-out) is worth understanding before that conversation.
+
+## What moves the cost per square metre?
+
+Five things matter more than the drawing:
+
+- **The existing services.** The biggest swing, as above.
+- **Whether the building is occupied.** Working around a live business typically adds 10 to 25 per cent for out-of-hours labour, phased handbacks, dust and route separation and security.
+- **Ceiling height and structure.** Low soffits mean services fight each other, and every clash becomes a variation.
+- **Access.** One goods lift and a two-hour delivery window is a different programme from a unit you can back a wagon up to.
+- **How resolved the design is.** The one the client controls completely, and the one that costs most when it's wrong.
+
+## Where does the money go?
+
+On a typical £110 per sq ft Cat B, mechanical and electrical is the largest line at 30 to 40 per cent. Partitions, doors and glazing take about 15 per cent, ceilings and lighting 12 per cent, joinery and tea points 10 per cent and flooring 8 per cent. Preliminaries, management and profit make up the rest.
+
+The proportions don't change when you convert to square metres. If one quote is well under the others, the gap is usually in the mechanical and electrical.
+
+## Why do published figures vary so much between sources?
+
+Most of the spread comes from what is being measured and what is included, not from the work itself. Before comparing any two figures, check:
+
+- **The area.** Net internal area and gross internal area are different numbers for the same floor, and a rate on one isn't comparable with a rate on the other.
+- **The scope.** Whether furniture, AV, IT and the landlord's shell are in or out.
+- **VAT and fees.** Ours exclude both.
+- **The region.** Ours are Manchester and the North West.
+
+## What have real office projects cost?
+
+Three of our finished office jobs give a sense of scale. The Sentric Music Cat B fit-out in Liverpool was circa £110,000. A high-specification office in Stockport, with a frameless glass boardroom, oak floors and a double-height stair, was circa £125,000.
+
+A public-facing service floor in Stockport, with ninety-plus staffed positions, was circa £175,000 and never closed for a day. We don't publish the floor areas of these jobs, so they aren't per square metre figures, and they shouldn't be read as one.
+
+## How do you get a figure you can hold?
+
+Get a measured survey and an elemental cost plan before you commit to a lease length or a budget. It costs a fraction of the job. Send us the floor or the site and we'll give you a written cost plan from the person who would run it. More on how we deliver offices is on our [office fit-out in Manchester](https://www.tatton-projects.co.uk/office-fit-out-manchester) page.`
+  },
+
+  {
     slug: "loft-conversion-altrincham",
     title: "Loft conversion in Altrincham: what fits under your roof, and what it takes to build one properly",
     seoTitle: "Loft conversion Altrincham: what fits under your roof",
@@ -3230,16 +3383,18 @@ If you have a floor coming vacant, send us the floor plan, the EPC and some phot
 
   {
     slug: "healthcare-fit-out-occupied-buildings",
-    title: "Fitting out healthcare buildings while patients are still being seen",
-    seoTitle: "Healthcare fit-out in an occupied building",
-    summary: "How to refurbish surgeries and care homes without stopping care: dust and infection control, phasing, noise windows and keeping the fire strategy live.",
+    title: "Care home and healthcare refurbishment: how it works while residents and patients stay",
+    seoTitle: "Care home refurbishment with residents in: how it works",
+    summary: "How care homes, nursing homes and surgeries are refurbished without stopping care: phasing by wing, infection control, out-of-hours windows, fire strategy and cost.",
     date: "2026-10-17",
     author: "Dave Groom",
     category: "Healthcare",
-    readTime: "5 min",
+    readTime: "7 min",
     image: "",
     featured: false,
-    body: `Patients don't stop arriving because the builders are in. A GP surgery, a dental practice or a clinic still has a full appointment book, and a care home still has residents living in the rooms either side of the work. The job has to fit around them.
+    body: `A care home refurbishment with residents in is run wing by wing or room by room, behind sealed screens, with noisy work kept to agreed windows and each phase handed back ready to use. The home decides who moves and when. Infection control and the fire strategy stay live throughout, and the programme follows the home's routine.
+
+Patients don't stop arriving because the builders are in. A GP surgery, a dental practice or a clinic still has a full appointment book, and a care home still has residents living in the rooms either side of the work. The job has to fit around them.
 
 Most of what I'd say about [building around a business that cannot close](https://www.tatton-projects.co.uk/blog/building-around-a-business-that-cannot-close) applies here too. This post is about what changes when the people on the other side of the screen are patients or residents rather than customers or staff.
 
@@ -3288,6 +3443,32 @@ That means:
 - The manager knows every day what has been isolated and where the works boundary is
 
 The operator remains responsible for fire safety in their building throughout. Our job is to make sure the works never undermine it. There's more on the general principles in [fire safety in a fit-out](https://www.tatton-projects.co.uk/blog/fire-safety-in-office-fit-outs).
+
+## What is different about refurbishing a care or nursing home?
+
+A surgery empties at the end of the day. A care home doesn't. The building is somebody's home at every hour, so the bedrooms, day rooms, dining rooms and wet rooms are refurbished in a sequence the home has agreed, and each room or wing comes back finished before the next one starts.
+
+The programme is built around the home's routine rather than the contractor's. Medication rounds, the use of the day rooms and visiting all shape when a corridor can be closed or a noisy task can happen. That means talking to the manager every day, not only at the start.
+
+Out-of-hours work means something different here too. Residents are at home in the evenings, at night and at weekends, which is when an office job would do its noisiest work. In a care home the quiet windows are agreed with the manager and may fall in the middle of the day, when residents are elsewhere in the building.
+
+Services need particular care. Nurse call, data and power to a resident's room are part of how they are looked after. A room shouldn't go back into use until everything in it has been tested and the home has accepted it, including the call point by the bed and in the en suite.
+
+## What does working around residents add to the cost?
+
+Working around a live operation typically adds 10 to 25 per cent to a fit-out or refurbishment. That covers out-of-hours labour, phased handbacks, dust and route separation and additional security. In a care home it also covers the extra cleaning, screening and supervision described above.
+
+It has to be in the budget from the first appraisal, not added later as a variation. A price that leaves it out isn't cheaper. It just hasn't counted the cost of keeping the home running.
+
+## Care home refurbishment: common questions
+
+**Do residents have to move out?** Not usually. A refurbishment can be phased so residents stay, and the home decides whether anyone moves room for a phase. We plan the sequence around that decision.
+
+**What's the difference between a care home fit-out and a refurbishment?** A fit-out usually means fitting out a new or converted building before residents arrive. A refurbishment is work to a home that is already open, which is where phasing, infection control and the fire strategy take over the programme.
+
+**How is infection risk kept down?** Sealed work zones, negative pressure and HEPA extraction where needed, dedicated routes and cleaning regimes agreed with the home before work starts. The home's infection prevention and control lead should see the method and be able to walk the screen line at any time.
+
+**Do you work on care homes outside the North West?** Yes. Healthcare fit-out and refurbishment is delivered on selected projects across the UK, managed from Manchester.
 
 ## Before you ask for prices
 
