@@ -34,6 +34,293 @@
 const POSTS = [
 
   {
+    slug: "shopfitting-altrincham",
+    title: "Shopfitting in Altrincham town centre: which consents does a new shop need?",
+    seoTitle: "Shopfitting Altrincham: shopfronts, signs and consents",
+    summary: "Fitting out a shop in Altrincham: the town-centre conservation areas, when a new shopfront needs planning, why illuminated signs need advertisement consent there, and how a shopfit runs.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Retail",
+    readTime: "5 min",
+    image: "",
+    featured: false,
+    body: `A shop fit-out inside an Altrincham unit needs no planning permission, but the outside often does. Much of the town centre sits in conservation areas, including Old Market Place, George Street, Stamford New Road and Goose Green. There, a new shopfront needs planning permission, and an illuminated sign needs advertisement consent from Trafford Council.
+
+Getting those consents in hand before the shopfitters arrive is what keeps an opening date. This guide sets out what needs what, then how the fit-out itself runs.
+
+## Is your unit in one of Altrincham's conservation areas?
+
+Trafford's conservation area map shows four in Altrincham town centre: Old Market Place, George Street, Stamford New Road and Goose Green. The Downs is just to the south. Trafford's guidance says it seeks to control advertisements and shop signs in conservation areas, and that extensions to shops need an application there.
+
+Check the map with the unit's address before you sign a lease that assumes a particular frontage.
+
+## Does the fit-out inside need planning permission?
+
+No. Work that affects only the inside of a building is not development under the Town and Country Planning Act. Partitions, ceilings, lighting, flooring, counters and display all fall on that side of the line.
+
+The same section is why the outside is different: works that materially affect the external appearance of the building are development. A new shopfront, a different entrance, new glazing or a roller shutter usually needs planning permission, and in a conservation area the design is judged against the street.
+
+## Does a shop sign need advertisement consent?
+
+Signs are controlled by the advertisement regulations, not planning permission. Some signs on business premises have "deemed consent", meaning no application, but the rules tighten in a conservation area:
+
+- **Illuminated signs.** Deemed consent for illuminated signs on business premises does not apply in a conservation area, so an illuminated fascia or projecting sign needs advertisement consent.
+- **Non-illuminated signs.** Can have deemed consent, but on a shop only on a wall containing a shop window.
+
+If the building is listed, the sign and any fixing into the fabric may also need listed building consent.
+
+## What does the landlord need to approve?
+
+In a shopping street, the landlord usually wants drawings, a programme, insurance and a method statement before granting a licence for alterations. Some leases also control the shopfront and signage design. [Fitting out a shopping centre unit](https://www.tatton-projects.co.uk/blog/fitting-out-a-shopping-centre-unit) covers the stricter version of these rules.
+
+## How does a shopfit run?
+
+Most shopfits follow the same sequence: hoarding and strip-out, services and structure, partitions and ceilings, then the shopfront, floor, joinery, display and till, with snagging and handover before stock goes in. [Shopfitting from strip-out to trading](https://www.tatton-projects.co.uk/blog/shopfitting-from-strip-out-to-trading) goes through each stage.
+
+The retail shopfits for Calvin Klein and Fossil shown on our work page were delivered by our founder, Dave Groom, before he set up Tatton Projects in 2020. They show the standard of finish a brand expects.
+
+[image:calvin-klein-01-shopfront.jpg]
+[caption:Calvin Klein shopfit, delivered by Dave Groom before Tatton Projects was founded in 2020]
+
+## Which Building Regulations apply to a shop?
+
+A shopfit usually involves work covered by the Building Regulations: fire escape and compartmentation under Approved Document B, access and any accessible toilet under Approved Document M, and lighting and controls under Approved Document L. Trafford Building Control, or a registered building control approver, signs it off.
+
+Before trading, whoever controls the shop also needs a fire risk assessment under the Regulatory Reform (Fire Safety) Order 2005.
+
+## What does a shopfit cost?
+
+We don't publish a rate per square foot for shopfitting, because a unit can be anything from a light refresh to a full strip-out with new shopfront and services. We price each one from a written cost plan, with the consents, the landlord's requirements and the programme built in.
+
+## How do you get a price?
+
+Send us the unit's address, the lease plan and the brand's design pack if you have one. You'll get a written cost plan from the person who would run the job. More is on our [builders in Altrincham](https://www.tatton-projects.co.uk/builders-altrincham), [shopfitting](https://www.tatton-projects.co.uk/shopfitting-manchester) and [fit-out contractors in Cheshire](https://www.tatton-projects.co.uk/fit-out-contractors-cheshire) pages.
+
+## Sources
+
+- [Works in a conservation area](https://www.trafford.gov.uk/planning-and-building-control/heritage-and-conservation/conservation-areas/works-conservation-area) and [conservation areas](https://www.trafford.gov.uk/planning-and-building-control/heritage-and-conservation/conservation-areas), Trafford Council
+- [The Town and Country Planning (Control of Advertisements) (England) Regulations 2007, Schedule 3](https://www.legislation.gov.uk/uksi/2007/783/schedule/3), legislation.gov.uk
+- [Town and Country Planning Act 1990, section 55](https://www.legislation.gov.uk/ukpga/1990/8/section/55), legislation.gov.uk
+- [Fire safety: Approved Document B](https://www.gov.uk/government/publications/fire-safety-approved-document-b), GOV.UK`
+  },
+
+  {
+    slug: "office-refurbishment-manchester",
+    title: "Office refurbishment in Manchester: should you refurbish your office or move?",
+    seoTitle: "Office refurbishment Manchester: refurbish or relocate?",
+    summary: "For Manchester businesses weighing up an office refurbishment against a move: what each costs on our published rates, the questions that decide it, MEES, and refurbishing while you stay in.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Fit-out",
+    readTime: "6 min",
+    image: "images/office-walkways-12-walkway-lvt.jpg",
+    featured: false,
+    body: `Refurbishing your Manchester office usually costs less than moving if the building's services and size still work for you. A move adds agents' and legal fees, a new fit-out and reinstating the old floor. A refurbishment avoids those but means working around your staff. On our 2026 rates, a standard Cat B refurbishment is £70 to £110 per sq ft.
+
+The right answer depends on the building more than the budget. This guide sets out the questions that decide it, and what each option involves.
+
+## What does an office refurbishment cost in Manchester?
+
+Our published rates for 2026, measured on net internal area and excluding VAT, fees and loose furniture:
+
+- **Cat A refresh:** £45 to £70 per sq ft
+- **Standard Cat B:** £70 to £110 per sq ft
+- **High-specification Cat B:** £110 to £180 per sq ft and upwards
+
+Refurbishing a floor you're still working in typically adds 10 to 25 per cent, for out-of-hours work, phased handbacks and keeping routes separate. The breakdown of a typical Cat B is in [what an office fit-out costs per square foot](https://www.tatton-projects.co.uk/blog/office-fit-out-cost-per-square-foot-manchester).
+
+## Which questions decide refurbish or move?
+
+Four questions usually settle it:
+
+- **Is the floor the right size?** If headcount or working patterns have changed a lot, no refurbishment fixes a floor that is too big or too small.
+- **Can the services take it?** Heating, cooling, power and data are the biggest swing in any refurbishment, and old plant may not take more desks.
+- **What does the lease say?** A break date, a renewal or a dilapidations bill changes the sums.
+- **Can the business work through it?** Phasing is possible in most offices, but it takes longer.
+
+## Why do the building services matter so much?
+
+On a typical Cat B, mechanical and electrical work is the largest single line, at 30 to 40 per cent of the cost. A floor with recent, well-sized services is a much cheaper refurbishment than one with plant at the end of its life. [Why mechanical and electrical is the biggest line](https://www.tatton-projects.co.uk/blog/office-m-and-e-explained) goes into why.
+
+A survey of the services before you decide is worth far more than it costs. It is the one thing a floor plan can't tell you.
+
+## What does moving cost that refurbishing doesn't?
+
+The move has its own fit-out, at the same rates as above, plus things a refurbishment avoids. Agents' and legal fees on the new lease, furniture and IT moves, and possibly overlapping rent while the new floor is built.
+
+There is the old floor too. Most leases require it to be put back to its original condition, and that dilapidations work is a cost of leaving. [Dilapidations and fit-out](https://www.tatton-projects.co.uk/blog/dilapidations-and-fit-out) explains how it's assessed.
+
+## Does the building's EPC affect the decision?
+
+It can. Since April 2018, a landlord has not been able to grant a new lease of a commercial property that falls below the minimum energy efficiency standard, currently an EPC of E, unless an exemption applies. If you're renewing in a poorly rated building, upgrade works may be coming anyway.
+
+[What EPC E means for letting a building](https://www.tatton-projects.co.uk/blog/mees-epc-changes-what-landlords-need-to-do) covers what landlords need to do.
+
+## Can you refurbish while your staff stay in?
+
+Yes. Most of our commercial work is in occupied buildings. We re-floored the walkways, lobbies and stairs of an occupied office building and built it a new toilet block, showers and bike store, taking floors in sections behind protection and handing them back as they finished.
+
+[image:office-walkways-02-before-walkway.jpg]
+[caption:Before: the existing tiled walkway in the occupied office building, ahead of re-flooring]
+
+Our Stockport service centre floor, circa £175,000, was fitted out with ninety-plus staffed positions and the public coming in every day. [How to fit out a building without closing it](https://www.tatton-projects.co.uk/blog/building-around-a-business-that-cannot-close) shows how that's phased.
+
+## What consents does an office refurbishment need?
+
+Internal work alone is not development under the Town and Country Planning Act, so it needs no planning permission. Building Regulations still apply to fire escape and compartmentation, accessible toilets and new lighting and heating.
+
+If you lease the floor, you'll also need the landlord's licence for alterations. Whoever controls the premises must keep the fire risk assessment up to date as the layout changes.
+
+## How do you get a straight answer?
+
+Send us the floor plan, the address and what isn't working. We'll look at the services and give you a written cost plan for refurbishing, which you can set against the cost of a move. More is on our [office fit-out in Manchester](https://www.tatton-projects.co.uk/office-fit-out-manchester), [commercial refurbishment in Manchester](https://www.tatton-projects.co.uk/commercial-refurbishment-manchester) and [builders in Manchester](https://www.tatton-projects.co.uk/builders-manchester) pages.
+
+## Sources
+
+- [The Energy Efficiency (Private Rented Property) (England and Wales) Regulations 2015, regulation 27](https://www.legislation.gov.uk/uksi/2015/962/regulation/27), legislation.gov.uk
+- [Non-domestic private rented property: minimum energy efficiency standard, landlord guidance](https://www.gov.uk/guidance/non-domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance), GOV.UK
+- [Town and Country Planning Act 1990, section 55](https://www.legislation.gov.uk/ukpga/1990/8/section/55), legislation.gov.uk
+- [The Regulatory Reform (Fire Safety) Order 2005](https://www.legislation.gov.uk/uksi/2005/1541/contents), legislation.gov.uk`
+  },
+
+  {
+    slug: "office-fit-out-knutsford",
+    title: "Fitting out an office in Knutsford town centre: what changes in a listed or conservation-area building?",
+    seoTitle: "Office fit-out Knutsford: listed buildings and consents",
+    summary: "Fitting out an office or commercial unit in Knutsford's town-centre conservation area: listed building consent for internal work, signs, Article 4, Building Regulations and our fit-out rates.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Fit-out",
+    readTime: "5 min",
+    image: "images/stockport-office-04-stair.jpg",
+    featured: false,
+    body: `In Knutsford town centre, an office fit-out is usually straightforward in a modern building and slower in a historic one. Cheshire East's Knutsford conservation area covers the whole town centre. Internal work needs no planning permission, but a listed building needs listed building consent for internal changes that affect its character, and illuminated signs need advertisement consent.
+
+So the first job is to find out what the building is. The rest of this guide covers what each answer means for the fit-out.
+
+## Is the building listed, or only in the conservation area?
+
+The two are different. A conservation area controls the outside: demolition, the frontage, signs and trees. Listing protects the building itself, inside and out, and Cheshire East's built heritage team deals with both.
+
+A building can be in the conservation area without being listed. Check the listing before you sign a lease that assumes you can move walls.
+
+## What needs listed building consent inside?
+
+Any alteration that would affect a listed building's character as a building of special architectural or historic interest needs consent. On an office fit-out, that can include:
+
+- Removing or moving partitions, especially original walls
+- Suspended ceilings that cut across cornices or windows
+- New service runs chased into walls or floors
+- Replacing doors, or upgrading them to fire doors
+- Fixing signs or equipment into historic fabric
+
+Consent comes before the work. Working without it is a criminal offence, so it belongs in the programme from the start.
+
+## How do you meet fire and access rules in a historic building?
+
+The Building Regulations still apply: escape routes and fire separation under Approved Document B, access under Approved Document M. In a listed building the usual answers, new fire doors or a lift, may harm the character, so the fire strategy has to be designed with the heritage consent in mind.
+
+That is a conversation between the fire engineer, the heritage officer and Building Control, and it is best held before the design is fixed. [Fire safety in office fit-outs](https://www.tatton-projects.co.uk/blog/fire-safety-in-office-fit-outs) covers the standard approach.
+
+## Do signs and the frontage need consent?
+
+Yes, often. The deemed consent for illuminated signs on business premises does not apply in a conservation area, so an illuminated sign in Knutsford town centre needs advertisement consent. Changes that materially affect the outside, such as new windows or an entrance, need planning permission.
+
+Cheshire East says planning applications in a conservation area must be full applications, not outline, and need a heritage statement.
+
+## Does the St John's Article 4 direction affect offices?
+
+Not directly. St John's is one of Knutsford's conservation areas with an Article 4(2) direction, but Cheshire East says these directions apply only to houses, not to flats or commercial property. For an office, the conservation area and listing rules above are what matter.
+
+## What does an office fit-out in Knutsford cost?
+
+Our published 2026 rates are £45 to £70 per sq ft for Cat A, £70 to £110 for a standard Cat B and £110 to £180 and upwards for a high-specification Cat B, excluding VAT, fees and furniture, on our [cost guide](https://www.tatton-projects.co.uk/costs). A listed building adds design and consent time, and sometimes cost, which we price as it is found.
+
+For scale, our compact, high-specification office in Stockport, with a frameless glass boardroom and a double-height stair, was circa £125,000.
+
+[image:stockport-office-02-boardroom-2.jpg]
+[caption:Stockport: the boardroom behind frameless glass, facing the street]
+
+## How do you get started?
+
+Send us the address, the lease plan and what the office needs to do. We'll check the building's status with you and give you a written cost plan from the person who would run the job. More is on our [builders in Knutsford](https://www.tatton-projects.co.uk/builders-knutsford) and [fit-out contractors in Cheshire](https://www.tatton-projects.co.uk/fit-out-contractors-cheshire) pages.
+
+## Sources
+
+- [Conservation areas](https://www.cheshireeast.gov.uk/planning/built-and-natural-environment/conservation-areas/conservation_areas.aspx), Cheshire East Council
+- [Conservation Areas: Article 4(2) Direction](https://www.cheshireeast.gov.uk/planning/built-and-natural-environment/controls_in_conservation_areas/article_4_directions/article-4-directions-controls-in-conservation-areas.aspx), Cheshire East Council
+- [Planning (Listed Buildings and Conservation Areas) Act 1990, section 7](https://www.legislation.gov.uk/ukpga/1990/9/section/7), legislation.gov.uk
+- [The Town and Country Planning (Control of Advertisements) (England) Regulations 2007, Schedule 3](https://www.legislation.gov.uk/uksi/2007/783/schedule/3), legislation.gov.uk`
+  },
+
+  {
+    slug: "new-build-house-mobberley",
+    title: "Building a new house in Mobberley: what do you need to check before you buy or knock down?",
+    seoTitle: "New build house Mobberley: planning checks and build cost",
+    summary: "Building or replacing a house in Mobberley: the conservation area, the emerging neighbourhood plan, demolition consent, trees, our published new build rates and our nearby Knutsford build.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "New build",
+    readTime: "5 min",
+    image: "images/knutsford-05-complete.jpg",
+    featured: false,
+    body: `Before building a new house in Mobberley, check four things: whether the plot is in the Mobberley conservation area, what Cheshire East's planning policies say about the site, how the emerging Mobberley neighbourhood plan treats it, and which trees are protected. On our 2026 rates, a well-built new house costs £2,000 to £2,600 per square metre.
+
+This guide is for both kinds of project: replacing an existing house on a good plot, or building a single home on land a family already owns. Both need full planning permission from Cheshire East.
+
+## Is the plot in the Mobberley conservation area?
+
+Cheshire East has a Mobberley conservation area with its own appraisal, which describes what gives the area its character. If the plot is inside it, the design, the materials and the effect on the street all carry more weight.
+
+Knocking down a building in a conservation area also needs planning permission for "relevant demolition", which Cheshire East handles on its own application form. It is free, but it has to be in hand before demolition starts.
+
+## What is the Mobberley neighbourhood plan?
+
+Mobberley Parish Council is preparing a neighbourhood plan. Cheshire East designated the neighbourhood area on 8 November 2021, and the draft plan went out for pre-submission consultation from March to May 2024. Once a neighbourhood plan is made, it becomes part of the development plan used to decide applications.
+
+Read the latest draft before you design, because its policies on design and housing may well be applied to your scheme.
+
+## What about the Green Belt and the policies map?
+
+Parts of Cheshire East are Green Belt, where national policy restricts new building. Whether your plot is in it is a question for the council's policies map, not a guess, and it changes what a replacement house can be.
+
+[Replacement dwellings](https://www.tatton-projects.co.uk/blog/replacement-dwellings-cheshire) explains how a knock-down and rebuild is usually assessed.
+
+## Which trees are protected?
+
+In a conservation area, any tree not covered by a preservation order is still protected: you must give the council six weeks' notice before cutting or felling it. Trees with preservation orders need consent. Mature trees also shape where a house and its foundations can go.
+
+[image:knutsford-01-plot.jpg]
+[caption:Knutsford: the plot before anything was built]
+
+## What did our nearby Knutsford new build involve?
+
+A few miles away, we took an empty plot in Knutsford to a finished family home for circa £400,000. That covered groundworks, substructure and drainage, the structural frame, brick and flint elevations, a slate roof, first and second fix, the kitchen, bathrooms and joinery, landscaping, and Building Control and warranty sign-off.
+
+[From empty plot to keys](https://www.tatton-projects.co.uk/blog/new-build-construction-stages) walks through those stages.
+
+## What does a new house in Mobberley cost to build?
+
+Our published rates for 2026, per square metre of finished floor, excluding VAT, land, professional fees, demolition and abnormals:
+
+- **Good standard:** £2,000 to £2,600
+- **High specification:** £2,600 to £3,800
+- **Exceptional finishes:** £3,800 to £5,500 and upwards
+
+A 250 sq m house at high specification is roughly £650,000 to £950,000 to build. [What it costs to build a house in Cheshire](https://www.tatton-projects.co.uk/blog/cost-to-build-a-house-cheshire) has the detail.
+
+## How do you start?
+
+Before you buy a plot or commission drawings, send us the address and what you'd like to build. We'll tell you honestly what we think is likely and what it would cost. More is on our [builders in Mobberley](https://www.tatton-projects.co.uk/builders-mobberley) and [new build homes in Cheshire](https://www.tatton-projects.co.uk/new-build-homes-cheshire) pages.
+
+## Sources
+
+- [Conservation areas](https://www.cheshireeast.gov.uk/planning/built-and-natural-environment/conservation-areas/conservation_areas.aspx) and [conservation area appraisals](https://www.cheshireeast.gov.uk/planning/built-and-natural-environment/conservation_areas_appraisals/conservation_areas_appraisals.aspx), Cheshire East Council
+- [Mobberley Neighbourhood Plan](https://www.cheshireeast.gov.uk/planning/neighbourhood-plans/neighbourhood-plans-g-m/mobberley-neighbourhood-plan.aspx), Cheshire East Council
+- [Town and Country Planning Act 1990, section 211](https://www.legislation.gov.uk/ukpga/1990/8/section/211), legislation.gov.uk`
+  },
+
+  {
     slug: "kitchen-extension-hale",
     title: "Kitchen extension in Hale: will it need planning permission, and what does it involve?",
     seoTitle: "Kitchen extension Hale: planning, conservation areas and cost",
