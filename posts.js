@@ -34,6 +34,608 @@
 const POSTS = [
 
   {
+    slug: "kitchen-extension-hale",
+    title: "Kitchen extension in Hale: will it need planning permission, and what does it involve?",
+    seoTitle: "Kitchen extension Hale: planning, conservation areas and cost",
+    summary: "Kitchen extensions in Hale: what permitted development allows, what changes in the Hale Station, South Hale and Ashley Heath conservation areas, side returns, glazing and cost.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Extensions",
+    readTime: "6 min",
+    image: "images/didsbury-kitchen-05-glazed-roof.jpg",
+    featured: false,
+    body: `Most kitchen extensions in Hale need either planning permission or a check that they fall within permitted development. A single-storey rear extension of up to 3 m on a semi, or 4 m on a detached house, is usually permitted. Hale Station, South Hale and Ashley Heath are conservation areas, though, and there a side-return infill needs an application.
+
+Which of those applies to your house decides the drawings, the programme and how early a builder can price the job. This guide goes through it in the order we check it on a first visit.
+
+## Is your house in one of Hale's conservation areas?
+
+Trafford Council's conservation area map shows three in and around Hale: Hale Station, South Hale and Ashley Heath. Bowdon, The Devisdale and The Downs sit just to the west. Check the map before anyone draws anything, because it changes what you can build without an application.
+
+Trafford's own guidance lists house extensions among the changes that need a planning application in a conservation area. The national rules, set out below, are more specific about which extensions that means.
+
+## What can you build without planning permission in Hale?
+
+Outside a conservation area, a single-storey rear extension is permitted development under Class A of the General Permitted Development Order, within these limits:
+
+- **Depth.** No more than 3 m beyond the original rear wall on a semi or terrace, or 4 m on a detached house.
+- **Height.** No more than 4 m high, and no higher than 3 m at the eaves if it is within 2 m of a boundary.
+- **Garden.** Extensions and outbuildings together can cover no more than half the land around the original house.
+- **Materials.** Similar in appearance to the existing house.
+
+Up to 6 m on a semi, or 8 m on a detached house, is possible through prior approval. Trafford notifies your neighbours, who get at least 21 days to comment, and you can't start until the council has answered or 42 days have passed.
+
+## What changes inside a conservation area?
+
+Conservation areas are "article 2(3) land" in the Order, and on that land Class A does not cover:
+
+- An extension beyond a side wall of the original house, which is what a side-return infill is
+- Any extension of more than one storey beyond the rear wall
+- Cladding in render, stone, timber, tiles or plastic
+- The larger 6 m and 8 m extensions through prior approval
+
+A single-storey rear extension within the 3 m and 4 m limits can still be permitted in principle. Given what Trafford's guidance says, it is worth asking the council or applying for a lawful development certificate before relying on it.
+
+## Side return or full width: which suits a Hale house?
+
+Many of the Victorian and Edwardian semis and terraces near Hale village have a narrow back addition with a strip of yard beside it. Infilling that strip gives the kitchen its width; extending across the back as well, a wraparound, gives it depth too.
+
+Both mean steel. The back wall and the side wall of the back addition usually come out, and an engineer designs the beams and what they bear on. [Removing a load-bearing wall](https://www.tatton-projects.co.uk/blog/removing-a-load-bearing-wall) covers who does what.
+
+## Should a Hale kitchen extension have a glazed roof?
+
+A side return is narrow and often overshadowed by next door, so most of its light has to come from above. A glazed roof gives the most; a run of rooflights costs less and is easier to keep warm and shaded. The trade-offs are in [glazed roof or rooflights](https://www.tatton-projects.co.uk/blog/glazed-roof-or-rooflights-kitchen-extension).
+
+[image:didsbury-kitchen-05-glazed-roof.jpg]
+[caption:Didsbury, Manchester: the glazed roof running the length of a kitchen extension, over the island and dining end]
+
+## What about trees, drains and the neighbours?
+
+Three things catch Hale projects out:
+
+- **Trees.** In a conservation area, you must give Trafford six weeks' notice before working on any tree more than 7.5 cm across at 1.5 m above the ground. Foundations near a tree may need its roots protecting too.
+- **Drains.** A public sewer under the back of the house usually needs a [build-over agreement](https://www.tatton-projects.co.uk/blog/build-over-agreement-explained).
+- **The party wall.** On a semi or terrace, foundations near the boundary usually need notice under the [Party Wall Act](https://www.tatton-projects.co.uk/blog/party-wall-act-explained).
+
+## What does a kitchen extension in Hale cost?
+
+Our published rate for an extension is £2,400 to £3,600 per square metre of new floor area, before VAT and fees, on our [cost guide](https://www.tatton-projects.co.uk/costs). The kitchen itself, and how much of the existing house is remodelled, sit on top of that.
+
+The two Didsbury kitchen extensions on our work page, at circa £120,000 and circa £160,000 with the kitchens fitted, are the closest finished match to a Hale side return or wraparound. [What a kitchen extension costs](https://www.tatton-projects.co.uk/blog/kitchen-extension-cost-manchester) explains the difference between them.
+
+## How do you get started?
+
+Check the conservation area map, then send us the address, some photos and what you want the kitchen to do. We'll tell you which planning route applies and give you a written cost plan from the person who would run the job. More is on our [builders in Hale](https://www.tatton-projects.co.uk/builders-hale) and [extension builders in Hale](https://www.tatton-projects.co.uk/extension-builders-hale) pages.
+
+## Sources
+
+- [The Town and Country Planning (General Permitted Development) (England) Order 2015, Schedule 2, Part 1](https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1), legislation.gov.uk
+- [Article 2(3) land, Schedule 1, Part 1](https://www.legislation.gov.uk/uksi/2015/596/schedule/1/part/1), legislation.gov.uk
+- [Conservation areas](https://www.trafford.gov.uk/planning-and-building-control/heritage-and-conservation/conservation-areas) and [works in a conservation area](https://www.trafford.gov.uk/planning-and-building-control/heritage-and-conservation/conservation-areas/works-conservation-area), Trafford Council
+- [Trees in conservation areas](https://www.trafford.gov.uk/planning-and-building-control/heritage-and-conservation/tree-preservation-orders-tpos/trees-conservation-areas), Trafford Council`
+  },
+
+  {
+    slug: "loft-conversion-sale",
+    title: "Loft conversion in Sale: what can a 1930s semi's roof take?",
+    seoTitle: "Loft conversion Sale: hip-to-gable, dormers and planning",
+    summary: "Loft conversions on Sale's 1930s semis: why most need a hip-to-gable and dormer, the 50 cubic metre permitted development limit, conservation areas in Sale, and Building Regulations.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Advice",
+    readTime: "5 min",
+    image: "images/didsbury-10-landing.jpg",
+    featured: false,
+    body: `Most 1930s semis in Sale can take a loft conversion, usually a hip-to-gable with a rear dormer, because the hipped roof leaves little usable space on its own. Up to 50 cubic metres of extra roof space is normally permitted development. That does not apply in Sale's conservation areas, such as Ashton upon Mersey and Brogden Grove.
+
+The rest of this guide is the detail: why the roof shape matters so much, what the permitted development limits really say, and what Building Control will want to see.
+
+## Why do Sale semis usually need a hip-to-gable?
+
+A typical interwar semi in Sale has a hipped roof: the side of the roof slopes back as well as the front and rear. That sloping side takes most of the head height out of the loft, so a dormer at the back on its own often leaves a room that is narrow at both ends.
+
+A hip-to-gable builds the side slope up into a vertical gable wall, then a dormer goes across the rear slope. Together they turn the loft into a full-height room, usually a bedroom with an en suite. Head height still decides it: about 2.2 m from the top of the ceiling joists to the ridge is the practical minimum.
+
+## How much can you add without planning permission?
+
+Under Class B of the General Permitted Development Order, a loft conversion on a house is permitted development if:
+
+- The extra roof space is no more than 50 cubic metres on a semi or detached house, or 40 on a terrace
+- Nothing goes higher than the existing ridge
+- Nothing projects beyond the front roof slope where it faces a road
+- The materials look similar to the existing house
+- There is no balcony, veranda or raised platform
+
+A dormer must sit, as far as practicable, at least 0.2 m back from the eaves, although a hip-to-gable is exempt from that rule. Any window in a side wall or side roof slope must be obscure-glazed and fixed shut below 1.7 m above the floor.
+
+## Which Sale houses need a planning application?
+
+Class B does not apply on article 2(3) land, which includes conservation areas. Trafford's conservation area map shows two in Sale, Ashton upon Mersey and Brogden Grove, so a dormer or hip-to-gable there needs planning permission.
+
+Trafford also lists Clematis Cottage on Rutland Lane in Sale under an Article 4 direction, which covers that one property, not the streets around it. Flats need an application too. If you are unsure, a lawful development certificate from Trafford proves the conversion was lawful when you come to sell.
+
+## What does Building Control look at in a Sale loft?
+
+Every loft conversion needs Building Regulations approval. The main points are new floor joists and steels, a protected stair down to the front door with fire doors off it, mains-wired interlinked smoke alarms, an escape window and an insulated roof. We go through each in [loft conversion in Altrincham](https://www.tatton-projects.co.uk/blog/loft-conversion-altrincham), and the rules are the same in Sale.
+
+On a semi, the stair usually decides the layout. It has to land over the existing stair with enough headroom, and a badly placed stair can cost you a bedroom below.
+
+## Does the neighbour need to know?
+
+Yes, on a semi. The new steels usually bear on the wall you share with next door, and building the gable often means working on the party wall too. That is work under the Party Wall Act, with notice at least two months before it starts. [The Party Wall Act explained](https://www.tatton-projects.co.uk/blog/party-wall-act-explained) sets out the notices.
+
+## Is a loft on its own the right size of job for us?
+
+We take on projects from around £100,000. A loft conversion on its own can come in under that, and it often makes most sense as part of a wider plan for the house, with the rewiring, heating or a rear extension done at the same time. If the loft is all you need, ask anyway and we'll say honestly whether we're the right firm for it.
+
+## How is a loft conversion priced?
+
+We don't publish a rate for a loft on its own, because a rooflight conversion and a hip-to-gable with a full-width dormer are different jobs. When a loft is part of a wider refurbishment, our published rate is £1,400 to £2,800 per square metre, before VAT and fees, on our [cost guide](https://www.tatton-projects.co.uk/costs).
+
+[image:didsbury-10-landing.jpg]
+[caption:Didsbury, Manchester: a new oak handrail and painted spindles run through every landing of the house]
+
+## How do you get a real answer?
+
+Measure the head height in the loft if you can, then send us the address and some photos. We'll check the roof structure and tell you what will fit before you pay for drawings. More on our work in the town is on our [builders in Sale](https://www.tatton-projects.co.uk/builders-sale) page, and whole-house projects on [house renovations in Altrincham](https://www.tatton-projects.co.uk/house-renovations-altrincham).
+
+## Sources
+
+- [The Town and Country Planning (General Permitted Development) (England) Order 2015, Schedule 2, Part 1, Class B](https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1), legislation.gov.uk
+- [Loft conversion: planning permission](https://www.planningportal.co.uk/permission/common-projects/loft-conversion/planning-permission), Planning Portal
+- [Conservation areas](https://www.trafford.gov.uk/planning-and-building-control/heritage-and-conservation/conservation-areas), Trafford Council
+- [Article 4 Directions: heritage](https://www.trafford.gov.uk/planning-and-building-control/planning-support-and-information/article-4-directions/article-4-directions-heritage), Trafford Council`
+  },
+
+  {
+    slug: "house-extension-urmston",
+    title: "House extension in Urmston: permitted development, prior approval or full planning?",
+    seoTitle: "House extension Urmston: which planning route applies",
+    summary: "Extending a house in Urmston or Flixton: the three planning routes, how Trafford's prior approval works, the Flixton conservation area and Article 4 directions, and what extensions cost.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Extensions",
+    readTime: "6 min",
+    image: "images/didsbury-02-kitchen-garden.jpg",
+    featured: false,
+    body: `Most extensions to Urmston's 1930s semis take one of three routes: a single-storey rear extension of up to 3 m under permitted development, up to 6 m through Trafford's prior approval process, or a full planning application for anything bigger, two-storey or in the Flixton conservation area. Which route applies decides the programme.
+
+This guide explains each route, how long it takes, and what Urmston houses tend to need once the back wall comes out.
+
+## Which planning route does your extension take?
+
+For a semi-detached or terraced house, the national rules sort most rear extensions like this:
+
+- **Permitted development.** A single storey, up to 3 m beyond the original rear wall and no more than 4 m high. No application, though a lawful development certificate is worth having.
+- **Prior approval.** A single storey of more than 3 m and up to 6 m. Trafford checks the effect on the neighbours.
+- **Planning permission.** Anything beyond those limits, most two-storey extensions, and anything in a conservation area that the rules don't cover.
+
+On a detached house the first two limits are 4 m and 8 m. "Original" means the house as first built, so an earlier extension counts towards the limit.
+
+## How does prior approval work in Trafford?
+
+You send Trafford a description of the extension with its depth, height and eaves height, a plan, and the addresses of the houses next door. The council writes to those neighbours, who get at least 21 days to comment.
+
+Trafford considers the effect on light and privacy next door, and can refuse. You can't start until it confirms prior approval isn't needed, grants it, or 42 days pass without a decision. Build those six weeks into the programme before you book anyone.
+
+## What about a two-storey or side extension?
+
+A two-storey rear extension can be permitted development if it goes no more than 3 m beyond the rear wall and stays at least 7 m from the back boundary. Its roof pitch should match the house, and side-facing upstairs windows must be obscure-glazed. On most Urmston gardens the 7 m rule is the one that bites.
+
+A side extension can be permitted if it is single storey, no more than 4 m high and no wider than half the original house. Anything forward of the front wall needs planning. Our [single or two-storey extension](https://www.tatton-projects.co.uk/blog/single-or-two-storey-extension) guide covers the design side.
+
+## Is Urmston covered by Article 4 directions?
+
+Hardly at all. Trafford lists two Article 4 directions in Urmston: Chesham House at 101 Church Road and Jawbone Cottage at 273 Davyhulme Road. Each covers that building, so for most Urmston houses the normal permitted development rules apply.
+
+Flixton is different. Trafford's conservation area map shows a Flixton conservation area, and on that land side extensions, two-storey rear extensions, cladding and the larger prior approval extensions all need a planning application.
+
+## What does a 1930s Urmston semi need once it's opened up?
+
+Opening the back of the house into a kitchen and living space almost always means a steel beam where the rear wall was, and often a second where an internal wall comes out. A structural engineer designs them and Building Control inspects them.
+
+The other common finds are a drain run under the extension, a party wall with next door that needs notice, and wiring and heating that are due anyway. [Extending a 1930s house](https://www.tatton-projects.co.uk/blog/extending-a-1930s-house) goes through what tends to turn up.
+
+[image:didsbury-02-kitchen-garden.jpg]
+[caption:Didsbury, Manchester: a kitchen opened to the garden through minimal-frame sliders]
+
+## What does an extension in Urmston cost?
+
+Our published rate for an extension is £2,400 to £3,600 per square metre of finished floor area, before VAT and fees, on our [cost guide](https://www.tatton-projects.co.uk/costs). The finished Didsbury kitchen extensions on our work page came in at circa £120,000 and circa £160,000, kitchens included.
+
+We take on projects from around £100,000. For a single steel or a knock-through on its own, our sister company The Load Bearing Company is the right call.
+
+## Can you stay at home while it's built?
+
+Usually, yes, for a rear extension. Plan a temporary kitchen and expect short shutdowns of water and power when the services are connected. [Living at home during an extension](https://www.tatton-projects.co.uk/blog/living-at-home-during-an-extension) has the practical side.
+
+## How do you start?
+
+Work out which route you're on, then send us the drawings, or the address and a sketch. You'll get a written cost plan from the person who would run the job. More is on our [builders in Urmston](https://www.tatton-projects.co.uk/builders-urmston) and [extension builders in Manchester](https://www.tatton-projects.co.uk/extension-builders-manchester) pages.
+
+## Sources
+
+- [The Town and Country Planning (General Permitted Development) (England) Order 2015, Schedule 2, Part 1, Class A](https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1), legislation.gov.uk
+- [Permitted development rights for householders: technical guidance](https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance), GOV.UK
+- [Article 4 Directions: heritage](https://www.trafford.gov.uk/planning-and-building-control/planning-support-and-information/article-4-directions/article-4-directions-heritage), Trafford Council
+- [Extensions: planning permission](https://www.planningportal.co.uk/permission/common-projects/extensions/planning-permission), Planning Portal`
+  },
+
+  {
+    slug: "house-renovation-knutsford",
+    title: "Renovating a house in Knutsford: which consents do you need, and what does it cost?",
+    seoTitle: "House renovation Knutsford: conservation areas and costs",
+    summary: "Renovating a house in Knutsford: the town's conservation areas, the St John's Article 4 direction, when internal work needs consent, renovate or replace, and our published refurbishment rates.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Advice",
+    readTime: "6 min",
+    image: "images/wilmslow-02-during.jpg",
+    featured: false,
+    body: `Renovating a house in Knutsford usually starts with one question: is it in a conservation area? Cheshire East says the Knutsford conservation area covers the whole town centre, and there are separate ones at Legh Road, Cross Town, Heathfield Square and St John's. Internal work rarely needs planning permission. External changes, demolition and listed buildings often do.
+
+After that, a renovation here is priced and run like anywhere else. This guide covers the consents first, then the building work and the cost.
+
+## Which Knutsford conservation area is your house in?
+
+Cheshire East publishes appraisals for five conservation areas in the town: Knutsford, Legh Road, Cross Town, Heathfield Square and St John's. The council's map shows the boundaries.
+
+Being in one doesn't stop a renovation. It means a smaller allowance for extensions without planning, applications for dormers, cladding and front-facing changes, and a heritage statement with any application.
+
+## What does the St John's Article 4 direction mean?
+
+St John's is one of the Cheshire East conservation areas with an Article 4(2) direction, confirmed in 1995, and the council publishes the list of affected addresses. On those houses, changes that would normally be permitted need planning permission.
+
+Cheshire East says these directions generally apply to elevations facing a road and can cover windows, doors, roofs, chimneys, porches and boundary walls. Repairs, like-for-like replacement and work already done are not affected, but new front windows or doors in a different style or material are.
+
+## What can you do inside without permission?
+
+Work that affects only the inside of a building is not "development" under the Town and Country Planning Act, so it needs no planning permission, conservation area or not. That covers most of a renovation: new kitchens and bathrooms, rewiring, heating, plastering and moving non-structural walls.
+
+Two exceptions matter. A listed building needs listed building consent for any alteration that affects its character, inside or out. And Building Regulations apply whatever planning says: structure, new circuits, drainage and replacement windows all need approval or a registered installer.
+
+## What turns up in an older Knutsford house?
+
+Every old house is different, but a renovation here usually finds some of these once the plaster comes off:
+
+- Wiring and pipework from several decades, patched rather than replaced
+- Earlier openings made without proper support
+- Floors patched and out of level
+- Roofs and chimneys that need more than a repair
+
+None of these stops a job. They're the reason a budget carries a contingency, and why a price given without opening anything up is a guess.
+
+## Should you renovate, or replace the house?
+
+On some Knutsford plots the better answer is a new house. That needs planning permission from Cheshire East, and in a conservation area demolition and the new design are judged against the street. [Replacement dwellings in Cheshire](https://www.tatton-projects.co.uk/blog/replacement-dwellings-cheshire) sets out how that is weighed up.
+
+Our own Knutsford job was a new build: an empty plot taken to a finished brick and flint family home for circa £400,000, from groundworks to Building Control and warranty sign-off.
+
+[image:knutsford-06-front.jpg]
+[caption:Knutsford: the finished new build, brick and flint under a slate roof]
+
+## What does a renovation in Knutsford cost?
+
+Our published rate for a whole-house refurbishment is £1,400 to £2,800 per square metre, before VAT and fees, depending on how far back the house goes and the finish. On that basis a 200 sq m house refurbished to a high standard is roughly £300,000 to £500,000.
+
+The closest finished example on our work page is in Wilmslow: a 1930s detached taken back to brick, extended front and rear and fully re-serviced for circa £375,000. The full rates are on our [cost guide](https://www.tatton-projects.co.uk/costs).
+
+## Can you live in the house during it?
+
+For a full back-to-brick renovation, most clients move out, because the house has no services for a period and every room is a work area. For a phased renovation you can often stay. We'll say which yours is at the first visit.
+
+## How do you get a price?
+
+Check the conservation area map and whether the house is listed, then send us the address and photos. We'll visit and give you a written cost plan from the person who would run the job. More is on our [builders in Knutsford](https://www.tatton-projects.co.uk/builders-knutsford) and [house renovations](https://www.tatton-projects.co.uk/house-renovations-altrincham) pages.
+
+## Sources
+
+- [Conservation areas](https://www.cheshireeast.gov.uk/planning/built-and-natural-environment/conservation-areas/conservation_areas.aspx) and [conservation area appraisals](https://www.cheshireeast.gov.uk/planning/built-and-natural-environment/conservation_areas_appraisals/conservation_areas_appraisals.aspx), Cheshire East Council
+- [Local Article 4(2) information](https://www.cheshireeast.gov.uk/planning/built-and-natural-environment/controls_in_conservation_areas/article_4_directions/local_article_42_information.aspx), Cheshire East Council
+- [Town and Country Planning Act 1990, section 55](https://www.legislation.gov.uk/ukpga/1990/8/section/55), legislation.gov.uk
+- [Planning (Listed Buildings and Conservation Areas) Act 1990, section 7](https://www.legislation.gov.uk/ukpga/1990/9/section/7), legislation.gov.uk`
+  },
+
+  {
+    slug: "kitchen-refurbishment-wilmslow",
+    title: "Kitchen refurbishment in Wilmslow: what changes when you open up the back of a 1930s house?",
+    seoTitle: "Kitchen refurbishment Wilmslow: remodelling a 1930s house",
+    summary: "Refurbishing a kitchen in a 1930s Wilmslow house: when it becomes a remodel, what Building Regulations cover, planning in Wilmslow's conservation areas, and what moves the cost.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Advice",
+    readTime: "5 min",
+    image: "images/wilmslow-05-rear-after.jpg",
+    featured: false,
+    body: `In a 1930s Wilmslow house, a kitchen refurbishment usually turns into a remodel: the kitchen, dining room and back room are joined into one space. That means a steel, new services and new doors to the garden. It needs Building Regulations approval but rarely planning permission, unless the outside changes or the house is listed or in a conservation area.
+
+Our Wilmslow house on the work page is that job, so this guide uses it as the example.
+
+## What did the kitchen in our Wilmslow house involve?
+
+The house was a tired 1930s detached, dark and cut up inside. As part of a circa £375,000 extension and refurbishment, we opened the ground floor into a single kitchen and living space, added a full-width rear extension with bi-folds onto a new terrace, and re-serviced the whole house.
+
+The kitchen was one line in that job, not the whole of it. That is common in Wilmslow, where the kitchen is usually the reason a bigger project starts.
+
+[image:wilmslow-06-kitchen.jpg]
+[caption:Wilmslow: the open-plan kitchen and living space, opened to the garden]
+
+## Should the kitchen stay where it is, or move to the back?
+
+In many 1930s layouts the kitchen is a small room at the side or back, with a separate dining room next to it. Leaving it there and refitting it is the cheapest option. Moving it into the back room, facing the garden, is usually what people actually want.
+
+Moving it means new waste and supply routes, and the fall a waste pipe needs decides where a sink or island can go. It is worth settling the layout with the services in mind before anyone chooses units.
+
+## Which parts need Building Regulations approval?
+
+Planning and Building Regulations are separate. A kitchen remodel touches several parts of the Building Regulations:
+
+- **Structure.** Removing a load-bearing wall needs an engineer's design and approval.
+- **Electrics.** New circuits, such as a hob or oven supply, are notifiable work, signed off by a registered electrician or Building Control.
+- **Gas.** Any change to a gas supply must be done by a Gas Safe registered engineer.
+- **Ventilation.** A kitchen needs mechanical extract to the standard in Approved Document F.
+- **New windows and doors.** These need approval or a registered installer.
+
+In Wilmslow that approval comes from Cheshire East Building Control or a registered building control approver. [Removing a load-bearing wall](https://www.tatton-projects.co.uk/blog/removing-a-load-bearing-wall) covers the structural side.
+
+## Does a kitchen refurbishment in Wilmslow need planning permission?
+
+Internal work is not development under planning law, so a refurbishment inside the house doesn't need planning permission. New doors in the back wall and an extension may, depending on size and location.
+
+Cheshire East has four conservation areas in and around Wilmslow: Hawthorn Lane, Highfield, St Bartholomew's and Styal. In those, the extension allowance without planning is smaller. A listed house needs listed building consent for internal work that affects its character, kitchens included.
+
+## What turns up in a 1930s kitchen?
+
+These houses are well built, but most have been altered more than once. The usual finds:
+
+- **Floor levels.** Timber floors in the front rooms and a later concrete floor in the kitchen, at different heights. One continuous floor means levelling the lot.
+- **Chimney breasts.** Often in the back room, sometimes removed downstairs and left above.
+- **Wiring.** Usually due for replacement if the walls are open.
+
+[Extending a 1930s house](https://www.tatton-projects.co.uk/blog/extending-a-1930s-house) has more on how these houses were built.
+
+## What does it cost?
+
+We don't publish a rate for a kitchen on its own, because the kitchen itself can be anything from supplied units to bespoke joinery. Our published rates for the work around it are £1,400 to £2,800 per square metre for refurbishment and £2,400 to £3,600 per square metre for extension, before VAT and fees, on our [cost guide](https://www.tatton-projects.co.uk/costs).
+
+The lines that move the price most are the structure, moving the wet services, the floor and the glazing, not the units.
+
+## How do you get a price?
+
+Send us the address, photos and what you want from the kitchen. We'll look at the structure and the services and give you a written cost plan from the person who would run the job. More is on our [builders in Wilmslow](https://www.tatton-projects.co.uk/builders-wilmslow) and [house renovations](https://www.tatton-projects.co.uk/house-renovations-altrincham) pages.
+
+## Sources
+
+- [Electrical safety: Approved Document P](https://www.gov.uk/government/publications/electrical-safety-approved-document-p), GOV.UK
+- [Ventilation: Approved Document F](https://www.gov.uk/government/publications/ventilation-approved-document-f), GOV.UK
+- [Town and Country Planning Act 1990, section 55](https://www.legislation.gov.uk/ukpga/1990/8/section/55), legislation.gov.uk
+- [Conservation area appraisals](https://www.cheshireeast.gov.uk/planning/built-and-natural-environment/conservation_areas_appraisals/conservation_areas_appraisals.aspx), Cheshire East Council`
+  },
+
+  {
+    slug: "house-extension-alderley-edge",
+    title: "House extension in Alderley Edge: how big can you build on a large plot?",
+    seoTitle: "House extension Alderley Edge: size limits and planning",
+    summary: "Extending a detached house in Alderley Edge: the 4 m and 8 m permitted development limits, two-storey and side extensions, the four Alderley Edge conservation areas, trees and cost.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Extensions",
+    readTime: "6 min",
+    image: "images/wilmslow-04-front-after.jpg",
+    featured: false,
+    body: `On a detached house in Alderley Edge, a single-storey rear extension of up to 4 m is usually permitted development, and up to 8 m through prior approval, as long as extensions cover no more than half the garden. The four Alderley Edge conservation areas change that: there, side and two-storey extensions need planning permission and a heritage statement.
+
+Big plots tempt big extensions, and the limits are easy to misread. This guide sets them out, then covers the trees, the design choice and the cost.
+
+## Which Alderley Edge conservation areas are there?
+
+Cheshire East lists four conservation areas in the village: Alderley Edge, Davey Lane, Elm Grove and Trafford Road, each with its own appraisal. Nether Alderley, to the south, has one too. The council's map shows the boundaries, and it is the first thing to check.
+
+## What can a detached house add without planning permission?
+
+Outside a conservation area, Class A of the General Permitted Development Order allows these on a detached house:
+
+- **Single-storey rear.** Up to 4 m beyond the original rear wall, or up to 8 m through prior approval, and no more than 4 m high.
+- **Two-storey rear.** Up to 3 m beyond the rear wall, and at least 7 m from the back boundary.
+- **Side.** Single storey, no more than 4 m high and no wider than half the original house.
+- **Near a boundary.** Eaves no higher than 3 m within 2 m of it.
+
+Nothing can go forward of the front wall, and extensions and outbuildings together can cover no more than half the land around the original house. On a large Alderley Edge plot, the 50 per cent rule rarely bites; the depth limits usually do.
+
+## What changes in a conservation area?
+
+Conservation areas are "article 2(3) land", and there Class A does not allow side extensions, two-storey rear extensions, cladding or the larger extensions through prior approval. Cheshire East says the size of extension allowed without planning permission is smaller than elsewhere.
+
+When an application is needed, the council expects good design in sympathetic materials, a heritage statement, and a full rather than outline application. That is more design work up front, which is why an architect usually earns their fee here.
+
+## What about the trees?
+
+Alderley Edge is a well-treed place, and that matters to an extension. In a conservation area, any tree not covered by a preservation order is still protected: you must give the council six weeks' notice before cutting or felling it.
+
+Trees also shape the foundations. Roots near the footprint can mean deeper or piled foundations and protection fencing during the build, which is worth knowing before the design is fixed.
+
+## Single storey or two storey?
+
+A single-storey extension gives a bigger ground floor and keeps the work away from the bedrooms. A two-storey one adds bedrooms without taking more garden, but in a conservation area it always needs planning. [Single or two-storey extension](https://www.tatton-projects.co.uk/blog/single-or-two-storey-extension) covers the trade-offs.
+
+## What did our Wilmslow house get?
+
+A few miles away, we extended a 1930s detached in Wilmslow front and rear, with a full-width rear extension and bi-folds onto a new terrace, an oak-framed porch, a re-render and every window replaced. The whole job, with the refurbishment, was circa £375,000.
+
+[image:wilmslow-07-porch.jpg]
+[caption:Wilmslow: the oak-framed porch added to the front of the house]
+
+## What does an extension in Alderley Edge cost?
+
+Our published rate is £2,400 to £3,600 per square metre of finished floor area, before VAT and fees, on our [cost guide](https://www.tatton-projects.co.uk/costs). On that rate, a 40 sq m extension is roughly £96,000 to £144,000 before the kitchen, VAT and fees.
+
+The things that push it up here are structural glazing, deeper foundations near trees and remodelling the existing house to join it all up.
+
+## How do you start?
+
+Check the conservation area map first, then send us the drawings, or the address and what you want from the house. You'll get a written cost plan from the person who would run the job. More is on our [builders in Alderley Edge](https://www.tatton-projects.co.uk/builders-alderley-edge) and [extension builders](https://www.tatton-projects.co.uk/extension-builders-altrincham) pages.
+
+## Sources
+
+- [The Town and Country Planning (General Permitted Development) (England) Order 2015, Schedule 2, Part 1, Class A](https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1), legislation.gov.uk
+- [Conservation areas](https://www.cheshireeast.gov.uk/planning/built-and-natural-environment/conservation-areas/conservation_areas.aspx) and [conservation area appraisals](https://www.cheshireeast.gov.uk/planning/built-and-natural-environment/conservation_areas_appraisals/conservation_areas_appraisals.aspx), Cheshire East Council
+- [Town and Country Planning Act 1990, section 211](https://www.legislation.gov.uk/ukpga/1990/8/section/211), legislation.gov.uk`
+  },
+
+  {
+    slug: "whole-house-refurbishment-bowdon",
+    title: "Whole-house refurbishment in Bowdon: what needs consent, and how is a period villa refurbished?",
+    seoTitle: "Whole-house refurbishment Bowdon: consents and costs",
+    summary: "Refurbishing a Victorian or Edwardian house in Bowdon: conservation areas, The Downs Article 4 direction, listed buildings, trees, the order of work and our published refurbishment rates.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Advice",
+    readTime: "6 min",
+    image: "images/wilmslow-03-stairs.jpg",
+    featured: false,
+    body: `A whole-house refurbishment of a Bowdon villa is mostly internal work, so it often needs no planning permission, but it nearly always needs Building Regulations approval. Bowdon and The Devisdale are conservation areas, so demolition, cladding, side extensions and tree work need consent. A listed house needs listed building consent for internal changes too.
+
+This guide sets out the consents, then how we run a refurbishment of a big period house and what it costs.
+
+## Which consents does a Bowdon refurbishment need?
+
+Trafford's conservation area map shows Bowdon and The Devisdale, with The Downs and Ashley Heath alongside. Here is how the rules fall on a typical refurbishment:
+
+- **Internal work.** Not development under planning law, so no planning permission, unless the house is listed.
+- **Demolition.** Planning permission is generally needed to demolish a building in a conservation area, even an unlisted one.
+- **Extensions and cladding.** Side extensions, two-storey rear extensions and render or cladding need an application.
+- **Trees.** Six weeks' notice to Trafford before work on any tree more than 7.5 cm across at 1.5 m.
+
+## Is your house under The Downs Article 4 direction?
+
+Trafford lists parts of The Downs conservation area as covered by an Article 4 direction. On those houses, planning permission is likely to be needed for changes to windows, doors, roofs and chimneys, including uPVC windows, and for porches, gates, fences and walls.
+
+If your house is near The Downs, check before you order windows. Like-for-like repair is the safer route anyway on a period front elevation.
+
+## What if the house is listed?
+
+Listed building consent is needed for any demolition, alteration or extension that affects a listed building's special character, and Trafford says extensions typically need planning permission as well. Working without consent is a criminal offence, so the consent comes before the strip-out, not after.
+
+That can include things that feel routine: removing a fireplace, replacing doors, moving a partition or changing a staircase. Trafford offers pre-application advice for heritage sites, and it is worth using.
+
+## How is a Bowdon villa refurbished?
+
+Every whole-house refurbishment follows the same order, and a big period house just has more of each stage:
+
+- **Strip-out and survey.** Take it back far enough to see the structure and the services.
+- **Structure.** Repair or replace what's wrong, and put in any new openings and steels.
+- **First fix.** New wiring, heating, plumbing and drainage, run while the walls and floors are open.
+- **Plaster, joinery and finishes.** Then the kitchen, bathrooms and second fix.
+
+[Building Control inspections](https://www.tatton-projects.co.uk/blog/building-control-inspections-extension) explains what gets inspected along the way.
+
+## How do you keep the character?
+
+The features that make a Bowdon house worth buying are usually the ones a careless refurbishment loses: staircases, cornices, panelled doors, fireplaces and sash windows. The sensible approach is to record them before the strip-out, and repair rather than replace wherever the condition allows.
+
+Joinery that does need replacing should be made to match, not bought off a shelf. [Staircases and joinery in a remodel](https://www.tatton-projects.co.uk/blog/staircases-and-joinery-in-a-remodel) covers how we handle that.
+
+[image:didsbury-09-bathroom-brass.jpg]
+[caption:Didsbury, Manchester: a brass high-level cistern, period detail carried into a refurbished bathroom]
+
+## Should you go down instead of out?
+
+When the plot is tight or the street scene is protected, a basement can add space without changing the front of the house. Our Hale basement conversion turned a cellar into a cinema room, a home office and a lounge. [Basement conversions in Hale and Bowdon](https://www.tatton-projects.co.uk/blog/basement-conversion-hale-bowdon) covers what's involved.
+
+## What does a whole-house refurbishment in Bowdon cost?
+
+Our published rate is £1,400 to £2,800 per square metre, before VAT and fees, depending on how far back the house goes and the finish. A 200 sq m house refurbished to a high standard is roughly £300,000 to £500,000. Bowdon houses are often larger, and the rate scales with the floor area.
+
+Carry a contingency for what the strip-out finds. [What a whole-house refurbishment costs](https://www.tatton-projects.co.uk/blog/whole-house-refurbishment-cost-cheshire) has the breakdown.
+
+## Can you live in the house during it?
+
+For a back-to-brick refurbishment, most clients move out. The house is without services for a period and every room is a work area. On a phased job you can sometimes stay in part of the house. Our office is on The Downs, a few minutes away, and we'll tell you honestly which yours is.
+
+More is on our [builders in Bowdon](https://www.tatton-projects.co.uk/builders-bowdon) and [property refurbishment in Altrincham](https://www.tatton-projects.co.uk/property-refurbishment-altrincham) pages.
+
+## Sources
+
+- [Works in a conservation area](https://www.trafford.gov.uk/planning-and-building-control/heritage-and-conservation/conservation-areas/works-conservation-area), Trafford Council
+- [Article 4 Directions: heritage](https://www.trafford.gov.uk/planning-and-building-control/planning-support-and-information/article-4-directions/article-4-directions-heritage), Trafford Council
+- [Building works on listed buildings](https://www.trafford.gov.uk/planning-and-building-control/heritage-and-conservation/listed-buildings/building-works-listed-buildings-and-how-get-permission), Trafford Council
+- [Trees in conservation areas](https://www.trafford.gov.uk/planning-and-building-control/heritage-and-conservation/tree-preservation-orders-tpos/trees-conservation-areas), Trafford Council
+- [Town and Country Planning Act 1990, section 55](https://www.legislation.gov.uk/ukpga/1990/8/section/55), legislation.gov.uk`
+  },
+
+  {
+    slug: "office-fit-out-wilmslow",
+    title: "Office fit-out in Wilmslow: what does it cost, and what needs consent?",
+    seoTitle: "Office fit-out Wilmslow: cost per sq ft and consents",
+    summary: "Fitting out an office in Wilmslow: our 2026 Cat A and Cat B rates per sq ft, when planning applies, Building Regulations and fire safety, the landlord's licence and working around a live business.",
+    date: "2026-11-16",
+    author: "Dave Groom",
+    category: "Fit-out",
+    readTime: "5 min",
+    image: "images/stockport-office-01-boardroom.jpg",
+    featured: false,
+    body: `An office fit-out in Wilmslow costs roughly £45 to £70 per sq ft for Cat A and £70 to £110 for a standard Cat B on our 2026 rates, excluding VAT, fees and furniture. Purely internal work doesn't need planning permission, but it does need Building Regulations approval, usually a licence from your landlord, and a fire strategy kept live.
+
+This guide covers the cost, the consents and how the work runs.
+
+## What does an office fit-out in Wilmslow cost?
+
+Our published fit-out rates for 2026, measured on net internal area and excluding VAT, professional fees and loose furniture:
+
+- **Cat A:** £45 to £70 per sq ft. Ceilings, lighting, raised floor, basic mechanical and electrical, decoration.
+- **Standard Cat B:** £70 to £110 per sq ft. Partitions, meeting rooms, tea point, carpet, data cabling, basic joinery.
+- **High-specification Cat B:** £110 to £180 per sq ft and upwards. Bespoke joinery, feature lighting, acoustics, integrated AV.
+
+The difference between the two categories is explained in [Cat A and Cat B fit-out](https://www.tatton-projects.co.uk/cat-a-cat-b-fit-out), and the full table is on our [cost guide](https://www.tatton-projects.co.uk/costs).
+
+## What have offices like this cost?
+
+A high-specification office in Stockport, with a frameless glass boardroom facing the street, wide-board oak floors, recessed linear lighting and a double-height stair, was circa £125,000. The Sentric Music Cat B fit-out in Liverpool was circa £110,000.
+
+We don't publish the floor areas, so treat these as a sense of scale, not as rates per square foot.
+
+[image:stockport-office-03-openplan.jpg]
+[caption:Stockport: open plan with recessed linear lighting and oak flooring]
+
+## Does an office fit-out need planning permission?
+
+Work that affects only the inside of a building is not development under the Town and Country Planning Act, so a fit-out on its own needs no planning permission. External changes are different: new windows, plant on the roof or a new entrance may need it.
+
+Signs are controlled separately under the advertisement regulations. If the building is listed, internal alterations that affect its character need listed building consent from Cheshire East. Wilmslow's conservation areas include St Bartholomew's, by the parish church, so check the map if you are near it.
+
+## Which Building Regulations apply?
+
+Most fit-outs involve work covered by the Building Regulations, approved by Cheshire East Building Control or a registered building control approver. The parts that come up most:
+
+- **Fire, Approved Document B.** Escape routes, travel distances, fire doors and compartmentation when partitions move.
+- **Access, Approved Document M.** Accessible toilets and routes through the floor.
+- **Energy, Approved Document L.** Lighting, controls and any new heating or cooling.
+
+Separately, the Regulatory Reform (Fire Safety) Order 2005 makes the employer or person in control responsible for a fire risk assessment. Change the layout and that assessment needs updating. [Fire safety in office fit-outs](https://www.tatton-projects.co.uk/blog/fire-safety-in-office-fit-outs) goes into the detail.
+
+## What does the landlord need to approve?
+
+If you lease the floor, the lease almost certainly requires a licence for alterations before work starts. The landlord will want drawings, method statements and insurance, and may require you to reinstate at the end. [Licence to alter](https://www.tatton-projects.co.uk/blog/licence-to-alter-office-fit-out) and [dilapidations](https://www.tatton-projects.co.uk/blog/dilapidations-and-fit-out) cover both.
+
+## Can the business keep working during the fit-out?
+
+Yes, with a phased programme. Our Stockport service centre floor, circa £175,000, was fitted out with ninety-plus staffed positions and the public coming through the doors every day. We also re-floored the walkways of an occupied office and built it a new welfare block without closing it.
+
+Working around a live business typically adds 10 to 25 per cent, for out-of-hours work, phased handbacks and keeping routes separate.
+
+## How do you get a price?
+
+Send the floor plan or the address, and what the space needs to do. You'll get a written cost plan from the person who would run the job. More is on our [builders in Wilmslow](https://www.tatton-projects.co.uk/builders-wilmslow) and [fit-out contractors in Cheshire](https://www.tatton-projects.co.uk/fit-out-contractors-cheshire) pages.
+
+## Sources
+
+- [Town and Country Planning Act 1990, section 55](https://www.legislation.gov.uk/ukpga/1990/8/section/55), legislation.gov.uk
+- [Fire safety: Approved Document B](https://www.gov.uk/government/publications/fire-safety-approved-document-b) and [Access to and use of buildings: Approved Document M](https://www.gov.uk/government/publications/access-to-and-use-of-buildings-approved-document-m), GOV.UK
+- [The Regulatory Reform (Fire Safety) Order 2005](https://www.legislation.gov.uk/uksi/2005/1541/contents), legislation.gov.uk
+- [Building control and building regulations](https://www.cheshireeast.gov.uk/planning/building_control/building-control-and-building-regulations.aspx), Cheshire East Council`
+  },
+
+  {
     slug: "kitchen-refurbishment-altrincham",
     title: "Kitchen refurbishment in Altrincham: when it's a builder's job, what it involves and how it's priced",
     seoTitle: "Kitchen refurbishment Altrincham, Hale and Bowdon (2026 guide)",
