@@ -170,6 +170,8 @@ const footer = (depth) => {
       <a href="${up}builders-hale.html">Builders in Hale</a>
       <a href="${up}builders-urmston.html">Builders in Urmston</a>
       <a href="${up}builders-didsbury.html">Builders in Didsbury</a>
+      <a href="${up}house-renovations-altrincham.html">Kitchen refurbishment &amp; renovations Altrincham</a>
+      <a href="${up}office-fit-out-altrincham.html">Commercial refurbishment specialists Manchester</a>
       <a href="${up}office-fit-out-stockport.html">Office fit-out Stockport</a>
       <a href="${up}fit-out-contractors-cheshire.html">Fit-out &amp; shopfitters Cheshire</a>
       <a href="${up}industrial-units-warehouses.html">Industrial units &amp; warehouses</a>
@@ -623,7 +625,7 @@ function blogPostPage(p, all) {
     headline: p.title,
     description: plain(p.summary),
     datePublished: p.date,
-    dateModified: p.date,
+    dateModified: p.updated || p.date,
     author: { '@type': 'Person', name: p.author || 'Dave Groom' },
     publisher: {
       '@type': 'Organization',
@@ -673,6 +675,7 @@ function blogPostPage(p, all) {
     <p class="post-meta">
       <span class="cat">${esc(p.category || 'Note')}</span>
       <time datetime="${esc(p.date)}">${esc(p.date)}</time>
+      ${p.updated ? `<span>Updated <time datetime="${esc(p.updated)}">${esc(p.updated)}</time></span>` : ''}
       ${p.readTime ? `<span>${esc(p.readTime)} read</span>` : ''}
     </p>
     <h1>${esc(p.title)}</h1>

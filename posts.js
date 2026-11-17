@@ -173,7 +173,7 @@ If you lease the floor, you'll also need the landlord's licence for alterations.
 
 ## How do you get a straight answer?
 
-Send us the floor plan, the address and what isn't working. We'll look at the services and give you a written cost plan for refurbishing, which you can set against the cost of a move. More is on our [office fit-out in Manchester](https://www.tatton-projects.co.uk/office-fit-out-manchester), [commercial refurbishment in Manchester](https://www.tatton-projects.co.uk/commercial-refurbishment-manchester) and [builders in Manchester](https://www.tatton-projects.co.uk/builders-manchester) pages.
+Send us the floor plan, the address and what isn't working. We'll look at the services and give you a written cost plan for refurbishing, which you can set against the cost of a move. More is on our [office fit-out in Manchester](https://www.tatton-projects.co.uk/office-fit-out-manchester), [commercial refurbishment in Manchester](https://www.tatton-projects.co.uk/commercial-refurbishment-manchester), [commercial refurbishment specialists in Manchester and Altrincham](https://www.tatton-projects.co.uk/office-fit-out-altrincham) and [builders in Manchester](https://www.tatton-projects.co.uk/builders-manchester) pages.
 
 ## Sources
 
@@ -243,7 +243,7 @@ For scale, our compact, high-specification office in Stockport, with a frameless
 
 ## How do you get started?
 
-Send us the address, the lease plan and what the office needs to do. We'll check the building's status with you and give you a written cost plan from the person who would run the job. More is on our [builders in Knutsford](https://www.tatton-projects.co.uk/builders-knutsford) and [fit-out contractors in Cheshire](https://www.tatton-projects.co.uk/fit-out-contractors-cheshire) pages.
+Send us the address, the lease plan and what the office needs to do. We'll check the building's status with you and give you a written cost plan from the person who would run the job. More is on our [builders in Knutsford](https://www.tatton-projects.co.uk/builders-knutsford), [fit-out contractors in Cheshire](https://www.tatton-projects.co.uk/fit-out-contractors-cheshire) and [commercial refurbishment specialists](https://www.tatton-projects.co.uk/office-fit-out-altrincham) pages, and the rates are broken down in [office fit-out cost in Manchester](https://www.tatton-projects.co.uk/blog/office-fit-out-cost-per-square-foot-manchester).
 
 ## Sources
 
@@ -392,7 +392,7 @@ The two Didsbury kitchen extensions on our work page, at circa £120,000 and cir
 
 ## How do you get started?
 
-Check the conservation area map, then send us the address, some photos and what you want the kitchen to do. We'll tell you which planning route applies and give you a written cost plan from the person who would run the job. More is on our [builders in Hale](https://www.tatton-projects.co.uk/builders-hale) and [extension builders in Hale](https://www.tatton-projects.co.uk/extension-builders-hale) pages.
+Check the conservation area map, then send us the address, some photos and what you want the kitchen to do. We'll tell you which planning route applies and give you a written cost plan from the person who would run the job. More is on our [builders in Hale](https://www.tatton-projects.co.uk/builders-hale), [extension builders in Hale](https://www.tatton-projects.co.uk/extension-builders-hale) and [kitchen refurbishment in Altrincham](https://www.tatton-projects.co.uk/house-renovations-altrincham) pages.
 
 ## Sources
 
@@ -464,7 +464,7 @@ We don't publish a rate for a loft on its own, because a rooflight conversion an
 
 ## How do you get a real answer?
 
-Measure the head height in the loft if you can, then send us the address and some photos. We'll check the roof structure and tell you what will fit before you pay for drawings. More on our work in the town is on our [builders in Sale](https://www.tatton-projects.co.uk/builders-sale) page, and whole-house projects on [house renovations in Altrincham](https://www.tatton-projects.co.uk/house-renovations-altrincham).
+Measure the head height in the loft if you can, then send us the address and some photos. We'll check the roof structure and tell you what will fit before you pay for drawings. More on our work in the town is on our [builders in Sale](https://www.tatton-projects.co.uk/builders-sale) page, next door in [builders in Urmston](https://www.tatton-projects.co.uk/builders-urmston), and whole-house projects on [house renovations in Altrincham](https://www.tatton-projects.co.uk/house-renovations-altrincham).
 
 ## Sources
 
@@ -839,7 +839,7 @@ Carry a contingency for what the strip-out finds. [What a whole-house refurbishm
 
 For a back-to-brick refurbishment, most clients move out. The house is without services for a period and every room is a work area. On a phased job you can sometimes stay in part of the house. Our office is on The Downs, a few minutes away, and we'll tell you honestly which yours is.
 
-More is on our [builders in Bowdon](https://www.tatton-projects.co.uk/builders-bowdon) and [property refurbishment in Altrincham](https://www.tatton-projects.co.uk/property-refurbishment-altrincham) pages.
+More is on our [builders in Bowdon](https://www.tatton-projects.co.uk/builders-bowdon), [property refurbishment in Altrincham](https://www.tatton-projects.co.uk/property-refurbishment-altrincham) and [house renovations and kitchen refurbishment in Altrincham](https://www.tatton-projects.co.uk/house-renovations-altrincham) pages.
 
 ## Sources
 
@@ -912,7 +912,7 @@ Working around a live business typically adds 10 to 25 per cent, for out-of-hour
 
 ## How do you get a price?
 
-Send the floor plan or the address, and what the space needs to do. You'll get a written cost plan from the person who would run the job. More is on our [builders in Wilmslow](https://www.tatton-projects.co.uk/builders-wilmslow) and [fit-out contractors in Cheshire](https://www.tatton-projects.co.uk/fit-out-contractors-cheshire) pages.
+Send the floor plan or the address, and what the space needs to do. You'll get a written cost plan from the person who would run the job. More is on our [builders in Wilmslow](https://www.tatton-projects.co.uk/builders-wilmslow), [fit-out contractors in Cheshire](https://www.tatton-projects.co.uk/fit-out-contractors-cheshire) and [commercial refurbishment specialists](https://www.tatton-projects.co.uk/office-fit-out-altrincham) pages, and the rates are broken down in [office fit-out cost in Manchester](https://www.tatton-projects.co.uk/blog/office-fit-out-cost-per-square-foot-manchester).
 
 ## Sources
 
@@ -2073,7 +2073,7 @@ Check the planning position early too, especially if the house is in a conservat
 
 ## If you own one
 
-Send us the drawings, or photos of the house front and back with a note of what you'd like it to become. You'll hear from the person who would run the job about what we'd expect to find, what the structure involves and roughly where it sits against our [published rates](https://www.tatton-projects.co.uk/costs).`
+Send us the drawings, or photos of the house front and back with a note of what you'd like it to become. You'll hear from the person who would run the job about what we'd expect to find, what the structure involves and roughly where it sits against our [published rates](https://www.tatton-projects.co.uk/costs). If yours is one of the 1930s semis in Urmston or Flixton, our [builders in Urmston](https://www.tatton-projects.co.uk/builders-urmston) page covers the Trafford planning routes.`
   },
 
   {
@@ -4896,21 +4896,24 @@ At Tatton, the person who prices the job is the person who runs it on site. We'r
 
 ## Getting a price from us
 
-Send us the drawings or a scope, the address, and how the building will be used while the work is going on. You'll get a price, and you'll have met the person who would run the job. If you're comparing several, [how to compare builders' quotes like for like](https://www.tatton-projects.co.uk/blog/how-to-compare-builders-quotes) will help. More on our commercial work is on our [commercial refurbishment](https://www.tatton-projects.co.uk/commercial-refurbishment-manchester) page.`
+Send us the drawings or a scope, the address, and how the building will be used while the work is going on. You'll get a price, and you'll have met the person who would run the job. If you're comparing several, [how to compare builders' quotes like for like](https://www.tatton-projects.co.uk/blog/how-to-compare-builders-quotes) will help. More on our commercial work is on our [commercial refurbishment](https://www.tatton-projects.co.uk/commercial-refurbishment-manchester) and [commercial refurbishment specialists in Manchester](https://www.tatton-projects.co.uk/office-fit-out-altrincham) pages.`
   },
 
   {
     slug: "office-fit-out-cost-per-square-foot-manchester",
     title: "What an office fit-out actually costs per square foot in Manchester",
     seoTitle: "Office Fit-Out Cost Manchester: £45–£180 per sq ft (2026)",
-    summary: "Real 2026 rates for Cat A and Cat B fit-out in Manchester and Cheshire — and the five things that move the number more than anything on the drawing.",
+    summary: "What an office fit-out costs in Manchester in 2026: Cat A £45–£70/sq ft, Cat B £70–£180+, plus 10–25% in an occupied building, and what moves it.",
     date: "2026-07-14",
+    updated: "2026-11-17",
     author: "Dave Groom",
     category: "Cost",
     readTime: "6 min",
     image: "images/sentric-01-lounge.jpg",
     featured: true,
-    body: `Nobody in this industry publishes prices. I've never understood it. You end up with a client who has a floor, a budget in their head, and no way of knowing whether the two are in the same postcode until they've spent three weeks getting quotes.
+    body: `An office fit-out in Manchester costs £45 to £70 per square foot for a Cat A refresh, £70 to £110 for a standard Cat B and £110 to £180 or more for a high-specification Cat B, all-in, excluding VAT and furniture. Working around staff in an occupied building typically adds 10 to 25 per cent.
+
+Nobody in this industry publishes prices. I've never understood it. You end up with a client who has a floor, a budget in their head, and no way of knowing whether the two are in the same postcode until they've spent three weeks getting quotes.
 
 So here are the numbers we're working to in 2026.
 
@@ -4955,7 +4958,17 @@ The interesting line is M&E. It is the biggest cost, it is the one clients under
 
 Get a measured survey and a proper cost plan before you commit to a lease length or a fit-out budget. It costs a fraction of the job and it is the difference between a number you can hold and a number that grows.
 
-We'll do a feasibility appraisal on any floor and tell you what it will really cost — including telling you when the building is wrong for you. That advice is free, and we would rather give it before you sign than after.`
+We'll do a feasibility appraisal on any floor and tell you what it will really cost — including telling you when the building is wrong for you. That advice is free, and we would rather give it before you sign than after.
+
+## Office fit-out cost in Manchester: quick answers
+
+**How much does an office fit-out cost in Manchester?** As a 2026 guide, £45 to £70 per sq ft for a Cat A refresh, £70 to £110 for a standard Cat B and £110 to £180 or more for a high-specification Cat B, excluding VAT and furniture.
+
+**Where are the rest of the rates?** Our [cost guide](https://www.tatton-projects.co.uk/costs) has the full table, and [office construction cost per square metre](https://www.tatton-projects.co.uk/blog/office-construction-cost-per-square-metre) covers metric rates.
+
+**Does staying in the building cost more?** Usually 10 to 25 per cent more, for out-of-hours work, phased handbacks and keeping routes separate. Our Stockport service centre, circa £175,000, was fitted out without closing for a day.
+
+**Who runs it?** We're commercial refurbishment and fit-out contractors based in Altrincham, working across Manchester. More is on our [office fit-out in Manchester](https://www.tatton-projects.co.uk/office-fit-out-manchester) and [commercial refurbishment specialists](https://www.tatton-projects.co.uk/office-fit-out-altrincham) pages.`
   },
 
   {
