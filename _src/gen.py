@@ -47,6 +47,7 @@ TRADES = [
   lede='Wall linings, independent linings, tape & joint and skim finishes for commercial fit-outs, refurbishments and new build. Priced as a package, delivered by our own supervised teams.',
   card='Wall linings, tape & joint and skim finishes for fit-outs and refurbs.',
   img='ti-drylining-partition-taped.jpg', img2='ti-drylining-tape-joint-boards.jpg',
+  gallery=[('ti-drylining-taped-wall-over-shutter.jpg','Full-height wall lining taped and jointed over a roller shutter opening'), ('ti-drylining-warehouse-wall-lining.jpg','Warehouse wall lining boarded and taped from scissor lifts')],
   scope=['Dot & dab and direct-bond wall linings', 'Independent wall linings (metal stud and I-stud)', 'Shaftwall and stairwell linings',
          'Tape & joint to Q2–Q4 finish ready for decoration', 'Hard-coat and skim plastering, patch & make good',
          'Fire-rated and acoustic linings to manufacturer systems', 'Boarding to bulkheads, risers and boxing-in', 'Making good after M&E first and second fix'],
@@ -60,7 +61,8 @@ TRADES = [
   h1='Metal stud partition contractors',
   lede='Fire-rated, acoustic and standard metal stud partitions, set out, built and boarded to the system on your drawings, for office fit-outs, retail, healthcare and hospitality.',
   card='Fire-rated and acoustic metal stud partitions built to system.',
-  img='sentric-11-pods.jpg', img2='office-walkways-06-toilet-framing.jpg',
+  img='sentric-11-pods.jpg', img2='ti-metal-stud-partitions-framing.jpg',
+  gallery=[('ti-metal-stud-framing-first-fix.jpg','Metal stud partitions framed out at first fix'), ('office-walkways-06-toilet-framing.jpg','Stud framing for toilet partitions in an occupied office')],
   scope=['Metal stud partitions (GypWall, Knauf and Siniat systems)', 'Fire-rated partitions to 30, 60 and 90 minutes', 'Acoustic partitions with insulation and twin-frame build-ups',
          'Head deflection details and fire stopping at junctions', 'Pattresses and noggins for wall-hung fittings', 'Door openings, frames and ironmongery prep',
          'Toilet cubicles and IPS panel systems', 'Acoustic wall panelling and feature walls'],
@@ -198,6 +200,12 @@ def faq_ld(faqs):
     return {"@context": "https://schema.org", "@type": "FAQPage",
             "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}
 
+def gallery_html(t):
+    g = t.get('gallery')
+    if not g: return ''
+    figs = ''.join(f'<figure class="reveal" style="--d:{i*80}ms"><img src="{im(f)}" alt="{html.escape(a)}" loading="lazy" width="800" height="600"><figcaption>{html.escape(a)}</figcaption></figure>' for i, (f, a) in enumerate(g))
+    return f'<section class="sec slim gal-sec"><div class="wrap"><p class="kicker reveal">On site</p><div class="gal">{figs}</div></div></section>'
+
 def faq_html(faqs):
     return ('<section class="sec faq"><div class="wrap narrow"><p class="kicker reveal">Questions</p><h2 class="reveal">Common questions</h2>'
             + ''.join(f'<details class="reveal"><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>' for q, a in faqs) + '</div></section>')
@@ -271,6 +279,7 @@ for t in TRADES:
 <div class="reveal" style="--d:120ms"><div class="imgwrap"><img class="rounded" src="{im(t["img2"])}" alt="{t["name"]} project example" loading="lazy" width="900" height="700"></div><p class="note">{t["systems"]}</p>
 <div class="terms"><div><b>Supply &amp; fit</b><span>Materials, labour and supervision in one price.</span></div><div><b>Labour only</b><span>You free-issue materials; we supply managed, supervised teams.</span></div></div></div>
 </div></section>
+{gallery_html(t)}
 <section class="sec slim"><div class="wrap reveal">{ACCRED}</div></section>
 {faq_html(t["faqs"])}
 <section class="sec slim"><div class="wrap reveal"><h2>Other interior packages</h2><ul class="pills">{others}</ul></div></section>

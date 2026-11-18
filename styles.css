@@ -166,6 +166,15 @@ p{margin-bottom:14px}
 .pills a{display:inline-block;border:1px solid var(--line-soft);padding:12px 18px;text-decoration:none;color:var(--stone);transition:all .25s}
 .pills a:hover{border-color:var(--gold);color:var(--gold)}
 
+/* on-site gallery */
+.gal-sec{padding-top:10px}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.gal figure{overflow:hidden;background:var(--ink-2);border:1px solid var(--line-soft)}
+.gal img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;transition:transform 1s var(--ease)}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{font:400 12px/1.5 var(--mono);color:var(--stone-2);padding:12px 14px;letter-spacing:.04em}
+@media(max-width:700px){.gal{grid-template-columns:1fr}}
+
 /* faq */
 .faq details{border-bottom:1px solid var(--line-soft);padding:20px 0}
 .faq summary{cursor:pointer;font:500 20px/1.35 var(--serif);list-style:none;display:flex;justify-content:space-between;gap:20px}
