@@ -1,7 +1,11 @@
 /* ===========================================================
    TATTON PROJECTS — nav.js
-   Phone-width menu. Only does anything at 1000px and below;
-   the desktop header is untouched.
+   The hamburger menu. styles.css decides when the button shows
+   ("hamburger navigation": 1000px and below on every page,
+   1279px and below on the home page, whose <nav> has class
+   "nav-long"). This file never repeats those widths — it asks
+   whether the button is showing — so the two can't drift apart.
+   Wider than that, the desktop header is untouched.
    =========================================================== */
 (function () {
   'use strict';
@@ -34,8 +38,10 @@
   btn.addEventListener('click', function () { open(!nav.classList.contains('menu-open')); });
   menu.addEventListener('click', function (e) { if (e.target.closest('a')) open(false); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') open(false); });
+  /* is the button on screen? (styles.css hides it above the breakpoint) */
+  function folded() { return window.getComputedStyle(btn).display !== 'none'; }
   window.addEventListener('resize', function () {
-    if (window.innerWidth > 1000) open(false);
+    if (!folded()) open(false);
     else if (nav.classList.contains('menu-open')) setTop();
   });
 })();

@@ -49,6 +49,8 @@ your homepage.
     app.js           home page behaviour
     blog.js          blog rendering
     page.js          shared sub-page behaviour
+    nav.js           the menu button on phones and tablets (and, on the home page,
+                     small laptops — the widths are set in styles.css, "hamburger navigation")
     build-pages.js   generates the project pages (don't edit unless you mean it)
     package.json     tells Vercel to run the generator
     vercel.json      caching, security headers, redirect from tattonprojects.co.uk

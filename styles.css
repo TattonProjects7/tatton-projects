@@ -1874,35 +1874,50 @@ a.sector:hover h4 { color: var(--gold); }
 .tp-film .sf__cue { font-family: var(--mono); }
 .tp-film .sf__actions .btn { margin: 0; }
 
-/* ---------- phone-width navigation (1000px and below only) ---------- */
+/* ---------- hamburger navigation ----------
+   When the menu button replaces the row of links:
+     every page ............................ 1000px and below
+     a page with <nav class="nav-long"> .... 1279px and below
+   "nav-long" is on the home page only: its menu is too long to sit beside
+   the logo on a small laptop, so it folds away sooner. If that menu grows,
+   raise 1279 until the row clears the logo again.
+   The two media queries at the end of this block (and the 1000px one beside
+   .nav-links near the top) are the only place these widths are written.
+   nav.js doesn't repeat them: it checks whether the button is showing. */
 .nav-toggle, .nav-menu { display: none; }
+.nav-toggle {
+  flex-direction: column; justify-content: center; gap: 5px;
+  width: 44px; height: 44px; margin-left: 10px; padding: 0 10px;
+  background: transparent; border: 1px solid var(--line-soft); border-radius: 2px; cursor: pointer;
+}
+.nav-toggle span:not(.sr) { display: block; height: 1.5px; width: 22px; background: var(--stone); transition: transform .3s, opacity .3s; }
+.nav-toggle .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+nav.menu-open .nav-toggle span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+nav.menu-open .nav-toggle span:nth-child(2) { opacity: 0; }
+nav.menu-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.nav-menu {
+  position: fixed; left: 0; right: 0; top: 64px; bottom: 0; z-index: 90;
+  background: rgba(12,12,13,.98); padding: 24px var(--gutter) 48px; overflow-y: auto;
+  flex-direction: column;
+}
+.nav-menu a {
+  font-family: var(--serif); font-size: 27px; line-height: 1.2; color: var(--stone);
+  text-decoration: none; padding: 15px 0; border-bottom: 1px solid var(--line-soft);
+}
+.nav-menu a.nav-call {
+  font-family: var(--mono); font-size: 13px; letter-spacing: .16em; text-transform: uppercase;
+  margin-top: 26px; border: 1px solid var(--gold-dim); text-align: center; padding: 17px; color: var(--gold) !important;
+}
+body.menu-open { overflow: hidden; }
 @media (max-width: 1000px) {
-  .nav-toggle {
-    display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
-    width: 44px; height: 44px; margin-left: 10px; padding: 0 10px;
-    background: transparent; border: 1px solid var(--line-soft); border-radius: 2px; cursor: pointer;
-  }
-  .nav-toggle span:not(.sr) { display: block; height: 1.5px; width: 22px; background: var(--stone); transition: transform .3s, opacity .3s; }
-  .nav-toggle .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-  nav.menu-open .nav-toggle span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-  nav.menu-open .nav-toggle span:nth-child(2) { opacity: 0; }
-  nav.menu-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-  .nav-menu {
-    position: fixed; left: 0; right: 0; top: 64px; bottom: 0; z-index: 90;
-    background: rgba(12,12,13,.98); padding: 24px var(--gutter) 48px; overflow-y: auto;
-    flex-direction: column;
-  }
+  .nav-toggle { display: inline-flex; }
   nav.menu-open .nav-menu { display: flex; }
-  .nav-menu a {
-    font-family: var(--serif); font-size: 27px; line-height: 1.2; color: var(--stone);
-    text-decoration: none; padding: 15px 0; border-bottom: 1px solid var(--line-soft);
-  }
-  .nav-menu a.nav-call {
-    font-family: var(--mono); font-size: 13px; letter-spacing: .16em; text-transform: uppercase;
-    margin-top: 26px; border: 1px solid var(--gold-dim); text-align: center; padding: 17px; color: var(--gold) !important;
-  }
-  body.menu-open { overflow: hidden; }
   .nav-call { padding: 9px 12px; }
+}
+@media (max-width: 1279px) {
+  nav.nav-long .nav-links a:not(.nav-call) { display: none; }
+  nav.nav-long .nav-toggle { display: inline-flex; }
+  nav.nav-long.menu-open .nav-menu { display: flex; }
 }
 
 /* ---------- phone-width legibility (700px and below only) ---------- */
