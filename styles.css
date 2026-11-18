@@ -127,7 +127,7 @@ p{margin-bottom:14px}
 .steps b{font:500 21px/1.3 var(--serif);display:block}
 .steps span{grid-column:2;color:var(--stone-2);font-size:15px}
 .imgwrap{overflow:hidden}
-.rounded{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 1.2s var(--ease)}
+.rounded{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;transition:transform 1.2s var(--ease)}
 .imgwrap:hover .rounded{transform:scale(1.04)}
 
 /* accred */
@@ -147,7 +147,7 @@ p{margin-bottom:14px}
 .projlist{display:grid;gap:60px}
 .proj{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(24px,5vw,60px);align-items:center}
 .proj:nth-child(even) .imgwrap{order:2}
-.proj img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 1.2s var(--ease)}
+.proj img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;transition:transform 1.2s var(--ease)}
 .proj:hover img{transform:scale(1.04)}
 @media(max-width:800px){.proj{grid-template-columns:1fr}.proj:nth-child(even) .imgwrap{order:0}}
 .tags{display:flex;flex-wrap:wrap;gap:8px}

@@ -19,7 +19,7 @@ AREAS = [{"@type": "City", "name": n} for n in ["Manchester", "Liverpool", "Leed
 ORG = {
     "@context": "https://schema.org", "@type": ["GeneralContractor", "LocalBusiness"], "@id": ORG_ID,
     "name": "Tatton Interiors", "alternateName": ["Tatton Interiors Manchester"],
-    "url": DOMAIN + '/', "logo": IMG + 'tatton-interiors-logo-dark.png', "image": IMG + 'sentric-02-lounge-wide.jpg',
+    "url": DOMAIN + '/', "logo": IMG + 'tatton-interiors-logo-dark.png', "image": IMG + 'vanguard-01-breakout.jpg',
     "description": "Interior fit-out subcontractor for main contractors and fit-out firms: plastering and drylining, metal stud partitions, suspended ceilings, commercial joinery and internal glazing. Supply & fit or labour only. Based in Altrincham, Greater Manchester, working across the North West and UK-wide.",
     "telephone": PHONE_INTL, "address": ADDRESS,
     "geo": {"@type": "GeoCoordinates", "latitude": 53.3889, "longitude": -2.3497},
@@ -44,7 +44,7 @@ TRADES = [
   h1='Plastering & drylining contractors',
   lede='Wall linings, independent linings, tape & joint and skim finishes for commercial fit-outs, refurbishments and new build. Priced as a package, delivered by our own supervised teams.',
   card='Wall linings, tape & joint and skim finishes for fit-outs and refurbs.',
-  img='office-walkways-06-toilet-framing.jpg', img2='calvin-klein-07-frame.jpg',
+  img='calvin-klein-03-till.jpg', img2='calvin-klein-01-shopfront.jpg',
   scope=['Dot & dab and direct-bond wall linings', 'Independent wall linings (metal stud and I-stud)', 'Shaftwall and stairwell linings',
          'Tape & joint to Q2–Q4 finish ready for decoration', 'Hard-coat and skim plastering, patch & make good',
          'Fire-rated and acoustic linings to manufacturer systems', 'Boarding to bulkheads, risers and boxing-in', 'Making good after M&E first and second fix'],
@@ -58,7 +58,7 @@ TRADES = [
   h1='Metal stud partition contractors',
   lede='Fire-rated, acoustic and standard metal stud partitions, set out, built and boarded to the system on your drawings, for office fit-outs, retail, healthcare and hospitality.',
   card='Fire-rated and acoustic metal stud partitions built to system.',
-  img='office-walkways-07-cubicles-installed.jpg', img2='sentric-14-acoustic-wall.jpg',
+  img='sentric-11-pods.jpg', img2='office-walkways-06-toilet-framing.jpg',
   scope=['Metal stud partitions (GypWall, Knauf and Siniat systems)', 'Fire-rated partitions to 30, 60 and 90 minutes', 'Acoustic partitions with insulation and twin-frame build-ups',
          'Head deflection details and fire stopping at junctions', 'Pattresses and noggins for wall-hung fittings', 'Door openings, frames and ironmongery prep',
          'Toilet cubicles and IPS panel systems', 'Acoustic wall panelling and feature walls'],
@@ -72,7 +72,7 @@ TRADES = [
   h1='Suspended ceiling contractors',
   lede='Exposed-grid and tile ceilings, MF plasterboard ceilings, bulkheads and acoustic rafts, installed level, coordinated with M&E and handed over clean.',
   card='Grid, MF plasterboard, bulkheads and acoustic rafts.',
-  img='calvin-klein-06-ceiling.jpg', img2='sentric-01-lounge.jpg',
+  img='vanguard-02-lounge.jpg', img2='stockport-02-positions.jpg',
   scope=['Exposed grid and lay-in tile ceilings (600×600 / 1200×600)', 'MF plasterboard ceilings and bulkheads', 'Acoustic ceiling rafts and baffles',
          'Fire-rated ceilings and membranes', 'Access panels and service hatches', 'Coordination with lighting, diffusers and sprinkler drops',
          'Ceiling replacement in occupied buildings', 'Perimeter trims, shadow gaps and feature edges'],
@@ -86,7 +86,7 @@ TRADES = [
   h1='Commercial joinery contractors',
   lede='First and second fix, doorsets and bespoke fitted joinery (reception desks, tea points, panelling, booths and shopfit joinery) fitted by joiners who know commercial programmes.',
   card='Doorsets, reception desks, tea points, panelling and shopfit joinery.',
-  img='fossil-02-watch-wall.jpg', img2='leeds-bar-03-bar.jpg',
+  img='fossil-02-watch-wall.jpg', img2='fossil-04-shelving.jpg',
   scope=['First and second fix joinery', 'Fire doorsets and ironmongery', 'Reception desks and tea points', 'Wall panelling and acoustic timber panels',
          'Booths, banquettes and bar joinery', 'Retail shopfit joinery and display', 'Skirtings, architraves and window boards', 'Bespoke fitted joinery and storage'],
   systems='Our founder came up through the tools as a joiner, so joinery packages are set out, fixed and finished to the standard the client sees first.',
@@ -99,7 +99,7 @@ TRADES = [
   h1='Internal glazing & glass partitions',
   lede='Frameless and framed glass partitions, glazed meeting rooms and screens, glazed doors and crittall-style screens, installed plumb, sealed and manifested to spec.',
   card='Frameless glass partitions, glazed screens and crittall-style screens.',
-  img='stockport-office-01-boardroom.jpg', img2='didsbury-kitchen-01-crittall.jpg',
+  img='stockport-office-02-boardroom-2.jpg', img2='vanguard-06-entrance.jpg',
   scope=['Frameless single and double glazed partitions', 'Framed aluminium glazed office screens', 'Glass meeting rooms and boardrooms', 'Glazed and frameless glass doors',
          'Crittall-style steel-look screens', 'Acoustic glazing to specified dB ratings', 'Manifestation and privacy film', 'Integration with partitions and ceilings'],
   systems='Glazing is coordinated with the partition and ceiling packages, so heads, deflection and junctions are designed once rather than fixed on site.',
@@ -110,12 +110,12 @@ TRADES = [
 
 PROJECTS = [
  dict(t='Stockport service centre', loc='Stockport', v='£175K', img='stockport-01-floor.jpg', d='Phased fit-out of a live public service floor with 90+ staffed positions that never closed: suspended ceilings, acoustic dividers and screens.', tags=['Ceilings', 'Partitions']),
- dict(t='Sentric Music', loc='Liverpool', v='£110K', img='sentric-02-lounge-wide.jpg', d='Cat B office fit-out with feature ceiling raft, acoustic wall panelling, booths, boardroom and joinery.', tags=['Ceilings', 'Joinery', 'Partitions']),
- dict(t='Office fit-out', loc='Stockport', v='£125K', img='stockport-office-01-boardroom.jpg', d='Compact office with frameless glass boardroom, oak flooring and a double-height stair.', tags=['Internal glazing', 'Joinery']),
+ dict(t='Sentric Music', loc='Liverpool', v='£110K', img='sentric-10-booths.jpg', d='Cat B office fit-out with feature ceiling raft, acoustic wall panelling, booths, boardroom and joinery.', tags=['Ceilings', 'Joinery', 'Partitions']),
+ dict(t='Office fit-out', loc='Stockport', v='£125K', img='stockport-office-02-boardroom-2.jpg', d='Compact office with frameless glass boardroom, oak flooring and a double-height stair.', tags=['Internal glazing', 'Joinery']),
  dict(t='Office walkways & communal toilets', loc='North West', v='', img='office-walkways-07-cubicles-installed.jpg', d='Occupied office: new toilets, showers and changing rooms with stud framing, cubicle partitions and joinery.', tags=['Drylining', 'Partitions', 'Joinery']),
  dict(t='Calvin Klein', loc='UK', v='', img='calvin-klein-06-ceiling.jpg', d='Shell-to-store shopfit inside a live shopping centre: partitions, ceilings, joinery and shopfront glazing.', tags=['Partitions', 'Ceilings', 'Glazing'], pre=True),
- dict(t='Fossil', loc='London', v='', img='fossil-02-watch-wall.jpg', d='Brand-standard retail shopfit with illuminated walls, glazed display cases and joinery.', tags=['Joinery', 'Glazing'], pre=True),
- dict(t='Bar & restaurant', loc='Leeds', v='', img='leeds-bar-03-bar.jpg', d='Bar and restaurant with blackened steel screens, back bar and booth joinery.', tags=['Joinery'], pre=True),
+ dict(t='Fossil', loc='London', v='', img='fossil-01-store.jpg', d='Brand-standard retail shopfit with illuminated walls, glazed display cases and joinery.', tags=['Joinery', 'Glazing'], pre=True),
+ dict(t='Bar & restaurant', loc='Leeds', v='', img='leeds-bar-01-restaurant.jpg', d='Bar and restaurant with blackened steel screens, back bar and booth joinery.', tags=['Joinery'], pre=True),
 ]
 
 def ld(obj): return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False) + '</script>'
@@ -217,10 +217,10 @@ proj_strip = ''.join(f'<figure class="pc reveal" style="--d:{i*70}ms"><img src="
 mq = ' <b>/</b> '.join(['Plastering', 'Drylining', 'Metal stud partitions', 'Suspended ceilings', 'MF ceilings', 'Commercial joinery', 'Fire doorsets', 'Glass partitions', 'Internal glazing', 'Acoustic panelling'])
 home = head('Drylining, Partitions & Ceilings Subcontractor | Tatton Interiors',
             'Interior fit-out subcontractor for main contractors: drylining, partitions, suspended ceilings, joinery and internal glazing. Supply & fit or labour only. Manchester & UK.',
-            '/', 'sentric-02-lounge-wide.jpg',
+            '/', 'vanguard-01-breakout.jpg',
             [{"@context": "https://schema.org", "@type": "WebSite", "@id": DOMAIN + '/#website', "url": DOMAIN + '/', "name": "Tatton Interiors", "publisher": {"@id": ORG_ID}, "inLanguage": "en-GB"}, faq_ld(home_faqs)]) + header('/') + f'''
 <section class="hero">
-<div class="hero-bg"><img src="{IMG}sentric-02-lounge-wide.jpg" alt="Office interior fit-out with acoustic ceiling raft" width="1800" height="1200" fetchpriority="high"></div>
+<div class="hero-bg"><img src="{IMG}vanguard-01-breakout.jpg" alt="Office breakout area with a circular feature ceiling and fitted seating" width="1800" height="1200" fetchpriority="high"></div>
 <div class="hero-in wrap">
 <p class="kicker anim" style="--d:0ms">Interior fit-out subcontractor · A Tatton Projects company</p>
 <h1 class="anim" style="--d:120ms">Interior packages for <em>main contractors</em> and fit-out firms.</h1>
@@ -291,7 +291,7 @@ group_ld = {"@context": "https://schema.org", "@type": "Organization", "name": "
                                 {"@type": "Organization", "name": "EstiMate", "url": "https://www.esti-mate.app/"}]}
 about = head('About Tatton Interiors | A Tatton Projects Company',
              'Tatton Interiors is the interiors subcontracting arm of Tatton Projects, part of the DPG Holdings group. Constructionline Gold, SSIP, CITB. Based in Altrincham, Greater Manchester.',
-             '/about', 'sentric-14-acoustic-wall.jpg', [faq_ld(about_faqs), crumbs([('Home', '/'), ('About', '/about')]), group_ld]) + header('/about') + f'''
+             '/about', 'sentric-03-believe.jpg', [faq_ld(about_faqs), crumbs([('Home', '/'), ('About', '/about')]), group_ld]) + header('/about') + f'''
 <section class="phero short"><div class="wrap phero-in"><nav class="crumbs mono small" aria-label="Breadcrumb"><a href="/">Home</a> / <span>About</span></nav><h1 class="anim">About Tatton Interiors</h1><p class="lead anim" style="--d:140ms">The interiors arm of Tatton Projects, set up so main contractors get a dedicated interiors subcontractor with a main contractor's backing.</p></div></section>
 <section class="sec"><div class="wrap two">
 <div class="reveal"><h2>Why a separate interiors company</h2><p>Tatton Projects builds new homes, developments and commercial fit-outs as a main contractor. More and more main contractors asked us to take on their drylining, ceilings, partitions, joinery and glazing packages. Tatton Interiors exists to do exactly that, with its own focus, its own teams and the same standards.</p>
@@ -327,7 +327,7 @@ contact = head('Send a Package to Price | Tatton Interiors',
 </div></section>''' + footer()
 write('/contact', contact)
 
-write('/404', head('Page not found | Tatton Interiors', 'Page not found.', '/404', 'sentric-02-lounge-wide.jpg', robots='noindex') + header()
+write('/404', head('Page not found | Tatton Interiors', 'Page not found.', '/404', 'vanguard-01-breakout.jpg', robots='noindex') + header()
       + '<section class="phero short"><div class="wrap phero-in"><h1>Page not found</h1><p class="lead">Try one of our interior packages instead.</p><p><a class="btn btn-solid" href="/">Back to home</a></p></div></section>' + footer())
 
 # ---------- sitemap / robots / llms ----------
