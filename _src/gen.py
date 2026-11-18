@@ -93,6 +93,7 @@ TRADES = [
   lede='Timber slat and acoustic wall panelling, fitted booth seating, tea points and kitchenettes, bench desks, reception desks and doorsets, made and fitted by joiners who know commercial programmes.',
   card='Wall panelling, booth seating, tea points, desks and doorsets.',
   img='ti-timber-slat-wall-panelling.jpg', img2='ti-booths-acoustic-panelling.jpg',
+  gallery=[('ti-office-bar-slatted-bulkhead.jpg','Office breakfast bar, curved slatted timber bulkhead and feature wall joinery'), ('ti-fluted-wall-panelling-brass.jpg','Fluted wall panelling with brass trims, display niches and a walnut counter')],
   scope=['Timber slat and acoustic felt wall panelling', 'Fitted booth seating, banquettes and bench seating', 'Tea points, kitchenettes and breakout kitchen runs', 'Bench desks, touchdown points and work booths',
          'Reception desks and feature joinery', 'Fire doorsets and ironmongery', 'Retail shopfit joinery and display', 'First and second fix, skirtings and architraves'],
   systems='Our founder came up through the tools as a joiner, so joinery packages are set out, fixed and finished to the standard the client sees first.',
