@@ -102,6 +102,9 @@ nav.stuck .brand img { height: 28px; }
 }
 .nav-call:hover { background: var(--gold); color: var(--ink) !important; }
 @media (max-width: 1000px) { .nav-links a:not(.nav-call) { display: none; } }
+/* the home page menu is eleven links: keep each on one line, closer together on laptops */
+.nav-links a { white-space: nowrap; }
+@media (max-width: 1400px) { .nav-links { gap: 18px; } }
 
 /* ---------- hero ---------- */
 header {

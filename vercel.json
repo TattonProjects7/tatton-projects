@@ -120,6 +120,11 @@
       "permanent": false
     },
     {
+      "source": "/supply-chain",
+      "destination": "/drylining-ceilings-joinery-subcontractors",
+      "permanent": true
+    },
+    {
       "source": "/projects",
       "destination": "/work",
       "permanent": true

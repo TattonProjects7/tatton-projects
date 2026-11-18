@@ -98,6 +98,8 @@ const clip = (t, n) => {
 };
 
 /* ---------- shared chrome ---------- */
+/* the page for other contractors (services.js, sector "Trade"); it has its own nav tab */
+const TRADE_PAGE = 'drylining-ceilings-joinery-subcontractors';
 const nav = (depth, active) => {
   const up = depth ? '../' : '';
   const on = (k) => (k === active ? ' class="active"' : '');
@@ -109,6 +111,7 @@ const nav = (depth, active) => {
   <div class="nav-links">
     <a href="${up}services.html"${on('services')}>Services</a>
     <a href="${up}work.html"${on('work')}>Work</a>
+    <a href="${up}${TRADE_PAGE}.html"${on('trade')}>Supply chain</a>
     <a href="${up}costs.html">Costs</a>
     <a href="${up}finance.html">Finance</a>
     <a href="${up}blog.html">Insight</a>
@@ -149,6 +152,7 @@ const footer = (depth) => {
       <a href="${up}costs.html">What things cost</a>
       <a href="${up}finance.html">Project finance</a>
       <a href="${up}blog.html">Insight</a>
+      <a href="${up}${TRADE_PAGE}.html">Subcontract packages — drylining, ceilings &amp; joinery</a>
       <a href="https://www.silopod.co.uk" rel="noopener">SiloPod — acoustic pods</a>
       <a href="https://www.esti-mate.app" rel="noopener">EstiMate — quoting &amp; contracts app</a>
       <a href="https://www.apex-carnivore.com" rel="noopener">APEX — carnivore recipes &amp; training app</a>
@@ -758,8 +762,8 @@ const projectCard = (p) => `<a class="proj" href="work/${esc(p.id)}.html">
       </div>
     </a>`;
 
-const callButtons = (label, center) => `<div class="cta-row"${center ? ' style="justify-content:center"' : ''}>
-        <a href="index.html#enquire" class="btn btn-solid">${esc(label)}</a>
+const callButtons = (label, center, href) => `<div class="cta-row"${center ? ' style="justify-content:center"' : ''}>
+        <a href="${esc(href || 'index.html#enquire')}" class="btn btn-solid">${esc(label)}</a>
         <a href="tel:01617062907" class="btn btn-ghost">0161 706 2907</a>
       </div>`;
 
@@ -802,7 +806,7 @@ function servicePage(s, all) {
   }] : []));
 
   const film = s.id === 'new-build-homes-cheshire';
-  return head({ title: s.title, desc: s.description, canonical: url, image: img, depth: 0, extraSchema: schema, ogType: 'website', active: 'services', extraHead: film ? FILM_HEAD : '' }) + `
+  return head({ title: s.title, desc: s.description, canonical: url, image: img, depth: 0, extraSchema: schema, ogType: 'website', active: s.nav || 'services', extraHead: film ? FILM_HEAD : '' }) + `
 <!-- Built by build-pages.js from services.js. Edit services.js, not this file. -->
 <main id="main" class="svc">
 
@@ -817,7 +821,7 @@ function servicePage(s, all) {
       <p class="eyebrow">${esc(s.eyebrow)}</p>
       <h1>${gold(s.h1)}</h1>
       <p class="lede">${esc(s.lede)}</p>
-      ${callButtons(s.ctaButton)}
+      ${callButtons(s.ctaButton, false, s.ctaHref)}
       <div class="hero-meta">
         ${(s.heroFacts || []).map(([k, v]) => `<span>${esc(k)} <b>${esc(v)}</b></span>`).join('\n        ')}
       </div>
@@ -940,7 +944,7 @@ ${faqs.length ? `<section class="faq">
 <section class="svc-cta">
   <h2 class="svc-h2">${gold(s.ctaHeading)}</h2>
   <p class="lede">${esc(s.ctaText)}</p>
-  ${callButtons(s.ctaButton, true)}
+  ${callButtons(s.ctaButton, true, s.ctaHref)}
 </section>
 
 </main>
@@ -959,7 +963,8 @@ function servicesIndex(all) {
   const url = `${SITE}/services`;
   const groups = [
     ['Commercial', 'Fit-out and refurbishment'],
-    ['Residential', 'Homes and development']
+    ['Residential', 'Homes and development'],
+    ['Trade', 'For main contractors']
   ];
 
   const schema = ldScripts([{

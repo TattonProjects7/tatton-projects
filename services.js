@@ -1406,4 +1406,67 @@ const SERVICES = [
     serviceType: ["Office fit-out", "Cat B office fit-out", "Cat A office fit-out", "Office refurbishment"],
     areaServed: [{"@type": "Place", "name": "Stockport"}, {"@type": "Place", "name": "Cheadle"}, {"@type": "Place", "name": "Bramhall"}, {"@type": "Place", "name": "Hazel Grove"}]
   },
+
+  /* For other contractors, not clients: its own tab in the menu (nav: "trade")
+     and its own group on /services. ctaHref sends the buttons to email, because
+     the enquiry form is built around client projects. */
+  {
+    id: "drylining-ceilings-joinery-subcontractors",
+    name: "Drylining, Ceilings & Joinery Packages for Main Contractors",
+    short: "Subcontract packages",
+    sector: "Trade",
+    nav: "trade",
+    areaServed: [{ "@type": "Country", "name": "United Kingdom" }],
+    title: "Drylining, Ceilings & Joinery Subcontractors | Tatton Projects",
+    description: "Drylining, partition, suspended ceiling and joinery packages for main contractors, UK-wide. Supply and fit or labour only. Constructionline Gold and SSIP.",
+    h1: "Drylining, ceilings *& joinery packages.*",
+    eyebrow: "For main contractors · UK-wide",
+    lede: "Tatton Projects takes drylining and partition, suspended ceiling and joinery packages for main contractors and fit-out firms across the UK, supply and fit or labour only.",
+    summary: "Drylining and partitions, suspended ceilings and joinery for main contractors, supply and fit or labour only, UK-wide.",
+    hero: "images/stockport-04-desks.jpg",
+    heroCaption: "Stockport service centre · suspended ceilings across a live floor",
+    card: "images/stockport-04-desks-card.jpg",
+    heroFacts: [["Basis", "Supply & fit · labour only"], ["Pre-qualified", "Constructionline Gold · SSIP"], ["Coverage", "UK-wide"]],
+    introEyebrow: "For your supply chain",
+    introHeading: "The packages we run on our own jobs, *priced for yours.*",
+    intro: [
+      "Partitions, ceilings and joinery set the pace of a fit-out. We run all three on our own projects as a main contractor, so we know what your site manager needs from the firm doing them: a clear scope, a start date that holds, and work that doesn't come back as a snag.",
+      "We take these packages for other contractors anywhere in the UK, one trade or all three together, supply and fit or labour only. Tatton is owner-managed, so you deal with the person who priced the package."
+    ],
+    factsTitle: "At a glance",
+    facts: [["Drylining & partitions", "Metal stud · linings · tape & joint"], ["Suspended ceilings", "Grid · MF · bulkheads"], ["Joinery", "Bespoke & fitted"], ["Basis", "Supply & fit or labour only"]],
+    factsNote: "",
+    cardsHeading: "Three packages, *one order or three.*",
+    cards: [
+      ["Drylining & partitions", "Metal stud partitions, wall linings and plasterboard, taped and jointed ready for decoration."],
+      ["Suspended ceilings", "Suspended grid ceilings, MF plasterboard ceilings and bulkheads."],
+      ["Joinery", "Bespoke and fitted joinery, including reception desks, tea points and wall panelling."],
+      ["Supply and fit, or labour only", "We price the package with materials included, or labour only where you are free-issuing the materials."]
+    ],
+    scope: [
+      "Metal stud partitions and wall linings",
+      "Plasterboard, tape and joint",
+      "Suspended grid ceilings",
+      "MF plasterboard ceilings and bulkheads",
+      "Bespoke and fitted joinery",
+      "Reception desks, tea points and wall panelling",
+      "Supply and fit, or labour only",
+      "One package, or all three together"
+    ],
+    projects: ["stockport-service-centre", "sentric-music", "stockport-office"],
+    projectsNote: "Our own fit-outs, delivered as main contractor. Each one included ceilings, partitions or joinery of the kind we take as packages.",
+    faqs: [
+      ["Which packages do you take?", "Drylining and partitions, suspended ceilings and joinery. You can place one package with us or all three together on the same job."],
+      ["Do you price supply and fit, or labour only?", "Both. We price a package with materials included, or labour only where you are free-issuing the materials. Tell us which when you send the drawings and specification."],
+      ["Where do you work?", "Across the UK. We are based in Altrincham, Greater Manchester, and travel for packages nationwide."],
+      ["What accreditations do you hold?", "Constructionline Gold, SSIP health and safety accreditation, CITB registration and CSCS, and we are members of the Federation of Master Builders."],
+      ["How do we add you to our supply chain?", "Send your pre-qualification questionnaire or supplier form to info@tattonprojects.co.uk and we'll complete and return it. You can also find us on Constructionline, where we hold Gold membership."],
+      ["Can you work in occupied buildings and out of hours?", "Yes. Much of our own fit-out work is in buildings that stay open, including a Stockport service floor with more than ninety staffed positions that never closed, with the heavy work done outside opening hours."]
+    ],
+    ctaHeading: "Building your *supply chain?*",
+    ctaText: "Send us your pre-qualification questionnaire or supplier form, or the drawings and specification for a package. You'll get the form back completed, or the package priced, by the person who'd run it.",
+    ctaButton: "Send us a package →",
+    ctaHref: "mailto:info@tattonprojects.co.uk?subject=Subcontract%20package",
+    serviceType: ["Drylining contractor", "Partitioning contractor", "Suspended ceiling contractor", "Joinery contractor", "Fit-out subcontractor"]
+  },
 ];
