@@ -27,7 +27,7 @@ ORG = {
     "geo": {"@type": "GeoCoordinates", "latitude": 53.3889, "longitude": -2.3497},
     "areaServed": AREAS,
     "knowsAbout": ["Drylining", "Plastering", "Metal stud partitions", "Acoustic partitions", "Acoustic walls", "Suspended ceilings", "MF plasterboard ceilings", "Commercial joinery", "Fitted furniture", "Wall panelling",
-                   "Fire doorsets", "Internal glazing", "Glass partitions", "Office fit-out", "Cat A fit-out", "Cat B fit-out", "Retail shopfitting"],
+                   "Fire doorsets", "Internal glazing", "Glass partitions", "Toilet cubicles", "IPS duct panels", "Washroom fit-out", "Office fit-out", "Cat A fit-out", "Cat B fit-out", "Retail shopfitting"],
     "parentOrganization": {"@type": "Organization", "name": "DPG Holdings"},
     "sameAs": ["https://www.tatton-projects.co.uk/"],
     "legalName": "Tatton Projects of Cheshire Limited", "identifier": "Companies House 17553626",
@@ -116,6 +116,23 @@ TRADES = [
   faqs=[('Do you install frameless glass partitions?', 'Yes. We install frameless single and double glazed partitions, glazed doors and meeting rooms, including acoustic-rated glazing.'),
         ('Can you do glazing with the partitions package?', 'Yes. Running glazing alongside partitions and ceilings means one team owns the junctions between them.'),
         ('Do you supply manifestation?', 'Yes. We supply and fit manifestation and privacy film to meet Building Regulations and the client brand.')]),
+ dict(slug='toilet-cubicles', name='Toilet Cubicles & Washrooms', short='washroom',
+  title='Toilet Cubicle Installers & Washroom Fit-Out | Tatton Interiors',
+  desc='Toilet cubicle and washroom installers for main contractors: full-height compact laminate cubicles, IPS duct panels, vanity units and washroom fit-out. Supply & fit or labour only. Manchester, North West & UK.',
+  h1='Toilet cubicle & washroom installers',
+  lede='Full-height and standard compact laminate cubicles, IPS framing and duct panels, vanity units and washroom fit-out, built around your plumbing and M&E so the washroom is ready to hand over.',
+  card='Compact laminate cubicles, IPS panels and vanity units.',
+  img='ti-toilet-cubicles-full-height.jpg', img2='ti-washroom-cubicles-vanity.jpg',
+  gallery=[('ti-ips-framing-washroom.jpg','Before: stripped washroom, IPS frames set out'), ('ti-ips-framing-first-fix.jpg','Before: IPS framing at first fix, cisterns and pipework in'), ('ti-cubicle-panels-installed.jpg','During: full-height cubicle panels installed'), ('ti-cubicle-doors-woodgrain.jpg','After: woodgrain doors hung, washroom complete'), ('ti-vanity-unit-solid-surface.jpg','After: vanity run, solid-surface top and mirrors'), ('ti-cubicle-interior-ips-panel.jpg','After: finished cubicle with IPS back panel')],
+  gallery_title='Before, during &amp; after',
+  scope=['Full-height and standard toilet cubicles in compact laminate (HPL)', 'IPS framing and duct panels to conceal cisterns and pipework, with access panels',
+         'Vanity units with solid-surface tops and undermount basin cut-outs', 'Washroom wall panelling and IPS back panels',
+         'Mirrors, dispensers and washroom accessories fitted', 'Shower and changing room cubicles and benching',
+         'Coordinated with plumbing and M&E first and second fix', 'Washroom refurbishment in occupied buildings, phased floor by floor'],
+  systems='IPS frames are set out and built before the plumber arrives, so cisterns, waste and supply pipework land where the panels and cubicles need them.',
+  faqs=[('Do you install toilet cubicles labour only?', 'Yes. We install client-supplied cubicles, IPS and vanities labour only, or supply and fit the full washroom package.'),
+        ('Do you build the IPS framing?', 'Yes. We build the IPS framing at first fix, coordinate with the plumber for cisterns and pipework, then fit the duct panels, access panels and vanity tops at second fix.'),
+        ('Can you refurbish washrooms in a building that stays open?', 'Yes. We phase washroom refurbishments floor by floor so the building always has working toilets, with temporary screening and out-of-hours noisy work where needed.')]),
 ]
 
 PROJECTS = [
@@ -160,7 +177,7 @@ def head(title, desc, path, img, extra_ld=(), robots='index,follow,max-image-pre
 '''
 
 NAV = [('/plastering-drylining', 'Drylining'), ('/partitions', 'Partitions'), ('/suspended-ceilings', 'Ceilings'), ('/joinery', 'Joinery'),
-       ('/internal-glazing', 'Glazing'), ('/projects', 'Projects'), ('/about', 'About')]
+       ('/internal-glazing', 'Glazing'), ('/toilet-cubicles', 'Washrooms'), ('/projects', 'Projects'), ('/about', 'About')]
 
 BRAND = '<img class="logo" src="' + IMG + 'tatton-interiors-logo-light-120.png" alt="Tatton Interiors" width="368" height="120">'
 
@@ -262,7 +279,7 @@ def gallery_html(t):
     g = t.get('gallery')
     if not g: return ''
     figs = ''.join(f'<figure class="reveal" style="--d:{i*80}ms"><img src="{im(f)}" alt="{html.escape(a)}" loading="lazy" width="800" height="600"><figcaption>{html.escape(a)}</figcaption></figure>' for i, (f, a) in enumerate(g))
-    return f'<section class="sec slim gal-sec"><div class="wrap"><p class="kicker reveal">On site</p><div class="gal">{figs}</div></div></section>'
+    return f'<section class="sec slim gal-sec"><div class="wrap"><p class="kicker reveal">{t.get('gallery_title', 'On site')}</p><div class="gal{' gal3' if len(g) >= 5 else ''}">{figs}</div></div></section>'
 
 def faq_html(faqs):
     return ('<section class="sec faq"><div class="wrap narrow"><p class="kicker reveal">Questions</p><h2 class="reveal">Common questions</h2>'
@@ -285,7 +302,7 @@ home_faqs = [
  ('Are you pre-qualified?', 'Yes. We hold Constructionline Gold and SSIP accreditation, are CITB registered, and our site teams are CSCS carded. We will complete your PQQ or supplier forms.')]
 cards = ''.join(f'''<a class="card reveal" href="/{t["slug"]}" style="--d:{i*80}ms"><div class="card-img"><img src="{im(t["img"])}" alt="{t["name"]} by Tatton Interiors" loading="lazy" width="800" height="600"></div><div class="card-body"><span class="mono num">0{i+1}</span><h3>{t["name"]}</h3><p>{t["card"]}</p><span class="arrow">View package <i>→</i></span></div></a>''' for i, t in enumerate(TRADES))
 proj_strip = ''.join(f'<figure class="pc reveal" style="--d:{i*70}ms"><img src="{im(p["img"])}" alt="{p["t"]}, {p["loc"]}: interior fit-out" loading="lazy" width="800" height="600"><figcaption><strong>{p["t"]}</strong><span>{p["loc"]}{" · " + p["v"] if p["v"] else ""}</span></figcaption></figure>' for i, p in enumerate(PROJECTS[:4]))
-mq = ' <b>/</b> '.join(['Plastering', 'Drylining', 'Metal stud partitions', 'Acoustic walls', 'Suspended ceilings', 'MF ceilings', 'Commercial joinery', 'Fitted furniture', 'Wall panelling', 'Glass partitions', 'Internal glazing', 'Ceiling tiles'])
+mq = ' <b>/</b> '.join(['Plastering', 'Drylining', 'Metal stud partitions', 'Acoustic walls', 'Suspended ceilings', 'MF ceilings', 'Commercial joinery', 'Fitted furniture', 'Wall panelling', 'Glass partitions', 'Internal glazing', 'Toilet cubicles', 'IPS & vanities', 'Ceiling tiles'])
 home = head('Drylining, Partitions & Ceilings Subcontractor | Tatton Interiors',
             'Interior fit-out subcontractor for main contractors: drylining, partitions, suspended ceilings, joinery and internal glazing. Supply & fit or labour only. Manchester & UK.',
             '/', 'ti-breakout-mesh-ceiling.jpg',
@@ -303,10 +320,10 @@ home = head('Drylining, Partitions & Ceilings Subcontractor | Tatton Interiors',
 <div class="wrap"><section class="stats">
 <div class="stat reveal"><b><span data-count="110">110</span>+</b><span>projects since 2020</span></div>
 <div class="stat reveal" style="--d:80ms"><b><span data-count="20">20</span>+</b><span>years on the tools &amp; running sites</span></div>
-<div class="stat reveal" style="--d:160ms"><b><span data-count="5">5</span></b><span>interior trades, one point of contact</span></div>
+<div class="stat reveal" style="--d:160ms"><b><span data-count="6">6</span></b><span>interior trades, one point of contact</span></div>
 <div class="stat reveal" style="--d:240ms"><b>Gold</b><span>Constructionline accredited</span></div>
 </section></div>
-<section class="sec" id="packages"><div class="wrap"><p class="kicker reveal">What we deliver</p><h2 class="reveal">Five interior packages. One team owning the junctions.</h2>
+<section class="sec" id="packages"><div class="wrap"><p class="kicker reveal">What we deliver</p><h2 class="reveal">Six interior packages. One team owning the junctions.</h2>
 <div class="cards">{cards}</div></div></section>
 <section class="sec alt"><div class="wrap two">
 <div><p class="kicker reveal">How we work</p><h2 class="reveal">Priced by the person who runs it.</h2>
@@ -405,7 +422,7 @@ write('/404', head('Page not found | Tatton Interiors', 'Page not found.', '/404
       + '<section class="phero short"><div class="wrap phero-in"><h1>Page not found</h1><p class="lead">Try one of our interior packages instead.</p><p><a class="btn btn-solid" href="/">Back to home</a></p></div></section>' + footer())
 
 # ---------- sitemap / robots / llms ----------
-pages = ['/', '/plastering-drylining', '/partitions', '/suspended-ceilings', '/joinery', '/internal-glazing', '/projects', '/about', '/contact']
+pages = ['/', '/plastering-drylining', '/partitions', '/suspended-ceilings', '/joinery', '/internal-glazing', '/toilet-cubicles', '/projects', '/about', '/contact']
 with open(os.path.join(OUT, 'sitemap.xml'), 'w') as f:
     f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + ''.join(f'<url><loc>{DOMAIN}{p}</loc><lastmod>{TODAY}</lastmod><priority>{"1.0" if p == "/" else "0.8"}</priority></url>\n' for p in pages) + '</urlset>\n')
