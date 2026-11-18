@@ -13,16 +13,43 @@ def mail(label=None, subject='Subcontract package - Tatton Interiors'):
     if not EMAIL: return ''
     return f'<a href="mailto:{EMAIL}?subject={subject.replace(" ", "%20")}">{label or EMAIL}</a>'
 
+
+CITIES = [
+ dict(slug='london', name='London', region='London & the South East', near='the City, the West End, Canary Wharf, King\'s Cross and across the M25',
+      note='London fit-outs run on tight logistics: restricted deliveries, booked goods lifts and out-of-hours working. We plan labour, material drops and accommodation around that from the start.'),
+ dict(slug='birmingham', name='Birmingham', region='the West Midlands', near='Birmingham city centre, Colmore Row, Digbeth, Solihull and the wider West Midlands',
+      note='Birmingham is a short run down the M6 from our Altrincham base, so we can mobilise teams quickly and keep the same supervisor on your job from start to finish.'),
+ dict(slug='manchester', name='Manchester', region='Greater Manchester', near='Manchester city centre, Spinningfields, Salford Quays, Trafford, Stockport and Altrincham',
+      note='Manchester is home. Our office is in Altrincham, so for Greater Manchester packages there is no travel cost and the person who priced it is never far from site.'),
+ dict(slug='liverpool', name='Liverpool', region='Merseyside', near='Liverpool city centre, the Commercial District, the Baltic Triangle, the Knowledge Quarter and the Wirral',
+      note='We have delivered Cat B office fit-out work in Liverpool, including the Sentric Music offices, and run Merseyside packages daily from our Altrincham base.'),
+ dict(slug='leeds', name='Leeds', region='West Yorkshire', near='Leeds city centre, Wellington Place, Holbeck, Bradford and Wakefield',
+      note='Leeds is just over the Pennines on the M62, so Yorkshire packages are run as day-commute jobs with the same supervised teams we use in Manchester.'),
+ dict(slug='sheffield', name='Sheffield', region='South Yorkshire', near='Sheffield city centre, Kelham Island, Meadowhall, Rotherham and Doncaster',
+      note='South Yorkshire packages are run from Manchester over the Snake or the M62, with teams staying local for longer programmes.'),
+ dict(slug='newcastle', name='Newcastle', region='the North East', near='Newcastle city centre, Gateshead, Sunderland and Durham',
+      note='For North East packages we mobilise a supervised team with local accommodation, so programme and quality are the same as on our home patch.'),
+ dict(slug='bristol', name='Bristol', region='the South West', near='Bristol city centre, Temple Quarter, Harbourside, Bath and the M4/M5 corridor',
+      note='South West packages are run with a resident supervised team and booked accommodation, priced up front so there are no travel extras later.'),
+ dict(slug='nottingham', name='Nottingham', region='the East Midlands', near='Nottingham, Derby, Leicester and the M1 corridor',
+      note='The East Midlands is in easy reach of our base, so packages here are run with the same teams and supervision as our North West work.'),
+ dict(slug='glasgow', name='Glasgow', region='Scotland', near='Glasgow city centre, the IFSD, Edinburgh and the Central Belt',
+      note='For Scottish packages we bring a supervised team with accommodation booked, working to the same systems and records as in England.'),
+ dict(slug='cardiff', name='Cardiff', region='South Wales', near='Cardiff city centre, Swansea, Newport and the M4 corridor',
+      note='South Wales packages are run with a resident supervised team, with travel and accommodation priced in from the start.'),
+ dict(slug='cheshire', name='Cheshire', region='Cheshire', near='Chester, Warrington, Knutsford, Wilmslow, Macclesfield and Crewe',
+      note='Cheshire is on our doorstep, with our office in Altrincham, so Cheshire packages carry no travel costs and quick call-outs for snagging.'),
+]
+
 ADDRESS = {"@type": "PostalAddress", "streetAddress": "Suite 15, Peel House, 30 The Downs", "addressLocality": "Altrincham",
            "addressRegion": "Greater Manchester", "postalCode": "WA14 2PX", "addressCountry": "GB"}
 ORG_ID = DOMAIN + '/#organization'
-AREAS = [{"@type": "City", "name": n} for n in ["Manchester", "Liverpool", "Leeds", "Warrington", "Stockport", "Chester", "Preston", "Altrincham"]] + \
-        [{"@type": "AdministrativeArea", "name": "Cheshire"}, {"@type": "AdministrativeArea", "name": "North West England"}, {"@type": "Country", "name": "United Kingdom"}]
+AREAS = [{"@type": "Country", "name": "United Kingdom"}, {"@type": "Country", "name": "England"}, {"@type": "Country", "name": "Scotland"}, {"@type": "Country", "name": "Wales"}] + [{"@type": "City", "name": c["name"]} for c in CITIES if c["slug"] != "cheshire"] + [{"@type": "AdministrativeArea", "name": "Cheshire"}]
 ORG = {
     "@context": "https://schema.org", "@type": ["GeneralContractor", "LocalBusiness"], "@id": ORG_ID,
-    "name": "Tatton Interiors", "alternateName": ["Tatton Interiors Manchester"],
+    "name": "Tatton Interiors", "alternateName": ["Tatton Interiors UK", "Tatton Interiors Manchester"],
     "url": DOMAIN + '/', "logo": IMG + 'tatton-interiors-logo-dark.png', "image": DOMAIN + '/images/ti-breakout-mesh-ceiling.jpg',
-    "description": "Interior fit-out subcontractor for main contractors and fit-out firms: plastering and drylining, metal stud partitions, suspended ceilings, commercial joinery and internal glazing. Supply & fit or labour only. Based in Altrincham, Greater Manchester, working across the North West and UK-wide.",
+    "description": "Interior fit-out subcontractor for main contractors and fit-out firms: plastering and drylining, metal stud partitions, suspended ceilings, commercial joinery and internal glazing. Supply & fit or labour only. Based in Altrincham, Greater Manchester, working UK-wide including London, Birmingham, Leeds, Liverpool, Newcastle, Bristol, Glasgow and Cardiff.",
     "telephone": PHONE_INTL, "address": ADDRESS,
     "geo": {"@type": "GeoCoordinates", "latitude": 53.3889, "longitude": -2.3497},
     "areaServed": AREAS,
@@ -41,8 +68,8 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="
 
 TRADES = [
  dict(slug='plastering-drylining', name='Plastering & Drylining', short='drylining',
-  title='Plastering & Drylining Contractors Manchester | Tatton Interiors',
-  desc='Drylining and plastering subcontractor for main contractors across Manchester, the North West and UK. Wall linings, MF, tape & joint, skim. Supply & fit or labour only.',
+  title='Plastering & Drylining Contractors UK | Tatton Interiors',
+  desc='Drylining and plastering subcontractor for main contractors across the UK. Wall linings, MF, tape & joint, skim. Supply & fit or labour only.',
   h1='Plastering & drylining contractors',
   lede='Wall linings, independent linings, tape & joint and skim finishes for commercial fit-outs, refurbishments and new build. Priced as a package, delivered by our own supervised teams.',
   card='Wall linings, tape & joint and skim finishes for fit-outs and refurbs.',
@@ -56,8 +83,8 @@ TRADES = [
         ('What finish standard do you work to?', 'We tape & joint to the finish level in your specification, typically Q3 or Q4 for commercial areas, or hard-coat and skim where a plastered finish is specified.'),
         ('Can you work in occupied buildings?', 'Yes. Much of our fit-out work is in live offices and public buildings, phased around the client with dust control and out-of-hours working where needed.')]),
  dict(slug='partitions', name='Partitions', short='partitions',
-  title='Metal Stud & Acoustic Partition Contractors | Tatton Interiors',
-  desc='Metal stud and acoustic partition contractors: acoustic walls built to your Rw rating, fire-rated and high-performance partitions to British Gypsum and Knauf systems. North West & UK.',
+  title='Metal Stud & Acoustic Partition Contractors UK | Tatton Interiors',
+  desc='Metal stud and acoustic partition contractors: acoustic walls built to your Rw rating, fire-rated and high-performance partitions to British Gypsum and Knauf systems. UK-wide.',
   h1='Metal stud & acoustic partition contractors',
   lede='Fire-rated, acoustic and standard metal stud partitions, set out, built and boarded to the system on your drawings, for office fit-outs, retail, healthcare and hospitality.',
   card='Acoustic and fire-rated metal stud walls built to system.',
@@ -73,8 +100,8 @@ TRADES = [
         ('Can you set out from drawings?', 'Yes. Our supervisors set out partition lines from your general arrangement and setting-out drawings and raise any clashes before boarding.'),
         ('Do you do partitions as a separate package?', 'Yes: partitions on their own, or combined with drylining, ceilings, joinery and glazing as one interiors package.')]),
  dict(slug='suspended-ceilings', name='Suspended Ceilings', short='ceilings',
-  title='Suspended Ceiling Contractors Manchester | Tatton Interiors',
-  desc='Suspended ceiling contractors: grid and tile ceilings, MF plasterboard ceilings, bulkheads, rafts and acoustic ceilings for commercial fit-outs. Manchester, North West & UK.',
+  title='Suspended Ceiling Contractors UK | Tatton Interiors',
+  desc='Suspended ceiling contractors: grid and tile ceilings, MF plasterboard ceilings, bulkheads, rafts and acoustic ceilings for commercial fit-outs. UK-wide.',
   h1='Suspended ceiling contractors',
   lede='Exposed-grid and tile ceilings, MF plasterboard ceilings, bulkheads and acoustic rafts, installed level, coordinated with M&E and handed over clean.',
   card='Grid, MF plasterboard, bulkheads and acoustic rafts.',
@@ -88,8 +115,8 @@ TRADES = [
         ('Do you coordinate with M&E contractors?', 'Yes. We agree setting-out and service positions before install so lights, diffusers and sprinkler heads land in the grid.'),
         ('Can you replace ceilings in a live office?', 'Yes. We phase ceiling replacements around occupied floors and work out of hours where the client needs it.')]),
  dict(slug='joinery', name='Joinery & Fitted Furniture', short='joinery',
-  title='Commercial Joinery & Fitted Furniture | Tatton Interiors',
-  desc='Commercial joinery and fitted furniture subcontractor: timber slat and acoustic wall panelling, booth seating, tea points, reception desks, doorsets and shopfit joinery. North West & UK.',
+  title='Commercial Joinery & Fitted Furniture UK | Tatton Interiors',
+  desc='Commercial joinery and fitted furniture subcontractor: timber slat and acoustic wall panelling, booth seating, tea points, reception desks, doorsets and shopfit joinery. UK-wide.',
   h1='Commercial joinery & fitted furniture',
   lede='Timber slat and acoustic wall panelling, fitted booth seating, tea points and kitchenettes, bench desks, reception desks and doorsets, made and fitted by joiners who know commercial programmes.',
   card='Wall panelling, booth seating, tea points, desks and doorsets.',
@@ -102,8 +129,8 @@ TRADES = [
         ('Do you make and fit fitted furniture?', 'Yes. We supply and fit booth seating, banquettes, tea points, bench desks, reception desks and wall panelling, or fit client-supplied furniture and joinery labour only.'),
         ('Do you do shopfitting joinery?', 'Yes. Our team has delivered brand-standard retail joinery for stores including Fossil and Calvin Klein.')]),
  dict(slug='internal-glazing', name='Internal Glazing', short='glazing',
-  title='Internal Glazing & Glass Partitions | Tatton Interiors',
-  desc='Internal glazing contractors: frameless and framed glass partitions, glazed office screens, glass meeting rooms, glazed doors and crittall-style screens. Manchester & UK.',
+  title='Internal Glazing & Glass Partitions UK | Tatton Interiors',
+  desc='Internal glazing contractors: frameless and framed glass partitions, glazed office screens, glass meeting rooms, glazed doors and crittall-style screens. UK-wide.',
   h1='Internal glazing & glass partitions',
   lede='Frameless and framed glass partitions, glazed meeting rooms and screens, glazed doors and crittall-style screens, installed plumb, sealed and manifested to spec.',
   card='Frameless glass partitions, glazed screens and crittall-style screens.',
@@ -117,8 +144,8 @@ TRADES = [
         ('Can you do glazing with the partitions package?', 'Yes. Running glazing alongside partitions and ceilings means one team owns the junctions between them.'),
         ('Do you supply manifestation?', 'Yes. We supply and fit manifestation and privacy film to meet Building Regulations and the client brand.')]),
  dict(slug='toilet-cubicles', name='Toilet Cubicles & Washrooms', short='washroom',
-  title='Toilet Cubicle Installers & Washroom Fit-Out | Tatton Interiors',
-  desc='Toilet cubicle and washroom installers for main contractors: full-height compact laminate cubicles, IPS duct panels, vanity units and washroom fit-out. Supply & fit or labour only. Manchester, North West & UK.',
+  title='Toilet Cubicle Installers & Washroom Fit-Out UK | Tatton Interiors',
+  desc='Toilet cubicle and washroom installers for main contractors: full-height compact laminate cubicles, IPS duct panels, vanity units and washroom fit-out. Supply & fit or labour only. UK-wide.',
   h1='Toilet cubicle & washroom installers',
   lede='Full-height and standard compact laminate cubicles, IPS framing and duct panels, vanity units and washroom fit-out, built around your plumbing and M&E so the washroom is ready to hand over.',
   card='Compact laminate cubicles, IPS panels and vanity units.',
@@ -195,25 +222,29 @@ def header(active=''):
 
 def footer():
     trades = ''.join(f'<li><a href="/{t["slug"]}">{t["name"]}</a></li>' for t in TRADES)
+    areas = ''.join(f'<li><a href="/areas/{c["slug"]}">{c["name"]}</a></li>' for c in CITIES)
     em = f'<br>{mail()}' if EMAIL else ''
-    return f'''</main>
+    return f"""</main>
 <footer class="foot">
 <div class="foot-grid">
-<div>{BRAND}<p>Interior fit-out packages for main contractors and fit-out firms. Supply &amp; fit or labour only.</p>
+<div>{BRAND}<p>UK interior fit-out subcontractor for main contractors and fit-out firms. Supply &amp; fit or labour only.</p>
 <p class="mono small">Suite 15, Peel House, 30 The Downs,<br>Altrincham WA14 2PX</p>
-<p><a href="tel:{PHONE_INTL}">{PHONE}</a>{em}</p></div>
+<p><a href="tel:{PHONE_INTL}">{PHONE}</a>{em}</p>
+<p class="mono small">Mon–Fri 7:30–17:30</p></div>
 <div><h3>Packages</h3><ul>{trades}</ul></div>
-<div><h3>Company</h3><ul><li><a href="/projects">Projects</a></li><li><a href="/about">About &amp; accreditations</a></li><li><a href="/contact">Send a package</a></li></ul></div>
-<div><h3>DPG Holdings group</h3><ul>
-<li><a href="https://www.tatton-projects.co.uk/">Tatton Projects</a> <span class="muted">· main contracting</span></li>
-<li><a href="https://www.theloadbearingcompany.co.uk/">The Load Bearing Company</a> <span class="muted">· structural alterations</span></li>
+<div><h3>Areas we cover</h3><ul class="cols2">{areas}<li><a href="/areas">All UK areas</a></li></ul></div>
+<div><h3>Company</h3><ul><li><a href="/projects">Projects</a></li><li><a href="/about">About &amp; accreditations</a></li><li><a href="/contact">Send a package to price</a></li><li><a href="/contact">PQQ &amp; supplier forms</a></li></ul>
+<h3 style="margin-top:22px">DPG Holdings group</h3><ul>
+<li><a href="https://www.tatton-projects.co.uk/">Tatton Projects</a> <span class="muted">· main contractor</span></li>
+<li><a href="https://www.theloadbearingcompany.co.uk/">The Load Bearing Company</a> <span class="muted">· structural</span></li>
 <li><a href="https://www.silopod.co.uk/">SiloPod</a> <span class="muted">· acoustic pods</span></li>
 <li><a href="https://www.esti-mate.app/">EstiMate</a> <span class="muted">· estimating software</span></li></ul></div>
 </div>
+<div class="foot-seo"><p>Tatton Interiors is a UK interior fit-out subcontractor working for main contractors, fit-out firms and developers across England, Scotland and Wales. We price and deliver <a href="/plastering-drylining">drylining and plastering</a>, <a href="/partitions">metal stud and acoustic partitions</a>, <a href="/suspended-ceilings">suspended ceilings and MF ceilings</a>, <a href="/joinery">commercial joinery, wall panelling and fitted furniture</a>, <a href="/internal-glazing">internal glazing and glass partitions</a> and <a href="/toilet-cubicles">toilet cubicles, IPS and washroom fit-out</a>, supply &amp; fit or labour only, for offices, retail, healthcare, education, hospitality and residential schemes. Constructionline Gold, SSIP accredited, CITB registered and CSCS-carded teams.</p></div>
 <div class="foot-base mono small"><span>© {datetime.date.today().year} Tatton Interiors is a trading name of Tatton Projects of Cheshire Limited, company no. 17553626, registered in England &amp; Wales. A sister company of Tatton Projects, part of the DPG Holdings group.</span><span>Constructionline Gold · SSIP · CITB · CSCS</span></div>
 </footer>
 <script src="/site.js?v={ver('site.js')}" defer></script>
-</body></html>'''
+</body></html>"""
 
 def crumbs(items):
     return {"@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -297,14 +328,14 @@ def write(path, content):
 home_faqs = [
  ('What does Tatton Interiors do?', 'Tatton Interiors is an interior fit-out subcontractor. We price and deliver plastering and drylining, metal stud partitions, suspended ceilings, joinery and fitted furniture, and internal glazing packages for main contractors and fit-out firms.'),
  ('Do you work supply & fit or labour only?', 'Both. Every package can be priced supply & fit with materials included, or labour only where the main contractor free-issues materials.'),
- ('Where do you work?', 'We are based in Altrincham, Greater Manchester, and work across Manchester, Cheshire, Merseyside, Lancashire, Yorkshire and the wider North West, and take packages UK-wide.'),
+ ('Where do you work?', 'Anywhere in the UK. We are based in Altrincham, Greater Manchester, and take packages across England, Scotland and Wales, including London, Birmingham, Manchester, Liverpool, Leeds, Sheffield, Newcastle, Bristol, Nottingham, Glasgow and Cardiff. For work away we bring supervised teams with accommodation priced in.'),
  ('How is Tatton Interiors related to Tatton Projects?', 'Tatton Interiors is the interiors subcontracting arm of Tatton Projects. It is a trading name of Tatton Projects of Cheshire Limited and part of the DPG Holdings group. Tatton Projects delivers main contracts; Tatton Interiors delivers interior packages for other contractors.'),
  ('Are you pre-qualified?', 'Yes. We hold Constructionline Gold and SSIP accreditation, are CITB registered, and our site teams are CSCS carded. We will complete your PQQ or supplier forms.')]
 cards = ''.join(f'''<a class="card reveal" href="/{t["slug"]}" style="--d:{i*80}ms"><div class="card-img"><img src="{im(t["img"])}" alt="{t["name"]} by Tatton Interiors" loading="lazy" width="800" height="600"></div><div class="card-body"><span class="mono num">0{i+1}</span><h3>{t["name"]}</h3><p>{t["card"]}</p><span class="arrow">View package <i>→</i></span></div></a>''' for i, t in enumerate(TRADES))
 proj_strip = ''.join(f'<figure class="pc reveal" style="--d:{i*70}ms"><img src="{im(p["img"])}" alt="{p["t"]}, {p["loc"]}: interior fit-out" loading="lazy" width="800" height="600"><figcaption><strong>{p["t"]}</strong><span>{p["loc"]}{" · " + p["v"] if p["v"] else ""}</span></figcaption></figure>' for i, p in enumerate(PROJECTS[:4]))
 mq = ' <b>/</b> '.join(['Plastering', 'Drylining', 'Metal stud partitions', 'Acoustic walls', 'Suspended ceilings', 'MF ceilings', 'Commercial joinery', 'Fitted furniture', 'Wall panelling', 'Glass partitions', 'Internal glazing', 'Toilet cubicles', 'IPS & vanities', 'Ceiling tiles'])
-home = head('Drylining, Partitions & Ceilings Subcontractor | Tatton Interiors',
-            'Interior fit-out subcontractor for main contractors: drylining, partitions, suspended ceilings, joinery and internal glazing. Supply & fit or labour only. Manchester & UK.',
+home = head('Drylining, Partitions & Ceilings Subcontractor UK | Tatton Interiors',
+            'Interior fit-out subcontractor for main contractors: drylining, partitions, suspended ceilings, joinery and internal glazing. Supply & fit or labour only. UK-wide.',
             '/', 'ti-breakout-mesh-ceiling.jpg',
             [{"@context": "https://schema.org", "@type": "WebSite", "@id": DOMAIN + '/#website', "url": DOMAIN + '/', "name": "Tatton Interiors", "publisher": {"@id": ORG_ID}, "inLanguage": "en-GB"}, faq_ld(home_faqs)]) + header('/') + f'''
 <section class="hero">
@@ -312,7 +343,7 @@ home = head('Drylining, Partitions & Ceilings Subcontractor | Tatton Interiors',
 <div class="hero-in wrap">
 <p class="kicker anim" style="--d:0ms">Interior fit-out subcontractor · A Tatton Projects company</p>
 <h1 class="anim" style="--d:120ms">Interior packages for <em>main contractors</em> and fit-out firms.</h1>
-<p class="lead anim" style="--d:260ms">Plastering &amp; drylining, partitions, suspended ceilings, wall panelling, joinery &amp; fitted furniture and internal glazing. Priced as one package or trade by trade, supply &amp; fit or labour only. Based in Manchester, working UK-wide.</p>
+<p class="lead anim" style="--d:260ms">Plastering &amp; drylining, partitions, suspended ceilings, wall panelling, joinery &amp; fitted furniture and internal glazing. Priced as one package or trade by trade, supply &amp; fit or labour only. Based in Manchester, working right across the UK.</p>
 <div class="row anim" style="--d:380ms"><a class="btn btn-solid" href="/contact">Send a package to price</a><a class="btn btn-ghost" href="#packages">See the packages</a></div>
 </div>
 <div class="marquee" aria-hidden="true"><div class="track"><span>{mq} <b>/</b> </span><span>{mq} <b>/</b> </span></div></div>
@@ -331,6 +362,9 @@ home = head('Drylining, Partitions & Ceilings Subcontractor | Tatton Interiors',
 <div class="reveal" style="--d:120ms"><div class="imgwrap"><img class="rounded" src="{im('ti-acoustic-felt-booth.jpg')}" alt="Acoustic felt wall panelling and walnut joinery in a fitted work booth" loading="lazy" width="900" height="700"></div>{ACCRED}</div>
 </div></section>
 <section class="sec"><div class="wrap"><p class="kicker reveal">Recent interiors work</p><h2 class="reveal">Delivered in live offices, retail and hospitality.</h2><div class="pgrid">{proj_strip}</div><p class="reveal center"><a class="btn btn-ghost" href="/projects">All projects →</a></p></div></section>
+<section class="sec"><div class="wrap"><p class="kicker reveal">Where we work</p><h2 class="reveal">Based in Manchester. Working across the UK.</h2>
+<p class="reveal muted" style="max-width:720px">We take interior packages anywhere in England, Scotland and Wales. Close to home we run day teams; further afield we bring supervised teams with accommodation priced in, so there are no travel extras at final account.</p>
+<ul class="pills reveal">{''.join(f'<li><a href="/areas/{c["slug"]}">{c["name"]}</a></li>' for c in CITIES)}<li><a href="/areas">All areas →</a></li></ul></div></section>
 <section class="sec group"><div class="wrap narrow reveal"><p class="kicker">Part of the group</p><h2>A sister company of Tatton Projects.</h2><p>Tatton Interiors is the interiors subcontracting arm of <a href="https://www.tatton-projects.co.uk/">Tatton Projects</a>, the Manchester and Cheshire main contractor behind new build homes, developments and commercial fit-outs. Both sit under the DPG Holdings group alongside <a href="https://www.theloadbearingcompany.co.uk/">The Load Bearing Company</a>, <a href="https://www.silopod.co.uk/">SiloPod</a> and <a href="https://www.esti-mate.app/">EstiMate</a>, so every package has a main contractor's backing.</p></div></section>
 {faq_html(home_faqs)}
 {CTA}''' + footer()
@@ -421,8 +455,50 @@ write('/contact', contact)
 write('/404', head('Page not found | Tatton Interiors', 'Page not found.', '/404', 'vanguard-01-breakout.jpg', robots='noindex') + header()
       + '<section class="phero short"><div class="wrap phero-in"><h1>Page not found</h1><p class="lead">Try one of our interior packages instead.</p><p><a class="btn btn-solid" href="/">Back to home</a></p></div></section>' + footer())
 
+
+# ---------- AREA PAGES ----------
+os.makedirs(os.path.join(OUT, 'areas'), exist_ok=True)
+for c in CITIES:
+    n = c['name']
+    path = '/areas/' + c['slug']
+    t_links = ''.join(f'<li class="reveal" style="--d:{i*50}ms"><a href="/{t["slug"]}"><b>{t["name"]} in {n}</b><span>{t["card"]}</span></a></li>' for i, t in enumerate(TRADES))
+    faqs = [(f'Do you work in {n}?', f'Yes. Tatton Interiors takes drylining, partitions, ceilings, joinery, glazing and washroom packages in {n} and across {c["region"]}, including {c["near"]}. {c["note"]}'),
+            (f'Can you supply labour-only teams in {n}?', f'Yes. We supply supervised, CSCS-carded labour-only teams in {n} where the main contractor free-issues materials, or price supply & fit with materials included.'),
+            (f'How quickly can you start in {n}?', 'Send the drawings, spec and programme and we will confirm price and start date. For most packages we can mobilise within one to two weeks of order, subject to programme.')]
+    svc = {"@context": "https://schema.org", "@type": "Service", "name": f"Interior fit-out subcontractor in {n}",
+           "serviceType": "Drylining, partitions, suspended ceilings, joinery, internal glazing and washroom fit-out",
+           "provider": {"@id": ORG_ID}, "areaServed": {"@type": "City" if c['slug'] != 'cheshire' else "AdministrativeArea", "name": n}, "url": DOMAIN + path}
+    others = ''.join(f'<li><a href="/areas/{o["slug"]}">{o["name"]}</a></li>' for o in CITIES if o is not c)
+    page = head(f'Drylining, Partitions & Ceilings Contractors {n} | Tatton Interiors',
+                f'Interior fit-out subcontractor in {n}: drylining, metal stud partitions, suspended ceilings, joinery, internal glazing and toilet cubicles for main contractors. Supply & fit or labour only.',
+                path, 'ti-breakout-mesh-ceiling.jpg', [svc, faq_ld(faqs), crumbs([('Home', '/'), ('Areas', '/areas'), (n, path)])]) + header() + f"""
+<section class="phero short"><div class="wrap phero-in"><nav class="crumbs mono small" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/areas">Areas</a> / <span>{n}</span></nav>
+<h1 class="anim">Interior fit-out subcontractors in {n}</h1>
+<p class="lead anim" style="--d:140ms">Drylining, partitions, suspended ceilings, joinery, internal glazing and washroom packages for main contractors and fit-out firms {("across " + c["region"]) if n in c["region"] else ("in " + n + " and across " + c["region"])}. Supply &amp; fit or labour only.</p>
+<div class="row anim" style="--d:260ms"><a class="btn btn-solid" href="/contact">Send a {n} package</a><a class="btn btn-ghost" href="tel:{PHONE_INTL}">{PHONE}</a></div></div></section>
+<section class="sec"><div class="wrap two">
+<div><p class="kicker reveal">Packages in {n}</p><h2 class="reveal">What we deliver in {n}</h2><ul class="arealinks">{t_links}</ul></div>
+<div class="reveal" style="--d:120ms"><h2>Working in {n}</h2><p>We cover {c["near"]}.</p><p>{c["note"]}</p>
+<p>Every package is supervised, set out from your drawings and built to the specified manufacturer system, with hold-point photos and handover records as standard.</p>{ACCRED}</div>
+</div></section>
+{QUALITY_HTML}
+{faq_html(faqs)}
+<section class="sec slim"><div class="wrap reveal"><h2>Other areas we cover</h2><ul class="pills">{others}</ul></div></section>
+{CTA}""" + footer()
+    write(path, page)
+
+idx_items = ''.join(f'<li class="reveal" style="--d:{(i%4)*50}ms"><a href="/areas/{c["slug"]}"><b>{c["name"]}</b><span>{c["region"]}</span></a></li>' for i, c in enumerate(CITIES))
+areas_idx = head('Areas We Cover | UK Interior Fit-Out Subcontractor | Tatton Interiors',
+                 'Tatton Interiors works UK-wide: drylining, partitions, ceilings, joinery, glazing and washroom packages in London, Birmingham, Manchester, Liverpool, Leeds, Newcastle, Bristol, Glasgow, Cardiff and beyond.',
+                 '/areas', 'ti-open-plan-grid-ceiling.jpg', [crumbs([('Home', '/'), ('Areas', '/areas')])]) + header() + f"""
+<section class="phero short"><div class="wrap phero-in"><nav class="crumbs mono small" aria-label="Breadcrumb"><a href="/">Home</a> / <span>Areas</span></nav>
+<h1 class="anim">Working across the UK</h1><p class="lead anim" style="--d:140ms">Based in Altrincham, Greater Manchester, we take interior packages anywhere in England, Scotland and Wales. For work away we bring supervised teams with travel and accommodation priced in from the start.</p></div></section>
+<section class="sec"><div class="wrap"><ul class="areagrid">{idx_items}</ul>
+<p class="reveal muted" style="margin-top:30px">Not listed? We still cover it. <a href="/contact">Send us the package</a> and tell us where the site is.</p></div></section>{CTA}""" + footer()
+write('/areas', areas_idx)
+
 # ---------- sitemap / robots / llms ----------
-pages = ['/', '/plastering-drylining', '/partitions', '/suspended-ceilings', '/joinery', '/internal-glazing', '/toilet-cubicles', '/projects', '/about', '/contact']
+pages = ['/', '/plastering-drylining', '/partitions', '/suspended-ceilings', '/joinery', '/internal-glazing', '/toilet-cubicles', '/projects', '/areas'] + ['/areas/' + c['slug'] for c in CITIES] + ['/about', '/contact']
 with open(os.path.join(OUT, 'sitemap.xml'), 'w') as f:
     f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + ''.join(f'<url><loc>{DOMAIN}{p}</loc><lastmod>{TODAY}</lastmod><priority>{"1.0" if p == "/" else "0.8"}</priority></url>\n' for p in pages) + '</urlset>\n')
@@ -433,7 +509,7 @@ with open(os.path.join(OUT, 'robots.txt'), 'w') as f:
 contact_line = f'- Contact: {PHONE}' + (f', {EMAIL}' if EMAIL else '') + ', Suite 15, Peel House, 30 The Downs, Altrincham WA14 2PX'
 llms = f'''# Tatton Interiors
 
-> Tatton Interiors is a UK interior fit-out subcontractor based in Altrincham, Greater Manchester. It prices and delivers plastering & drylining, metal stud partitions, suspended ceilings, commercial joinery and internal glazing packages for main contractors and fit-out firms, supply & fit or labour only, across Manchester, the North West and UK-wide. It is a sister company of Tatton Projects (main contractor) and part of the DPG Holdings group.
+> Tatton Interiors is a UK interior fit-out subcontractor based in Altrincham, Greater Manchester. It prices and delivers plastering & drylining, metal stud partitions, suspended ceilings, commercial joinery and fitted furniture, internal glazing, and toilet cubicle and washroom packages for main contractors and fit-out firms, supply & fit or labour only, anywhere in the UK. It is a sister company of Tatton Projects (main contractor) and part of the DPG Holdings group.
 
 Key facts:
 - Legal entity: Tatton Projects of Cheshire Limited (Companies House 17553626); Tatton Interiors is a trading name
@@ -441,7 +517,7 @@ Key facts:
 - Accreditations: Constructionline Gold, SSIP, CITB registered, CSCS-carded teams
 - Founder: Dave Groom (20+ years: joiner, site manager, project manager, contracts manager)
 {contact_line}
-- Areas: Manchester, Cheshire, Liverpool, Warrington, Stockport, Leeds, North West England, UK-wide
+- Areas: UK-wide (England, Scotland, Wales), including {', '.join(c['name'] for c in CITIES)}
 
 ## Packages
 ''' + ''.join(f'- [{t["name"]}]({DOMAIN}/{t["slug"]}): {t["desc"]}\n' for t in TRADES) + f'''
@@ -449,7 +525,8 @@ Key facts:
 - [Projects]({DOMAIN}/projects): Interior fit-out projects including Sentric Music (Liverpool), Stockport service centre, Calvin Klein and Fossil shopfits
 - [About]({DOMAIN}/about): Company, accreditations and the DPG Holdings group
 - [Contact]({DOMAIN}/contact): Send a package to price
-- [Tatton Projects](https://www.tatton-projects.co.uk/): Sister company, main contractor for new build homes, developments and commercial fit-out
+- [Areas we cover]({DOMAIN}/areas): UK-wide coverage
+''' + ''.join(f'- [Interior fit-out subcontractor in {c["name"]}]({DOMAIN}/areas/{c["slug"]})\n' for c in CITIES) + f'''- [Tatton Projects](https://www.tatton-projects.co.uk/): Sister company, main contractor for new build homes, developments and commercial fit-out
 '''
 with open(os.path.join(OUT, 'llms.txt'), 'w') as f: f.write(llms)
 print('ok', sorted(os.listdir(OUT)))
