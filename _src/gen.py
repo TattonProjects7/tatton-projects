@@ -107,6 +107,7 @@ TRADES = [
   lede='Frameless and framed glass partitions, glazed meeting rooms and screens, glazed doors and crittall-style screens, installed plumb, sealed and manifested to spec.',
   card='Frameless glass partitions, glazed screens and crittall-style screens.',
   img='ti-glazed-partitions-corridor.jpg', img2='stockport-office-02-boardroom-2.jpg',
+  extra='glazing',
   scope=['Frameless single and double glazed partitions', 'Framed aluminium glazed office screens', 'Glass meeting rooms and boardrooms', 'Glazed and frameless glass doors',
          'Crittall-style steel-look screens', 'Acoustic glazing to specified dB ratings', 'Manifestation and privacy film', 'Integration with partitions and ceilings'],
   systems='Glazing is coordinated with the partition and ceiling packages, so heads, deflection and junctions are designed once rather than fixed on site.',
@@ -226,6 +227,35 @@ QUALITY_HTML = """<section class="sec"><div class="wrap"><p class="kicker reveal
 <div class="reveal" style="--d:240ms"><b>Snagged before you see it</b><span>We snag our own work first, then hand over with the records you need: fire-stopping photos, system details and O&amp;M information.</span></div>
 </div></div></section>"""
 
+
+def _svg(kind):
+    st='stroke="#D6B136" fill="none" stroke-width="2"'
+    glass='fill="rgba(237,235,231,.06)" stroke="#85868A" stroke-width="1"'
+    base=f'<rect x="10" y="20" width="220" height="150" {glass}/>'
+    if kind=='frameless':
+        body=(f'<line x1="10" y1="20" x2="230" y2="20" {st}/><line x1="10" y1="170" x2="230" y2="170" {st}/>'
+              '<line x1="83" y1="22" x2="83" y2="168" stroke="#85868A" stroke-width="1" stroke-dasharray="3 3"/>'
+              '<line x1="156" y1="22" x2="156" y2="168" stroke="#85868A" stroke-width="1" stroke-dasharray="3 3"/>'
+              '<line x1="30" y1="40" x2="60" y2="70" stroke="#EDEBE7" stroke-opacity=".25"/><line x1="100" y1="40" x2="140" y2="80" stroke="#EDEBE7" stroke-opacity=".25"/>')
+    elif kind=='framed':
+        body=(f'<rect x="10" y="20" width="220" height="150" {st}/>'
+              f'<line x1="83" y1="20" x2="83" y2="170" {st}/><line x1="156" y1="20" x2="156" y2="170" {st}/>'
+              f'<rect x="160" y="40" width="66" height="130" stroke="#D6B136" fill="none" stroke-width="1.5"/>'
+              '<line x1="218" y1="100" x2="218" y2="112" stroke="#D6B136" stroke-width="3"/>')
+    else:
+        lines=''.join(f'<line x1="{x}" y1="20" x2="{x}" y2="170" {st}/>' for x in (65,120,175))
+        lines+=''.join(f'<line x1="10" y1="{y}" x2="230" y2="{y}" {st}/>' for y in (70,120))
+        body=f'<rect x="10" y="20" width="220" height="150" stroke="#D6B136" fill="none" stroke-width="3"/>'+lines
+    return f'<svg viewBox="0 0 240 190" role="img" aria-label="{kind} glass partition diagram">{base}{body}<line x1="0" y1="176" x2="240" y2="176" stroke="#2B2C2F" stroke-width="4"/></svg>'
+
+GLAZING_HTML = """<section class="sec alt"><div class="wrap"><p class="kicker reveal">Glazing systems</p><h2 class="reveal">Which glass partition fits the spec?</h2>
+<p class="reveal muted small">Illustrations of the systems we install. Typical performance shown; the final figure always comes from the specified manufacturer system.</p>
+<div class="gsys">
+<div class="reveal">""" + _svg('frameless') + """<h3>Frameless glass</h3><p>Butt-jointed toughened or laminated glass in slim head and floor channels. Clean sightlines for meeting rooms and receptions.</p><ul><li>Single glazed, 10–12mm</li><li>Typically around Rw 35–38 dB</li><li>Frameless or framed glass doors</li></ul></div>
+<div class="reveal" style="--d:90ms">""" + _svg('framed') + """<h3>Framed aluminium</h3><p>Aluminium-framed single or double-glazed screens with integrated doors and blinds options. The workhorse for offices and healthcare.</p><ul><li>Single or double glazed</li><li>Double glazed typically Rw 42–50 dB+</li><li>Fire-rated options available</li></ul></div>
+<div class="reveal" style="--d:180ms">""" + _svg('crittall') + """<h3>Crittall-style screens</h3><p>Slim black steel-look frames with glazing bars, for a warehouse feel in offices, hospitality and high-end residential.</p><ul><li>Steel or aluminium steel-look frames</li><li>Single, double and acoustic glass</li><li>Hinged, pivot and sliding doors</li></ul></div>
+</div></div></section>"""
+
 def gallery_html(t):
     g = t.get('gallery')
     if not g: return ''
@@ -306,7 +336,7 @@ for t in TRADES:
 <div class="terms"><div><b>Supply &amp; fit</b><span>Materials, labour and supervision in one price.</span></div><div><b>Labour only</b><span>You free-issue materials; we supply managed, supervised teams.</span></div></div></div>
 </div></section>
 {gallery_html(t)}
-{ACOUSTIC_HTML if t.get("extra") == "acoustic" else ""}
+{ACOUSTIC_HTML if t.get("extra") == "acoustic" else (GLAZING_HTML if t.get("extra") == "glazing" else "")}
 {QUALITY_HTML}
 <section class="sec slim"><div class="wrap reveal">{ACCRED}</div></section>
 {faq_html(t["faqs"])}
