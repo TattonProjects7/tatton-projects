@@ -1939,3 +1939,8 @@ a.sector:hover h4 { color: var(--gold); }
 .review blockquote { margin: 10px 0 12px; font-size: 16px; line-height: 1.5; }
 .review figcaption { font-size: 13px; opacity: .72; }
 .reviews-more { margin-top: 18px; font-size: 14px; }
+
+/* Tatton Interiors sister card: same card as LBC, in Tatton gold */
+.ti-card { --lbc-yellow: #D6B136; --lbc-black: #0C0C0D; }
+.ti-card .lbc-tape { height: 3px; background: linear-gradient(90deg, #9A7F26, #D6B136 40%, #D6B136 60%, #9A7F26); }
+.ti-logo { height: clamp(46px, 5vw, 62px); width: auto; display: block; margin-bottom: 6px; }
