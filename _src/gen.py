@@ -26,7 +26,7 @@ ORG = {
     "telephone": PHONE_INTL, "address": ADDRESS,
     "geo": {"@type": "GeoCoordinates", "latitude": 53.3889, "longitude": -2.3497},
     "areaServed": AREAS,
-    "knowsAbout": ["Drylining", "Plastering", "Metal stud partitions", "Suspended ceilings", "MF plasterboard ceilings", "Commercial joinery", "Fitted furniture", "Wall panelling",
+    "knowsAbout": ["Drylining", "Plastering", "Metal stud partitions", "Acoustic partitions", "Acoustic walls", "Suspended ceilings", "MF plasterboard ceilings", "Commercial joinery", "Fitted furniture", "Wall panelling",
                    "Fire doorsets", "Internal glazing", "Glass partitions", "Office fit-out", "Cat A fit-out", "Cat B fit-out", "Retail shopfitting"],
     "parentOrganization": {"@type": "Organization", "name": "DPG Holdings"},
     "sameAs": ["https://www.tatton-projects.co.uk/"],
@@ -56,18 +56,20 @@ TRADES = [
         ('What finish standard do you work to?', 'We tape & joint to the finish level in your specification, typically Q3 or Q4 for commercial areas, or hard-coat and skim where a plastered finish is specified.'),
         ('Can you work in occupied buildings?', 'Yes. Much of our fit-out work is in live offices and public buildings, phased around the client with dust control and out-of-hours working where needed.')]),
  dict(slug='partitions', name='Partitions', short='partitions',
-  title='Metal Stud Partition Contractors | Tatton Interiors',
-  desc='Metal stud partition contractors for offices, retail and healthcare: fire-rated, acoustic and high-performance partitions to British Gypsum and Knauf systems. North West & UK.',
-  h1='Metal stud partition contractors',
+  title='Metal Stud & Acoustic Partition Contractors | Tatton Interiors',
+  desc='Metal stud and acoustic partition contractors: acoustic walls built to your Rw rating, fire-rated and high-performance partitions to British Gypsum and Knauf systems. North West & UK.',
+  h1='Metal stud & acoustic partition contractors',
   lede='Fire-rated, acoustic and standard metal stud partitions, set out, built and boarded to the system on your drawings, for office fit-outs, retail, healthcare and hospitality.',
-  card='Fire-rated and acoustic metal stud partitions built to system.',
+  card='Acoustic and fire-rated metal stud walls built to system.',
   img='sentric-11-pods.jpg', img2='ti-metal-stud-partitions-framing.jpg',
-  gallery=[('ti-metal-stud-framing-first-fix.jpg','Metal stud partitions framed out at first fix'), ('office-walkways-06-toilet-framing.jpg','Stud framing for toilet partitions in an occupied office')],
+  gallery=[('ti-metal-stud-framing-first-fix.jpg','Metal stud partitions framed out at first fix'), ('ti-acoustic-partition-pattresses.jpg','Partition with timber pattresses fixed before boarding'), ('office-walkways-06-toilet-framing.jpg','Stud framing for toilet partitions in an occupied office')],
+  extra='acoustic',
   scope=['Metal stud partitions (GypWall, Knauf and Siniat systems)', 'Fire-rated partitions to 30, 60 and 90 minutes', 'Acoustic partitions with insulation and twin-frame build-ups',
          'Head deflection details and fire stopping at junctions', 'Pattresses and noggins for wall-hung fittings', 'Door openings, frames and ironmongery prep',
          'Toilet cubicles and IPS panel systems', 'Acoustic wall panelling and feature walls'],
   systems='Partitions are set out from your drawings, built to the specified system and fire-stopped at the head, so they pass inspection first time.',
-  faqs=[('Do you install fire-rated partitions?', 'Yes. We build fire-rated partitions to the specified manufacturer system, including head deflection details and fire stopping at junctions and penetrations.'),
+  faqs=[('Can you build acoustic walls to a set sound rating?', 'Yes. We build acoustic partitions to the Rw rating in your specification, using the manufacturer system that achieves it: twin or staggered studs, acoustic insulation, double-layer acoustic board, sealed heads and junctions, and flanking details above the ceiling. We can arrange pre-completion sound testing.'),
+        ('Do you install fire-rated partitions?', 'Yes. We build fire-rated partitions to the specified manufacturer system, including head deflection details and fire stopping at junctions and penetrations.'),
         ('Can you set out from drawings?', 'Yes. Our supervisors set out partition lines from your general arrangement and setting-out drawings and raise any clashes before boarding.'),
         ('Do you do partitions as a separate package?', 'Yes: partitions on their own, or combined with drylining, ceilings, joinery and glazing as one interiors package.')]),
  dict(slug='suspended-ceilings', name='Suspended Ceilings', short='ceilings',
@@ -200,6 +202,29 @@ def faq_ld(faqs):
     return {"@context": "https://schema.org", "@type": "FAQPage",
             "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}
 
+
+ACOUSTIC_HTML = """<section class="sec alt"><div class="wrap two">
+<div><p class="kicker reveal">Acoustic walls</p><h2 class="reveal">Built to the sound rating, not just the drawing.</h2>
+<p class="reveal">Meeting rooms, boardrooms, treatment rooms and hotel bedrooms only work if the wall stops the sound. We build acoustic partitions to the Rw rating in your specification, using the tested manufacturer system that achieves it, and we detail the junctions where most walls leak.</p></div>
+<ul class="ticks">
+<li class="reveal">Built to the specified Rw (dB) rating using tested British Gypsum, Knauf and Siniat systems</li>
+<li class="reveal" style="--d:50ms">Twin-frame, staggered and wide-stud builds with acoustic insulation in the cavity</li>
+<li class="reveal" style="--d:100ms">Double-layer acoustic plasterboard with staggered joints</li>
+<li class="reveal" style="--d:150ms">Acoustic sealant at heads, bases and abutments; head deflection details that keep the seal</li>
+<li class="reveal" style="--d:200ms">Flanking control: barriers in ceiling voids and raised floors, sealed service penetrations</li>
+<li class="reveal" style="--d:250ms">Acoustic doorsets and acoustic glazing coordinated with the wall</li>
+<li class="reveal" style="--d:300ms">Acoustic felt and timber slat wall panelling for room acoustics</li>
+<li class="reveal" style="--d:350ms">Pre-completion sound testing arranged where the spec or Approved Document E needs it</li>
+</ul></div></section>"""
+
+QUALITY_HTML = """<section class="sec"><div class="wrap"><p class="kicker reveal">Quality</p><h2 class="reveal">How we make sure it's right first time.</h2>
+<div class="qgrid">
+<div class="reveal"><b>Built to system</b><span>Every wall, ceiling and lining goes in to the manufacturer's tested system and your specification. No substitutions without approval.</span></div>
+<div class="reveal" style="--d:80ms"><b>Line, level &amp; finish</b><span>Set out from your drawings, checked for line and level, and taped and jointed to the finish level specified, Q1 to Q4.</span></div>
+<div class="reveal" style="--d:160ms"><b>Hold points &amp; photos</b><span>Pre-board inspections for fire stopping, insulation, pattresses and services, photographed and recorded before anything is closed up.</span></div>
+<div class="reveal" style="--d:240ms"><b>Snagged before you see it</b><span>We snag our own work first, then hand over with the records you need: fire-stopping photos, system details and O&amp;M information.</span></div>
+</div></div></section>"""
+
 def gallery_html(t):
     g = t.get('gallery')
     if not g: return ''
@@ -227,7 +252,7 @@ home_faqs = [
  ('Are you pre-qualified?', 'Yes. We hold Constructionline Gold and SSIP accreditation, are CITB registered, and our site teams are CSCS carded. We will complete your PQQ or supplier forms.')]
 cards = ''.join(f'''<a class="card reveal" href="/{t["slug"]}" style="--d:{i*80}ms"><div class="card-img"><img src="{im(t["img"])}" alt="{t["name"]} by Tatton Interiors" loading="lazy" width="800" height="600"></div><div class="card-body"><span class="mono num">0{i+1}</span><h3>{t["name"]}</h3><p>{t["card"]}</p><span class="arrow">View package <i>→</i></span></div></a>''' for i, t in enumerate(TRADES))
 proj_strip = ''.join(f'<figure class="pc reveal" style="--d:{i*70}ms"><img src="{im(p["img"])}" alt="{p["t"]}, {p["loc"]}: interior fit-out" loading="lazy" width="800" height="600"><figcaption><strong>{p["t"]}</strong><span>{p["loc"]}{" · " + p["v"] if p["v"] else ""}</span></figcaption></figure>' for i, p in enumerate(PROJECTS[:4]))
-mq = ' <b>/</b> '.join(['Plastering', 'Drylining', 'Metal stud partitions', 'Suspended ceilings', 'MF ceilings', 'Commercial joinery', 'Fitted furniture', 'Wall panelling', 'Glass partitions', 'Internal glazing', 'Ceiling tiles'])
+mq = ' <b>/</b> '.join(['Plastering', 'Drylining', 'Metal stud partitions', 'Acoustic walls', 'Suspended ceilings', 'MF ceilings', 'Commercial joinery', 'Fitted furniture', 'Wall panelling', 'Glass partitions', 'Internal glazing', 'Ceiling tiles'])
 home = head('Drylining, Partitions & Ceilings Subcontractor | Tatton Interiors',
             'Interior fit-out subcontractor for main contractors: drylining, partitions, suspended ceilings, joinery and internal glazing. Supply & fit or labour only. Manchester & UK.',
             '/', 'ti-breakout-mesh-ceiling.jpg',
@@ -280,6 +305,8 @@ for t in TRADES:
 <div class="terms"><div><b>Supply &amp; fit</b><span>Materials, labour and supervision in one price.</span></div><div><b>Labour only</b><span>You free-issue materials; we supply managed, supervised teams.</span></div></div></div>
 </div></section>
 {gallery_html(t)}
+{ACOUSTIC_HTML if t.get("extra") == "acoustic" else ""}
+{QUALITY_HTML}
 <section class="sec slim"><div class="wrap reveal">{ACCRED}</div></section>
 {faq_html(t["faqs"])}
 <section class="sec slim"><div class="wrap reveal"><h2>Other interior packages</h2><ul class="pills">{others}</ul></div></section>
