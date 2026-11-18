@@ -1,4 +1,4 @@
-import json, os, html, datetime
+import json, os, html, datetime, hashlib
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'site')
 os.makedirs(OUT, exist_ok=True)
 DOMAIN = 'https://www.tattoninteriors.co.uk'
@@ -6,6 +6,8 @@ IMG = 'https://www.tatton-projects.co.uk/images/'
 PHONE = '0161 706 3880'; PHONE_INTL = '+441617063880'
 EMAIL = os.environ.get('TI_EMAIL', '').strip()   # set by the owner; omitted from the site if blank
 TODAY = datetime.date.today().isoformat()
+def ver(f):
+    return hashlib.md5(open(os.path.join(OUT, f), 'rb').read()).hexdigest()[:8]
 
 def mail(label=None, subject='Subcontract package - Tatton Interiors'):
     if not EMAIL: return ''
@@ -139,7 +141,7 @@ def head(title, desc, path, img, extra_ld=(), robots='index,follow,max-image-pre
 <meta name="geo.region" content="GB-TRF"><meta name="geo.placename" content="Altrincham, Greater Manchester">
 <link rel="icon" href="https://www.tatton-projects.co.uk/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="https://www.tatton-projects.co.uk/favicon-180.png">
 {FONTS}
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/styles.css?v={ver('styles.css')}">
 {ld(ORG)}
 {''.join(ld(x) for x in extra_ld)}
 </head>
@@ -182,7 +184,7 @@ def footer():
 </div>
 <div class="foot-base mono small"><span>© {datetime.date.today().year} Tatton Interiors is a trading name of Tatton Projects of Cheshire Limited, company no. 17553626, registered in England &amp; Wales. A sister company of Tatton Projects, part of the DPG Holdings group.</span><span>Constructionline Gold · SSIP · CITB · CSCS</span></div>
 </footer>
-<script src="/site.js" defer></script>
+<script src="/site.js?v={ver('site.js')}" defer></script>
 </body></html>'''
 
 def crumbs(items):
