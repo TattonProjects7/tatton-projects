@@ -121,7 +121,17 @@
     },
     {
       "source": "/supply-chain",
-      "destination": "/drylining-ceilings-joinery-subcontractors",
+      "destination": "https://www.tattoninteriors.co.uk/",
+      "permanent": true
+    },
+    {
+      "source": "/drylining-ceilings-joinery-subcontractors",
+      "destination": "https://www.tattoninteriors.co.uk/",
+      "permanent": true
+    },
+    {
+      "source": "/drylining-ceilings-joinery-subcontractors.html",
+      "destination": "https://www.tattoninteriors.co.uk/",
       "permanent": true
     },
     {

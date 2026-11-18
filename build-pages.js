@@ -98,8 +98,6 @@ const clip = (t, n) => {
 };
 
 /* ---------- shared chrome ---------- */
-/* the page for other contractors (services.js, sector "Trade"); it has its own nav tab */
-const TRADE_PAGE = 'drylining-ceilings-joinery-subcontractors';
 const nav = (depth, active) => {
   const up = depth ? '../' : '';
   const on = (k) => (k === active ? ' class="active"' : '');
@@ -111,7 +109,6 @@ const nav = (depth, active) => {
   <div class="nav-links">
     <a href="${up}services.html"${on('services')}>Services</a>
     <a href="${up}work.html"${on('work')}>Work</a>
-    <a href="${up}${TRADE_PAGE}.html"${on('trade')}>Supply chain</a>
     <a href="${up}costs.html">Costs</a>
     <a href="${up}finance.html">Finance</a>
     <a href="${up}blog.html">Insight</a>
@@ -144,6 +141,7 @@ const footer = (depth) => {
       <span class="foot-txt">Follow: <a href="https://www.linkedin.com/company/tatton-projects/" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/tatton.projects/" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@tattonprojects" rel="noopener">YouTube</a> · <a href="https://www.tiktok.com/@tattonprojects" rel="noopener">TikTok</a></span>
       <span class="foot-txt">EstiMate: <a href="https://www.esti-mate.app" rel="noopener">Website</a> · <a href="https://www.youtube.com/@estimate-app" rel="noopener">YouTube</a> · <a href="https://www.linkedin.com/company/esti-mate-app/" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/estimate.app.uk" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@estimate.app" rel="noopener">TikTok</a> · <a href="https://www.google.com/maps?cid=6162024861675261580" rel="noopener">Google</a></span>
       <span class="foot-txt">The Load Bearing Company: <a href="https://www.theloadbearingcompany.co.uk" rel="noopener">Website</a> · <a href="https://www.google.com/maps?cid=1607872291215419791" rel="noopener">Google</a></span>
+      <span class="foot-txt">Tatton Interiors: <a href="https://www.tattoninteriors.co.uk" rel="noopener">Website</a> · <a href="tel:01617063880">0161 706 3880</a></span>
     </div>
     <div class="rise">
       <p class="foot-lbl">More</p>
@@ -152,7 +150,7 @@ const footer = (depth) => {
       <a href="${up}costs.html">What things cost</a>
       <a href="${up}finance.html">Project finance</a>
       <a href="${up}blog.html">Insight</a>
-      <a href="${up}${TRADE_PAGE}.html">Subcontract packages — drylining, ceilings &amp; joinery</a>
+      <a href="https://www.tattoninteriors.co.uk" rel="noopener">Tatton Interiors — drylining, partitions, ceilings, joinery &amp; glazing packages</a>
       <a href="https://www.silopod.co.uk" rel="noopener">SiloPod — acoustic pods</a>
       <a href="https://www.esti-mate.app" rel="noopener">EstiMate — quoting &amp; contracts app</a>
       <a href="https://www.apex-carnivore.com" rel="noopener">APEX — carnivore recipes &amp; training app</a>
@@ -963,8 +961,7 @@ function servicesIndex(all) {
   const url = `${SITE}/services`;
   const groups = [
     ['Commercial', 'Fit-out and refurbishment'],
-    ['Residential', 'Homes and development'],
-    ['Trade', 'For main contractors']
+    ['Residential', 'Homes and development']
   ];
 
   const schema = ldScripts([{
