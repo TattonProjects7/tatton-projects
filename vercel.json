@@ -1,4 +1,8 @@
 {
+  "framework": null,
+  "buildCommand": "echo static site",
+  "installCommand": "echo skip",
+  "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
