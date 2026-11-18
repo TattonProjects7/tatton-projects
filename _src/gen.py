@@ -46,7 +46,7 @@ TRADES = [
   h1='Plastering & drylining contractors',
   lede='Wall linings, independent linings, tape & joint and skim finishes for commercial fit-outs, refurbishments and new build. Priced as a package, delivered by our own supervised teams.',
   card='Wall linings, tape & joint and skim finishes for fit-outs and refurbs.',
-  img='calvin-klein-03-till.jpg', img2='calvin-klein-01-shopfront.jpg',
+  img='ti-drylining-partition-taped.jpg', img2='ti-drylining-tape-joint-boards.jpg',
   scope=['Dot & dab and direct-bond wall linings', 'Independent wall linings (metal stud and I-stud)', 'Shaftwall and stairwell linings',
          'Tape & joint to Q2–Q4 finish ready for decoration', 'Hard-coat and skim plastering, patch & make good',
          'Fire-rated and acoustic linings to manufacturer systems', 'Boarding to bulkheads, risers and boxing-in', 'Making good after M&E first and second fix'],
