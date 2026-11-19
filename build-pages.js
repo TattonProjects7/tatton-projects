@@ -103,7 +103,7 @@ const nav = (depth, active) => {
   const on = (k) => (k === active ? ' class="active"' : '');
   return `<nav id="nav" aria-label="Main navigation">
   <a href="/" class="brand">
-    <img src="${up}images/logo-horizontal-light-type.png" alt="Tatton Projects"
+    <img src="${up}images/logo-horizontal-light-type-330.png" width="330" height="109" alt="Tatton Projects"
          onerror="this.outerHTML='<span>Tatton Projects</span>'">
   </a>
   <div class="nav-links">
@@ -334,9 +334,9 @@ function projectPage(p, i, all) {
   ${p.video ? `<section class="cs-video">
     <figure${p.video.portrait ? ' class="portrait"' : ''}>
       <video src="${esc(p.video.src)}" poster="${p.video.poster ? '../' + esc(p.video.poster) : (p.hero ? '../' + esc(p.hero) : '')}"
-        preload="metadata" muted loop playsinline controls
+        preload="none" muted loop playsinline controls
         aria-label="${esc(p.video.label || p.name + ' walkthrough')}"></video>
-      ${p.video.cap ? `<figcaption><span>${esc(p.video.cap)}</span><img src="../images/logo-horizontal-light-type.png" alt="Tatton Projects" loading="lazy" decoding="async"></figcaption>` : ''}
+      ${p.video.cap ? `<figcaption><span>${esc(p.video.cap)}</span><img src="../images/logo-horizontal-light-type-330.png" width="330" height="109" alt="Tatton Projects" loading="lazy" decoding="async"></figcaption>` : ''}
     </figure>
   </section>
   <style>
@@ -841,7 +841,7 @@ ${film ? NEWBUILD_FILM : ''}
       ${(s.intro || []).map((t, i) => `<p${i === 0 ? ' class="big"' : ''}>${esc(t)}</p>`).join('\n      ')}${s.video ? `
       <figure class="svc-video">
         <video src="${esc(s.video.src)}" poster="${esc(s.video.poster || s.hero)}"
-          preload="metadata" muted loop playsinline controls
+          preload="none" muted loop playsinline controls
           aria-label="${esc(s.video.label || s.short + ' walkthrough')}"></video>
         <figcaption><span>${esc(s.video.cap || '')}</span>${s.video.link ? `<a href="${esc(s.video.link)}">See the full project →</a>` : ''}</figcaption>
       </figure>
