@@ -131,7 +131,7 @@
         '<div class="art-cta">' +
           '<h2>Got a project like this?</h2>' +
           '<p class="lede" style="margin:0 auto 26px">Feasibility, cost plan, or a straight answer on whether a building is worth taking.</p>' +
-          '<a href="index.html#enquire" class="btn btn-solid">Send an enquiry →</a>' +
+          '<a href="/#enquire" class="btn btn-solid">Send an enquiry →</a>' +
         '</div>' +
         (others.length
           ? '<div class="art-next">' + others.map(function (o) {

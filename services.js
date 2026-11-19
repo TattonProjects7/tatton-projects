@@ -758,7 +758,7 @@ const SERVICES = [
     heroCaption: "Hale basement conversion · cinema room, office and lounge",
     card: "videos/basement-conversion-hale.jpg",
     heroFacts: [["Basements from", "£3,000 / sq m"], ["Hale basement", "Walkthrough below"], ["Areas", "Altrincham · Hale · Bowdon"]],
-    video: {"src": "videos/basement-conversion-hale.mp4", "poster": "videos/basement-conversion-hale.jpg", "label": "Basement conversion walkthrough — Hale, Cheshire", "cap": "Hale basement · site walkthrough · 27 s", "link": "work/hale-basement-conversion.html"},
+    video: {"src": "videos/basement-conversion-hale.mp4", "poster": "videos/basement-conversion-hale.jpg", "label": "Basement conversion walkthrough — Hale, Cheshire", "cap": "Hale basement · site walkthrough · 27 s", "link": "/work/hale-basement-conversion"},
     introEyebrow: "Below ground",
     introHeading: "Floor area *without the footprint.*",
     intro: ["On tight plots and protected streets in Altrincham and Hale, going down is often the only way to add real floor area. A basement conversion underpins the existing structure, forms a waterproof envelope and brings in drainage, ventilation, heating and power before the rooms are finished to the standard of the house above.", "Our Hale basement walkthrough shows the finished result: a cinema room, a home office and a lounge beneath an existing property. It is one of several basement projects we have delivered across Altrincham, Hale and Bowdon."],

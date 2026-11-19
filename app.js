@@ -29,7 +29,7 @@
     } else {
       grid.innerHTML = list.map(function (p) {
         return '' +
-          '<a class="proj' + (p.live ? ' live' : '') + '" href="work/' + esc(p.id) + '.html" data-t="' + esc(p.sector) + '">' +
+          '<a class="proj' + (p.live ? ' live' : '') + '" href="/work/' + esc(p.id) + '" data-t="' + esc(p.sector) + '">' +
             '<div class="shot">' +
               (p.card
                 ? '<img src="' + esc(p.card) + '" alt="' + esc(p.name) + '" loading="lazy" onerror="this.remove()">'

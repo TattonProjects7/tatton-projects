@@ -77,19 +77,19 @@ const OFFICE_FILM = filmSection('office', 'An office fit-out', [
   { step: 'The shell', kicker: 'Commercial · Cat B office fit-out', title: 'An empty floor. <em>A finished office.</em>', body: 'Manchester mill shell to boardroom: partitions, services, joinery and finishes delivered in one programme, with the landlord&rsquo;s building kept running around us.' },
   { step: 'The fit-out', kicker: 'The fit-out', title: 'Glass, timber, light &mdash; <em>then the desks.</em>', body: 'Glazed meeting rooms, acoustic rafts, bench desking and a reception that says who you are. Cat A to Cat B, snag-free on the handover date.' },
   { step: 'Handover', kicker: 'Handover', title: 'Monday morning. <em>Staff in.</em>', body: 'O&amp;M file, certificates and warranties on the desk; keys with the tenant; a landlord who calls us for the next floor.',
-    actions: [{ href: 'index.html#enquire', label: 'Talk about a fit-out &rarr;' }, { href: 'office-fit-out-manchester.html', label: 'Office fit-out', ghost: true }] },
+    actions: [{ href: '/#enquire', label: 'Talk about a fit-out &rarr;' }, { href: '/office-fit-out-manchester', label: 'Office fit-out', ghost: true }] },
 ]);
 const SERVICES_FILM = filmSection('newbuild', 'What we build', [
   { step: 'What we do', kicker: 'Services · Manchester &amp; Cheshire · UK-wide fit-out', title: 'Structure first. <em>Finish last.</em>', body: 'New build homes, major domestic works, housing developments and commercial fit-out: four things, one site manager, from the first dig to the keys.' },
   { step: 'How we work', kicker: 'How we work', title: 'Priced properly. <em>Programmed honestly.</em>', body: 'A fixed-price quote with the working shown, a programme you can see move, and a site that is tidy at four o&rsquo;clock.' },
   { step: 'Handover', kicker: 'Handover', title: 'Keys in hand, <em>paperwork done.</em>', body: 'Certificates, warranties and the O&amp;M file on the day, and a client who would have us back for the next one.',
-    actions: [{ href: 'index.html#enquire', label: 'Talk to us about a project &rarr;' }, { href: 'work.html', label: 'See the work', ghost: true }] },
+    actions: [{ href: '/#enquire', label: 'Talk to us about a project &rarr;' }, { href: '/work', label: 'See the work', ghost: true }] },
 ]);
 const NEWBUILD_FILM = filmSection('newbuild', 'A new build home', [
   { step: 'The structure', kicker: 'New build · Cheshire', title: 'From the first course <em>of brick.</em>', body: 'A one-off home on a private plot: groundworks, structure, roof and glazing under one site manager, from the first dig to the day the keys turn.' },
   { step: 'The build', kicker: 'The build', title: 'Structure, services &mdash; <em>then the finish.</em>', body: 'Blockwork and steel, first fix, plaster, second-fix joinery &mdash; a programme you can see, with a site that is tidy at four o&rsquo;clock.' },
   { step: 'Handover', kicker: 'Handover', title: 'The front door, <em>on the day we said.</em>', body: 'Warranties, certificates and the O&amp;M file in hand &mdash; and a home that looks like the drawings.',
-    actions: [{ href: 'index.html#enquire', label: 'Discuss a new build &rarr;' }, { href: 'work.html', label: 'See the work', ghost: true }] },
+    actions: [{ href: '/#enquire', label: 'Discuss a new build &rarr;' }, { href: '/work', label: 'See the work', ghost: true }] },
 ]);
 
 const clip = (t, n) => {
@@ -102,17 +102,17 @@ const nav = (depth, active) => {
   const up = depth ? '../' : '';
   const on = (k) => (k === active ? ' class="active"' : '');
   return `<nav id="nav" aria-label="Main navigation">
-  <a href="${up}index.html" class="brand">
+  <a href="/" class="brand">
     <img src="${up}images/logo-horizontal-light-type.png" alt="Tatton Projects"
          onerror="this.outerHTML='<span>Tatton Projects</span>'">
   </a>
   <div class="nav-links">
-    <a href="${up}services.html"${on('services')}>Services</a>
-    <a href="${up}work.html"${on('work')}>Work</a>
-    <a href="${up}costs.html">Costs</a>
-    <a href="${up}finance.html">Finance</a>
-    <a href="${up}blog.html">Insight</a>
-    <a href="${up}index.html#land">Land</a>
+    <a href="/services"${on('services')}>Services</a>
+    <a href="/work"${on('work')}>Work</a>
+    <a href="/costs">Costs</a>
+    <a href="/finance">Finance</a>
+    <a href="/blog">Insight</a>
+    <a href="/#land">Land</a>
     <a href="tel:01617062907" class="nav-call">0161 706 2907</a>
   </div>
 </nav>`;
@@ -126,7 +126,7 @@ const footer = (depth) => {
       <h3>Let's talk about the site.</h3>
       <div class="cta-row" style="margin-top:26px">
         <a href="tel:01617062907" class="btn btn-solid">Call 0161 706 2907</a>
-        <a href="${up}index.html#enquire" class="btn btn-ghost">Send an enquiry</a>
+        <a href="/#enquire" class="btn btn-ghost">Send an enquiry</a>
       </div>
     </div>
     <div class="rise">
@@ -145,38 +145,38 @@ const footer = (depth) => {
     </div>
     <div class="rise">
       <p class="foot-lbl">More</p>
-      <a href="${up}services.html">Construction services</a>
-      <a href="${up}work.html">Selected work</a>
-      <a href="${up}costs.html">What things cost</a>
-      <a href="${up}finance.html">Project finance</a>
-      <a href="${up}blog.html">Insight</a>
+      <a href="/services">Construction services</a>
+      <a href="/work">Selected work</a>
+      <a href="/costs">What things cost</a>
+      <a href="/finance">Project finance</a>
+      <a href="/blog">Insight</a>
       <a href="https://www.tattoninteriors.co.uk" rel="noopener">Tatton Interiors — drylining, partitions, ceilings, joinery &amp; glazing packages</a>
       <a href="https://www.silopod.co.uk" rel="noopener">SiloPod — acoustic pods</a>
       <a href="https://www.esti-mate.app" rel="noopener">EstiMate — quoting &amp; contracts app</a>
       <a href="https://www.apex-carnivore.com" rel="noopener">APEX — carnivore recipes &amp; training app</a>
       <a href="https://www.theloadbearingcompany.co.uk" rel="noopener">The Load Bearing Company — structural alterations &amp; steel</a>
-      <a href="${up}builders-altrincham.html">Builders in Altrincham</a>
-      <a href="${up}builders-manchester.html">Builders in Manchester</a>
-      <a href="${up}home-builders-altrincham.html">Home builders Altrincham</a>
-      <a href="${up}home-builders-manchester.html">Home builders Manchester</a>
-      <a href="${up}extension-builders-altrincham.html">Extension builders Altrincham</a>
-      <a href="${up}extension-builders-manchester.html">Extension builders Manchester</a>
-      <a href="${up}property-refurbishment-altrincham.html">Property refurbishment Altrincham</a>
-      <a href="${up}property-refurbishment-manchester.html">Property refurbishment Manchester</a>
-      <a href="${up}builders-wilmslow.html">Builders in Wilmslow</a>
-      <a href="${up}builders-alderley-edge.html">Builders in Alderley Edge</a>
-      <a href="${up}builders-sale.html">Builders in Sale</a>
-      <a href="${up}builders-bowdon.html">Builders in Bowdon</a>
-      <a href="${up}builders-knutsford.html">Builders in Knutsford</a>
-      <a href="${up}builders-mobberley.html">Builders in Mobberley</a>
-      <a href="${up}builders-hale.html">Builders in Hale</a>
-      <a href="${up}builders-urmston.html">Builders in Urmston</a>
-      <a href="${up}builders-didsbury.html">Builders in Didsbury</a>
-      <a href="${up}house-renovations-altrincham.html">Kitchen refurbishment &amp; renovations Altrincham</a>
-      <a href="${up}office-fit-out-altrincham.html">Commercial refurbishment specialists Manchester</a>
-      <a href="${up}office-fit-out-stockport.html">Office fit-out Stockport</a>
-      <a href="${up}fit-out-contractors-cheshire.html">Fit-out &amp; shopfitters Cheshire</a>
-      <a href="${up}industrial-units-warehouses.html">Industrial units &amp; warehouses</a>
+      <a href="/builders-altrincham">Builders in Altrincham</a>
+      <a href="/builders-manchester">Builders in Manchester</a>
+      <a href="/home-builders-altrincham">Home builders Altrincham</a>
+      <a href="/home-builders-manchester">Home builders Manchester</a>
+      <a href="/extension-builders-altrincham">Extension builders Altrincham</a>
+      <a href="/extension-builders-manchester">Extension builders Manchester</a>
+      <a href="/property-refurbishment-altrincham">Property refurbishment Altrincham</a>
+      <a href="/property-refurbishment-manchester">Property refurbishment Manchester</a>
+      <a href="/builders-wilmslow">Builders in Wilmslow</a>
+      <a href="/builders-alderley-edge">Builders in Alderley Edge</a>
+      <a href="/builders-sale">Builders in Sale</a>
+      <a href="/builders-bowdon">Builders in Bowdon</a>
+      <a href="/builders-knutsford">Builders in Knutsford</a>
+      <a href="/builders-mobberley">Builders in Mobberley</a>
+      <a href="/builders-hale">Builders in Hale</a>
+      <a href="/builders-urmston">Builders in Urmston</a>
+      <a href="/builders-didsbury">Builders in Didsbury</a>
+      <a href="/house-renovations-altrincham">Kitchen refurbishment &amp; renovations Altrincham</a>
+      <a href="/office-fit-out-altrincham">Commercial refurbishment specialists Manchester</a>
+      <a href="/office-fit-out-stockport">Office fit-out Stockport</a>
+      <a href="/fit-out-contractors-cheshire">Fit-out &amp; shopfitters Cheshire</a>
+      <a href="/industrial-units-warehouses">Industrial units &amp; warehouses</a>
     </div>
   </div>
   <div class="foot-btm">
@@ -309,8 +309,8 @@ function projectPage(p, i, all) {
 <article>
 
   <div class="crumb">
-    <a href="../index.html">Home</a> <span>/</span>
-    <a href="../work.html">Work</a> <span>/</span>
+    <a href="/">Home</a> <span>/</span>
+    <a href="/work">Work</a> <span>/</span>
     <b>${esc(p.name)}</b>
   </div>
 
@@ -392,7 +392,7 @@ function projectPage(p, i, all) {
     <h2 style="font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.6vw,46px);line-height:1.08;margin-bottom:16px">Got something <em style="font-style:italic;color:var(--gold)">similar?</em></h2>
     <p class="lede" style="margin:0 auto 28px">Send us the floor, the plot or the drawing. You'll get a written cost plan from the person who'd run the job.</p>
     <div class="cta-row" style="justify-content:center">
-      <a href="../index.html#enquire" class="btn btn-solid">Start a conversation →</a>
+      <a href="/#enquire" class="btn btn-solid">Start a conversation →</a>
       <a href="tel:01617062907" class="btn btn-ghost">0161 706 2907</a>
     </div>
   </section>
@@ -400,7 +400,7 @@ function projectPage(p, i, all) {
 </article>
 
 <div class="cs-next">
-  ${others.map((o) => `<a href="${esc(o.id)}.html">
+  ${others.map((o) => `<a href="/work/${esc(o.id)}">
     ${o.value ? `<div class="v">${esc(o.value)}</div>` : ''}
     <h4>${esc(o.name)}</h4>
     <p class="loc">${esc(o.location)}</p>
@@ -461,7 +461,7 @@ function workIndex(all) {
   }].map((d) => `<script type="application/ld+json">\n${JSON.stringify(d, null, 2)}\n</script>`).join('\n');
 
   const cards = all.map((p) => `
-    <a class="proj${p.live ? ' live' : ''}" href="work/${esc(p.id)}.html" data-t="${esc(p.sector)}">
+    <a class="proj${p.live ? ' live' : ''}" href="/work/${esc(p.id)}" data-t="${esc(p.sector)}">
       <div class="shot">
         ${p.card
           ? `<img src="${esc(p.card)}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`
@@ -494,7 +494,7 @@ function workIndex(all) {
 <header class="page-head">
   <div class="hero-inner">
     <div class="crumb" style="margin-bottom:20px">
-      <a href="index.html">Home</a> <span>/</span> <b>Work</b>
+      <a href="/">Home</a> <span>/</span> <b>Work</b>
     </div>
     <p class="eyebrow ln"><span style="animation-delay:.3s">Selected work</span></p>
     <h1>
@@ -668,8 +668,8 @@ function blogPostPage(p, all) {
 
 <article class="art">
   <div class="crumb" style="margin-bottom:26px">
-    <a href="../index.html">Home</a> <span>/</span>
-    <a href="../blog.html">Insight</a> <span>/</span>
+    <a href="/">Home</a> <span>/</span>
+    <a href="/blog">Insight</a> <span>/</span>
     <b>${esc(p.title)}</b>
   </div>
 
@@ -694,13 +694,13 @@ function blogPostPage(p, all) {
     <h2>Got a project like this?</h2>
     <p class="lede" style="margin:0 auto 26px">Feasibility, cost plan, or a straight answer on whether a building is worth taking.</p>
     <div class="cta-row" style="justify-content:center">
-      <a href="../index.html#enquire" class="btn btn-solid">Send an enquiry →</a>
+      <a href="/#enquire" class="btn btn-solid">Send an enquiry →</a>
       <a href="tel:01617062907" class="btn btn-ghost">0161 706 2907</a>
     </div>
   </div>
 
   ${others.length ? `<div class="art-next">
-    ${others.map((o) => `<a href="${esc(o.slug)}.html" style="display:block;color:inherit;text-decoration:none;padding:30px;background:var(--ink)">
+    ${others.map((o) => `<a href="/blog/${esc(o.slug)}" style="display:block;color:inherit;text-decoration:none;padding:30px;background:var(--ink)">
       <span class="cat">${esc(o.category || 'Note')}</span>
       <h4 style="margin-top:10px">${esc(o.title)}</h4>
       <p class="loc">${esc(o.date)}</p>
@@ -741,7 +741,7 @@ const ldScripts = (docs) => docs
   .map((d) => `<script type="application/ld+json">\n${JSON.stringify(d, null, 2)}\n</script>`)
   .join('\n');
 
-const projectCard = (p) => `<a class="proj" href="work/${esc(p.id)}.html">
+const projectCard = (p) => `<a class="proj" href="/work/${esc(p.id)}">
       <div class="shot">
         ${p.card
           ? `<img src="${esc(p.card)}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`
@@ -761,7 +761,7 @@ const projectCard = (p) => `<a class="proj" href="work/${esc(p.id)}.html">
     </a>`;
 
 const callButtons = (label, center, href) => `<div class="cta-row"${center ? ' style="justify-content:center"' : ''}>
-        <a href="${esc(href || 'index.html#enquire')}" class="btn btn-solid">${esc(label)}</a>
+        <a href="${esc(href || '/#enquire')}" class="btn btn-solid">${esc(label)}</a>
         <a href="tel:01617062907" class="btn btn-ghost">0161 706 2907</a>
       </div>`;
 
@@ -812,8 +812,8 @@ function servicePage(s, all) {
   <div class="svc-hero-in">
     <div class="svc-copy">
       <div class="crumb">
-        <a href="index.html">Home</a> <span>/</span>
-        <a href="services.html">Services</a> <span>/</span>
+        <a href="/">Home</a> <span>/</span>
+        <a href="/services">Services</a> <span>/</span>
         <b>${esc(s.short)}</b>
       </div>
       <p class="eyebrow">${esc(s.eyebrow)}</p>
@@ -857,7 +857,7 @@ ${film ? NEWBUILD_FILM : ''}
       <ul class="facts">
         ${(s.facts || []).map(([k, v]) => `<li><span>${esc(k)}</span> <b>${esc(v)}</b></li>`).join('\n        ')}
       </ul>
-      ${s.factsNote ? `<p class="svc-note">${esc(s.factsNote)} <a href="costs.html">Full cost guide →</a></p>` : ''}
+      ${s.factsNote ? `<p class="svc-note">${esc(s.factsNote)} <a href="/costs">Full cost guide →</a></p>` : ''}
     </aside>
   </div>
 </section>
@@ -891,7 +891,7 @@ ${work.length ? `<section>
       <h2 class="svc-h2">Projects like this, <em>delivered.</em></h2>
       ${s.projectsNote ? `<p class="svc-note">${esc(s.projectsNote)}</p>` : ''}
     </div>
-    <a class="svc-more" href="work.html">All work →</a>
+    <a class="svc-more" href="/work">All work →</a>
   </div>
   <div class="projects">
     ${work.map(projectCard).join('\n    ')}
@@ -917,7 +917,7 @@ ${faqs.length ? `<section class="faq">
     <h2>Other <em>services.</em></h2>
   </div>
   <div class="sectors">
-    ${others.map((o) => `<a class="sector" href="${esc(o.id)}.html">
+    ${others.map((o) => `<a class="sector" href="/${esc(o.id)}">
       <span class="k">${esc(o.sector)}</span>
       <h4>${esc(o.short)}</h4>
       <p>${esc(o.summary)}</p>
@@ -996,7 +996,7 @@ function servicesIndex(all) {
 <header class="page-head">
   <div class="hero-inner">
     <div class="crumb" style="margin-bottom:20px">
-      <a href="index.html">Home</a> <span>/</span> <b>Services</b>
+      <a href="/">Home</a> <span>/</span> <b>Services</b>
     </div>
     <p class="eyebrow ln"><span style="animation-delay:.3s">Construction · Fit-out · Residential</span></p>
     <h1><span class="ln"><span style="animation-delay:.45s">What we <em>build.</em></span></span></h1>
@@ -1009,7 +1009,7 @@ ${SERVICES_FILM}
   ${groups.map(([sector, label]) => `<div class="svc-group">
     <p class="eyebrow">${esc(label)}</p>
     <div class="svc-list">
-      ${all.filter((s) => s.sector === sector).map((s) => `<a class="proj" href="${esc(s.id)}.html">
+      ${all.filter((s) => s.sector === sector).map((s) => `<a class="proj" href="/${esc(s.id)}">
         <div class="shot">
           <img src="${esc(s.card || s.hero)}" alt="${esc(s.short)}" loading="lazy" onerror="this.remove()">
         </div>
