@@ -323,7 +323,7 @@ Before you buy a plot or commission drawings, send us the address and what you'd
   {
     slug: "kitchen-extension-hale",
     title: "Kitchen extension in Hale: will it need planning permission, and what does it involve?",
-    seoTitle: "Kitchen extension Hale: planning, conservation areas and cost",
+    seoTitle: "Kitchen extension Hale: planning, conservation and cost",
     summary: "Kitchen extensions in Hale: what permitted development allows, what changes in the Hale Station, South Hale and Ashley Heath conservation areas, side returns, glazing and cost.",
     date: "2026-11-16",
     author: "Dave Groom",
@@ -469,7 +469,7 @@ Measure the head height in the loft if you can, then send us the address and som
 ## Sources
 
 - [The Town and Country Planning (General Permitted Development) (England) Order 2015, Schedule 2, Part 1, Class B](https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1), legislation.gov.uk
-- [Loft conversion: planning permission](https://www.planningportal.co.uk/permission/common-projects/loft-conversion/planning-permission), Planning Portal
+- [Loft conversion: planning permission](https://www.planningportal.co.uk/permission/common-projects/loft-conversion/planning-permission/), Planning Portal
 - [Conservation areas](https://www.trafford.gov.uk/planning-and-building-control/heritage-and-conservation/conservation-areas), Trafford Council
 - [Article 4 Directions: heritage](https://www.trafford.gov.uk/planning-and-building-control/planning-support-and-information/article-4-directions/article-4-directions-heritage), Trafford Council`
   },
@@ -545,7 +545,7 @@ Work out which route you're on, then send us the drawings, or the address and a 
 - [The Town and Country Planning (General Permitted Development) (England) Order 2015, Schedule 2, Part 1, Class A](https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1), legislation.gov.uk
 - [Permitted development rights for householders: technical guidance](https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance), GOV.UK
 - [Article 4 Directions: heritage](https://www.trafford.gov.uk/planning-and-building-control/planning-support-and-information/article-4-directions/article-4-directions-heritage), Trafford Council
-- [Extensions: planning permission](https://www.planningportal.co.uk/permission/common-projects/extensions/planning-permission), Planning Portal`
+- [Extensions: planning permission](https://www.planningportal.co.uk/permission/common-projects/extensions/planning-permission/), Planning Portal`
   },
 
   {
@@ -925,7 +925,7 @@ Send the floor plan or the address, and what the space needs to do. You'll get a
   {
     slug: "kitchen-refurbishment-altrincham",
     title: "Kitchen refurbishment in Altrincham: when it's a builder's job, what it involves and how it's priced",
-    seoTitle: "Kitchen refurbishment Altrincham, Hale and Bowdon (2026 guide)",
+    seoTitle: "Kitchen refurbishment Altrincham, Hale and Bowdon: a guide",
     summary: "Refurbishing or remodelling a kitchen in Altrincham, Hale or Bowdon: when walls, services or an extension come in, the consents, what moves the cost and how to price it.",
     date: "2026-11-16",
     author: "Dave Groom",

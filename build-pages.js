@@ -266,7 +266,7 @@ function projectPage(p, i, all) {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: `${p.name} — ${p.type}${p.location ? ', ' + p.location : ''}`,
-    description: plain(p.blurb),
+    description: plain(p.blurb) + (p.attribution ? ' ' + plain(p.attribution) : ''),
     articleBody: plain(p.overview),
     datePublished: (p.year && /^\d{4}$/.test(p.year)) ? `${p.year}-01-01` : '2026-01-01',
     author: { '@type': 'Person', name: 'Dave Groom' },
@@ -448,7 +448,7 @@ function workIndex(all) {
     hasPart: all.map((p) => ({
       '@type': 'Article',
       headline: p.name,
-      description: plain(p.blurb),
+      description: plain(p.blurb) + (p.attribution ? ' ' + plain(p.attribution) : ''),
       url: `${SITE}/work/${p.id}`
     }))
   }, {
@@ -1092,7 +1092,7 @@ try {
     });
     out.push('## Projects', '');
     PROJECTS.forEach((p) => {
-      out.push(`### ${strip(p.name)}${p.location ? ' — ' + strip(p.location) : ''}${p.value ? ' (' + strip(p.value) + ')' : ''}`, `URL: ${SITE}/work/${p.id}`, strip(p.blurb), '');
+      out.push(`### ${strip(p.name)}${p.location ? ' — ' + strip(p.location) : ''}${p.value ? ' (' + strip(p.value) + ')' : ''}`, `URL: ${SITE}/work/${p.id}`, strip(p.blurb) + (p.attribution ? ' ' + strip(p.attribution) : ''), '');
       if ((p.scope || []).length) out.push('Scope: ' + p.scope.map(strip).join('; '), '');
     });
     out.push('## Articles', '');
