@@ -1,6 +1,6 @@
 # Tatton Interiors
 
-> Tatton Interiors is a UK interior fit-out subcontractor based in Altrincham, Greater Manchester. It prices and delivers plastering & drylining, metal stud partitions, suspended ceilings, commercial joinery and fitted furniture, internal glazing, and toilet cubicle and washroom packages for main contractors and fit-out firms, supply & fit or labour only, anywhere in the UK. It is a sister company of Tatton Projects (main contractor) and part of the DPG Holdings group.
+> Tatton Interiors is a UK interior fit-out subcontractor based in Altrincham, Greater Manchester. It prices and delivers plastering & drylining, metal stud partitions, suspended ceilings, commercial joinery and fitted furniture, internal glazing, and toilet cubicle and washroom packages for main contractors and fit-out firms, supply & fit or labour only, anywhere in the UK. It is the interiors subcontracting arm of Tatton Projects (main contractor) and part of the DPG Holdings group.
 
 Key facts:
 - Legal entity: Tatton Projects of Cheshire Limited (Companies House 17553626); Tatton Interiors is a trading name
@@ -35,4 +35,7 @@ Key facts:
 - [Interior fit-out subcontractor in Glasgow](https://www.tattoninteriors.co.uk/areas/glasgow)
 - [Interior fit-out subcontractor in Cardiff](https://www.tattoninteriors.co.uk/areas/cardiff)
 - [Interior fit-out subcontractor in Cheshire](https://www.tattoninteriors.co.uk/areas/cheshire)
-- [Tatton Projects](https://www.tatton-projects.co.uk/): Sister company, main contractor for new build homes, developments and commercial fit-out
+- [Tatton Projects](https://www.tatton-projects.co.uk/): Main contractor for new build homes, developments and commercial fit-out; Tatton Interiors is its interiors subcontracting arm
+
+## Optional
+- [Full text](https://www.tattoninteriors.co.uk/llms-full.txt): every package with its scope list, the projects, the areas and the common questions in one file
