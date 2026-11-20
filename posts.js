@@ -1106,7 +1106,7 @@ Water tanks, boilers and chimney breasts all have to go somewhere too. None of t
 
 **Rear dormer.** A flat-roofed box built out of the back slope. It is the standard Altrincham loft because it turns the sloping ceiling into a full-height room, usually with space for a bedroom and an en suite. A full-width dormer is the most space; a smaller one keeps more of the roof.
 
-**Hip-to-gable.** For semi-detached and end-terrace houses with a hipped roof, the sloping side is built up into a vertical gable, then a rear dormer goes on as well. This is what makes a lot of the 1930s semis in Timperley, Hale and Sale work, because the hip takes most of the usable space away.
+**Hip-to-gable.** For semi-detached and end-terrace houses with a hipped roof, the sloping side is built up into a vertical gable, then a rear dormer goes on as well. This is what makes a lot of the 1930s semis in Timperley, Hale and [Sale](/builders-sale) work, because the hip takes most of the usable space away.
 
 Mansards, which change the whole roof shape, are rarer here and nearly always need planning.
 
@@ -1518,7 +1518,7 @@ Here is how it works in practice. This is a builder's summary, not legal advice.
 
 ## First: which council are you in?
 
-- **Altrincham, Hale, Bowdon, Timperley and Sale** — Trafford Council
+- **Altrincham, Hale, Bowdon, Timperley and [Sale](/builders-sale)** — Trafford Council
 - **Wilmslow, Knutsford, Alderley Edge, Prestbury and Macclesfield** — Cheshire East Council
 - **Didsbury and Chorlton** — Manchester City Council
 - **Stockport, Bramhall and Cheadle** — Stockport Council
@@ -2022,7 +2022,7 @@ Tell us at the start that you'll be living in, along with who's at home, any pet
     readTime: "4 min",
     image: "images/wilmslow-01-before.jpg",
     featured: false,
-    body: `Between the wars, the suburbs around Manchester grew fast, and a lot of the family houses in places like Sale, Altrincham, Stockport and Wilmslow date from then. They're good houses to extend: decent plots, sensible room sizes and solid brick. They also have a few habits worth knowing about before you open one up.
+    body: `Between the wars, the suburbs around Manchester grew fast, and a lot of the family houses in places like [Sale](/builders-sale), Altrincham, Stockport and Wilmslow date from then. They're good houses to extend: decent plots, sensible room sizes and solid brick. They also have a few habits worth knowing about before you open one up.
 
 ## How they were built
 

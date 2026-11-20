@@ -801,6 +801,14 @@ function servicePage(s, all) {
       '@type': 'Question', name: q,
       acceptedAnswer: { '@type': 'Answer', text: a }
     }))
+  }] : []).concat(s.updated ? [{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${url}#webpage`,
+    url,
+    name: s.title,
+    about: { '@id': `${url}#service` },
+    dateModified: s.updated
   }] : []));
 
   const film = s.id === 'new-build-homes-cheshire';
@@ -818,7 +826,8 @@ function servicePage(s, all) {
       </div>
       <p class="eyebrow">${esc(s.eyebrow)}</p>
       <h1>${gold(s.h1)}</h1>
-      <p class="lede">${esc(s.lede)}</p>
+      <p class="lede">${esc(s.lede)}</p>${s.updated ? `
+      <p class="svc-note svc-updated">Updated <time datetime="${esc(s.updated)}">${niceDate(s.updated)}</time></p>` : ''}
       ${callButtons(s.ctaButton, false, s.ctaHref)}
       <div class="hero-meta">
         ${(s.heroFacts || []).map(([k, v]) => `<span>${esc(k)} <b>${esc(v)}</b></span>`).join('\n        ')}
