@@ -4281,7 +4281,7 @@ If you have a floor coming vacant, send us the floor plan, the EPC and some phot
     readTime: "7 min",
     image: "",
     featured: false,
-    body: `A care home refurbishment with residents in is run wing by wing or room by room, behind sealed screens, with noisy work kept to agreed windows and each phase handed back ready to use. The home decides who moves and when. Infection control and the fire strategy stay live throughout, and the programme follows the home's routine.
+    body: `A [care home refurbishment](/healthcare-fit-out) with residents in is run wing by wing or room by room, behind sealed screens, with noisy work kept to agreed windows and each phase handed back ready to use. The home decides who moves and when. Infection control and the fire strategy stay live throughout, and the programme follows the home's routine.
 
 Patients don't stop arriving because the builders are in. A GP surgery, a dental practice or a clinic still has a full appointment book, and a care home still has residents living in the rooms either side of the work. The job has to fit around them.
 
@@ -4353,7 +4353,7 @@ It has to be in the budget from the first appraisal, not added later as a variat
 
 **Do residents have to move out?** Not usually. A refurbishment can be phased so residents stay, and the home decides whether anyone moves room for a phase. We plan the sequence around that decision.
 
-**What's the difference between a care home fit-out and a refurbishment?** A fit-out usually means fitting out a new or converted building before residents arrive. A refurbishment is work to a home that is already open, which is where phasing, infection control and the fire strategy take over the programme.
+**What's the difference between a care home fit-out and a refurbishment?** A fit-out usually means fitting out a new or converted building before residents arrive. A refurbishment is work to a home that is already open, which is where phasing, infection control and the fire strategy take over the programme. Our [care home fit out](/healthcare-fit-out) page covers both.
 
 **How is infection risk kept down?** Sealed work zones, negative pressure and HEPA extraction where needed, dedicated routes and cleaning regimes agreed with the home before work starts. The home's infection prevention and control lead should see the method and be able to walk the screen line at any time.
 
@@ -5053,7 +5053,7 @@ Positions came back online in batches — powered, cabled, screened and tested b
 
 We have done the same in hotels that kept selling rooms, in care homes with residents in the rooms next door, and in retail units inside malls that traded throughout.
 
-> A care home is the hardest version of this. Residents are elderly, often frail, frequently unsettled by change — and they live there. Everything is phased, everything is sealed, and noise is confined to windows in the day when people are up.
+> A [care home](/healthcare-fit-out) is the hardest version of this. Residents are elderly, often frail, frequently unsettled by change — and they live there. Everything is phased, everything is sealed, and noise is confined to windows in the day when people are up.
 
 ## What to ask a contractor
 
