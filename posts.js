@@ -827,7 +827,7 @@ Joinery that does need replacing should be made to match, not bought off a shelf
 
 ## Should you go down instead of out?
 
-When the plot is tight or the street scene is protected, a basement can add space without changing the front of the house. Our Hale basement conversion turned a cellar into a cinema room, a home office and a lounge. [Basement conversions in Hale and Bowdon](https://www.tatton-projects.co.uk/blog/basement-conversion-hale-bowdon) covers what's involved.
+When the plot is tight or the street scene is protected, a basement can add space without changing the front of the house. Our Hale [basement conversion](/basement-conversions-altrincham) turned a cellar into a cinema room, a home office and a lounge. [Basement conversions in Hale and Bowdon](https://www.tatton-projects.co.uk/blog/basement-conversion-hale-bowdon) covers what's involved.
 
 ## What does a whole-house refurbishment in Bowdon cost?
 
@@ -1589,7 +1589,7 @@ Per square metre of finished floor area, excluding VAT, land, professional fees 
 - **High specification — £2,600 to £3,800 per sq m.** Architect-led, structural glazing, bespoke joinery, underfloor heating throughout, air source heat pump or MVHR, landscaped grounds.
 - **Exceptional — £3,800 to £5,500+ per sq m.** Basement, pool or spa, plant room, lift, gated approach, full home automation. The £2m+ house.
 
-A basement is priced on its own, at **£3,000 to £5,000 per sq m**. Excavation, retaining walls and waterproofing make it the most expensive floor of any house by a long way.
+A [basement](/basement-conversions-altrincham) is priced on its own, at **£3,000 to £5,000 per sq m**. Excavation, retaining walls and waterproofing make it the most expensive floor of any house by a long way.
 
 ## A worked example
 
@@ -3008,7 +3008,7 @@ Where a project sits in that range depends on the depth, the water, how much of 
 
 Anyone who gives you a single figure for a basement before seeing the site is guessing. The full set of ranges is on our [cost guide](https://www.tatton-projects.co.uk/costs).
 
-If you're thinking about a basement in Hale, Bowdon, Altrincham or nearby, send us the address, any drawings you have, and photos of the existing cellar if there is one. We'll tell you whether it's realistic, and what needs investigating before anyone can give you a proper number. More on our work locally is on our [extension builders in Hale](https://www.tatton-projects.co.uk/extension-builders-hale) page.`
+If you're thinking about a [basement conversion in Altrincham](/basement-conversions-altrincham), Hale, Bowdon or nearby, send us the address, any drawings you have, and photos of the existing cellar if there is one. We'll tell you whether it's realistic, and what needs investigating before anyone can give you a proper number. More on our work locally is on our [extension builders in Hale](https://www.tatton-projects.co.uk/extension-builders-hale) page.`
   },
 
   {
