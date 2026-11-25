@@ -966,7 +966,7 @@ None of these stop a job. They are the reason a sensible budget carries a contin
 
 ## Do you need planning permission or Building Control?
 
-Internal work to a house rarely needs planning permission. The catch is location. Bowdon, The Downs and parts of Hale are conservation areas, and a listed building needs listed building consent from Trafford Council for most internal work, kitchens included.
+Internal work to a house rarely needs planning permission. The catch is location. Bowdon, The Downs and parts of Hale are conservation areas (more on our [builders in Bowdon](/builders-bowdon) page), and a listed building needs listed building consent from Trafford Council for most internal work, kitchens included.
 
 Building Regulations apply more often. Removing a load-bearing wall needs approval. New electrical circuits, such as a cooker or induction hob supply, are notifiable work, and any change to the gas supply has to be made by a Gas Safe registered engineer. If an extension is involved, it needs Building Control in any case.
 
@@ -1261,7 +1261,7 @@ See the work: the [Hale basement](/work/hale-basement-conversion), the [Wilmslow
 - **Who will be on site every day?** The person who priced it, a site manager, or a subcontractor you haven't met?
 - **What's excluded?** Kitchens, glazing, electrics, decoration, skips and Building Control fees are the usual gaps between two "similar" prices.
 - **Provisional sums.** How much of the price is a guess, and who carries the risk if it's wrong?
-- **Trafford Council and party walls.** Altrincham, Hale and Bowdon fall under Trafford, and Bowdon and parts of Hale are conservation areas. Ask who handles planning conditions, Building Control and any party wall notices.
+- **Trafford Council and party walls.** Altrincham, Hale and Bowdon fall under Trafford, and Bowdon and parts of Hale are conservation areas. Our [builders in Bowdon](/builders-bowdon) page covers the consents. Ask who handles planning conditions, Building Control and any party wall notices.
 - **Proof, not logos.** Insurance certificates, FMB or TrustMark membership, and two recent clients you can ring.
 
 ## The short version
@@ -1542,7 +1542,7 @@ Houses in England have permitted development rights. These let you extend withou
 
 ## The catches that change everything
 
-**Conservation areas.** Much of Bowdon, and parts of Hale and Altrincham, sit in conservation areas, as do many village centres in Cheshire East. Inside one, side extensions, two-storey rear extensions and the larger rear extension route are not permitted development, and cladding is restricted. Check the council's conservation area maps before you assume anything.
+**Conservation areas.** Much of Bowdon (see [builders in Bowdon](/builders-bowdon)), and parts of Hale and Altrincham, sit in conservation areas, as do many village centres in Cheshire East. Inside one, side extensions, two-storey rear extensions and the larger rear extension route are not permitted development, and cladding is restricted. Check the council's conservation area maps before you assume anything.
 
 **Article 4 directions.** A council can remove some permitted development rights in a particular area. They are less common than conservation areas, but they exist.
 

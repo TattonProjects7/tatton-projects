@@ -847,7 +847,8 @@ ${film ? NEWBUILD_FILM : ''}
     <div class="svc-ov rise">
       <p class="eyebrow">${esc(s.introEyebrow)}</p>
       <h2 class="svc-h2">${gold(s.introHeading)}</h2>
-      ${(s.intro || []).map((t, i) => `<p${i === 0 ? ' class="big"' : ''}>${esc(t)}</p>`).join('\n      ')}${s.video ? `
+      ${(s.intro || []).map((t, i) => `<p${i === 0 ? ' class="big"' : ''}>${esc(t)}</p>`).join('\n      ')}${(s.introLinks || []).length ? `
+      <p class="svc-note">Nearby: ${s.introLinks.map(([t, h]) => `<a href="${esc(h)}">${esc(t)}</a>`).join(' · ')}</p>` : ''}${s.video ? `
       <figure class="svc-video">
         <video src="${esc(s.video.src)}" poster="${esc(s.video.poster || s.hero)}"
           preload="none" muted loop playsinline controls
