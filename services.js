@@ -425,6 +425,7 @@ const SERVICES = [
       "Cat A is the landlord's base build: raised floors, suspended ceilings, basic services, fire detection and finished surfaces that leave a floor clean, lettable and ready for a tenant. Cat B is the tenant's fit-out: the layout, partitions, meeting rooms, kitchens, joinery, branding, lighting and workplace design that turn that empty floor into somewhere a team actually works.",
       "We deliver both, and the shell-to-handover work in between, coordinating landlord, tenant, designer and building control so the two stages meet cleanly instead of clashing on site."
     ],
+    introLinks: [["Cat A fit out vs Cat A+", "/blog/cat-a-plus-fit-out-explained"], ["Office fit-out, Manchester", "/office-fit-out-manchester"]],
     factsTitle: "Guide rates",
     facts: [["Cat A refresh", "£45–£70 / sq ft"], ["Standard Cat B", "£70–£110 / sq ft"], ["High-spec Cat B", "£110–£180 / sq ft"], ["Coverage", "UK-wide, selected"]],
     factsNote: "2026 guide rates, excluding VAT and professional fees. A measured cost plan replaces the range.",

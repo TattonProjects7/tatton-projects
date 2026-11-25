@@ -1019,7 +1019,7 @@ Those figures are our published per square foot rates converted to square metres
 
 These are all-in fit-out rates for Manchester and the North West in 2026, measured on net internal area, excluding VAT, professional fees and loose furniture. One square metre is 10.764 square feet, and the square metre figures are rounded.
 
-- **Cat A refresh:** £45 to £70 per sq ft, or roughly £480 to £750 per sq m. Ceilings, lighting, raised floor, basic mechanical and electrical, decoration.
+- **Cat A refresh:** £45 to £70 per sq ft, or roughly £480 to £750 per sq m. Ceilings, lighting, raised floor, basic mechanical and electrical, decoration. What a [Cat A fit out](/blog/cat-a-plus-fit-out-explained) includes is explained separately.
 - **Standard Cat B:** £70 to £110 per sq ft, or roughly £750 to £1,180 per sq m. Partitions, meeting rooms, tea point, carpet, data cabling, basic joinery.
 - **High-specification Cat B:** £110 to £180 per sq ft and upwards, or roughly £1,180 to £1,940 per sq m and upwards. Bespoke joinery, feature lighting, acoustic treatment, integrated AV.
 
@@ -1340,7 +1340,7 @@ Office fit-out in Manchester splits into three markets, and the contractors rare
 
 - **£1m and above, usually multi-floor or a whole building.** National fit-out specialists with design teams, cost consultants and bid teams. Procurement is formal, often through a project manager or agent.
 - **£250k to £1m, a floor or two.** Regional design-and-build firms with their own designers and site teams. Design-and-build in one contract is the norm here.
-- **£50k to £500k, a floor, a suite or a refresh of an occupied office.** Owner-managed contractors who price the job themselves and run it on site. This is where the Cat A refresh, the landlord’s refurbishment and the growing company’s first proper office sit.
+- **£50k to £500k, a floor, a suite or a refresh of an occupied office.** Owner-managed contractors who price the job themselves and run it on site. This is where the [Cat A refresh](/blog/cat-a-plus-fit-out-explained), the landlord’s refurbishment and the growing company’s first proper office sit.
 
 Tell a firm honestly which band you are in and the good ones will say if it isn’t theirs.
 
@@ -3654,15 +3654,18 @@ Send us your drawings, your plot or your office floor. For a plot, a location an
   {
     slug: "cat-a-plus-fit-out-explained",
     title: "Cat A+ and plug-and-play offices: what landlords are offering and why",
-    seoTitle: "Cat A+ fit-out explained: plug-and-play offices",
-    summary: "What Cat A+ actually includes, why landlords fit out floors before a tenant signs, and what to check before you pay for one or take one on.",
+    seoTitle: "Cat A fit out vs Cat A+: what landlords include",
+    summary: "What a Cat A fit out includes, how Cat A+ plug-and-play floors go further, what to check before you pay for one, and our 2026 cost per sq ft.",
     date: "2026-10-17",
+    updated: "2026-11-25",
     author: "Dave Groom",
     category: "Fit-out",
     readTime: "4 min",
     image: "images/stockport-office-03-openplan.jpg",
     featured: false,
-    body: `Cat A used to be the end of a landlord's job. Raised floor, suspended ceilings, lighting, basic services, fire detection and finished surfaces. A clean, empty floor, and the tenant took it from there.
+    body: `A Cat A fit out is the landlord's base finish that makes an empty office floor lettable: raised floor, suspended ceilings, lighting, heating and cooling, fire detection and finished surfaces. As a 2026 guide, a Cat A refresh runs £45 to £70 per sq ft, before VAT. Cat A+ goes further, adding meeting rooms, a tea point and sometimes furniture.
+
+Cat A used to be the end of a landlord's job. Raised floor, suspended ceilings, lighting, basic services, fire detection and finished surfaces. A clean, empty floor, and the tenant took it from there.
 
 Some landlords now go further before a floor is marketed. They put in a few meeting rooms, a tea point and floor finishes, and sometimes the furniture and the Wi-Fi as well, so a tenant can sign and move in without running a fit-out of their own. Agents call it Cat A+, plug-and-play or fitted space. It is worth understanding, because it changes who pays for what and who is left holding the risk.
 
@@ -3712,7 +3715,17 @@ It is also worth asking how easily you can change things. A plug-and-play floor 
 
 Our published 2026 ranges are £45 to £70 per sq ft for a Cat A refresh and £70 to £110 for a standard Cat B, excluding VAT and loose furniture. We don't publish a separate band for Cat A+, because the specification varies too much from one floor to the next. It has to be priced from the list of what is going in. The full ranges are on our [cost guide](https://www.tatton-projects.co.uk/costs).
 
-If you're a landlord weighing up Cat A or Cat A+ on an empty floor, send us the floor plan and a few photos. We'll do a free feasibility appraisal and tell you what each option would cost, and what we would leave out. There is more on getting a vacant floor ready in [refurbishing an office floor to let it faster](https://www.tatton-projects.co.uk/blog/refurbishing-an-office-to-let).`
+If you're a landlord weighing up Cat A or Cat A+ on an empty floor, send us the floor plan and a few photos. We'll do a free feasibility appraisal and tell you what each option would cost, and what we would leave out. There is more on getting a vacant floor ready in [refurbishing an office floor to let it faster](https://www.tatton-projects.co.uk/blog/refurbishing-an-office-to-let).
+
+## Questions about Cat A fit outs
+
+**What is a Cat A fit out?** The landlord's base finish for an office floor: raised floor, suspended ceilings, lighting, heating and cooling, fire detection and finished surfaces. It leaves a clean, open floor ready for a tenant's own Cat B fit-out.
+
+**What does a Cat A office fit out cost?** Our published 2026 range is £45 to £70 per sq ft for a Cat A refresh, excluding VAT and loose furniture. Working around an occupied building typically adds 10 to 25 per cent.
+
+**What is the difference between Cat A and Cat A+?** Cat A+ is the landlord doing part of the Cat B in advance, such as meeting rooms, a tea point and floor finishes. There is no fixed definition, so ask for the list of what is included.
+
+**Who pays for a Cat A fit out?** Usually the landlord, because Cat A is what makes the floor lettable. The tenant then pays for the Cat B on top, unless the lease agrees otherwise.`
   },
 
   {
