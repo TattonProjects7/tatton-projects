@@ -337,7 +337,7 @@ Which of those applies to your house decides the drawings, the programme and how
 
 ## Is your house in one of Hale's conservation areas?
 
-Trafford Council's conservation area map shows three in and around Hale: Hale Station, South Hale and Ashley Heath. Bowdon, The Devisdale and The Downs sit just to the west. Check the map before anyone draws anything, because it changes what you can build without an application.
+Trafford Council's conservation area map shows three in and around Hale: Hale Station, South Hale and Ashley Heath. Bowdon, The Devisdale and The Downs sit just to the west (see [builders in Bowdon](/builders-bowdon)). Check the map before anyone draws anything, because it changes what you can build without an application.
 
 Trafford's own guidance lists house extensions among the changes that need a planning application in a conservation area. The national rules, set out below, are more specific about which extensions that means.
 
@@ -2998,7 +2998,7 @@ A basement used as living space needs building regulations approval, and buildin
 
 **Services.** Heating, electrics and data, plus drainage. A WC or shower below the level of the main drains needs a pumped system.
 
-**Planning.** Converting an existing cellar with no change to the outside often doesn't need planning permission. Digging a new basement, enlarging one, or adding lightwells that change how the house looks may well need it. Much of Bowdon and parts of Hale sit in conservation areas, so check with Trafford Council before you assume anything.
+**Planning.** Converting an existing cellar with no change to the outside often doesn't need planning permission. Digging a new basement, enlarging one, or adding lightwells that change how the house looks may well need it. Much of Bowdon and parts of Hale sit in conservation areas, so check with Trafford Council before you assume anything. Our [builders in Bowdon](/builders-bowdon) page covers Bowdon's conservation areas.
 
 ## What it costs, and where to start
 
