@@ -780,7 +780,22 @@ function servicePage(s, all) {
     description: s.description,
     url,
     image: img,
-    provider: { '@id': `${SITE}/#organisation` },
+    provider: {
+      '@type': 'GeneralContractor',
+      '@id': `${SITE}/#organisation`,
+      name: 'Tatton Projects',
+      url: `${SITE}/`,
+      telephone: '+441617062907',
+      email: 'info@tattonprojects.co.uk',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Suite 15, Peel House, 30 The Downs',
+        addressLocality: 'Altrincham',
+        addressRegion: 'Greater Manchester',
+        postalCode: 'WA14 2PX',
+        addressCountry: 'GB'
+      }
+    },
     areaServed: s.areaServed || [
       { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
       { '@type': 'AdministrativeArea', name: 'Cheshire' }
